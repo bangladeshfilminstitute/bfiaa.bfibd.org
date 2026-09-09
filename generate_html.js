@@ -12,12 +12,9 @@ const data = {
 };
 
 let html = `
-<!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-     PICNIC 2023
-■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
-<section class="gallery-section" id="picnic" aria-label="BFIAA Picnic 2023" style="background:var(--dark); padding:100px 0;">
+<section class="gallery-section" id="picnic" aria-label="BFIAA Picnic 2023" style="background:var(--dark-2); padding:100px 0; border-top: 1px solid var(--border);">
   <div class="container">
-    <div class="reveal text-center" style="margin-bottom: 60px;">
+    <div class="reveal text-center" style="margin-bottom: 40px;">
       <div class="section-label" style="justify-content:center;">Events</div>
       <h2 class="section-title">Annual Picnic <span>2023</span></h2>
       <div class="divider" style="margin: 20px auto;"></div>
@@ -25,41 +22,61 @@ let html = `
         A day of joy, cricket, raffle draws, and memorable moments with our founding director Tanvir Mokammel and fellow alumni.
       </p>
     </div>
+
+    <!-- Picnic Tabs -->
+    <div class="picnic-tabs reveal" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 40px;">
 `;
 
-for (const [category, ids] of Object.entries(data)) {
+const categories = Object.keys(data);
+categories.forEach((cat, idx) => {
+    const activeClass = idx === 0 ? "active" : "";
+    html += `      <button class="picnic-tab-btn ${activeClass}" data-target="picnic-seg-${idx}">${cat}</button>\n`;
+});
+
+html += `    </div>\n\n    <div class="picnic-segments-container reveal reveal-delay-1" style="min-height: 400px;">\n`;
+
+categories.forEach((category, idx) => {
+    const ids = data[category];
     const catSafe = category.toLowerCase().replace(/ /g, '-');
+    const displayStyle = idx === 0 ? "block" : "none";
     
-    html += `\n    <!-- Segment: ${category} -->\n`;
-    html += `    <div class="picnic-segment" style="margin-bottom: 60px;">\n`;
+    html += `      <!-- Segment: ${category} -->\n`;
+    html += `      <div class="picnic-segment" id="picnic-seg-${idx}" style="display: ${displayStyle}; animation: fadeIn 0.4s ease-out forwards;">\n`;
     
-    // Only add a title if it's not the Cover, or maybe format it differently
-    if (category !== "Cover") {
-        html += `      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">${category}</h3>\n`;
-    }
-    
-    // If it's the cover, just one big image
-    if (category === "Cover" || ids.length === 1) {
-        html += `      <div class="gallery-grid" style="grid-template-columns: 1fr;">\n`;
+    // Add masonry style layout for segments with more than 3 images
+    let gridStyle = "";
+    if (ids.length > 5) {
+        // Masonry trick with columns
+        gridStyle = `display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-auto-rows: 250px; gap: 16px;`;
+    } else if (ids.length === 1) {
+        gridStyle = `display: grid; grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;`;
     } else {
-        html += `      <div class="gallery-grid">\n`;
+        gridStyle = `display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;`;
     }
+
+    html += `        <div class="gallery-grid" style="${gridStyle}">\n`;
 
     for (let i = 0; i < ids.length; i++) {
         const urlPath = `images/picnic-2023/${catSafe}/${i + 1}.jpg`;
-        html += `        <div class="gallery-item reveal" tabindex="0" data-src="${urlPath}" data-caption="${category} - Photo ${i + 1}">
-          <img src="${urlPath}" alt="${category}" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>\n`;
+        // Make the first image span 2 rows if it's a large gallery to give a "bento box" feel
+        let itemStyle = "";
+        if (ids.length > 5 && i === 0) {
+            itemStyle = `grid-row: span 2; grid-column: span 2;`;
+        }
+
+        html += `          <div class="gallery-item" tabindex="0" data-src="${urlPath}" data-caption="${category} - Photo ${i + 1}" style="${itemStyle}">
+            <img src="${urlPath}" alt="${category}" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>\n`;
     }
 
+    html += `        </div>\n`;
     html += `      </div>\n`;
-    html += `    </div>\n`;
-}
+});
 
-html += `  </div>\n</section>\n`;
+html += `    </div>\n  </div>\n</section>\n`;
 
 fs.writeFileSync('picnic_html.txt', html);
-console.log("Written to picnic_html.txt");
+console.log("Written new tabbed layout to picnic_html.txt");
