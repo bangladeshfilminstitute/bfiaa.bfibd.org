@@ -425,5 +425,26 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); } });
   });
 
-  console.log('🎬 BFIAA · bfiaa.bfibd.org · Advanced Lightbox ready');
+  // ■ Tab Logic for Picnic 2023 ■
+  const tabBtns = document.querySelectorAll('.picnic-tab-btn');
+  const tabSegments = document.querySelectorAll('.picnic-segment');
+  
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Remove active class from all
+      tabBtns.forEach(b => b.classList.remove('active'));
+      tabSegments.forEach(s => s.style.display = 'none');
+      
+      // Add active class to clicked
+      btn.classList.add('active');
+      const targetId = btn.getAttribute('data-target');
+      document.getElementById(targetId).style.display = 'block';
+      
+      // Re-initialize lightbox array so the new images are in correct order!
+      // Actually, since we only hide/show them with display: none, 
+      // the Lightbox STILL works perfectly because all DOM elements exist!
+    });
+  });
+
+  console.log('🎬 BFIAA — bfiaa.bfibd.org — Advanced Lightbox ready');
 });
