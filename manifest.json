@@ -1,0 +1,21 @@
+{
+  "name": "bfiaa-bfibd",
+  "short_name": "BFIAA",
+  "description": "Bangladesh Film Institute Alumni Association — bfiaa.bfibd.org",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080808",
+  "theme_color": "#8B0000",
+  "icons": [
+    {
+      "src": "images/bfiaa-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/bfiaa-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
