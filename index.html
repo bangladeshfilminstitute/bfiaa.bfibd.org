@@ -839,9 +839,10 @@
 <!-- ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
      PICNIC 2023
 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ -->
-<section class="gallery-section" id="picnic" aria-label="BFIAA Picnic 2023" style="background:var(--dark); padding:100px 0;">
+
+<section class="gallery-section" id="picnic" aria-label="BFIAA Picnic 2023" style="background:var(--dark-2); padding:100px 0; border-top: 1px solid var(--border);">
   <div class="container">
-    <div class="reveal text-center" style="margin-bottom: 60px;">
+    <div class="reveal text-center" style="margin-bottom: 40px;">
       <div class="section-label" style="justify-content:center;">Events</div>
       <h2 class="section-title">Annual Picnic <span>2023</span></h2>
       <div class="divider" style="margin: 20px auto;"></div>
@@ -850,331 +851,333 @@
       </p>
     </div>
 
-    <!-- Segment: Cover -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <div class="gallery-grid" style="grid-template-columns: 1fr;">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/cover/1.jpg" data-caption="Cover - Photo 1">
-          <img src="images/picnic-2023/cover/1.jpg" alt="Cover" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+    <!-- Picnic Tabs -->
+    <div class="picnic-tabs reveal" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 40px;">
+      <button class="picnic-tab-btn active" data-target="picnic-seg-0">Cover</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-1">Raffle Tickets</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-2">Raffle Prizes</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-3">Moments</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-4">Cricket Match</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-5">Tanvir Mokammel</button>
+      <button class="picnic-tab-btn " data-target="picnic-seg-6">Last Moment</button>
+    </div>
+
+    <div class="picnic-segments-container reveal reveal-delay-1" style="min-height: 400px;">
+      <!-- Segment: Cover -->
+      <div class="picnic-segment" id="picnic-seg-0" style="display: block; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/cover/1.jpg" data-caption="Cover - Photo 1" style="">
+            <img src="images/picnic-2023/cover/1.jpg" alt="Cover" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Segment: Raffle Tickets -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Raffle Tickets</h3>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/1.jpg" data-caption="Raffle Tickets - Photo 1">
-          <img src="images/picnic-2023/raffle-tickets/1.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      <!-- Segment: Raffle Tickets -->
+      <div class="picnic-segment" id="picnic-seg-1" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-auto-rows: 250px; gap: 16px;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/1.jpg" data-caption="Raffle Tickets - Photo 1" style="grid-row: span 2; grid-column: span 2;">
+            <img src="images/picnic-2023/raffle-tickets/1.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/2.jpg" data-caption="Raffle Tickets - Photo 2">
-          <img src="images/picnic-2023/raffle-tickets/2.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/2.jpg" data-caption="Raffle Tickets - Photo 2" style="">
+            <img src="images/picnic-2023/raffle-tickets/2.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/3.jpg" data-caption="Raffle Tickets - Photo 3">
-          <img src="images/picnic-2023/raffle-tickets/3.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/3.jpg" data-caption="Raffle Tickets - Photo 3" style="">
+            <img src="images/picnic-2023/raffle-tickets/3.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/4.jpg" data-caption="Raffle Tickets - Photo 4">
-          <img src="images/picnic-2023/raffle-tickets/4.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/4.jpg" data-caption="Raffle Tickets - Photo 4" style="">
+            <img src="images/picnic-2023/raffle-tickets/4.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/5.jpg" data-caption="Raffle Tickets - Photo 5">
-          <img src="images/picnic-2023/raffle-tickets/5.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/5.jpg" data-caption="Raffle Tickets - Photo 5" style="">
+            <img src="images/picnic-2023/raffle-tickets/5.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/6.jpg" data-caption="Raffle Tickets - Photo 6">
-          <img src="images/picnic-2023/raffle-tickets/6.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/6.jpg" data-caption="Raffle Tickets - Photo 6" style="">
+            <img src="images/picnic-2023/raffle-tickets/6.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/7.jpg" data-caption="Raffle Tickets - Photo 7">
-          <img src="images/picnic-2023/raffle-tickets/7.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/7.jpg" data-caption="Raffle Tickets - Photo 7" style="">
+            <img src="images/picnic-2023/raffle-tickets/7.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/8.jpg" data-caption="Raffle Tickets - Photo 8">
-          <img src="images/picnic-2023/raffle-tickets/8.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/8.jpg" data-caption="Raffle Tickets - Photo 8" style="">
+            <img src="images/picnic-2023/raffle-tickets/8.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-tickets/9.jpg" data-caption="Raffle Tickets - Photo 9">
-          <img src="images/picnic-2023/raffle-tickets/9.jpg" alt="Raffle Tickets" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Segment: Raffle Prizes -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Raffle Prizes</h3>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/1.jpg" data-caption="Raffle Prizes - Photo 1">
-          <img src="images/picnic-2023/raffle-prizes/1.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/2.jpg" data-caption="Raffle Prizes - Photo 2">
-          <img src="images/picnic-2023/raffle-prizes/2.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/3.jpg" data-caption="Raffle Prizes - Photo 3">
-          <img src="images/picnic-2023/raffle-prizes/3.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/4.jpg" data-caption="Raffle Prizes - Photo 4">
-          <img src="images/picnic-2023/raffle-prizes/4.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/5.jpg" data-caption="Raffle Prizes - Photo 5">
-          <img src="images/picnic-2023/raffle-prizes/5.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/6.jpg" data-caption="Raffle Prizes - Photo 6">
-          <img src="images/picnic-2023/raffle-prizes/6.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/7.jpg" data-caption="Raffle Prizes - Photo 7">
-          <img src="images/picnic-2023/raffle-prizes/7.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/8.jpg" data-caption="Raffle Prizes - Photo 8">
-          <img src="images/picnic-2023/raffle-prizes/8.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/9.jpg" data-caption="Raffle Prizes - Photo 9">
-          <img src="images/picnic-2023/raffle-prizes/9.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/10.jpg" data-caption="Raffle Prizes - Photo 10">
-          <img src="images/picnic-2023/raffle-prizes/10.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/11.jpg" data-caption="Raffle Prizes - Photo 11">
-          <img src="images/picnic-2023/raffle-prizes/11.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/12.jpg" data-caption="Raffle Prizes - Photo 12">
-          <img src="images/picnic-2023/raffle-prizes/12.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/13.jpg" data-caption="Raffle Prizes - Photo 13">
-          <img src="images/picnic-2023/raffle-prizes/13.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/14.jpg" data-caption="Raffle Prizes - Photo 14">
-          <img src="images/picnic-2023/raffle-prizes/14.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/15.jpg" data-caption="Raffle Prizes - Photo 15">
-          <img src="images/picnic-2023/raffle-prizes/15.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/16.jpg" data-caption="Raffle Prizes - Photo 16">
-          <img src="images/picnic-2023/raffle-prizes/16.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/17.jpg" data-caption="Raffle Prizes - Photo 17">
-          <img src="images/picnic-2023/raffle-prizes/17.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
-          </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/raffle-prizes/18.jpg" data-caption="Raffle Prizes - Photo 18">
-          <img src="images/picnic-2023/raffle-prizes/18.jpg" alt="Raffle Prizes" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-tickets/9.jpg" data-caption="Raffle Tickets - Photo 9" style="">
+            <img src="images/picnic-2023/raffle-tickets/9.jpg" alt="Raffle Tickets" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Segment: Moments -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Moments</h3>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/1.jpg" data-caption="Moments - Photo 1">
-          <img src="images/picnic-2023/moments/1.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      <!-- Segment: Raffle Prizes -->
+      <div class="picnic-segment" id="picnic-seg-2" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-auto-rows: 250px; gap: 16px;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/1.jpg" data-caption="Raffle Prizes - Photo 1" style="grid-row: span 2; grid-column: span 2;">
+            <img src="images/picnic-2023/raffle-prizes/1.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/2.jpg" data-caption="Moments - Photo 2">
-          <img src="images/picnic-2023/moments/2.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/2.jpg" data-caption="Raffle Prizes - Photo 2" style="">
+            <img src="images/picnic-2023/raffle-prizes/2.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/3.jpg" data-caption="Moments - Photo 3">
-          <img src="images/picnic-2023/moments/3.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/3.jpg" data-caption="Raffle Prizes - Photo 3" style="">
+            <img src="images/picnic-2023/raffle-prizes/3.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/4.jpg" data-caption="Moments - Photo 4">
-          <img src="images/picnic-2023/moments/4.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/4.jpg" data-caption="Raffle Prizes - Photo 4" style="">
+            <img src="images/picnic-2023/raffle-prizes/4.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/5.jpg" data-caption="Moments - Photo 5">
-          <img src="images/picnic-2023/moments/5.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/5.jpg" data-caption="Raffle Prizes - Photo 5" style="">
+            <img src="images/picnic-2023/raffle-prizes/5.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/6.jpg" data-caption="Moments - Photo 6">
-          <img src="images/picnic-2023/moments/6.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/6.jpg" data-caption="Raffle Prizes - Photo 6" style="">
+            <img src="images/picnic-2023/raffle-prizes/6.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/7.jpg" data-caption="Moments - Photo 7">
-          <img src="images/picnic-2023/moments/7.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/7.jpg" data-caption="Raffle Prizes - Photo 7" style="">
+            <img src="images/picnic-2023/raffle-prizes/7.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/8.jpg" data-caption="Moments - Photo 8">
-          <img src="images/picnic-2023/moments/8.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/8.jpg" data-caption="Raffle Prizes - Photo 8" style="">
+            <img src="images/picnic-2023/raffle-prizes/8.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/9.jpg" data-caption="Moments - Photo 9">
-          <img src="images/picnic-2023/moments/9.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/9.jpg" data-caption="Raffle Prizes - Photo 9" style="">
+            <img src="images/picnic-2023/raffle-prizes/9.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/10.jpg" data-caption="Moments - Photo 10">
-          <img src="images/picnic-2023/moments/10.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/10.jpg" data-caption="Raffle Prizes - Photo 10" style="">
+            <img src="images/picnic-2023/raffle-prizes/10.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/moments/11.jpg" data-caption="Moments - Photo 11">
-          <img src="images/picnic-2023/moments/11.jpg" alt="Moments" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/11.jpg" data-caption="Raffle Prizes - Photo 11" style="">
+            <img src="images/picnic-2023/raffle-prizes/11.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/12.jpg" data-caption="Raffle Prizes - Photo 12" style="">
+            <img src="images/picnic-2023/raffle-prizes/12.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/13.jpg" data-caption="Raffle Prizes - Photo 13" style="">
+            <img src="images/picnic-2023/raffle-prizes/13.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/14.jpg" data-caption="Raffle Prizes - Photo 14" style="">
+            <img src="images/picnic-2023/raffle-prizes/14.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/15.jpg" data-caption="Raffle Prizes - Photo 15" style="">
+            <img src="images/picnic-2023/raffle-prizes/15.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/16.jpg" data-caption="Raffle Prizes - Photo 16" style="">
+            <img src="images/picnic-2023/raffle-prizes/16.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/17.jpg" data-caption="Raffle Prizes - Photo 17" style="">
+            <img src="images/picnic-2023/raffle-prizes/17.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/raffle-prizes/18.jpg" data-caption="Raffle Prizes - Photo 18" style="">
+            <img src="images/picnic-2023/raffle-prizes/18.jpg" alt="Raffle Prizes" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Segment: Cricket Match -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Cricket Match</h3>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/cricket-match/1.jpg" data-caption="Cricket Match - Photo 1">
-          <img src="images/picnic-2023/cricket-match/1.jpg" alt="Cricket Match" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      <!-- Segment: Moments -->
+      <div class="picnic-segment" id="picnic-seg-3" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); grid-auto-rows: 250px; gap: 16px;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/1.jpg" data-caption="Moments - Photo 1" style="grid-row: span 2; grid-column: span 2;">
+            <img src="images/picnic-2023/moments/1.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/cricket-match/2.jpg" data-caption="Cricket Match - Photo 2">
-          <img src="images/picnic-2023/cricket-match/2.jpg" alt="Cricket Match" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/2.jpg" data-caption="Moments - Photo 2" style="">
+            <img src="images/picnic-2023/moments/2.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/cricket-match/3.jpg" data-caption="Cricket Match - Photo 3">
-          <img src="images/picnic-2023/cricket-match/3.jpg" alt="Cricket Match" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/3.jpg" data-caption="Moments - Photo 3" style="">
+            <img src="images/picnic-2023/moments/3.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/4.jpg" data-caption="Moments - Photo 4" style="">
+            <img src="images/picnic-2023/moments/4.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/5.jpg" data-caption="Moments - Photo 5" style="">
+            <img src="images/picnic-2023/moments/5.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/6.jpg" data-caption="Moments - Photo 6" style="">
+            <img src="images/picnic-2023/moments/6.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/7.jpg" data-caption="Moments - Photo 7" style="">
+            <img src="images/picnic-2023/moments/7.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/8.jpg" data-caption="Moments - Photo 8" style="">
+            <img src="images/picnic-2023/moments/8.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/9.jpg" data-caption="Moments - Photo 9" style="">
+            <img src="images/picnic-2023/moments/9.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/10.jpg" data-caption="Moments - Photo 10" style="">
+            <img src="images/picnic-2023/moments/10.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/moments/11.jpg" data-caption="Moments - Photo 11" style="">
+            <img src="images/picnic-2023/moments/11.jpg" alt="Moments" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Segment: Tanvir Mokammel -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Tanvir Mokammel</h3>
-      <div class="gallery-grid" style="grid-template-columns: 1fr;">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/tanvir-mokammel/1.jpg" data-caption="Tanvir Mokammel - Photo 1">
-          <img src="images/picnic-2023/tanvir-mokammel/1.jpg" alt="Tanvir Mokammel" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      <!-- Segment: Cricket Match -->
+      <div class="picnic-segment" id="picnic-seg-4" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/cricket-match/1.jpg" data-caption="Cricket Match - Photo 1" style="">
+            <img src="images/picnic-2023/cricket-match/1.jpg" alt="Cricket Match" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/cricket-match/2.jpg" data-caption="Cricket Match - Photo 2" style="">
+            <img src="images/picnic-2023/cricket-match/2.jpg" alt="Cricket Match" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/cricket-match/3.jpg" data-caption="Cricket Match - Photo 3" style="">
+            <img src="images/picnic-2023/cricket-match/3.jpg" alt="Cricket Match" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- Segment: Last Moment -->
-    <div class="picnic-segment" style="margin-bottom: 60px;">
-      <h3 style="font-family: var(--font-title); font-size: 1.8rem; margin-bottom: 24px; color: var(--gold); border-bottom: 1px solid rgba(200, 169, 81, 0.2); padding-bottom: 10px;">Last Moment</h3>
-      <div class="gallery-grid">
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/last-moment/1.jpg" data-caption="Last Moment - Photo 1">
-          <img src="images/picnic-2023/last-moment/1.jpg" alt="Last Moment" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      <!-- Segment: Tanvir Mokammel -->
+      <div class="picnic-segment" id="picnic-seg-5" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: 1fr; max-width: 800px; margin: 0 auto;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/tanvir-mokammel/1.jpg" data-caption="Tanvir Mokammel - Photo 1" style="">
+            <img src="images/picnic-2023/tanvir-mokammel/1.jpg" alt="Tanvir Mokammel" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/last-moment/2.jpg" data-caption="Last Moment - Photo 2">
-          <img src="images/picnic-2023/last-moment/2.jpg" alt="Last Moment" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+      </div>
+      <!-- Segment: Last Moment -->
+      <div class="picnic-segment" id="picnic-seg-6" style="display: none; animation: fadeIn 0.4s ease-out forwards;">
+        <div class="gallery-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px;">
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/last-moment/1.jpg" data-caption="Last Moment - Photo 1" style="">
+            <img src="images/picnic-2023/last-moment/1.jpg" alt="Last Moment" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
-        </div>
-        <div class="gallery-item reveal" tabindex="0" data-src="images/picnic-2023/last-moment/3.jpg" data-caption="Last Moment - Photo 3">
-          <img src="images/picnic-2023/last-moment/3.jpg" alt="Last Moment" loading="lazy" />
-          <div class="gallery-overlay">
-            <span class="gallery-icon">⤢</span>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/last-moment/2.jpg" data-caption="Last Moment - Photo 2" style="">
+            <img src="images/picnic-2023/last-moment/2.jpg" alt="Last Moment" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
+          </div>
+          <div class="gallery-item" tabindex="0" data-src="images/picnic-2023/last-moment/3.jpg" data-caption="Last Moment - Photo 3" style="">
+            <img src="images/picnic-2023/last-moment/3.jpg" alt="Last Moment" loading="lazy" style="height: 100%; object-fit: cover;" />
+            <div class="gallery-overlay">
+              <span class="gallery-icon">⤢</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 
 <section class="gallery-section" id="gallery" aria-label="Photo Gallery">
