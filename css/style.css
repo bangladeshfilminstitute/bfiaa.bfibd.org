@@ -52,7 +52,7 @@ body {
 }
 
 .site-wrapper {
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   width: 100%;
   position: relative;
 }
@@ -210,7 +210,7 @@ a { text-decoration: none; color: inherit; }
 .filmstrip-ticker {
   background: var(--crimson-deep);
   border-bottom: 1px solid var(--crimson);
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   white-space: nowrap;
   height: 36px;
   display: flex;
@@ -271,7 +271,7 @@ a { text-decoration: none; color: inherit; }
   text-align: center;
   padding: 80px 24px 60px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 
 .hero-bg {
@@ -546,7 +546,7 @@ section { padding: 90px 24px; }
 .about-img-frame {
   position: relative;
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   background: var(--dark-3);
   border: 1px solid var(--border);
 }
@@ -686,7 +686,7 @@ section { padding: 90px 24px; }
   padding: 28px;
   transition: all var(--transition);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 .objective-card::before {
   content: '';
@@ -838,9 +838,9 @@ section { padding: 90px 24px; }
   margin-bottom: 3px;
   line-height: 1.3;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  /* -webkit-line-clamp: 2; removed */
   -webkit-box-orient: vertical;  
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 .member-role {
   font-family: var(--font-mono);
@@ -865,7 +865,7 @@ section { padding: 90px 24px; }
   background: var(--dark-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   transition: all var(--transition);
   cursor: pointer;
 }
@@ -878,7 +878,7 @@ section { padding: 90px 24px; }
   aspect-ratio: 16/9;
   background: var(--dark-3);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 .event-card-thumb img {
   width: 100%;
@@ -980,7 +980,7 @@ section { padding: 90px 24px; }
   justify-content: center;
   position: relative;
   box-shadow: -8px 0 20px rgba(0,0,0,0.5), 4px 4px 20px rgba(0,0,0,0.3);
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 .magazine-book img {
   width: 100%;
@@ -1108,7 +1108,7 @@ section { padding: 90px 24px; }
 }
 .gallery-item {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   border-radius: var(--radius);
   aspect-ratio: 4/3;
   background: var(--dark-3);
@@ -1204,7 +1204,7 @@ section { padding: 90px 24px; }
   max-width: 780px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
 }
 .membership-card::before {
   content: '';
@@ -1537,7 +1537,7 @@ section { padding: 90px 24px; }
   letter-spacing: 1px;
   color: var(--text-muted);
   text-transform: uppercase;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1577,7 +1577,7 @@ section { padding: 90px 24px; }
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; removed to show full names */
   cursor: grab;
 }
 .lb-stage:active { cursor: grabbing; }
