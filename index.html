@@ -44,6 +44,21 @@
 
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .saisei-btn-prev:hover, .saisei-btn-next:hover {
+      background: var(--gold) !important;
+      color: #000 !important;
+      border-color: var(--gold) !important;
+    }
+    .saisei-pagination-bullets .swiper-pagination-bullet {
+      background: #fff;
+      opacity: 0.5;
+    }
+    .saisei-pagination-bullets .swiper-pagination-bullet-active {
+      background: var(--gold);
+      opacity: 1;
+    }
+  </style>
 </head>
 <body>
 
@@ -735,56 +750,136 @@
       </p>
     </div>
 
-    <!-- Mega Gallery Grid -->
-    <div class="reveal reveal-delay-1" style="display: flex; flex-direction: column; gap: 16px;">
+    <!-- Saisei Inspired Custom Slider -->
+    <div class="saisei-slider-wrapper" style="width: 100%; border: 1px solid var(--border); background: #0a0a0a; border-radius: 8px; overflow: hidden; font-family: var(--font-main);">
       
-      <!-- Hero Photo -->
-      <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-1.jpg" data-caption="30 Years Celebration - Stage" style="width: 100%; aspect-ratio: 21/9; max-height: 600px; overflow: hidden; border: 1px solid var(--border);">
-        <img src="images/30-years/photo-1.jpg" alt="Stage Celebration" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-        <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-      </div>
-      
-      <!-- 9 Photos Grid -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-2.jpg" data-caption="Uralchitra Special Edition Launch" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-2.jpg" alt="Uralchitra Launch" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
+      <!-- Top Bar -->
+      <div class="saisei-slider-top" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; border-bottom: 1px solid var(--border);">
+        <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold);">
+          ? Selected Photos
         </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-3.jpg" data-caption="Birthday Celebration" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-3.jpg" alt="Birthday Celebration" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-4.jpg" data-caption="Tanvir Mokammel" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-4.jpg" alt="Tanvir Mokammel" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-5.jpg" data-caption="Film Festival Audience" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-5.jpg" alt="Film Festival Audience" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <!-- New Photos -->
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-6.jpg" data-caption="Alumni Gathering" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-6.jpg" alt="Alumni Gathering" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-7.jpg" data-caption="Alumni Gathering" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-7.jpg" alt="Alumni Gathering" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-8.jpg" data-caption="Alumni Gathering" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-8.jpg" alt="Alumni Gathering" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-9.jpg" data-caption="Alumni Gathering" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-9.jpg" alt="Alumni Gathering" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
-        </div>
-        <div class="gallery-item" tabindex="0" data-src="images/30-years/photo-10.jpg" data-caption="Alumni Gathering" style="aspect-ratio: 4/3; border: 1px solid var(--border);">
-          <img src="images/30-years/photo-10.jpg" alt="Alumni Gathering" loading="lazy" style="height: 100%; width: 100%; object-fit: cover;" />
-          <div class="gallery-overlay"><span class="gallery-icon">⤢</span></div>
+        <div class="saisei-pagination-fraction" style="font-family: var(--font-mono); font-size: 0.9rem; color: #fff;">
+          <span class="saisei-current">1</span> / <span class="saisei-total">10</span>
         </div>
       </div>
 
+      <!-- Main Slider -->
+      <div class="reveal reveal-delay-1 swiper thirty-years-slider" style="width: 100%;">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 (Default Photo) -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-2.jpg" alt="Uralchitra Launch" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Uralchitra Special Edition</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Magazine Launch Event</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-1.jpg" alt="Stage Celebration" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">30 Years Celebration</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Stage Event & Masterclass</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-3.jpg" alt="Birthday Celebration" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Birthday Celebration</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Honoring Tanvir Mokammel</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-4.jpg" alt="Tanvir Mokammel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Tanvir Mokammel</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Founder & Director</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-5.jpg" alt="Film Festival Audience" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Film Festival</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Retrospective Screenings</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-6.jpg" alt="Alumni Gathering 1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 7 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-7.jpg" alt="Alumni Gathering 2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 8 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-8.jpg" alt="Alumni Gathering 3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 9 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-9.jpg" alt="Alumni Gathering 4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
+              </div>
+            </div>
+          </div>
+          <!-- Slide 10 -->
+          <div class="swiper-slide">
+            <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
+              <img src="images/30-years/photo-10.jpg" alt="Alumni Gathering 5" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
+                <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
+                <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Bottom Bar -->
+      <div class="saisei-slider-bottom" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; border-top: 1px solid var(--border);">
+        <div class="saisei-slider-controls" style="display: flex; gap: 15px;">
+          <button class="saisei-btn-prev" style="background: transparent; border: 1px solid var(--border); color: #fff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease;">&larr;</button>
+          <button class="saisei-btn-next" style="background: transparent; border: 1px solid var(--border); color: #fff; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease;">&rarr;</button>
+        </div>
+        <div class="saisei-pagination-bullets" style="display: flex; gap: 8px;">
+          <!-- Bullets injected by Swiper -->
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1689,6 +1784,11 @@
     document.addEventListener('DOMContentLoaded', function() {
       if (typeof Swiper !== 'undefined') {
         new Swiper('.thirty-years-slider', {
+          on: {
+            slideChange: function () {
+              document.querySelector('.saisei-current').textContent = this.realIndex + 1;
+            }
+          },
           loop: true,
           speed: 600,
           parallax: true,
@@ -1697,12 +1797,12 @@
             disableOnInteraction: false,
           },
           pagination: {
-            el: '.swiper-pagination',
+            el: '.saisei-pagination-bullets',
             clickable: true,
           },
           navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: '.saisei-btn-next',
+            prevEl: '.saisei-btn-prev',
           },
           effect: 'fade',
           fadeEffect: {
