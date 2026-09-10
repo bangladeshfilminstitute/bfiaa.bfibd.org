@@ -43,6 +43,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
 
@@ -69,7 +70,7 @@
   </ul>
 
   <div class="nav-actions">
-    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener">← BFI Home</a>
+    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" style="height: 16px; width: auto;"/> BFI Home</a>
     <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
   </div>
 
@@ -1682,6 +1683,34 @@
 </div> <!-- End of site-wrapper -->
 
 <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof Swiper !== 'undefined') {
+        new Swiper('.thirty-years-slider', {
+          loop: true,
+          speed: 600,
+          parallax: true,
+          autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          effect: 'fade',
+          fadeEffect: {
+            crossFade: true
+          }
+        });
+      }
+    });
+  </script>
 </body>
 </html>
 
