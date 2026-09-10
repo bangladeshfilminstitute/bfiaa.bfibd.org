@@ -45,6 +45,10 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
+    .saisei-btn-prev:hover, .saisei-btn-prev:hover, .saisei-btn-next:hover, .saisei-download-btn:hover {
+      transform: scale(1.1);
+      border-color: var(--gold) !important;
+    }
     .saisei-btn-prev:hover, .saisei-btn-next:hover {
       background: var(--gold) !important;
       color: #000 !important;
@@ -70,7 +74,6 @@
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
     <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
-    <span class="nav-logo-text">BFIAA</span>
   </a>
 
   <ul class="nav-links" role="list">
@@ -756,7 +759,7 @@
       <!-- Top Bar -->
       <div class="saisei-slider-top" style="display: flex; justify-content: space-between; align-items: center; padding: 20px 30px; border-bottom: 1px solid var(--border);">
         <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; color: var(--gold);">
-          ? Selected Photos
+          🎞️ Timeless Memories
         </div>
         <div class="saisei-pagination-fraction" style="font-family: var(--font-mono); font-size: 0.9rem; color: #fff;">
           <span class="saisei-current">1</span> / <span class="saisei-total">10</span>
@@ -770,6 +773,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-2.jpg" alt="Uralchitra Launch" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-2.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Uralchitra Special Edition</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Magazine Launch Event</p>
@@ -780,6 +784,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-1.jpg" alt="Stage Celebration" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-1.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">30 Years Celebration</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Stage Event & Masterclass</p>
@@ -790,6 +795,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-3.jpg" alt="Birthday Celebration" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-3.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Birthday Celebration</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Honoring Tanvir Mokammel</p>
@@ -800,6 +806,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-4.jpg" alt="Tanvir Mokammel" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-4.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Tanvir Mokammel</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Founder & Director</p>
@@ -810,6 +817,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-5.jpg" alt="Film Festival Audience" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-5.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Film Festival</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">Retrospective Screenings</p>
@@ -820,6 +828,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-6.jpg" alt="Alumni Gathering 1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-6.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
@@ -830,6 +839,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-7.jpg" alt="Alumni Gathering 2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-7.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
@@ -840,6 +850,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-8.jpg" alt="Alumni Gathering 3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-8.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
@@ -850,6 +861,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-9.jpg" alt="Alumni Gathering 4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-9.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
@@ -860,6 +872,7 @@
           <div class="swiper-slide">
             <div class="saisei-slide-inner" style="position: relative; width: 100%; aspect-ratio: 16/9; max-height: 700px;">
               <img src="images/30-years/photo-10.jpg" alt="Alumni Gathering 5" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" />
+              <a href="images/30-years/photo-10.jpg" download target="_blank" class="saisei-download-btn" title="View Full / Download" style="position: absolute; top: 20px; right: 20px; background: rgba(0,0,0,0.6); color: #fff; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: all 0.3s ease; z-index: 10; border: 1px solid rgba(255,255,255,0.2);"><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg></a>
               <div class="saisei-slide-content" style="position: absolute; bottom: 30px; left: 30px; background: rgba(0,0,0,0.7); backdrop-filter: blur(5px); border: 1px solid var(--border); padding: 20px 30px; border-radius: 4px;">
                 <h3 style="margin: 0; font-family: var(--font-title); font-size: 1.4rem; color: var(--gold); letter-spacing: 1px;">Alumni Gathering</h3>
                 <p style="margin: 5px 0 0; font-size: 0.9rem; color: #ddd;">BFI Community</p>
