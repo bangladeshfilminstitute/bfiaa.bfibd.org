@@ -96,10 +96,10 @@ async function processAll() {
             const url = `https://drive.google.com/uc?export=download&id=${id}`;
             const filepath = path.join(catDir, `${i + 1}.jpg`);
             
-            if (fs.existsSync(filepath)) {
-                console.log(`Skipping ${catSafe}/${i + 1}.jpg (already exists)`);
-                continue;
-            }
+            // if (fs.existsSync(filepath)) {
+            //     console.log(`Skipping ${catSafe}/${i + 1}.jpg (already exists)`);
+            //     continue;
+            // }
 
             console.log(`Downloading ${catSafe}/${i + 1}.jpg ...`);
             try {
@@ -107,6 +107,7 @@ async function processAll() {
                 // Check if buffer is valid image
                 try {
                     await sharp(buffer)
+                        .rotate() // Auto-rotates based on EXIF orientation!
                         .resize({ width: 1000, withoutEnlargement: true })
                         .jpeg({ quality: 80 })
                         .toFile(filepath);
