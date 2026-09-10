@@ -11,6 +11,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "mammoth": "^1.12.2",
     "sharp": "^0.35.4"
   }
 }
