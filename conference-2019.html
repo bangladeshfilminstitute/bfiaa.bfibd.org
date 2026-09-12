@@ -36,39 +36,30 @@
       margin-bottom: 30px;
       text-transform: uppercase;
     }
-    .event-breadcrumb a {
-      color: var(--gold);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
+    .event-breadcrumb a { color: var(--gold); text-decoration: none; transition: color 0.2s; }
     .event-breadcrumb a:hover { color: #fff; }
     .conf-grid {
       display: grid;
-      grid-template-columns: 480px 1fr;
+      grid-template-columns: 400px 1fr;
       gap: 50px;
       align-items: start;
     }
-    .conf-photo-wrapper {
+    .conf-left-col {
       position: sticky;
       top: 90px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .conf-photo-wrapper {
       background: var(--dark-card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       overflow: hidden;
       box-shadow: 0 25px 60px rgba(0,0,0,0.6);
     }
-    .main-photo-frame {
-      width: 100%;
-      height: 330px;
-      background: #000;
-      overflow: hidden;
-    }
-    .main-photo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
+    .main-photo-frame { width: 100%; height: 290px; background: #000; overflow: hidden; }
+    .main-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
     .gallery-thumbnails {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -77,24 +68,9 @@
       background: var(--dark-2);
       border-top: 1px solid var(--border);
     }
-    .thumb-item {
-      aspect-ratio: 16/9;
-      border-radius: 4px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      cursor: pointer;
-      opacity: 0.75;
-      transition: all 0.2s ease;
-    }
-    .thumb-item:hover, .thumb-item.active {
-      opacity: 1;
-      border-color: var(--gold);
-    }
-    .thumb-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+    .thumb-item { aspect-ratio: 16/9; border-radius: 4px; overflow: hidden; border: 1px solid var(--border); cursor: pointer; opacity: 0.75; transition: all 0.2s ease; }
+    .thumb-item:hover, .thumb-item.active { opacity: 1; border-color: var(--gold); }
+    .thumb-item img { width: 100%; height: 100%; object-fit: cover; }
     .event-poster-actions {
       padding: 14px 16px;
       background: var(--dark-2);
@@ -102,137 +78,72 @@
       display: flex;
       gap: 10px;
     }
-    .event-meta-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 4px;
-      background: var(--crimson);
-      color: #fff;
-      margin-bottom: 16px;
-    }
-    .event-main-title {
-      font-family: var(--font-title);
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      color: #fff;
-      line-height: 1.25;
-      margin-bottom: 8px;
-    }
-    .event-bengali-title {
-      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
-      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
-      color: var(--gold);
-      font-weight: 700;
-      display: block;
-      margin-bottom: 25px;
-      line-height: 1.35;
-    }
-    .event-meta-table {
-      background: var(--dark-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      margin-bottom: 35px;
+    .conf-stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
-    .meta-col label {
-      display: block;
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 5px;
-    }
-    .meta-col span {
-      font-family: var(--font-body);
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--text);
-    }
-    .committee-box {
-      background: var(--dark-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 24px 28px;
-      margin-bottom: 30px;
-    }
-    .committee-box h4 {
-      font-family: var(--font-title);
-      font-size: 1.25rem;
-      color: var(--gold);
-      letter-spacing: 1px;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding-bottom: 10px;
-    }
-    .role-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns: 1fr 1fr;
       gap: 12px;
     }
-    .role-item {
+    .conf-stat-box {
       background: var(--dark-card);
       border: 1px solid var(--border);
-      padding: 10px 14px;
-      border-radius: 4px;
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
+      border-radius: var(--radius-md);
+      padding: 18px 14px;
+      text-align: center;
+      transition: border-color 0.2s;
     }
-    .role-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
+    .conf-stat-box:hover { border-color: var(--gold); }
+    .conf-stat-val { font-family: var(--font-title); font-size: 2rem; color: var(--gold); line-height: 1; margin-bottom: 5px; }
+    .conf-stat-lbl { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); }
+    .conf-highlights {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px;
     }
-    .role-name {
-      font-family: 'Hind Siliguri', var(--font-body), sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
-    }
-    .bengali-announcement-card {
-      background: rgba(139, 0, 0, 0.08);
+    .conf-highlights h5 { font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+    .highlight-item { display: flex; align-items: flex-start; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.85rem; color: #ccc; line-height: 1.5; }
+    .highlight-item:last-child { border-bottom: none; }
+    .highlight-icon { color: var(--gold); flex-shrink: 0; font-size: 1rem; margin-top: 1px; }
+    .bengali-side-card {
+      background: rgba(139,0,0,0.07);
       border-left: 4px solid var(--gold);
       border-top: 1px solid var(--border);
       border-right: 1px solid var(--border);
       border-bottom: 1px solid var(--border);
-      padding: 24px 28px;
       border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      margin-top: 25px;
+      padding: 20px 22px;
       font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.9;
-      color: #f0f0f0;
+      font-size: 0.92rem;
+      line-height: 1.85;
+      color: #e8e8e8;
     }
-    .bengali-announcement-card h4 {
-      font-size: 1.2rem;
-      color: var(--gold);
-      margin-bottom: 10px;
-      font-weight: 700;
+    .bengali-side-card h5 { font-size: 0.95rem; color: var(--gold); font-weight: 700; margin-bottom: 10px; }
+    .event-meta-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 4px; background: var(--crimson); color: #fff; margin-bottom: 16px;
     }
-    @media (max-width: 900px) {
-      .conf-grid {
-        grid-template-columns: 1fr;
-      }
-      .conf-photo-wrapper {
-        position: static;
-        max-width: 500px;
-        margin: 0 auto;
-      }
+    .event-main-title { font-family: var(--font-title); font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: #fff; line-height: 1.25; margin-bottom: 8px; }
+    .event-bengali-title { font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif; font-size: clamp(1.1rem, 2vw, 1.7rem); color: var(--gold); font-weight: 700; display: block; margin-bottom: 25px; line-height: 1.35; }
+    .event-meta-table {
+      background: var(--dark-2); border: 1px solid var(--border); border-radius: var(--radius-md);
+      padding: 24px; margin-bottom: 35px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;
+    }
+    .meta-col label { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 5px; }
+    .meta-col span { font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--text); }
+    .conf-committee-header {
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--border);
+    }
+    .conf-committee-header h3 { font-family: var(--font-title); font-size: 1.35rem; color: var(--gold); }
+    .conf-committee-header .committee-year-badge {
+      font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; color: var(--text-dim);
+      background: var(--dark-2); border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px; text-transform: uppercase;
+    }
+    @media (max-width: 960px) {
+      .conf-grid { grid-template-columns: 1fr; }
+      .conf-left-col { position: static; }
     }
   </style>
 </head>
@@ -240,7 +151,6 @@
 
 <div class="site-wrapper">
 
-<!-- Navigation -->
 <!-- Navigation -->
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
@@ -290,8 +200,8 @@
 <div class="filmstrip-ticker" aria-hidden="true">
   <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
   <div class="filmstrip-ticker-inner">
-    <span class="ticker-content">🏛️ BFIAA BIENNIAL CONFERENCE 2019 • HISTORIC ASSEMBLY & COMMITTEE FORMATION (2019-2021) • PUBLIC LIBRARY SEMINAR HALL • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-content" aria-hidden="true">🏛️ BFIAA BIENNIAL CONFERENCE 2019 • HISTORIC ASSEMBLY & COMMITTEE FORMATION (2019-2021) • PUBLIC LIBRARY SEMINAR HALL • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-content">🏛️ BFIAA BIENNIAL CONFERENCE 2019 • HISTORIC ASSEMBLY &amp; COMMITTEE FORMATION (2019-2021) • PUBLIC LIBRARY SEMINAR HALL • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-content" aria-hidden="true">🏛️ BFIAA BIENNIAL CONFERENCE 2019 • HISTORIC ASSEMBLY &amp; COMMITTEE FORMATION (2019-2021) • PUBLIC LIBRARY SEMINAR HALL • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
   </div>
   <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
 </div>
@@ -309,36 +219,100 @@
     </div>
 
     <div class="conf-grid">
-      <!-- Left: Photo Frame & Switcher -->
-      <div class="conf-photo-wrapper">
-        <div class="main-photo-frame">
-          <img id="mainConfImg" src="images/conference-2019-1.jpg" alt="BFIAA Biennial Conference 2019 Group Photo" />
-        </div>
-        <div class="gallery-thumbnails">
-          <div class="thumb-item active" onclick="switchConfPhoto('images/conference-2019-1.jpg', this)">
-            <img src="images/conference-2019-1.jpg" alt="Conference Assembly Photo 1" />
-          </div>
-          <div class="thumb-item" onclick="switchConfPhoto('images/conference-2019-2.jpg', this)">
-            <img src="images/conference-2019-2.jpg" alt="Conference Assembly Photo 2" />
-          </div>
-        </div>
-        <div class="event-poster-actions">
-          <a id="btnViewFull" href="images/conference-2019-1.jpg" target="_blank" class="btn-primary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
-            🔍 Full Photo
-          </a>
-          <a id="btnDownload" href="images/conference-2019-1.jpg" download="BFIAA-Conference-2019-Photo.jpg" class="btn-secondary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
-            ⬇ Download
-          </a>
-        </div>
-      </div>
 
-      <!-- Right: Content Column -->
+      <!-- ══════ LEFT COLUMN ══════ -->
+      <div class="conf-left-col">
+
+        <!-- Photo Frame & Switcher -->
+        <div class="conf-photo-wrapper">
+          <div class="main-photo-frame">
+            <img id="mainConfImg" src="images/conference-2019-1.jpg" alt="BFIAA Biennial Conference 2019 Group Photo" />
+          </div>
+          <div class="gallery-thumbnails">
+            <div class="thumb-item active" onclick="switchConfPhoto('images/conference-2019-1.jpg', this)">
+              <img src="images/conference-2019-1.jpg" alt="Conference Assembly Photo 1" />
+            </div>
+            <div class="thumb-item" onclick="switchConfPhoto('images/conference-2019-2.jpg', this)">
+              <img src="images/conference-2019-2.jpg" alt="Conference Assembly Photo 2" />
+            </div>
+          </div>
+          <div class="event-poster-actions">
+            <a id="btnViewFull" href="images/conference-2019-1.jpg" target="_blank" class="btn-primary" style="flex:1;justify-content:center;text-align:center;font-size:12px;padding:10px 14px;">🔍 Full Photo</a>
+            <a id="btnDownload" href="images/conference-2019-1.jpg" download="BFIAA-Conference-2019-Photo.jpg" class="btn-secondary" style="flex:1;justify-content:center;text-align:center;font-size:12px;padding:10px 14px;">⬇ Download</a>
+          </div>
+        </div>
+
+        <!-- Key Stats -->
+        <div class="conf-stats-grid">
+          <div class="conf-stat-box">
+            <div class="conf-stat-val">7</div>
+            <div class="conf-stat-lbl">Advisory Council</div>
+          </div>
+          <div class="conf-stat-box">
+            <div class="conf-stat-val">23</div>
+            <div class="conf-stat-lbl">Executive Council</div>
+          </div>
+          <div class="conf-stat-box">
+            <div class="conf-stat-val">2019</div>
+            <div class="conf-stat-lbl">Assembly Year</div>
+          </div>
+          <div class="conf-stat-box">
+            <div class="conf-stat-val">2yr</div>
+            <div class="conf-stat-lbl">Term 2019–2021</div>
+          </div>
+        </div>
+
+        <!-- Event Highlights -->
+        <div class="conf-highlights">
+          <h5>▶ Event Highlights</h5>
+          <div class="highlight-item">
+            <span class="highlight-icon">📅</span>
+            <span><strong>28 June 2019</strong> — Central Public Library Seminar Hall, Shahbag, Dhaka</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🎬</span>
+            <span><strong>Chief Guest:</strong> Tanvir Mokammel — Director, BFI &amp; Renowned Filmmaker</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🎓</span>
+            <span><strong>Special Guest:</strong> Dr. Mohammad Jahangir Hossain — elected as new President</span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🏛️</span>
+            <span>Chaired by <strong>Imtiaz Pavel</strong>, moderated by BFI faculty <strong>Sagir Mostafa</strong></span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🎞️</span>
+            <span>Alumni from diverse batches attended — including 1st batch pioneer <strong>Bulbul Biswas</strong></span>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">✅</span>
+            <span>Concluded with democratic formation of Advisory &amp; Executive Councils</span>
+          </div>
+        </div>
+
+        <!-- Bengali Official Record -->
+        <div class="bengali-side-card">
+          <h5>মূল বিজ্ঞপ্তি (Official Record)</h5>
+          <p>গত ২৮ জুন ২০১৯ তারিখে বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন এর সম্মেলন ২০১৯ হয়ে গেল পাবলিক লাইব্রেরির সেমিনার হলে। প্রধান অতিথি ছিলেন বরেণ্য চলচ্চিত্র নির্মাতা তানভীর মোকাম্মেল। বিশেষ অতিথি ছিলেন ড. মোহাম্মদ জাহাঙ্গীর হোসেন।</p>
+          <p style="margin-top:10px;">তানভীর মোকাম্মেল কে প্রধান উপদেষ্টা করে ৭ সদস্যের উপদেষ্টা পরিষদ এবং ড. মোহাম্মদ জাহাঙ্গীর হোসেন কে সভাপতি করে ২৩ সদস্যের নির্বাহী পরিষদ গঠন করা হয়।</p>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div style="display:flex; gap:12px; flex-wrap:wrap;">
+          <a href="https://bfiaa.bfibd.org/" class="btn-secondary" style="flex:1;text-align:center;border-color:var(--gold);color:var(--gold);">🏠 Home</a>
+          <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-primary" style="flex:1;text-align:center;">Join BFIAA →</a>
+        </div>
+
+      </div><!-- /conf-left-col -->
+
+      <!-- ══════ RIGHT COLUMN ══════ -->
       <div class="conf-info-wrapper">
-        <span class="event-meta-badge">🏛️ Milestone Biennial Assembly</span>
+        <span class="event-meta-badge">🏛️ Biennial Assembly 2019–2021</span>
         <h1 class="event-main-title">BFIAA Biennial Conference 2019</h1>
-        <span class="event-bengali-title">বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন সম্মেলন ২০১৯</span>
+        <span class="event-bengali-title">বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন সম্মেলন ২০১৯</span>
 
-        <!-- Metadata Table -->
+        <!-- Metadata -->
         <div class="event-meta-table">
           <div class="meta-col">
             <label>Date & Venue</label>
@@ -372,56 +346,237 @@
           </p>
         </div>
 
-        <!-- Advisory Council Box -->
-        <div class="committee-box">
-          <h4>🎓 Advisory Council (উপদেষ্টা পরিষদ) • 2019–2021</h4>
-          <div style="margin-bottom: 16px;">
-            <div class="role-item" style="border-left: 3px solid var(--gold);">
-              <span class="role-label">Chief Advisor (প্রধান উপদেষ্টা)</span>
-              <span class="role-name" style="font-size:16px; color:var(--gold);">জনাব তানভীর মোকাম্মেল (Tanvir Mokammel)</span>
+        <!-- ══ ADVISORY COUNCIL ══ -->
+        <div style="margin-bottom: 50px;">
+          <div class="conf-committee-header">
+            <h3>🎓 Advisory Council (উপদেষ্টা পরিষদ)</h3>
+            <span class="committee-year-badge">▶ 2019–2021 TERM</span>
+          </div>
+
+          <!-- Chief Advisor featured -->
+          <div class="committee-president" style="margin-bottom: 24px;">
+            <div class="president-card" style="max-width: 340px;">
+              <div style="width:80px; height:80px; border-radius:50%; background:var(--crimson); border:3px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-title); font-size:1.3rem; color:var(--gold); margin:0 auto 15px auto;">TM</div>
+              <div class="president-name">তানভীর মোকাম্মেল</div>
+              <div class="president-title">Tanvir Mokammel — Chief Advisor (প্রধান উপদেষ্টা) · 2019–2021</div>
             </div>
           </div>
-          <div class="role-grid">
-            <div class="role-item"><span class="role-label">Advisor 01</span><span class="role-name">জনাব উত্তম গুহ (Uttam Guha)</span></div>
-            <div class="role-item"><span class="role-label">Advisor 02</span><span class="role-name">সৈয়দ সাবাব আলী আরজু (Syed Sabab Ali Arzu)</span></div>
-            <div class="role-item"><span class="role-label">Advisor 03</span><span class="role-name">সগীর মোস্তফা (Sagir Mostafa)</span></div>
-            <div class="role-item"><span class="role-label">Advisor 04</span><span class="role-name">এন. এস. বুলবুল বিশ্বাস (N. S. Bulbul Biswas)</span></div>
-            <div class="role-item"><span class="role-label">Advisor 05</span><span class="role-name">আনোয়ার হোসেন (Anwar Hossain)</span></div>
-            <div class="role-item"><span class="role-label">Advisor 06</span><span class="role-name">রানা মাসুদ (Rana Masud)</span></div>
+
+          <div class="committee-grid">
+            <div class="member-card">
+              <div class="member-avatar">UG</div>
+              <div class="member-info">
+                <div class="member-name">Uttam Guha</div>
+                <div class="member-role">উত্তম গুহ<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 01 · 2019–21</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SA</div>
+              <div class="member-info">
+                <div class="member-name">Syed Sabab Ali Arzu</div>
+                <div class="member-role">সৈয়দ সাবাব আলী আরজু<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 02 · 2019–21</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SM</div>
+              <div class="member-info">
+                <div class="member-name">Sagir Mostafa</div>
+                <div class="member-role">সগীর মোস্তফা<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 03 · 2019–21</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">BB</div>
+              <div class="member-info">
+                <div class="member-name">N. S. Bulbul Biswas</div>
+                <div class="member-role">এন. এস. বুলবুল বিশ্বাস<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 04 · 2019–21</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AH</div>
+              <div class="member-info">
+                <div class="member-name">Anwar Hossain</div>
+                <div class="member-role">আনোয়ার হোসেন<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 05 · 2019–21</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">RM</div>
+              <div class="member-info">
+                <div class="member-name">Rana Masud</div>
+                <div class="member-role">রানা মাসুদ<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Advisor 06 · 2019–21</span></div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Executive Council Box -->
-        <div class="committee-box">
-          <h4>🏛️ Executive Council (নির্বাহী পরিষদ) • 2019–2021</h4>
-          
-          <div class="role-grid" style="margin-bottom: 20px;">
-            <div class="role-item" style="border-left: 3px solid var(--gold);"><span class="role-label">President (সভাপতি)</span><span class="role-name" style="color:var(--gold);">ড. মোহাম্মদ জাহাঙ্গীর হোসেন (Dr. Mohammad Jahangir Hossain)</span></div>
-            <div class="role-item"><span class="role-label">Vice President (সহ সভাপতি)</span><span class="role-name">শাহীনা হাফিজ ডেইজি (Shahina Hafiz Daisy)</span></div>
-            <div class="role-item"><span class="role-label">Vice President (সহ সভাপতি)</span><span class="role-name">আনিসুর রহমান সেলিম (Anisur Rahman Selim)</span></div>
-            <div class="role-item"><span class="role-label">General Secretary (সাধারণ সম্পাদক)</span><span class="role-name">শাহনাজ নাসরিন (Shahnaz Nasrin)</span></div>
-            <div class="role-item"><span class="role-label">Asst. General Secretary (সহ সাধারণ সম্পাদক)</span><span class="role-name">সাজ্জাদ খান (Sajjad Khan)</span></div>
-            <div class="role-item"><span class="role-label">Organizing Secretary (সাংগঠনিক সম্পাদক)</span><span class="role-name">সাবের তাবাচ্ছুম (Sabera Tabassum)</span></div>
-            <div class="role-item"><span class="role-label">Finance Secretary (অর্থ সম্পাদক)</span><span class="role-name">সানু মানিক (Shanu Manik)</span></div>
-            <div class="role-item"><span class="role-label">Office Secretary (দপ্তর সম্পাদক)</span><span class="role-name">শাশ্বত জামান (Shashwata Zaman)</span></div>
-            <div class="role-item"><span class="role-label">International Secretary (আন্তর্জাতিক সম্পাদক)</span><span class="role-name">আদনান ইমতিয়াজ আহমেদ (Adnan Imtiaz Ahmed)</span></div>
-            <div class="role-item"><span class="role-label">Seminar Secretary (সেমিনার সম্পাদক)</span><span class="role-name">সোহেল আহমেদ সিদ্দিকী (Sohel Ahmed Siddiquee)</span></div>
-            <div class="role-item"><span class="role-label">Publicity Secretary (প্রচার সম্পাদক)</span><span class="role-name">সংগীতা ঘোষ (Sangeeta Ghosh)</span></div>
-            <div class="role-item"><span class="role-label">IT Secretary (তথ্য ও প্রযুক্তি সম্পাদক)</span><span class="role-name">কাজী মুশফিক (Kazi Mushfiqus Saleheen)</span></div>
-            <div class="role-item"><span class="role-label">Publication Secretary (প্রকাশনা সম্পাদক)</span><span class="role-name">আনন্দ কুটুম (Ananda Kutum)</span></div>
+        <!-- ══ EXECUTIVE COUNCIL ══ -->
+        <div>
+          <div class="conf-committee-header">
+            <h3>🏛️ Executive Council (নির্বাহী পরিষদ)</h3>
+            <span class="committee-year-badge">▶ 2019–2021 TERM</span>
           </div>
 
-          <h5 style="font-family:var(--font-mono); font-size:11px; letter-spacing:1.5px; color:var(--text-dim); text-transform:uppercase; margin-bottom:12px;">Executive Members (নির্বাহী সদস্য)</h5>
-          <div class="role-grid">
-            <div class="role-item"><span class="role-label">Member 01</span><span class="role-name">ইমতিয়াজ পাভেল (Imtiaz Pavel)</span></div>
-            <div class="role-item"><span class="role-label">Member 02</span><span class="role-name">হোসনে আরা ইসলাম সুমা (Hosne Ara Islam Suma)</span></div>
-            <div class="role-item"><span class="role-label">Member 03</span><span class="role-name">সৈয়দ ওয়াসিউদ্দিন আহমেদ টিটো (Syed Wasiuddin Ahmed Tito)</span></div>
-            <div class="role-item"><span class="role-label">Member 04</span><span class="role-name">আসিফ উজ জামান (Asif Uz Zaman)</span></div>
-            <div class="role-item"><span class="role-label">Member 05</span><span class="role-name">বনানী বিশ্বাস (Banani Biswas)</span></div>
-            <div class="role-item"><span class="role-label">Member 06</span><span class="role-name">সন্দীপ কুমার মিস্ত্রী (Sandip Kumar Mistry)</span></div>
-            <div class="role-item"><span class="role-label">Member 07</span><span class="role-name">মাজহারুল ইসলাম বসু (Mazharul Islam Basu)</span></div>
-            <div class="role-item"><span class="role-label">Member 08</span><span class="role-name">মোঃ মনজুরুল হক (Md. Monjurul Haque)</span></div>
-            <div class="role-item"><span class="role-label">Member 09</span><span class="role-name">আসাদুজ্জামান শিপলু (Asaduzzaman Sheplu)</span></div>
+          <!-- President featured -->
+          <div class="committee-president" style="margin-bottom: 24px;">
+            <div class="president-card" style="max-width: 340px;">
+              <div style="width:80px; height:80px; border-radius:50%; background:var(--crimson); border:3px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-title); font-size:1.3rem; color:var(--gold); margin:0 auto 15px auto;">JH</div>
+              <div class="president-name">Dr. Mohammad Jahangir Hossain</div>
+              <div class="president-title">ড. মোহাম্মদ জাহাঙ্গীর হোসেন — President (সভাপতি) · 2019–2021</div>
+            </div>
+          </div>
+
+          <p style="font-family:var(--font-mono); font-size:10px; letter-spacing:2px; color:var(--text-dim); text-transform:uppercase; margin-bottom:14px;">▶ Office Bearers</p>
+          <div class="committee-grid" style="margin-bottom: 30px;">
+            <div class="member-card">
+              <div class="member-avatar" style="color:var(--gold);">SH</div>
+              <div class="member-info">
+                <div class="member-name" style="color:var(--gold);">Shahina Hafiz Daisy</div>
+                <div class="member-role">শাহীনা হাফিজ ডেইজি<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Vice President</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AR</div>
+              <div class="member-info">
+                <div class="member-name">Anisur Rahman Selim</div>
+                <div class="member-role">আনিসুর রহমান সেলিম<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Vice President</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SN</div>
+              <div class="member-info">
+                <div class="member-name">Shahnaz Nasrin</div>
+                <div class="member-role">শাহনাজ নাসরিন<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">General Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SK</div>
+              <div class="member-info">
+                <div class="member-name">Sajjad Khan</div>
+                <div class="member-role">সাজ্জাদ খান<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Asst. Gen. Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">ST</div>
+              <div class="member-info">
+                <div class="member-name">Sabera Tabassum</div>
+                <div class="member-role">সাবের তাবাচ্ছুম<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Organizing Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SM</div>
+              <div class="member-info">
+                <div class="member-name">Shanu Manik</div>
+                <div class="member-role">সানু মানিক<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Finance Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SZ</div>
+              <div class="member-info">
+                <div class="member-name">Shashwata Zaman</div>
+                <div class="member-role">শাশ্বত জামান<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Office Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AA</div>
+              <div class="member-info">
+                <div class="member-name">Adnan Imtiaz Ahmed</div>
+                <div class="member-role">আদনান ইমতিয়াজ আহমেদ<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">International Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SS</div>
+              <div class="member-info">
+                <div class="member-name">Sohel Ahmed Siddiquee</div>
+                <div class="member-role">সোহেল আহমেদ সিদ্দিকী<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Seminar Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SG</div>
+              <div class="member-info">
+                <div class="member-name">Sangeeta Ghosh</div>
+                <div class="member-role">সংগীতা ঘোষ<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Publicity Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">KM</div>
+              <div class="member-info">
+                <div class="member-name">Kazi Mushfiqus Saleheen</div>
+                <div class="member-role">কাজী মুশফিক<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">IT Secretary</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AK</div>
+              <div class="member-info">
+                <div class="member-name">Ananda Kutum</div>
+                <div class="member-role">আনন্দ কুটুম<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Publication Secretary</span></div>
+              </div>
+            </div>
+          </div>
+
+          <p style="font-family:var(--font-mono); font-size:10px; letter-spacing:2px; color:var(--text-dim); text-transform:uppercase; margin-bottom:14px;">▶ Executive Members (নির্বাহী সদস্য)</p>
+          <div class="committee-grid">
+            <div class="member-card">
+              <div class="member-avatar">IP</div>
+              <div class="member-info">
+                <div class="member-name">Imtiaz Pavel</div>
+                <div class="member-role">ইমতিয়াজ পাভেল<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 01</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">HS</div>
+              <div class="member-info">
+                <div class="member-name">Hosne Ara Islam Suma</div>
+                <div class="member-role">হোসনে আরা ইসলাম সুমা<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 02</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">WT</div>
+              <div class="member-info">
+                <div class="member-name">Syed Wasiuddin Ahmed Tito</div>
+                <div class="member-role">সৈয়দ ওয়াসিউদ্দিন আহমেদ টিটো<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 03</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AZ</div>
+              <div class="member-info">
+                <div class="member-name">Asif Uz Zaman</div>
+                <div class="member-role">আসিফ উজ জামান<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 04</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">BN</div>
+              <div class="member-info">
+                <div class="member-name">Banani Biswas</div>
+                <div class="member-role">বনানী বিশ্বাস<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 05</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">SC</div>
+              <div class="member-info">
+                <div class="member-name">Sandip Kumar Mistry</div>
+                <div class="member-role">সন্দীপ কুমার মিস্ত্রী<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 06</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">MB</div>
+              <div class="member-info">
+                <div class="member-name">Mazharul Islam Basu</div>
+                <div class="member-role">মাজহারুল ইসলাম বসু<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 07</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">MH</div>
+              <div class="member-info">
+                <div class="member-name">Md. Monjurul Haque</div>
+                <div class="member-role">মোঃ মনজুরুল হক<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 08</span></div>
+              </div>
+            </div>
+            <div class="member-card">
+              <div class="member-avatar">AS</div>
+              <div class="member-info">
+                <div class="member-name">Asaduzzaman Sheplu</div>
+                <div class="member-role">আসাদুজ্জামান শিপলু<br><span style="font-size:0.72rem;opacity:0.6;font-family:var(--font-mono);">Executive Member 09</span></div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -437,7 +592,7 @@
         </div>
 
         <!-- Action Links -->
-        <div style="margin-top: 40px; display:flex; gap:16px; flex-wrap:wrap;">
+        <div style="margin-top: 50px; display:flex; gap:16px; flex-wrap:wrap;">
           <a href="https://bfiaa.bfibd.org/" class="btn-secondary" style="border-color:var(--gold); color:var(--gold);">🏠 Home</a>
           <a href="https://bfiaa.bfibd.org/#conference-2019" class="btn-secondary">← View on Homepage</a>
           <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-primary">Join BFIAA Today</a>
