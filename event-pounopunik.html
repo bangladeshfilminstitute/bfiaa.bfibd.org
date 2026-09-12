@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cine Club Adda: পৌণঃপুণিক — BFIAA | Bangladesh Film Institute Alumni Association</title>
+  <meta name="description" content="BFIAA Cine Club Adda screening of acclaimed short film পৌণঃপুণিক (Pounopunik) by BFI alumnus filmmaker Khandaker Sumon, hosted by Mamun Sobhani."/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/event-pounopunik.html"/>
+  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#8B0000"/>
+
+  <meta property="og:title" content="Cine Club Adda: পৌণঃপুণিক — BFIAA"/>
+  <meta property="og:description" content="Screening of পৌণঃপুণিক by BFI alumni filmmaker Khandaker Sumon."/>
+  <meta property="og:url" content="https://bfiaa.bfibd.org/event-pounopunik.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="https://bfiaa.bfibd.org/images/pounopunik-flyer.jpg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .event-page-hero {
+      background: linear-gradient(180deg, rgba(20,0,0,0.6) 0%, var(--dark) 100%);
+      padding: 40px 0 60px;
+    }
+    .event-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .event-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .event-breadcrumb a:hover { color: #fff; }
+    .event-detail-grid {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    .event-poster-wrapper {
+      position: sticky;
+      top: 90px;
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    }
+    .event-poster-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .event-poster-actions {
+      padding: 16px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+    }
+    .event-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      background: var(--crimson);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .event-main-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .event-bengali-title {
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      color: var(--gold);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 25px;
+      line-height: 1.35;
+    }
+    .event-meta-table {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .meta-col label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+    .meta-col span {
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .event-content-section {
+      margin-bottom: 35px;
+    }
+    .event-content-section h3 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      color: var(--gold);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .event-content-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .bengali-announcement-card {
+      background: rgba(139, 0, 0, 0.08);
+      border-left: 4px solid var(--gold);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 28px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-top: 25px;
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #f0f0f0;
+    }
+    .bengali-announcement-card h4 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    @media (max-width: 900px) {
+      .event-detail-grid {
+        grid-template-columns: 1fr;
+      }
+      .event-poster-wrapper {
+        position: static;
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
+    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">About</a></li>
+    <li><a href="index.html#committee">Committee</a></li>
+    <li><a href="index.html#events">Events</a></li>
+    <li><a href="constitution.html">Constitution</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="index.html#events" class="nav-btn">← All Events</a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join BFIAA</a>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<!-- Filmstrip Ticker -->
+<div class="filmstrip-ticker" aria-hidden="true">
+  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
+  <div class="filmstrip-ticker-inner">
+    <span class="ticker-content">🎬 BFIAA CINE CLUB ADDA • FILM SCREENING & DIRECTOR'S MEET • BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-content" aria-hidden="true">🎬 BFIAA CINE CLUB ADDA • FILM SCREENING & DIRECTOR'S MEET • BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+  </div>
+  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
+</div>
+
+<!-- Main Event Section -->
+<section class="event-page-hero">
+  <div class="container">
+
+    <div class="event-breadcrumb">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="index.html#events">Events</a>
+      <span>/</span>
+      <span>Cine Club Adda: Pounopunik</span>
+    </div>
+
+    <div class="event-detail-grid">
+      <!-- Left: Poster Column -->
+      <div class="event-poster-wrapper">
+        <img src="images/pounopunik-flyer.jpg" alt="Cine Club Adda: Pounopunik Flyer" loading="lazy" />
+        <div class="event-poster-actions">
+          <a href="images/pounopunik-flyer.jpg" target="_blank" class="btn-primary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
+            🔍 Full Size Poster
+          </a>
+          <a href="images/pounopunik-flyer.jpg" download="BFIAA-Pounopunik-Screening.jpg" class="btn-secondary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
+            ⬇ Download
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Content Column -->
+      <div class="event-info-wrapper">
+        <span class="event-meta-badge">🎞️ Past Screening & Director's Meet</span>
+        <h1 class="event-main-title">Cine Club Adda: Screening of Pounopunik</h1>
+        <span class="event-bengali-title">“পৌণঃপুণিক” (The Hamster Wheel Rebellion)</span>
+
+        <!-- Metadata Table -->
+        <div class="event-meta-table">
+          <div class="meta-col">
+            <label>Date & Time</label>
+            <span>09 August 2022<br><small style="color:var(--gold); font-family:var(--font-mono);">Tuesday @ 9:00 PM</small></span>
+          </div>
+          <div class="meta-col">
+            <label>Director / Guest</label>
+            <span>Khandaker Sumon<br><small style="color:var(--text-muted);">Filmmaker & BFI Alumni</small></span>
+          </div>
+          <div class="meta-col">
+            <label>Host & Moderator</label>
+            <span>Mamun Sobhani<br><small style="color:var(--text-muted);">Publicity Secretary, BFIAA</small></span>
+          </div>
+          <div class="meta-col">
+            <label>Streaming Platform</label>
+            <span>Zoom Virtual Room<br><small style="color:var(--text-muted);">Interactive Screening</small></span>
+          </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="event-content-section">
+          <h3>Overview & Details</h3>
+          <p>
+            On Tuesday, August 9th, 2022, the Bangladesh Film Institute Alumni Association (BFIAA) held its monthly <strong>“Cine Club Adda”</strong> featuring the award-winning short film <strong>“পৌণঃপুণিক” (Pounopunik / The Hamster Wheel Rebellion)</strong>.
+          </p>
+          <p>
+            Directed by BFI alumnus and celebrated independent filmmaker <strong>Khandaker Sumon</strong>, <em>Pounopunik</em> explores poignant socio-economic realities with artistic conviction and deep human insight. The film was showcased in a dedicated online Zoom room attended by BFI alumni, students, and invited film enthusiasts.
+          </p>
+          <p>
+            The screening concluded with a comprehensive "Meet the Director" session moderated by filmmaker and BFIAA Publicity Secretary <strong>Mamun Sobhani</strong>, offering attendees an intimate perspective into the filmmaker's creative philosophy and independent production journey.
+          </p>
+        </div>
+
+        <!-- Original Bengali Announcement -->
+        <div class="bengali-announcement-card">
+          <h4>মূল বিজ্ঞপ্তি (Official Announcement)</h4>
+          <p>
+            সকলকে অত্যন্ত আনন্দের সাথে জানানো যাচ্ছে যে, আগামী ৯ই আগস্ট (মঙ্গলবার), বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশনের মাসিক আয়োজন “সিনে ক্লাব আড্ডায়” বাংলাদেশ ফিল্ম ইনস্টিটিউটের প্রাক্তণ শিক্ষার্থী চলচ্চিত্রনির্মাতা খন্দকার সুমনের “পৌণঃপুণিক” চলচ্চিত্রটি অনলাইন জুমের মাধ্যমে প্রদর্শিত হবে। অনুষ্ঠানটি উপস্থাপনা করবেন এসোসিয়েশনের প্রচার সম্পাদক চলচ্চিত্রনির্মাতা মামুন সোবহানি।
+          </p>
+          <p style="margin-top:10px; font-weight:600; color:var(--gold);">
+            প্রদর্শনীর সময়ঃ রাত ৯.০০টা (৯ই আগস্ট ২০২২)
+          </p>
+        </div>
+
+        <!-- Action Links -->
+        <div style="margin-top: 40px; display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="index.html#events" class="btn-secondary">← Back to All Events</a>
+          <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-primary">Join BFIAA Today</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration:none;">
+          <img src="images/bfiaa-logo.png" alt="BFIAA Logo" style="height:48px;width:auto;margin-bottom:12px;"/>
+        </a>
+        <p>
+          Bangladesh Film Institute Alumni Association (BFIAA) is the official network
+          of graduates, practitioners and scholars from Bangladesh's premier film institution.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html#about">About BFIAA</a></li>
+          <li><a href="index.html#committee">Executive Committee</a></li>
+          <li><a href="index.html#events">Events & Programmes</a></li>
+          <li><a href="index.html#celebration-30">30 Years Celebration</a></li>
+          <li><a href="index.html#picnic">Annual Picnic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="constitution.html">BFIAA Constitution</a></li>
+          <li><a href="index.html#membership">Membership Details</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply for Membership</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Institute)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener">Official Facebook Page</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.</span>
+      <span style="display:flex;gap:16px;">
+        <a href="constitution.html" style="color:var(--text-dim);font-size:12px;">Constitution</a>
+        <a href="index.html#contact" style="color:var(--text-dim);font-size:12px;">Contact</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
