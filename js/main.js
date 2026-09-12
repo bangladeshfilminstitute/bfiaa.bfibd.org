@@ -106,6 +106,22 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.style.boxShadow = scrollY > 30 ? '0 4px 24px rgba(0,0,0,0.5)' : '';
   }, { passive: true });
 
+  // ── Mobile Menu Toggle ─────────────────────────────────
+  const hb = document.getElementById('hamburger');
+  const mm = document.getElementById('mobileMenu');
+  if (hb && mm) {
+    hb.addEventListener('click', function() {
+      const open = mm.classList.toggle('open');
+      hb.setAttribute('aria-expanded', open);
+    });
+    mm.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mm.classList.remove('open');
+        hb.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
+
   // ── Membership Form ────────────────────────────────────
   const form = document.getElementById('membershipForm');
   if (form) {
