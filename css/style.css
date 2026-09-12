@@ -1914,3 +1914,9 @@ section { padding: 90px 24px; }
     gap: 10px;
   }
 }
+
+@media (max-width: 420px) {
+  .site-nav { padding: 0 12px; }
+  .nav-actions { gap: 6px; }
+  .nav-actions .nav-btn { padding: 5px 8px; font-size: 10px; }
+}
