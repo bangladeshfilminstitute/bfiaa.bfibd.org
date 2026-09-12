@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -128,7 +128,6 @@
   </ul>
 
   <div class="nav-actions">
-      <a href="https://bfiaa.bfibd.org/" class="nav-btn" style="border-color:var(--gold); color:var(--gold);">🏠 Home</a>
       <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" style="height: 16px; width: auto;"/> BFI Home</a>
     <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
   </div>
@@ -1927,7 +1926,22 @@
         });
       }
     });
+    document.addEventListener('DOMContentLoaded', function() {
+      const hb = document.getElementById('hamburger');
+      const mm = document.getElementById('mobileMenu');
+      if (hb && mm) {
+        hb.addEventListener('click', function() {
+          const open = mm.classList.toggle('open');
+          hb.setAttribute('aria-expanded', open);
+        });
+        mm.querySelectorAll('a').forEach(a => {
+          a.addEventListener('click', () => {
+            mm.classList.remove('open');
+            hb.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    });
   </script>
 </body>
 </html>
-
