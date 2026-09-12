@@ -1119,7 +1119,8 @@ section { padding: 90px 24px; }
 }
 .gallery-item:focus-visible { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(200,169,81,0.3); }
 .gallery-item:hover { border-color: rgba(200,169,81,0.4); }
-.gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 2/1; }
+/* Default gallery item */
+#gallery .gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 2/1; }
 .gallery-item.gallery-item-featured { grid-column: span 3; aspect-ratio: 21/9; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(200,169,81,0.2); }
 .gallery-item.gallery-item-featured:hover { box-shadow: 0 15px 40px rgba(200,169,81,0.4); border-color: var(--gold-light); }
 
@@ -1810,9 +1811,16 @@ section { padding: 90px 24px; }
   margin-bottom: 14px;
 }
 .constitution-body li { margin-bottom: 6px; }
-/* Picnic Tab Design */
+/* =========================================================
+   PICNIC RESPONSIVE GALLERY GRID & TABS
+   ========================================================= */
 .picnic-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
   margin-top: 30px;
+  margin-bottom: 40px;
 }
 .picnic-tab-btn {
   background: var(--dark);
@@ -1824,6 +1832,7 @@ section { padding: 90px 24px; }
   font-family: var(--font-main);
   font-size: 0.95rem;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 .picnic-tab-btn:hover {
   border-color: var(--gold);
@@ -1836,9 +1845,72 @@ section { padding: 90px 24px; }
   font-weight: 600;
   box-shadow: 0 4px 15px rgba(200, 169, 81, 0.3);
 }
+
+.picnic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.picnic-grid .gallery-item {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  aspect-ratio: 4/3;
+  width: 100%;
+  min-width: 0 !important;
+}
+.picnic-cover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.picnic-cover-grid .gallery-item {
+  grid-column: auto !important;
+  grid-row: auto !important;
+  aspect-ratio: 16/10;
+  width: 100%;
+  min-width: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .picnic-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+  }
+}
+
 @media (max-width: 768px) {
+  .picnic-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 6px 12px 14px;
+    gap: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) rgba(255,255,255,0.05);
+  }
   .picnic-tab-btn {
-    padding: 8px 14px;
+    padding: 8px 16px;
     font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .picnic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .picnic-cover-grid .gallery-item {
+    aspect-ratio: 4/3;
+  }
+}
+
+@media (max-width: 360px) {
+  .picnic-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
   }
 }
