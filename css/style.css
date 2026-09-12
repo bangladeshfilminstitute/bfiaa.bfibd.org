@@ -1915,6 +1915,12 @@ section { padding: 90px 24px; }
   }
 }
 
+@media (max-width: 520px) {
+  .nav-actions a[href*="bfibd.org"]:not([href*="bfiaa"]) {
+    display: none !important;
+  }
+}
+
 @media (max-width: 420px) {
   .site-nav { padding: 0 12px; }
   .nav-actions { gap: 6px; }
