@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BFIAA Biennial Conference 2021 — 6th Biennial Assembly & Committee 2021-2023 | BFIAA</title>
+  <meta name="description" content="Official record of the BFIAA 6th Biennial Conference held on 17 December 2021 at Sanskriti Bikash Kendra, Paribagh, Dhaka, establishing the 2021-2023 Executive Committee."/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/conference-2021.html"/>
+  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#8B0000"/>
+
+  <meta property="og:title" content="BFIAA Biennial Conference 2021 — Official 6th Assembly"/>
+  <meta property="og:description" content="Formation of the 2021-2023 Executive Committee at Sanskriti Bikash Kendra, Paribagh."/>
+  <meta property="og:url" content="https://bfiaa.bfibd.org/conference-2021.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="https://bfiaa.bfibd.org/images/gallery/conference-banner.jpg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .conference-page-hero {
+      background: linear-gradient(180deg, rgba(20,0,0,0.7) 0%, var(--dark) 100%);
+      padding: 40px 0 60px;
+    }
+    .event-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .event-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .event-breadcrumb a:hover { color: #fff; }
+    .conf-grid {
+      display: grid;
+      grid-template-columns: 480px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    .conf-photo-wrapper {
+      position: sticky;
+      top: 90px;
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    }
+    .main-photo-frame {
+      width: 100%;
+      height: 330px;
+      background: #000;
+      overflow: hidden;
+    }
+    .main-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-thumbnails {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 12px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+    }
+    .thumb-item {
+      aspect-ratio: 16/9;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      opacity: 0.75;
+      transition: all 0.2s ease;
+    }
+    .thumb-item:hover, .thumb-item.active {
+      opacity: 1;
+      border-color: var(--gold);
+      box-shadow: 0 0 10px rgba(200, 169, 81, 0.3);
+    }
+    .thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .event-poster-actions {
+      padding: 14px 16px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+    }
+    .event-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      background: var(--crimson);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .event-main-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .event-bengali-title {
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      color: var(--gold);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 25px;
+      line-height: 1.35;
+    }
+    .event-meta-table {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .meta-col label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+    .meta-col span {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .committee-box {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px 28px;
+      margin-bottom: 30px;
+    }
+    .committee-box h4 {
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      color: var(--gold);
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding-bottom: 10px;
+    }
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+    .role-item {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .role-label {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .role-name {
+      font-family: 'Hind Siliguri', var(--font-body), sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+    .bengali-announcement-card {
+      background: rgba(139, 0, 0, 0.08);
+      border-left: 4px solid var(--gold);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 28px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-top: 25px;
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #f0f0f0;
+    }
+    .bengali-announcement-card h4 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    @media (max-width: 900px) {
+      .conf-grid {
+        grid-template-columns: 1fr;
+      }
+      .conf-photo-wrapper {
+        position: static;
+        max-width: 100%;
+        margin: 0 auto 30px;
+      }
+      .main-photo-frame {
+        height: auto;
+        aspect-ratio: 16/10;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
+    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://bfiaa.bfibd.org/" class="nav-btn" style="border-color:var(--gold); color:var(--gold);">🏠 Home</a>
+    <a href="https://bfiaa.bfibd.org/#conference-2021" class="nav-btn">Conference Section</a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
+  </div>
+</nav>
+
+<div class="nav-spacer"></div>
+
+<!-- Filmstrip Marquee -->
+<div class="filmstrip-ticker" aria-hidden="true">
+  <div class="sprocket-strip">
+    <div class="sprocket-hole"></div><div class="sprocket-hole"></div><div class="sprocket-hole"></div>
+  </div>
+  <div class="filmstrip-ticker-inner">
+    <span class="ticker-content">
+      ▶ BFIAA 6TH BIENNIAL CONFERENCE — 17 DECEMBER 2021
+      <span class="ticker-dot">•</span>
+      SANSKRITI BIKASH KENDRA, DHAKA
+      <span class="ticker-dot">•</span>
+      EXECUTIVE COMMITTEE 2021–2023
+      <span class="ticker-dot">•</span>
+      CHIEF GUEST: TANVIR MOKAMMEL
+      <span class="ticker-dot">•</span>
+      BFIAA.BFIBD.ORG
+    </span>
+    <span class="ticker-content" aria-hidden="true">
+      ▶ BFIAA 6TH BIENNIAL CONFERENCE — 17 DECEMBER 2021
+      <span class="ticker-dot">•</span>
+      SANSKRITI BIKASH KENDRA, DHAKA
+      <span class="ticker-dot">•</span>
+      EXECUTIVE COMMITTEE 2021–2023
+      <span class="ticker-dot">•</span>
+      CHIEF GUEST: TANVIR MOKAMMEL
+      <span class="ticker-dot">•</span>
+      BFIAA.BFIBD.ORG
+    </span>
+  </div>
+</div>
+
+<!-- Main Section -->
+<main class="conference-page-hero">
+  <div class="container">
+
+    <div class="event-breadcrumb">
+      <a href="https://bfiaa.bfibd.org/">Home</a>
+      <span>/</span>
+      <a href="https://bfiaa.bfibd.org/#conference-2021">Conferences</a>
+      <span>/</span>
+      <span>Biennial Conference 2021</span>
+    </div>
+
+    <div class="conf-grid">
+
+      <!-- Left Column: Photo Stage & Thumbnails -->
+      <div class="conf-photo-wrapper">
+        <div class="main-photo-frame">
+          <img id="activePhoto" src="images/gallery/conference-banner.jpg" alt="BFIAA 6th Biennial Conference 2021 Assembly" />
+        </div>
+        
+        <div class="gallery-thumbnails">
+          <div class="thumb-item active" onclick="switchPhoto('images/gallery/conference-banner.jpg', this)">
+            <img src="images/gallery/conference-banner.jpg" alt="Conference Banner Assembly" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7655.jpg', this)">
+            <img src="images/gallery/dsc7655.jpg" alt="Conference Assembly Stage" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7660.jpg', this)">
+            <img src="images/gallery/dsc7660.jpg" alt="Faculty & Alumni Gathering" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7665.jpg', this)">
+            <img src="images/gallery/dsc7665.jpg" alt="Cultural Evening & Speeches" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7670.jpg', this)">
+            <img src="images/gallery/dsc7670.jpg" alt="BFIAA Members Group" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7675.jpg', this)">
+            <img src="images/gallery/dsc7675.jpg" alt="Film Screening & Honors" />
+          </div>
+        </div>
+
+        <div class="event-poster-actions">
+          <a id="viewFullBtn" href="images/gallery/conference-banner.jpg" target="_blank" class="btn-primary" style="flex:1; justify-content:center; text-align:center;">
+            🔍 Full Photo
+          </a>
+          <a id="downloadBtn" href="images/gallery/conference-banner.jpg" download class="btn-secondary" style="flex:1; justify-content:center; text-align:center;">
+            ⬇ Download
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Details & Committee Roster -->
+      <div class="conf-details-wrapper">
+
+        <div class="event-meta-badge">
+          🏛️ 6th Biennial Assembly • 2021–2023
+        </div>
+
+        <h1 class="event-main-title">BFIAA Biennial Conference 2021</h1>
+        <span class="event-bengali-title">বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের দ্বি-বার্ষিক সম্মেলন</span>
+
+        <!-- Metadata Table -->
+        <div class="event-meta-table">
+          <div class="meta-col">
+            <label>Date & Time</label>
+            <span>17 December 2021 (Friday) Afternoon</span>
+          </div>
+          <div class="meta-col">
+            <label>Venue</label>
+            <span>Sanskriti Bikash Kendra, Paribagh, Dhaka</span>
+          </div>
+          <div class="meta-col">
+            <label>Chief Guest</label>
+            <span>Tanvir Mokammel (Director, BFI)</span>
+          </div>
+          <div class="meta-col">
+            <label>President</label>
+            <span>Dr. Mohammad Jahangir Hossain (Outgoing President)</span>
+          </div>
+          <div class="meta-col">
+            <label>Special Guests / Faculty</label>
+            <span>Syed Shabab Ali Arzu, Rakibul Hasan, Sagir Mostafa, Rana Masud</span>
+          </div>
+          <div class="meta-col">
+            <label>Elected Term</label>
+            <span>2021–2023 Executive Committee</span>
+          </div>
+        </div>
+
+        <!-- Narrative Highlights -->
+        <div class="about-text" style="margin-bottom: 30px;">
+          <p class="about-highlight" style="margin-bottom: 20px;">
+            "বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে অনুষ্ঠিত হলো বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন।"
+          </p>
+          <p>
+            On Friday afternoon, December 17, 2021, the 6th Biennial Conference of the Bangladesh Film Institute Alumni Association (BFIAA) was held at Sanskriti Bikash Kendra in Paribagh, Dhaka. The assembly brought together pioneering graduates, faculty mentors, and aspiring independent filmmakers.
+          </p>
+          <p>
+            The conference was presided over by outgoing president <strong>Dr. Mohammad Jahangir Hossain</strong>, with BFI Director and acclaimed filmmaker <strong>Tanvir Mokammel</strong> as the Chief Guest. Renowned BFI faculty members <strong>Syed Shabab Ali Arzu</strong>, <strong>Rakibul Hasan</strong>, <strong>Sagir Mostafa</strong>, and <strong>Rana Masud</strong> attended as Special Guests.
+          </p>
+          <p>
+            During the event, honorary crests were presented to BFI teachers in recognition of their dedication to cinema education, and certificates were awarded to graduates of the Online Filmmaking Course. The ceremony concluded with a special screening of <strong>9 short films</strong> created by the course students.
+          </p>
+        </div>
+
+        <!-- 21-Member Executive Committee -->
+        <div class="committee-box">
+          <h4>
+            <span>👥</span> কার্যনির্বাহী কমিটি (২০২১–২০২৩) · 21-Member Executive Committee
+          </h4>
+          <div class="role-grid">
+            <div class="role-item">
+              <span class="role-label">০১. সভাপতি</span>
+              <span class="role-name">শাহীনা হাফিজ ডেইজি</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০২. সহ-সভাপতি</span>
+              <span class="role-name">আশরাফুল আযম খান</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৩. সাধারণ সম্পাদক</span>
+              <span class="role-name">সন্দীপ কুমার মিস্ত্রী</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৪. সহ-সাধারণ সম্পাদক</span>
+              <span class="role-name">কাজী মুসফিকুস সালেহীন</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৫. কোষাধ্যক্ষ</span>
+              <span class="role-name">সোহেল আহম্মেদ সিদ্দিকী</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৬. সাংগঠনিক সম্পাদক</span>
+              <span class="role-name">অপরাজিতা সংগীতা</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৭. দপ্তর সম্পাদক</span>
+              <span class="role-name">কাওসার আহম্মেদ আবির</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৮. আন্তর্জাতিক সম্পাদক</span>
+              <span class="role-name">নাসরুল্লাহ মনসুর রাসু</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">০৯. পাঠাগার সম্পাদক</span>
+              <span class="role-name">সাদিয়া রহমান জেমিম</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১০. সেমিনার সম্পাদক</span>
+              <span class="role-name">নাঈমুল ইসলাম</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১১. প্রচার সম্পাদক</span>
+              <span class="role-name">মামুন সোবহানি</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১২. প্রকাশনা সম্পাদক</span>
+              <span class="role-name">ড. নাজিয়া মাহমুদ</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৩. নির্বাহী সদস্য ০১</span>
+              <span class="role-name">ড. মোহাম্মদ জাহাঙ্গীর হোসেন</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৪. নির্বাহী সদস্য ০২</span>
+              <span class="role-name">সাজ্জাদ খান</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৫. নির্বাহী সদস্য ০৩</span>
+              <span class="role-name">সানু মানিক</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৬. নির্বাহী সদস্য ০৪</span>
+              <span class="role-name">হাসানুজ্জামান খান</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৭. নির্বাহী সদস্য ০৫</span>
+              <span class="role-name">আহসান উদ্দীন ভূঁইয়া</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৮. নির্বাহী সদস্য ০৬</span>
+              <span class="role-name">জান্নাতুল মাওয়া নোভা</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">১৯. নির্বাহী সদস্য ০৭</span>
+              <span class="role-name">রাজেশ্বর দাশ গুপ্ত</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">২০. নির্বাহী সদস্য ০৮</span>
+              <span class="role-name">জানে আলম</span>
+            </div>
+            <div class="role-item">
+              <span class="role-label">২১. নির্বাহী সদস্য ০৯</span>
+              <span class="role-name">জন ক্রিস্টোফার কস্টা</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archival Bengali Document Card -->
+        <div class="bengali-announcement-card">
+          <h4>📜 সম্মেলনের মূল বিবরণী</h4>
+          <p>
+            <strong>বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের দ্বি-বার্ষিক সম্মেলন: বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয়</strong>
+          </p>
+          <p>
+            ১৭ই ডিসেম্বর (শুক্রবার) বিকেলে পরীবাগস্থ সংস্কৃতি বিকাশ কেন্দ্রে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন অনুষ্ঠিত হয়। সম্মেলনে প্রধান অতিথি ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের পরিচালক বিশিষ্ট চলচ্চিত্রনির্মাতা তানভীর মোকাম্মেল। অনুষ্ঠানের সভাপতিত্ব করেন বিদায়ী কমিটির সভাপতি ড. মোহাম্মদ জাহাঙ্গীর হোসেন এবং বিশেষ অতিথি হিসেবে উপস্থিত ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের শিক্ষক সৈয়দ সাবাব আলী আরজু, রাকিবুল হাসান, সগীর মোস্তফা এবং রানা মাসুদ।
+          </p>
+          <p>
+            সম্মেলনে শিক্ষকদের পাশাপাশি বাংলাদেশের বিকল্পধারার সিনেমার নানা দিক নিয়ে বক্তব্য রাখেন এসোসিয়েশনের প্রধান উপদেষ্টা জনাব তানভীর মোকাম্মেল। অনুষ্ঠানের এক পর্যায়ে এসোসিয়েশনের পক্ষ থেকে বিএফআই-য়ের শিক্ষকদের প্রদান করা হয় সম্মাননা স্মারক এবং অনলাইন ফিল্ম মেকিং কোর্সের শিক্ষার্থীদের মাঝে সনদপত্র বিতরণ করা হয়। অনুষ্ঠানের শেষ পর্বে কোর্সের শিক্ষার্থীদের নির্মিত ৯টি স্বল্পদৈর্ঘ্য চলচ্চিত্র প্রদর্শিত হয়।
+          </p>
+          <p>
+            সম্মেলনে বিকল্পধারার চলচ্চিত্রকে সামনে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ২০২১-২০২৩ মেয়াদের জন্যে ২১ সদস্যবিশিষ্ট কার্যনির্বাহী কমিটি গঠিত হয়।
+          </p>
+        </div>
+
+        <div style="margin-top: 35px; display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="https://bfiaa.bfibd.org/#conference-2021" class="btn-primary">
+            ← Back to Homepage
+          </a>
+          <a href="conference-2019.html" class="btn-secondary">
+            View Biennial Conference 2019 →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Standard Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+          <span class="footer-logo-text">BFIAA</span>
+        </div>
+        <p class="footer-tagline">
+          The official alumni network of the Bangladesh Film Institute.
+          Fostering creative cinema, professional development, and meaningful
+          connections among filmmakers across Bangladesh.
+        </p>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/groups/bfialumni" target="_blank" rel="noopener" aria-label="Facebook Group">f</a>
+          <a href="https://bfibd.org" target="_blank" rel="noopener" aria-label="BFI Website">🌐</a>
+          <a href="https://tanvirmokammel.info" target="_blank" rel="noopener" aria-label="Tanvir Mokammel">🎬</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#mission">Mission</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
+      </p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
+        A SUBDOMAIN OF BFIBD.ORG →
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function switchPhoto(src, el) {
+    const mainImg = document.getElementById('activePhoto');
+    const fullBtn = document.getElementById('viewFullBtn');
+    const dlBtn = document.getElementById('downloadBtn');
+    
+    mainImg.style.opacity = '0.3';
+    setTimeout(() => {
+      mainImg.src = src;
+      mainImg.style.opacity = '1';
+    }, 150);
+
+    fullBtn.href = src;
+    dlBtn.href = src;
+
+    document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+</div>
+</body>
+</html>
