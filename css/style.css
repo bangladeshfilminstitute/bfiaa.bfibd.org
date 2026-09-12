@@ -152,6 +152,16 @@ a { text-decoration: none; color: inherit; }
 .nav-btn.gold { border-color: var(--gold-dark); color: var(--gold); }
 .nav-btn.gold:hover { background: var(--crimson); border-color: var(--crimson); color: #fff; }
 
+.nav-bfi-logo {
+  height: 16px;
+  width: auto;
+  background: #ffffff;
+  padding: 2px 4px;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .nav-hamburger {
   display: none;
   flex-direction: column;
