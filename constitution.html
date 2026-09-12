@@ -25,21 +25,50 @@
 <div class="site-wrapper">
 
 <!-- Nav -->
-<nav class="site-nav" role="navigation">
+<!-- Navigation -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
   <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
     <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
   </a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#committee">Committee</a></li>
-    <li><a href="index.html#events">Events</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
+
+  <ul class="nav-links" role="list">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
   </ul>
+
   <div class="nav-actions">
-    <a href="index.html" class="nav-btn">← Home</a>
-    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join →</a>
+    <a href="https://bfiaa.bfibd.org/" class="nav-btn" style="border-color:var(--gold); color:var(--gold);">🏠 Home</a>
+    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" style="height: 16px; width: auto;"/> BFI Home</a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
   </div>
+
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu" role="menu">
+  <a href="https://bfiaa.bfibd.org/" role="menuitem">Home</a>
+  <a href="https://bfiaa.bfibd.org/#about" role="menuitem">About BFIAA</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2021" role="menuitem">Conference 2021</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2019" role="menuitem">Conference 2019</a>
+  <a href="https://bfiaa.bfibd.org/#committee" role="menuitem">Committee</a>
+  <a href="https://bfiaa.bfibd.org/#events" role="menuitem">Events</a>
+  <a href="https://bfiaa.bfibd.org/#magazine" role="menuitem">Uralchitra</a>
+  <a href="https://bfiaa.bfibd.org/#picnic" role="menuitem">Picnic</a>
+  <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" role="menuitem" target="_blank" rel="noopener">Join Us</a>
+  <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
+  <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
+</div>
+
 <div class="nav-spacer"></div>
 
 <!-- Filmstrip -->
@@ -326,13 +355,106 @@
 </div>
 
 <!-- Footer (minimal) -->
-<footer style="background:var(--dark-2);border-top:1px solid var(--border);padding:24px;text-align:center;">
-  <p style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--text-dim);">
-    © 2026 BFIAA · <a href="index.html" style="color:var(--gold);">bfiaa.bfibd.org</a> ·
-    A SUBDOMAIN OF <a href="https://bfibd.org" target="_blank" rel="noopener" style="color:var(--gold);">BFIBD.ORG</a>
-  </p>
+<!-- Standard Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/bfiaa-logo.png" alt="BFIAA" onerror="this.style.display='none'"/>
+          <div class="footer-logo-text">BFIAA<br><span style="font-size:10px;letter-spacing:1px;color:var(--text-dim);">Bangladesh Film Institute<br>Alumni Association</span></div>
+        </div>
+        <p class="footer-brand-desc">
+          The official alumni association of the Bangladesh Film Institute —
+          connecting 1000+ graduates across 86+ batches in a shared love of cinema.
+        </p>
+        <div class="footer-social">
+          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">🎬</a>
+          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
+      </p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
+        A SUBDOMAIN OF BFIBD.ORG →
+      </a>
+    </div>
+  </div>
 </footer>
 </div> <!-- End of site-wrapper -->
+
+
+<script>
+  // Mobile Hamburger Toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'translateY(8px) rotate(45deg)';
+        spans[1].style.opacity   = '0';
+        spans[2].style.transform = 'translateY(-8px) rotate(-45deg)';
+      } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity   = '1';
+        spans[2].style.transform = 'none';
+      }
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', false);
+        const spans = hamburger.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity   = '1';
+        spans[2].style.transform = 'none';
+      });
+    });
+  }
+</script>
 
 </body>
 </html>
