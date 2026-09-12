@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>6th Executive Committee 1st Meeting — BFIAA | Bangladesh Film Institute Alumni Association</title>
+  <meta name="description" content="The inaugural 1st meeting of the 6th Executive Committee of BFIAA held on 7 January 2022 with Chief Guest Tanvir Mokammel and President Shahina Hafiz Daisy."/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/event-ec-meeting.html"/>
+  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#8B0000"/>
+
+  <meta property="og:title" content="6th Executive Committee 1st Meeting — BFIAA"/>
+  <meta property="og:description" content="Inaugural meeting of the 6th Executive Committee at BFI premises."/>
+  <meta property="og:url" content="https://bfiaa.bfibd.org/event-ec-meeting.html"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:image" content="https://bfiaa.bfibd.org/images/ec-meeting-1.jpg"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .event-page-hero {
+      background: linear-gradient(180deg, rgba(20,0,0,0.6) 0%, var(--dark) 100%);
+      padding: 40px 0 60px;
+    }
+    .event-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .event-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .event-breadcrumb a:hover { color: #fff; }
+    .event-detail-grid {
+      display: grid;
+      grid-template-columns: 460px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    .event-poster-wrapper {
+      position: sticky;
+      top: 90px;
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+    }
+    .main-photo-frame {
+      width: 100%;
+      height: 320px;
+      background: #000;
+      overflow: hidden;
+    }
+    .main-photo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-thumbnails {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      padding: 12px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+    }
+    .thumb-item {
+      aspect-ratio: 4/3;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      cursor: pointer;
+      opacity: 0.75;
+      transition: all 0.2s ease;
+    }
+    .thumb-item:hover, .thumb-item.active {
+      opacity: 1;
+      border-color: var(--gold);
+    }
+    .thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .event-poster-actions {
+      padding: 14px 16px;
+      background: var(--dark-2);
+      border-top: 1px solid var(--border);
+      display: flex;
+      gap: 10px;
+    }
+    .event-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      background: var(--crimson);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .event-main-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .event-bengali-title {
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      color: var(--gold);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 25px;
+      line-height: 1.35;
+    }
+    .event-meta-table {
+      background: var(--dark-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      margin-bottom: 35px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+    .meta-col label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+    .meta-col span {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .event-content-section {
+      margin-bottom: 35px;
+    }
+    .event-content-section h3 {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+      color: var(--gold);
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .event-content-section p {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+    .attendance-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+      margin: 20px 0 30px;
+    }
+    .attendee-card {
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      padding: 10px 14px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+    .attendee-card span.num {
+      font-family: var(--font-mono);
+      color: var(--gold);
+      font-weight: 700;
+      font-size: 12px;
+    }
+    .attendee-card span.bengali {
+      font-family: 'Hind Siliguri', sans-serif;
+      color: #ddd;
+    }
+    .bengali-announcement-card {
+      background: rgba(139, 0, 0, 0.08);
+      border-left: 4px solid var(--gold);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 28px;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin-top: 25px;
+      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      color: #f0f0f0;
+    }
+    .bengali-announcement-card h4 {
+      font-size: 1.2rem;
+      color: var(--gold);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    @media (max-width: 900px) {
+      .event-detail-grid {
+        grid-template-columns: 1fr;
+      }
+      .event-poster-wrapper {
+        position: static;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<!-- Navigation -->
+<nav class="site-nav" role="navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
+    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-links">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="constitution.html">Constitution</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://bfiaa.bfibd.org/" class="nav-btn" style="background:var(--dark-card); border-color:var(--gold); color:var(--gold);">🏠 Home</a>
+    <a href="https://bfiaa.bfibd.org/#events" class="nav-btn">← All Events</a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join BFIAA</a>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<!-- Filmstrip Ticker -->
+<div class="filmstrip-ticker" aria-hidden="true">
+  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
+  <div class="filmstrip-ticker-inner">
+    <span class="ticker-content">🏛️ 6TH EXECUTIVE COMMITTEE • 1ST OFFICIAL MEETING • BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+    <span class="ticker-content" aria-hidden="true">🏛️ 6TH EXECUTIVE COMMITTEE • 1ST OFFICIAL MEETING • BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION • bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
+  </div>
+  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
+</div>
+
+<!-- Main Event Section -->
+<section class="event-page-hero">
+  <div class="container">
+
+    <div class="event-breadcrumb">
+      <a href="https://bfiaa.bfibd.org/">Home</a>
+      <span>/</span>
+      <a href="https://bfiaa.bfibd.org/#events">Events</a>
+      <span>/</span>
+      <span>6th Executive Committee 1st Meeting</span>
+    </div>
+
+    <div class="event-detail-grid">
+      <!-- Left: Photo Showcase Column -->
+      <div class="event-poster-wrapper">
+        <div class="main-photo-frame">
+          <img id="mainEventImg" src="images/ec-meeting-1.jpg" alt="6th Executive Committee 1st Meeting" />
+        </div>
+        <div class="gallery-thumbnails">
+          <div class="thumb-item active" onclick="switchPhoto('images/ec-meeting-1.jpg', this)">
+            <img src="images/ec-meeting-1.jpg" alt="Meeting Photo 1" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/ec-meeting-2.png', this)">
+            <img src="images/ec-meeting-2.png" alt="Meeting Photo 2" />
+          </div>
+          <div class="thumb-item" onclick="switchPhoto('images/ec-meeting-3.jpg', this)">
+            <img src="images/ec-meeting-3.jpg" alt="Meeting Photo 3" />
+          </div>
+        </div>
+        <div class="event-poster-actions">
+          <a id="btnViewFull" href="images/ec-meeting-1.jpg" target="_blank" class="btn-primary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
+            🔍 Full Photo
+          </a>
+          <a id="btnDownload" href="images/ec-meeting-1.jpg" download="BFIAA-EC-Meeting-Photo.jpg" class="btn-secondary" style="flex:1; justify-content:center; text-align:center; font-size:12px; padding:10px 14px;">
+            ⬇ Download
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Content Column -->
+      <div class="event-info-wrapper">
+        <span class="event-meta-badge">🏛️ Official Committee Meeting</span>
+        <h1 class="event-main-title">6th Executive Committee: 1st Meeting</h1>
+        <span class="event-bengali-title">ষষ্ঠ কার্যনির্বাহী কমিটির প্রথম সভা</span>
+
+        <!-- Metadata Table -->
+        <div class="event-meta-table">
+          <div class="meta-col">
+            <label>Date & Venue</label>
+            <span>07 January 2022 (Friday)<br><small style="color:var(--gold); font-family:var(--font-mono);">BFI Premises, Dhaka</small></span>
+          </div>
+          <div class="meta-col">
+            <label>President / Chair</label>
+            <span>Shahina Hafiz Daisy<br><small style="color:var(--text-muted);">President, 6th EC</small></span>
+          </div>
+          <div class="meta-col">
+            <label>Chief Guest</label>
+            <span>Tanvir Mokammel<br><small style="color:var(--text-muted);">Director, BFI & Chief Advisor</small></span>
+          </div>
+          <div class="meta-col">
+            <label>Special Guest</label>
+            <span>Dr. Md. Jahangir Hossain<br><small style="color:var(--text-muted);">Former President, BFIAA</small></span>
+          </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="event-content-section">
+          <h3>Meeting Overview</h3>
+          <p>
+            The inaugural 1st meeting of the <strong>6th Executive Committee</strong> of the Bangladesh Film Institute Alumni Association (BFIAA) was held on Friday, January 7th, 2022, at the Bangladesh Film Institute premises.
+          </p>
+          <p>
+            The session was presided over by current President <strong>Shahina Hafiz Daisy</strong>. Renowned filmmaker and Director of BFI, <strong>Tanvir Mokammel</strong>, attended as the Chief Guest, providing inspiring guidance and strategic direction for the alumni network. Former President <strong>Dr. Mohammad Jahangir Hossain</strong> was present as the Special Guest.
+          </p>
+          <p>
+            A total of <strong>16 members</strong> of the newly elected committee participated both in person and virtually, laying out initiatives for cultural events, alumni welfare, publication schedules, and film appreciation programs.
+          </p>
+        </div>
+
+        <!-- Attendees Roster -->
+        <div class="event-content-section">
+          <h3>Participating Members (16 Total)</h3>
+          <div class="attendance-grid">
+            <div class="attendee-card"><span class="num">01</span><span class="bengali">ড. মো. জাহাঙ্গীর হোসেন</span></div>
+            <div class="attendee-card"><span class="num">02</span><span class="bengali">শাহীনা হাফিজ ডেইজি</span></div>
+            <div class="attendee-card"><span class="num">03</span><span class="bengali">সন্দীপ কুমার মিস্ত্রী</span></div>
+            <div class="attendee-card"><span class="num">04</span><span class="bengali">সোহেল আহমেদ সিদ্দিকী</span></div>
+            <div class="attendee-card"><span class="num">05</span><span class="bengali">সাজ্জাদ খান</span></div>
+            <div class="attendee-card"><span class="num">06</span><span class="bengali">আবীর আহম্মেদ</span></div>
+            <div class="attendee-card"><span class="num">07</span><span class="bengali">ড. নাজিয়া মাহমুদ</span></div>
+            <div class="attendee-card"><span class="num">08</span><span class="bengali">মামুন সোবহানি</span></div>
+            <div class="attendee-card"><span class="num">09</span><span class="bengali">কাজী মুশফিকুস সালেহীন</span></div>
+            <div class="attendee-card"><span class="num">10</span><span class="bengali">নাসরুল্লাহ্ মানসুর রাসু</span></div>
+            <div class="attendee-card"><span class="num">11</span><span class="bengali">নাঈমুল ইসলাম</span></div>
+            <div class="attendee-card"><span class="num">12</span><span class="bengali">সাদিয়া রহমান জেমিম</span></div>
+            <div class="attendee-card"><span class="num">13</span><span class="bengali">জান্নাতুল মাওয়া নোভা</span></div>
+            <div class="attendee-card"><span class="num">14</span><span class="bengali">জন ক্রিস্টোফার কস্টা</span></div>
+            <div class="attendee-card"><span class="num">15</span><span class="bengali">হাসানুজ্জামান খান</span></div>
+            <div class="attendee-card"><span class="num">16</span><span class="bengali">রাজেশ্বর দাশ গুপ্ত</span></div>
+          </div>
+        </div>
+
+        <!-- Original Bengali Announcement -->
+        <div class="bengali-announcement-card">
+          <h4>কার্যবিবরণী ও বিজ্ঞপ্তি (Official Report)</h4>
+          <p>
+            বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশনের ষষ্ঠ কার্যনির্বাহী কমিটির প্রথম সভা ০৭ জানুয়ারী ২০২২ (শুক্রবার) তারিখে বাংলাদেশ ফিল্ম ইনস্টিটিউটে অনুষ্ঠিত হয়। সভার সভাপতিত্ব করেন বর্তমান কমিটির সভাপতি শাহীনা হাফিজ ডেইজি। প্রধান অতিথি হিসেবে উপস্থিত ছিলেন বিএফআই-য়ের পরিচালক শ্রদ্ধেয় তানভীর মোকাম্মেল; বিশেষ অতিথি হিসেবে উপস্থিত ছিলেন পূর্বের কমিটির সভাপতি ড. মোহাম্মদ জাহাঙ্গীর হোসেন। উক্ত সভায় অনলাইন এবং অফলাইনে নতুন কমিটির মোট ষোলো (১৬) জন সদস্য উপস্থিত ছিলেন।
+          </p>
+          <p style="margin-top:10px; font-weight:600; color:var(--gold);">
+            সভার তারিখঃ ০৭ জানুয়ারী ২০২২ (শুক্রবার)
+          </p>
+        </div>
+
+        <!-- Action Links -->
+        <div style="margin-top: 40px; display:flex; gap:16px; flex-wrap:wrap;">
+          <a href="https://bfiaa.bfibd.org/" class="btn-secondary" style="border-color:var(--gold); color:var(--gold);">🏠 Home</a>
+          <a href="https://bfiaa.bfibd.org/#events" class="btn-secondary">← All Events</a>
+          <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-primary">Join BFIAA Today</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script>
+  function switchPhoto(src, el) {
+    document.getElementById('mainEventImg').src = src;
+    document.getElementById('btnViewFull').href = src;
+    document.getElementById('btnDownload').href = src;
+    document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="images/bfiaa-logo.png" alt="BFIAA" onerror="this.style.display='none'"/>
+          <div class="footer-logo-text">BFIAA<br><span style="font-size:10px;letter-spacing:1px;color:var(--text-dim);">Bangladesh Film Institute<br>Alumni Association</span></div>
+        </div>
+        <p class="footer-brand-desc">
+          The official alumni association of the Bangladesh Film Institute —
+          connecting 1000+ graduates across 86+ batches in a shared love of cinema.
+        </p>
+        <div class="footer-social">
+          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">🎬</a>
+          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#mission">Mission</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
+      </p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
+        A SUBDOMAIN OF BFIBD.ORG →
+      </a>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+</body>
+</html>
