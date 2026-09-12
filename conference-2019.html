@@ -183,9 +183,91 @@
       font-family: var(--font-mono); font-size: 11px; letter-spacing: 1.5px; color: var(--text-dim);
       background: var(--dark-2); border: 1px solid var(--border); padding: 5px 12px; border-radius: 20px; text-transform: uppercase;
     }
+
+    /* ─── RESPONSIVE BREAKPOINTS ─── */
     @media (max-width: 960px) {
-      .conf-grid { grid-template-columns: 1fr; }
-      .conf-left-col { position: static; }
+      .conf-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .conf-left-col {
+        position: static;
+        max-width: 100%;
+      }
+      .main-photo-frame {
+        height: auto;
+        aspect-ratio: 16/10;
+        max-height: 440px;
+      }
+      /* Hide duplicate Bengali card in left col on single-column mobile/tablet view */
+      .bengali-side-card {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .conference-page-hero {
+        padding: 25px 0 45px;
+      }
+      .event-breadcrumb {
+        font-size: 10px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .conf-photo-wrapper {
+        border-radius: var(--radius);
+      }
+      .conf-stats-grid {
+        gap: 8px;
+      }
+      .conf-stat-box {
+        padding: 14px 8px;
+      }
+      .conf-stat-val {
+        font-size: 1.6rem;
+      }
+      .conf-stat-lbl {
+        font-size: 8.5px;
+        letter-spacing: 1px;
+      }
+      .conf-highlights {
+        padding: 16px 14px;
+      }
+      .highlight-item {
+        font-size: 0.82rem;
+      }
+      .event-meta-table {
+        padding: 18px 16px;
+        gap: 14px;
+        grid-template-columns: 1fr;
+        margin-bottom: 25px;
+      }
+      .bengali-announcement-card {
+        padding: 20px 18px;
+        font-size: 0.98rem;
+        line-height: 1.85;
+      }
+      .bengali-announcement-card h4 {
+        font-size: 1.15rem;
+      }
+    }
+
+    @media (max-width: 440px) {
+      .committee-grid {
+        grid-template-columns: 1fr;
+      }
+      .president-card {
+        padding: 20px 14px;
+      }
+      .president-name {
+        font-size: 1.1rem;
+      }
+      .president-title {
+        font-size: 12px;
+      }
+      .event-poster-actions {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
