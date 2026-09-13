@@ -59,8 +59,8 @@
       box-shadow: 0 35px 80px rgba(0,0,0,0.8), 0 0 20px rgba(200, 169, 81, 0.1);
     }
     .main-photo-frame { width: 100%; height: 290px; background: #000; overflow: hidden; }
-    .main-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
-    .main-photo-frame:hover img { transform: scale(1.03); }
+    .main-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: filter 0.4s ease; }
+    .main-photo-frame:hover img { filter: brightness(1.08); }
     .gallery-thumbnails {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -95,7 +95,7 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    .conf-stat-box:hover { border-color: rgba(200, 169, 81, 0.5); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(200, 169, 81, 0.1); }
+    .conf-stat-box:hover { border-color: var(--gold); box-shadow: 0 0 20px rgba(200, 169, 81, 0.25); }
     .conf-stat-val { font-family: var(--font-title); font-size: 2.2rem; color: var(--gold); line-height: 1; margin-bottom: 5px; text-shadow: 0 0 10px rgba(200,169,81,0.2); }
     .conf-stat-lbl { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); }
     .conf-highlights {
