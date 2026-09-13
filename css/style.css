@@ -389,9 +389,9 @@ a { text-decoration: none; color: inherit; }
   transition: all var(--transition);
 }
 .stat-card:hover {
-  border-color: var(--border-bright);
-  background: rgba(200,169,81,0.06);
-  transform: translateY(-2px);
+  border-color: var(--gold);
+  background: rgba(200,169,81,0.08);
+  box-shadow: 0 0 20px rgba(200, 169, 81, 0.2);
 }
 .stat-val {
   font-family: var(--font-title);
@@ -436,8 +436,8 @@ a { text-decoration: none; color: inherit; }
 }
 .btn-primary:hover {
   background: linear-gradient(135deg, #c42929, var(--crimson-light));
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(139,0,0,0.5);
+  box-shadow: 0 0 24px rgba(178, 34, 34, 0.6);
+  filter: brightness(1.1);
 }
 .btn-secondary {
   display: inline-flex;
@@ -457,9 +457,9 @@ a { text-decoration: none; color: inherit; }
   transition: all var(--transition);
 }
 .btn-secondary:hover {
-  background: rgba(200,169,81,0.1);
-  border-color: var(--gold);
-  transform: translateY(-2px);
+  background: rgba(200,169,81,0.15);
+  border-color: var(--gold-light);
+  box-shadow: 0 0 15px rgba(200, 169, 81, 0.25);
 }
 
 /* Scroll indicator */
@@ -706,15 +706,14 @@ section { padding: 90px 24px; }
 .objective-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; right: 0;
+  top: 0; left: 0;
+  width: 0%;
   height: 3px;
   background: linear-gradient(to right, var(--crimson), var(--gold));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition);
+  transition: width var(--transition);
 }
-.objective-card:hover { border-color: var(--border-bright); transform: translateY(-4px); box-shadow: var(--shadow-gold); }
-.objective-card:hover::before { transform: scaleX(1); }
+.objective-card:hover { border-color: var(--gold); background: rgba(200,169,81,0.05); box-shadow: 0 0 25px rgba(200,169,81,0.25); }
+.objective-card:hover::before { width: 100%; }
 
 .objective-icon {
   font-size: 2rem;
@@ -828,10 +827,9 @@ section { padding: 90px 24px; }
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .member-card:hover {
-  border-color: rgba(200, 169, 81, 0.5);
+  border-color: var(--gold);
   background: rgba(200, 169, 81, 0.08);
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(200, 169, 81, 0.15), inset 0 0 20px rgba(200, 169, 81, 0.05);
+  box-shadow: 0 0 25px rgba(200, 169, 81, 0.2), inset 0 0 15px rgba(200, 169, 81, 0.04);
 }
 .member-avatar {
   width: 54px;
@@ -907,9 +905,8 @@ img.president-avatar {
   cursor: pointer;
 }
 .event-card:hover {
-  border-color: var(--border-bright);
-  transform: translateY(-6px);
-  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+  border-color: var(--gold);
+  box-shadow: 0 0 35px rgba(200, 169, 81, 0.2);
 }
 .event-card-thumb {
   aspect-ratio: 16/9;
@@ -921,9 +918,9 @@ img.president-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
+  transition: filter 0.4s ease;
 }
-.event-card:hover .event-card-thumb img { transform: scale(1.05); }
+.event-card:hover .event-card-thumb img { filter: brightness(1.1) contrast(1.04); }
 .event-card-thumb-placeholder {
   width: 100%;
   height: 100%;
@@ -982,9 +979,9 @@ img.president-avatar {
 .event-arrow {
   font-size: 1rem;
   color: var(--gold);
-  transition: transform var(--transition);
+  transition: color var(--transition), text-shadow var(--transition);
 }
-.event-card:hover .event-arrow { transform: translateX(4px); }
+.event-card:hover .event-arrow { color: #fff; text-shadow: 0 0 10px var(--gold); }
 
 /* =========================================================
    URALCHITRA MAGAZINE SECTION
@@ -1070,12 +1067,12 @@ img.president-avatar {
   border-radius: var(--radius);
   padding: 16px;
   text-align: center;
-  transition: transform var(--transition), box-shadow var(--transition);
+  transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
 }
 .edition-card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-gold);
-  border-color: rgba(200,169,81,0.3);
+  box-shadow: 0 0 30px rgba(200,169,81,0.25);
+  border-color: var(--gold);
+  background: rgba(200,169,81,0.04);
 }
 .edition-card img {
   width: 100%;
@@ -1155,7 +1152,7 @@ img.president-avatar {
   outline: none;
 }
 .gallery-item:focus-visible { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(200,169,81,0.3); }
-.gallery-item:hover { border-color: rgba(200,169,81,0.4); }
+.gallery-item:hover { border-color: var(--gold); box-shadow: 0 0 20px rgba(200,169,81,0.3); }
 /* Default gallery item */
 #gallery .gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 2/1; }
 .gallery-item.gallery-item-featured { grid-column: span 3; aspect-ratio: 21/9; border: 2px solid var(--gold); box-shadow: 0 10px 30px rgba(200,169,81,0.2); }
@@ -1165,10 +1162,10 @@ img.president-avatar {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease, filter 0.3s;
+  transition: filter 0.4s ease;
   display: block;
 }
-.gallery-item:hover img { transform: scale(1.06); filter: brightness(1.08); }
+.gallery-item:hover img { filter: brightness(1.15) contrast(1.05); }
 .gallery-item-overlay {
   position: absolute;
   inset: 0;
@@ -1190,15 +1187,14 @@ img.president-avatar {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -60%);
+  transform: translate(-50%, -50%);
   font-size: 1.8rem;
   opacity: 0;
-  transition: opacity 0.2s ease, transform 0.25s ease;
+  transition: opacity 0.25s ease;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.6));
 }
 .gallery-item:hover .gallery-item-overlay::before {
   opacity: 0.9;
-  transform: translate(-50%, -50%);
 }
 
 .gallery-item-label {
@@ -1654,9 +1650,9 @@ img.president-avatar {
 }
 .lb-nav:hover {
   background: var(--crimson);
-  border-color: var(--crimson);
+  border-color: var(--crimson-light);
   color: #fff;
-  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 0 16px rgba(178, 34, 34, 0.6);
 }
 .lb-prev { left: 16px; }
 .lb-next { right: 16px; }
@@ -1798,7 +1794,7 @@ img.president-avatar {
   box-shadow: 0 4px 14px rgba(139,0,0,0.5);
 }
 .back-to-top.visible { opacity: 1; transform: translateY(0); }
-.back-to-top:hover { background: var(--crimson-light); transform: translateY(-2px); }
+.back-to-top:hover { background: var(--crimson-light); box-shadow: 0 0 20px rgba(178, 34, 34, 0.7); filter: brightness(1.15); }
 
 /* =========================================================
    UTILITIES
