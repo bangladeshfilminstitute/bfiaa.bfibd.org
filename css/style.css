@@ -43,7 +43,11 @@ html {
 
 body {
   background: var(--dark);
-  background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, var(--dark) 70%);
+  background-image: 
+    radial-gradient(circle at 80% 20%, rgba(139, 0, 0, 0.15) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(200, 169, 81, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 50% 0%, #1a1a1a 0%, var(--dark) 70%);
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
@@ -811,35 +815,56 @@ section { padding: 90px 24px; }
   gap: 16px;
 }
 .member-card {
-  background: var(--dark-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px;
+  background: rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 169, 81, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 24px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 16px;
   transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 .member-card:hover {
-  border-color: var(--border-bright);
-  background: rgba(200,169,81,0.06);
-  transform: translateY(-4px);
-  box-shadow: 0 10px 30px rgba(200, 169, 81, 0.1);
+  border-color: rgba(200, 169, 81, 0.5);
+  background: rgba(200, 169, 81, 0.08);
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(200, 169, 81, 0.15), inset 0 0 20px rgba(200, 169, 81, 0.05);
 }
 .member-avatar {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--dark-3), var(--dark-4));
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-title);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--gold);
-  border: 1px solid var(--border);
+  border: 1px solid rgba(200, 169, 81, 0.3);
+  box-shadow: 0 0 15px rgba(200, 169, 81, 0.1);
   flex-shrink: 0;
+}
+img.member-avatar {
+  object-fit: cover;
+  object-position: center;
+  background: var(--dark-3);
+}
+img.president-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 3px solid var(--gold);
+  box-shadow: 0 0 25px rgba(200, 169, 81, 0.25);
+  margin: 0 auto 15px auto;
+  display: block;
+  background: var(--dark-3);
 }
 .member-info { min-width: 0; }
 .member-name {
