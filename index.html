@@ -44,7 +44,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3.3">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     .saisei-btn-prev:hover, .saisei-btn-next:hover, .saisei-download-btn:hover {
@@ -1265,18 +1265,25 @@
     <div class="magazine-inner">
 
       <div class="magazine-cover reveal">
-        <div class="magazine-book">
-          <img
-            src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg"
-            alt="Uralchitra — Special Edition on Tanvir Mokammel"
-            loading="lazy"
-            onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'magazine-book-placeholder\'><h2>উড়ালচিত্র</h2><h2>Uralchitra</h2><p>BFIAA Film Magazine</p></div>';"
-          />
-          <div class="magazine-book-spine"></div>
+        <div class="magazine-showcase">
+          <img src="images/uralchitra/Uralchitra number 1.png" class="floating-edition float-left" alt="Volume 1" loading="lazy" />
+          <img src="images/uralchitra/Uralchitra number 3.jpg" class="floating-edition float-right" alt="Volume 3" loading="lazy" />
+          <div class="magazine-book">
+            <img
+              src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg"
+              alt="Uralchitra — Special Edition on Tanvir Mokammel"
+              loading="lazy"
+              onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'magazine-book-placeholder\'><h2>উড়ালচিত্র</h2><h2>Uralchitra</h2><p>BFIAA Film Magazine</p></div>';"
+            />
+            <div class="magazine-spine"></div>
+            <div class="mag-gloss-overlay"></div>
+          </div>
         </div>
-      </div>
-
-      <div class="magazine-info reveal reveal-delay-1">
+          <div style="margin-top: 40px; text-align: center;">
+             <a href="uralchitra-special.html" class="saisei-btn" style="text-decoration: none;">Explore Details <span class="arrow" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="magazine-info reveal reveal-delay-1">
         <div class="section-label">Publication</div>
         <h2 class="section-title">উড়ালচিত্র<br><span>Uralchitra</span></h2>
         <div class="divider"></div>
