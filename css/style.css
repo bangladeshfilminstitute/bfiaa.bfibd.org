@@ -1001,32 +1001,92 @@ img.president-avatar {
 
 .magazine-cover {
   position: relative;
-}
-.magazine-book {
-  background: var(--dark-3);
-  border: 1px solid var(--border);
-  border-radius: 4px 12px 12px 4px;
-  aspect-ratio: 3/4;
-  max-width: 280px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: relative;
-  box-shadow: -8px 0 20px rgba(0,0,0,0.5), 4px 4px 20px rgba(0,0,0,0.3);
-  /* overflow: hidden; removed to show full names */
+  align-items: center;
+  padding: 60px 0;
 }
+
+.magazine-showcase {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.floating-edition {
+  position: absolute;
+  width: 75%;
+  height: auto;
+  border-radius: 4px 10px 10px 4px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+  z-index: 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.float-left {
+  left: -35%;
+  top: 15%;
+  transform: rotate(-12deg) scale(0.9);
+  filter: brightness(0.4) blur(1px);
+}
+
+.float-right {
+  right: -35%;
+  top: 25%;
+  transform: rotate(15deg) scale(0.85);
+  filter: brightness(0.6) blur(0.5px);
+}
+
+.magazine-book {
+  position: relative;
+  width: 100%;
+  background: var(--dark-3);
+  border-radius: 4px 14px 14px 4px;
+  box-shadow: 
+    -10px 20px 40px rgba(0,0,0,0.9), 
+    0 0 30px rgba(212, 175, 55, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  z-index: 2;
+}
+
 .magazine-book img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 4px 12px 12px 4px;
+  height: auto; /* Prevents cropping completely */
+  display: block;
+  border-radius: 3px 13px 13px 3px;
 }
-.magazine-book-spine {
+
+.magazine-spine {
   position: absolute;
-  left: 0; top: 0; bottom: 0;
-  width: 20px;
-  background: linear-gradient(to right, rgba(0,0,0,0.5), transparent);
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 22px;
+  background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0.2) 30%, rgba(0,0,0,0) 100%);
+  border-radius: 3px 0 0 3px;
+  border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.mag-gloss-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0) 40%, rgba(0,0,0,0.4) 100%);
+  border-radius: 4px 14px 14px 4px;
+  pointer-events: none;
+}
+
+/* Floor shadow reflection */
+.magazine-showcase::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 5%;
+  width: 90%;
+  height: 30px;
+  background: radial-gradient(ellipse at center, rgba(212, 175, 55, 0.3) 0%, rgba(0,0,0,0) 70%);
+  filter: blur(10px);
+  z-index: -1;
 }
 .magazine-book-placeholder {
   text-align: center;
@@ -1981,4 +2041,36 @@ img.president-avatar {
 .saisei-btn-next:hover,
 .saisei-download-btn:hover {
   transform: none !important;
+}
+
+
+/* Magazine Explore Button */
+.magazine-explore-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, var(--crimson) 0%, #a00000 100%);
+  color: #fff !important;
+  padding: 14px 35px;
+  border-radius: 50px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(139, 0, 0, 0.4), inset 0 0 0 1px rgba(255,255,255,0.2);
+  transition: all 0.3s ease;
+}
+
+.magazine-explore-btn:hover {
+  background: linear-gradient(135deg, #a00000 0%, var(--dark-card) 100%);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4), inset 0 0 0 1px var(--gold);
+}
+
+.magazine-explore-btn .arrow {
+  font-size: 1.3rem;
+  transition: color 0.3s ease;
+}
+
+.magazine-explore-btn:hover .arrow {
+  color: var(--gold);
 }
