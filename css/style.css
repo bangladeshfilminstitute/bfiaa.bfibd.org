@@ -1959,3 +1959,26 @@ img.president-avatar {
   .nav-actions { gap: 6px; }
   .nav-actions .nav-btn { padding: 5px 8px; font-size: 10px; }
 }
+
+/* =========================================================
+   GLOBAL ZERO-MOVEMENT / ZERO-ZOOM HOVER ENFORCEMENT
+   ========================================================= */
+.member-card:hover,
+.president-card:hover,
+.stat-card:hover,
+.conf-stat-box:hover,
+.btn-primary:hover,
+.btn-secondary:hover,
+.objective-card:hover,
+.event-card:hover,
+.event-card:hover .event-card-thumb img,
+.event-card:hover .event-arrow,
+.edition-card:hover,
+.gallery-item:hover img,
+.main-photo-frame:hover img,
+.back-to-top:hover,
+.saisei-btn-prev:hover,
+.saisei-btn-next:hover,
+.saisei-download-btn:hover {
+  transform: none !important;
+}
