@@ -1002,9 +1002,10 @@ img.president-avatar {
 .magazine-cover {
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .magazine-showcase {
