@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Uralchitra Special Edition — BFIAA</title>
+  <meta name="description" content="Uralchitra Special Edition on Tanvir Mokammel: 30 Years in Documentary Films."/>
+  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#8B0000"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3.3">
+
+  <style>
+    .event-page-hero {
+      background: linear-gradient(180deg, rgba(20,0,0,0.6) 0%, var(--dark) 100%);
+      padding: 40px 0 60px;
+    }
+    .event-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.5px;
+      color: var(--text-dim);
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .event-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .event-breadcrumb a:hover { color: #fff; }
+    
+    .event-detail-grid {
+      display: grid;
+      grid-template-columns: 350px 1fr;
+      gap: 50px;
+      align-items: start;
+    }
+    
+    @media (max-width: 900px) {
+      .event-detail-grid {
+        grid-template-columns: 1fr;
+      }
+      .event-poster-wrapper {
+        position: relative !important;
+        top: 0 !important;
+        max-width: 400px;
+        margin: 0 auto 40px;
+      }
+    }
+
+    .event-poster-wrapper {
+      position: sticky;
+      top: 90px;
+      background: var(--dark-3);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 4px 14px 14px 4px;
+      box-shadow: -10px 20px 40px rgba(0,0,0,0.9), 0 0 30px rgba(212, 175, 55, 0.15);
+      transform: translateZ(0);
+    }
+    .event-poster-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 3px 13px 13px 3px;
+    }
+    
+    .magazine-spine-side {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 18px;
+      background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(255,255,255,0.15) 40%, rgba(0,0,0,0) 100%);
+      border-radius: 3px 0 0 3px;
+      border-right: 1px solid rgba(0,0,0,0.3);
+    }
+
+    .mag-gloss-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 40%, rgba(0,0,0,0.5) 100%);
+      border-radius: 4px 14px 14px 4px;
+      pointer-events: none;
+    }
+
+    .event-meta-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 4px;
+      background: var(--crimson);
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .event-main-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 8px;
+    }
+    .event-bengali-title {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+      color: var(--gold);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 25px;
+    }
+    .info-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px;
+    }
+    .info-list li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      align-items: baseline;
+      gap: 15px;
+    }
+    .info-list li:last-child {
+      border-bottom: none;
+    }
+    .info-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      opacity: 0.8;
+    }
+    .info-value {
+      font-family: 'Hind Siliguri', sans-serif;
+      color: #eee;
+      line-height: 1.5;
+    }
+    .info-value strong {
+      color: #fff;
+    }
+    
+    .event-desc {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-top: 30px;
+      background: var(--dark-2);
+      padding: 30px;
+      border-radius: 8px;
+      border-left: 4px solid var(--crimson);
+    }
+    .event-desc p {
+      margin-bottom: 20px;
+    }
+    
+    .index-table {
+      margin-top: 40px;
+      font-family: 'Hind Siliguri', sans-serif;
+      background: var(--dark-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .index-table h3 {
+      padding: 20px 30px;
+      background: rgba(0,0,0,0.3);
+      border-bottom: 1px solid var(--border);
+      color: var(--gold);
+      margin: 0;
+      font-size: 1.3rem;
+    }
+    
+    .index-section {
+      padding: 20px 30px;
+      border-bottom: 1px solid var(--border);
+    }
+    .index-section:last-child { border-bottom: none; }
+    
+    .index-section h4 {
+      color: #fff;
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+      border-bottom: 1px dotted rgba(255,255,255,0.2);
+      padding-bottom: 5px;
+    }
+    
+    .index-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      color: var(--text-dim);
+      line-height: 1.6;
+    }
+    
+    .index-row span:first-child { flex: 1; padding-right: 20px; }
+    .index-row span:last-child { color: var(--gold); font-family: var(--font-mono); font-size: 12px; align-self: center; }
+
+  </style>
+</head>
+<body>
+
+<nav class="navbar" aria-label="Main Navigation">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="images/bfiaa-logo.png" alt="BFIAA Logo"/>
+        <div class="logo-text">
+          <span class="logo-title">BFIAA</span>
+          <span class="logo-sub">Alumni Association</span>
+        </div>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#magazine">Uralchitra</a>
+      <a href="index.html#events">Events</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<main>
+  <section class="event-page-hero">
+    <div class="container">
+      <div class="event-breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator">/</span>
+        <a href="index.html#magazine">Uralchitra Magazine</a>
+        <span class="separator">/</span>
+        <span class="current">Special Edition 2023</span>
+      </div>
+
+      <div class="event-detail-grid">
+        
+        <!-- Left: Cover -->
+        <div class="event-poster-col">
+          <div class="event-poster-wrapper">
+            <img src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" alt="Uralchitra Special Edition Cover">
+            <div class="magazine-spine-side"></div>
+            <div class="mag-gloss-overlay"></div>
+          </div>
+        </div>
+
+        <!-- Right: Details -->
+        <div class="event-info-col">
+          <div class="event-meta-badge">SPECIAL EDITION</div>
+          
+          <h1 class="event-main-title">30 Years in Documentary Films of Tanvir Mokammel</h1>
+          <span class="event-bengali-title">উড়ালচিত্র: তানভীর মোকাম্মেলের প্রামাণ্যচিত্রের ৩০ বছর</span>
+
+          <ul class="info-list">
+            <li>
+              <span class="info-label">Release</span>
+              <span class="info-value">মার্চ ২০২৩ (March 2023)</span>
+            </li>
+            <li>
+              <span class="info-label">Editor</span>
+              <span class="info-value">সন্দীপ কুমার মিস্ত্রী (Sandip Kumar Mistri)</span>
+            </li>
+            <li>
+              <span class="info-label">Editorial Board</span>
+              <span class="info-value">শাহিনা হাফিজ ডেইজি, সাজ্জাদ খান, মো: সোহেল আহম্মেদ সিদ্দিকী, অপরাজিতা সংগীতা</span>
+            </li>
+            <li>
+              <span class="info-label">Cover Design</span>
+              <span class="info-value">উত্তম গুহ (Uttam Guha)</span>
+            </li>
+            <li>
+              <span class="info-label">Graphics</span>
+              <span class="info-value">মো: কাওসার আহম্মেদ (আবীর)</span>
+            </li>
+            <li>
+              <span class="info-label">Print</span>
+              <span class="info-value">নীলক্ষেত, ঢাকা</span>
+            </li>
+            <li>
+              <span class="info-label">Price</span>
+              <span class="info-value">১০০ টাকা (100 BDT)</span>
+            </li>
+            <li>
+              <span class="info-label">Publisher</span>
+              <span class="info-value">
+                বাংলাদেশ ফিল্ম ইন্সটিটিউট এলামনাই এসোসিয়েশন (BFIAA)<br>
+                <a href="mailto:bfi.alumni.association@gmail.com" style="color:var(--gold);">bfi.alumni.association@gmail.com</a>
+              </span>
+            </li>
+            <li>
+              <span class="info-label">Contact</span>
+              <span class="info-value">
+                বাংলাদেশ ফিল্ম ইন্সটিটিউট<br>
+                বাড়ি-৩৯/এ, ফ্ল্যাট-বি৩, রোড-৪/এ, ধানমন্ডি, ঢাকা-১২০৯<br>
+                +88 01735-901328, +88 01303-616741
+              </span>
+            </li>
+          </ul>
+
+          <div class="event-desc">
+            <h3 style="color:#fff; font-family:var(--font-title); margin-bottom: 20px; font-size:1.4rem;">সম্পাদকীয়</h3>
+            <p>১৯৯১ সালে তানভীর মোকাম্মেলের প্রথম প্রামাণ্যচিত্র "স্মৃতি '৭১" মুক্তি পায়। ওঁর প্রামাণ্যযাত্রার বয়স বর্তমানে তিরিশ বছর পেরিয়ে গেছে। আজ তাই একটু পিছন ফিরে দেখার চেষ্টা, ঠিক কী বলতে চেয়েছে তানভীর মোকাম্মেলের প্রামাণ্যচিত্র?</p>
+            <p>তানভীর মোকাম্মেল ওঁর প্রামাণ্যচিত্রের মধ্য দিয়ে যে সময়টাতে মুক্তিযুদ্ধের কথা, পাহাড়ী ও বিহারীদের কথা, লালন ফকির ও তাজউদ্দীনদের কথা বলেছেন, তখন এসকল বিষয়ে আমাদের সমাজে এক ধরণের যৌথ বিস্মৃতি বা কালেক্টিভ এমনেসিয়া ছিল। সেই প্রেক্ষিতে এ প্রামাণ্যচিত্রগুলো মানুষের বিস্মৃতির বিরুদ্ধে স্মৃতির লড়াইকে উসকে দিয়েছিল। যে কাজ রাষ্ট্রের করার কথা ছিল, তানভীর মোকাম্মেল প্রায় ব্যক্তি উদ্যোগেই ওঁর ফিল্ম ইউনিট নিয়ে বছরের পর বছর ধরে গবেষণা করে অবিশ্রান্তভাবে একটার পর একটা প্রামাণ্যচিত্র নির্মাণের মধ্য দিয়ে সেই কাজটি করে চলেছেন।</p>
+            <p>তানভীর মোকাম্মেলের তত্ত্বাবধানে ওঁর গড়ে তোলা চলচ্চিত্র শিক্ষা প্রতিষ্ঠান বাংলাদেশ ফিল্ম ইন্সটিটিউটের শিক্ষার্থীরাও গবেষণাধর্মী এজাতীয় প্রামাণ্যচিত্র নির্মাণ করে যাচ্ছে। ইতিহাস সচেতন সত্যান্বেষী এ শিল্পীর ৬৮তম জন্মদিন ও প্রামাণ্যচিত্র নির্মাণের তিরিশ বছরপূর্তিতে বাংলাদেশ ফিল্ম ইন্সটিটিউট এলামনাই এসোসিয়েশনের পক্ষ থেকে শ্রদ্ধার্ঘ্য "উড়ালচিত্র"-র এই বিশেষ সংখ্যাটি।</p>
+            <p style="text-align: right; margin-top: 20px; color:var(--text-dim); font-size: 0.95rem;">- ৮ মার্চ, ২০২৩</p>
+          </div>
+          
+          <div class="index-table">
+            <h3>সূচিপত্র (Contents)</h3>
+            
+            <div class="index-section">
+              <h4>প্রামাণ্যচিত্র পরিচিতি</h4>
+              <div class="index-row"><span>তানভীর মোকাম্মেলের জীবনবৃত্তান্ত</span></div>
+              <div class="index-row"><span>সার-সংক্ষেপ ও কলাকুশলীগণ</span></div>
+            </div>
+            
+            <div class="index-section">
+              <h4>সাক্ষাৎকার</h4>
+              <div class="index-row"><span>প্রামাণ্যচিত্র হতে হবে একশ ভাগ বস্তুনিষ্ঠ ও সৎ <em>— তানভীর মোকাম্মেল</em></span></div>
+            </div>
+            
+            <div class="index-section">
+              <h4>প্রবন্ধ</h4>
+              <div class="index-row"><span>Some Reflections on Tanvir Mokammel’s Documentary Films <em>— John W. Hood</em></span></div>
+              <div class="index-row"><span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে দেশভাগ: একটি সমকালীন রাজনৈতিক দার্শনিক পর্যালোচনা <em>— মোহাম্মদ উল্লাহ</em></span></div>
+              <div class="index-row"><span>তানভীর মোকাম্মেল: মুক্তিযুদ্ধের নির্ভরযোগ্য প্রামাণ্যকার <em>— জাহাঙ্গীর মোহাম্মদ</em></span></div>
+              <div class="index-row"><span>বিশ্বপ্রকৃতি, প্রকৃতিনির্ভর প্রামাণ্যচিত্র ও তানভীর মোকাম্মেলের কাব্যময় চিত্ররূপ <em>— সন্দীপ কুমার মিস্ত্রী</em></span></div>
+              <div class="index-row"><span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে নারী <em>— শাহিনা হাফিজ ডেইজি</em></span></div>
+              <div class="index-row"><span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে লালন ও বাউলতত্ত্ব <em>— ড. নাজিয়া মাহমুদ</em></span></div>
+              <div class="index-row"><span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্র নির্মাণ আঙ্গিকে কিনো-আই ধারার প্রভাব <em>— কাজী মুসফিকুস সালেহীন</em></span></div>
+            </div>
+            
+            <div class="index-section">
+              <h4>মতামত</h4>
+              <div class="index-row"><span>অনুপম হায়াৎ / মানজারে হাসীন মুরাদ / মোরশেদুল ইসলাম</span></div>
+              <div class="index-row"><span>মেঘনা গুহঠাকুরতা / উত্তম গুহ / সৈয়দ শাবাব আলী আরজু</span></div>
+              <div class="index-row"><span>চিত্রলেখা গুহ / নিখিল কৃষ্ণ মজুমদার / রাকিবুল হাসান</span></div>
+              <div class="index-row"><span>সগীর মোস্তফা / রানা মাসুদ / অপরাজিতা সংগীতা</span></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="footer-container"></div>
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+</html>
