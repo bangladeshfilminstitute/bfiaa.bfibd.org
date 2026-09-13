@@ -53,13 +53,14 @@
     }
     .conf-photo-wrapper {
       background: var(--dark-card);
-      border: 1px solid var(--border);
+      border: 1px solid rgba(200, 169, 81, 0.3);
       border-radius: var(--radius-lg);
       overflow: hidden;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+      box-shadow: 0 35px 80px rgba(0,0,0,0.8), 0 0 20px rgba(200, 169, 81, 0.1);
     }
     .main-photo-frame { width: 100%; height: 290px; background: #000; overflow: hidden; }
-    .main-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .main-photo-frame img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.4s ease; }
+    .main-photo-frame:hover img { transform: scale(1.03); }
     .gallery-thumbnails {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -84,19 +85,23 @@
       gap: 12px;
     }
     .conf-stat-box {
-      background: var(--dark-card);
-      border: 1px solid var(--border);
+      background: rgba(17, 17, 17, 0.4);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid rgba(200, 169, 81, 0.15);
       border-radius: var(--radius-md);
       padding: 18px 14px;
       text-align: center;
-      transition: border-color 0.2s;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
-    .conf-stat-box:hover { border-color: var(--gold); }
-    .conf-stat-val { font-family: var(--font-title); font-size: 2rem; color: var(--gold); line-height: 1; margin-bottom: 5px; }
+    .conf-stat-box:hover { border-color: rgba(200, 169, 81, 0.5); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(200, 169, 81, 0.1); }
+    .conf-stat-val { font-family: var(--font-title); font-size: 2.2rem; color: var(--gold); line-height: 1; margin-bottom: 5px; text-shadow: 0 0 10px rgba(200,169,81,0.2); }
     .conf-stat-lbl { font-family: var(--font-mono); font-size: 9.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--text-dim); }
     .conf-highlights {
-      background: var(--dark-card);
-      border: 1px solid var(--border);
+      background: rgba(17, 17, 17, 0.4);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(200, 169, 81, 0.15);
       border-radius: var(--radius-md);
       padding: 20px;
     }
@@ -165,12 +170,16 @@
       font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
       padding: 6px 14px; border-radius: 4px; background: var(--crimson); color: #fff; margin-bottom: 16px;
     }
-    .event-main-title { font-family: var(--font-title); font-size: clamp(1.8rem, 3.5vw, 2.8rem); color: #fff; line-height: 1.25; margin-bottom: 8px; }
+    .event-main-title { font-family: var(--font-title); font-size: clamp(2.2rem, 4.5vw, 3.5rem); color: #fff; line-height: 1.1; margin-bottom: 8px; text-shadow: 0 4px 15px rgba(0,0,0,0.8); }
     .event-bengali-title { font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Kalpurush', sans-serif; font-size: clamp(1.1rem, 2vw, 1.7rem); color: var(--gold); font-weight: 700; display: block; margin-bottom: 25px; line-height: 1.35; }
     .event-meta-table {
-      background: var(--dark-2); border: 1px solid var(--border); border-radius: var(--radius-md);
+      background: rgba(17, 17, 17, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(200, 169, 81, 0.15); 
+      border-radius: var(--radius-md);
       padding: 32px; margin-bottom: 35px;
       display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px;
+      box-shadow: 0 4px 25px rgba(0,0,0,0.4);
     }
     .meta-col label { display: block; font-family: var(--font-mono); font-size: 10px; letter-spacing: 2px; text-transform: uppercase; color: var(--text-dim); margin-bottom: 5px; }
     .meta-col span { font-family: var(--font-body); font-size: 14px; font-weight: 600; color: var(--text); }
@@ -499,8 +508,8 @@
             <div class="member-card">
               <div class="member-avatar">SA</div>
               <div class="member-info">
-                <div class="member-name">Syed Sabab Ali Arzu</div>
-                <div class="member-name-bn">সৈয়দ সাবাব আলী আরজু</div>
+                <div class="member-name">Syed Shabab Ali Arzoo</div>
+                <div class="member-name-bn">সৈয়দ শাবাব আলী আরজু</div>
                 <div class="member-role">Advisor 02 · 2019–21</div>
               </div>
             </div>
