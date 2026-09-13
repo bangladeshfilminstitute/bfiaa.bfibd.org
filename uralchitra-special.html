@@ -211,30 +211,63 @@
     .index-row span:first-child { flex: 1; padding-right: 20px; }
     .index-row span:last-child { color: var(--gold); font-family: var(--font-mono); font-size: 12px; align-self: center; }
 
+  
+    @media (max-width: 900px) {
+      .event-detail-grid {
+        grid-template-columns: 1fr;
+      }
+      .event-poster-wrapper {
+        position: relative !important;
+        top: 0 !important;
+        max-width: 320px;
+        margin: 0 auto 40px;
+      }
+      .left-sidebar-widget {
+        max-width: 320px;
+        margin: 40px auto 0;
+      }
+    }
+    
+    .left-sidebar-widget {
+      margin-top: 40px; 
+      background: var(--dark-2); 
+      padding: 25px; 
+      border-radius: 8px; 
+      border: 1px solid var(--border);
+    }
+
   </style>
 </head>
 <body>
+<div class="site-wrapper">
 
-<nav class="navbar" aria-label="Main Navigation">
-  <div class="nav-container">
-    <div class="nav-logo">
-      <a href="index.html">
-        <img src="images/bfiaa-logo.png" alt="BFIAA Logo"/>
-        <div class="logo-text">
-          <span class="logo-title">BFIAA</span>
-          <span class="logo-sub">Alumni Association</span>
-        </div>
-      </a>
-    </div>
-    <div class="nav-links">
-      <a href="index.html#home">Home</a>
-      <a href="index.html#magazine">Uralchitra</a>
-      <a href="index.html#events">Events</a>
-      <a href="index.html#contact">Contact</a>
-    </div>
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
+    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+
+  <ul class="nav-links" role="list">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
+  </ul>
+
+  <div class="nav-actions">
+    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" class="nav-bfi-logo" style="height: 16px; width: auto; background: #ffffff; padding: 2px 4px; border-radius: 3px;"/> BFI Home</a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
   </div>
+
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 </nav>
-<div class="nav-spacer"></div>
+<div class="nav-spacer" style="height: 70px;"></div>
 
 <main>
   <section class="event-page-hero">
@@ -255,8 +288,28 @@
             <img src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" alt="Uralchitra Special Edition Cover">
             <div class="magazine-spine-side"></div>
             <div class="mag-gloss-overlay"></div>
+          
+          </div>
+          
+          <div class="left-sidebar-widget">
+            <h4 style="color: var(--gold); font-family: var(--font-title); margin-bottom: 20px; font-size: 1.1rem;">Other Publications</h4>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+              <a href="index.html#magazine" style="text-decoration:none;">
+                <img src="images/uralchitra/Uralchitra number 1.png" style="width:100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2);" alt="Vol 1">
+                <p style="text-align:center; color:#fff; font-size:12px; margin-top:5px; font-family: var(--font-mono);">VOL 1</p>
+              </a>
+              <a href="index.html#magazine" style="text-decoration:none;">
+                <img src="images/uralchitra/Uralchitro number 2.jpg" style="width:100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2);" alt="Vol 2">
+                <p style="text-align:center; color:#fff; font-size:12px; margin-top:5px; font-family: var(--font-mono);">VOL 2</p>
+              </a>
+              <a href="index.html#magazine" style="text-decoration:none;">
+                <img src="images/uralchitra/Uralchitra number 3.jpg" style="width:100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.2);" alt="Vol 3">
+                <p style="text-align:center; color:#fff; font-size:12px; margin-top:5px; font-family: var(--font-mono);">VOL 3</p>
+              </a>
+            </div>
           </div>
         </div>
+
 
         <!-- Right: Details -->
         <div class="event-info-col">
@@ -359,9 +412,72 @@
   </section>
 </main>
 
-<div id="footer-container"></div>
-<script src="js/main.js"></script>
-<script src="js/footer.js"></script>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
 
+      <div class="footer-brand">
+                <div class="footer-logo">
+          <a href="https://bfiaa.bfibd.org/" style="display: inline-block; text-decoration: none;" aria-label="BFIAA Home">
+            <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" style="height: 48px; width: auto;" onerror="this.style.display='none'"/>
+          </a>
+        </div>
+        <p class="footer-brand-desc">
+          The official alumni association of the Bangladesh Film Institute —
+          connecting 1000+ graduates across 86+ batches in a shared love of cinema.
+        </p>
+        <div class="footer-social">
+          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">🎬</a>
+          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="#" class="social-btn" title="YouTube">▶</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">
+        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
+      </p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
+        A SUBDOMAIN OF BFIBD.ORG →
+      </a>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
 </body>
 </html>
