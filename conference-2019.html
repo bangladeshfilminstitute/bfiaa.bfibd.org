@@ -18,9 +18,24 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 
   <style>
+    /* Absolute suppression of any hover movement or zoom */
+    .member-card:hover,
+    .president-card:hover,
+    .conf-stat-box:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .thumb-item:hover,
+    .main-photo-frame:hover img {
+      transform: none !important;
+    }
+    .member-card:hover {
+      border-color: var(--gold) !important;
+      background: rgba(200, 169, 81, 0.08) !important;
+      box-shadow: 0 0 25px rgba(200, 169, 81, 0.2), inset 0 0 15px rgba(200, 169, 81, 0.04) !important;
+    }
     .conference-page-hero {
       background: linear-gradient(180deg, rgba(20,0,0,0.7) 0%, var(--dark) 100%);
       padding: 40px 0 60px;
