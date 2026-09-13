@@ -43,6 +43,7 @@ html {
 
 body {
   background: var(--dark);
+  background-image: radial-gradient(circle at 50% 0%, #1a1a1a 0%, var(--dark) 70%);
   color: var(--text);
   font-family: var(--font-body);
   font-size: 16px;
@@ -415,7 +416,7 @@ a { text-decoration: none; color: inherit; }
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--crimson);
+  background: linear-gradient(135deg, var(--crimson-light), var(--crimson));
   color: #fff;
   font-family: var(--font-body);
   font-size: 13px;
@@ -424,15 +425,15 @@ a { text-decoration: none; color: inherit; }
   text-transform: uppercase;
   padding: 14px 28px;
   border-radius: var(--radius);
-  border: 2px solid var(--crimson);
+  border: none;
   cursor: pointer;
   transition: all var(--transition);
+  box-shadow: 0 4px 15px rgba(139, 0, 0, 0.2);
 }
 .btn-primary:hover {
-  background: var(--crimson-light);
-  border-color: var(--crimson-light);
+  background: linear-gradient(135deg, #c42929, var(--crimson-light));
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(139,0,0,0.4);
+  box-shadow: 0 8px 24px rgba(139,0,0,0.5);
 }
 .btn-secondary {
   display: inline-flex;
@@ -821,8 +822,9 @@ section { padding: 90px 24px; }
 }
 .member-card:hover {
   border-color: var(--border-bright);
-  background: rgba(200,169,81,0.04);
-  transform: translateX(3px);
+  background: rgba(200,169,81,0.06);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(200, 169, 81, 0.1);
 }
 .member-avatar {
   width: 48px;
