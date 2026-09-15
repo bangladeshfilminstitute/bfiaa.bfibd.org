@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Syed Oasiuddin Ahmed — Filmmaker | BFIAA</title>
+  <meta name="description" content="Film profile of Syed Oasiuddin Ahmed — filmmaker, documentary director and screenwriter. BFIAA Alumni member."/>
+  <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#8B0000"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=3.3">
+  <style>
+    /* Override global style.css section padding */
+    section { padding: 0 !important; }
+
+    :root { --profile-gold: #c9a84c; --profile-dim: rgba(255,255,255,0.55); --card-bg: rgba(255,255,255,0.03); --card-border: rgba(255,255,255,0.08); }
+
+    /* Ticker */
+    .profile-ticker { background:#0a0a0a; border-bottom:1px solid rgba(255,255,255,0.08); overflow:hidden; white-space:nowrap; padding:8px 0; }
+    .profile-ticker span { display:inline-block; animation:ticker 32s linear infinite; font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:2px; color:#c9a84c; text-transform:uppercase; }
+    @keyframes ticker { 0%{transform:translateX(100vw);} 100%{transform:translateX(-100%);} }
+
+    /* Hero */
+    .profile-hero { background:linear-gradient(160deg,#0d0d0d 0%,#1a0a0a 50%,#0d0d0d 100%); border-bottom:1px solid rgba(255,255,255,0.08); padding:clamp(50px,8vw,90px) 0 clamp(15px,2vw,25px); position:relative; overflow:hidden; }
+    .profile-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 60% 60% at 70% 40%,rgba(184,15,10,0.12) 0%,transparent 70%); pointer-events:none; }
+    .profile-hero-inner { max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:300px 1fr; gap:60px; align-items:center; }
+    .profile-photo-frame { width:260px; height:320px; border-radius:4px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.8),0 0 0 1px rgba(201,168,76,0.2); position:relative; margin:0 auto; }
+    .profile-photo-frame img { width:100%; height:100%; object-fit:cover; object-position:top center; filter:grayscale(15%) contrast(1.05); transition:filter 0.5s; }
+    .profile-photo-frame:hover img { filter:grayscale(0%) contrast(1.1); }
+    .profile-photo-frame::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 55%,rgba(13,13,13,0.88) 100%); }
+    .photo-badge { position:absolute; bottom:12px; left:0; right:0; text-align:center; z-index:2; }
+    .photo-badge span { background:var(--crimson,#b80f0a); color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; padding:5px 12px; border-radius:2px; display:inline-block; }
+    .profile-info-col { padding:0; }
+    .batch-label { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:3px; color:#c9a84c; text-transform:uppercase; margin-bottom:14px; display:flex; align-items:center; gap:10px; }
+    .batch-label::before { content:''; width:30px; height:1px; background:#c9a84c; }
+    .profile-name { font-family:'Cinzel',serif; font-size:clamp(2rem,4.5vw,3.4rem); font-weight:700; color:#fff; line-height:1.15; margin:0 0 6px; }
+    .profile-name-bn { font-family:'Hind Siliguri',sans-serif; font-size:clamp(1rem,2.5vw,1.25rem); color:#c9a84c; margin-bottom:22px; opacity:0.85; }
+    .roles { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px; }
+    .role-tag { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; padding:5px 14px; border:1px solid rgba(201,168,76,0.3); border-radius:2px; color:#c9a84c; }
+    .role-tag.primary { background:rgba(201,168,76,0.1); border-color:rgba(201,168,76,0.5); }
+    .profile-bio { font-family:'Plus Jakarta Sans',sans-serif; font-size:1.02rem; color:rgba(255,255,255,0.72); line-height:1.78; max-width:560px; margin-bottom:30px; }
+    .stats { display:flex; gap:28px; flex-wrap:wrap; }
+    .stat .num { font-family:'Cinzel',serif; font-size:2rem; font-weight:700; color:#b80f0a; display:block; line-height:1; }
+    .stat .lbl { font-family:'JetBrains Mono',monospace; font-size:0.62rem; letter-spacing:2px; color:rgba(255,255,255,0.4); text-transform:uppercase; margin-top:4px; display:block; }
+
+    /* Subnav */
+    .profile-subnav { background:rgba(10,10,10,0.96); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,0.08); position:sticky; top:70px; z-index:100; }
+    .subnav-inner { max-width:1100px; margin:0 auto; padding:0 24px; display:flex; overflow-x:auto; }
+    .subnav-inner::-webkit-scrollbar { display:none; }
+    .pnav-link { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); text-decoration:none; padding:14px 20px; border-bottom:2px solid transparent; white-space:nowrap; transition:color 0.2s,border-color 0.2s; }
+    .pnav-link:hover,.pnav-link.active { color:#c9a84c; border-bottom-color:#c9a84c; }
+
+    /* Sections */
+    .psec { max-width:1100px; margin:0 auto; padding:clamp(20px,2vw,30px) 24px; }
+    .ps-label { font-family:'JetBrains Mono',monospace; font-size:0.66rem; letter-spacing:3px; color:#c9a84c; text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:12px; }
+    .ps-label::after { content:''; flex:1; height:1px; background:rgba(201,168,76,0.18); }
+    .ps-title { font-family:'Cinzel',serif; font-size:clamp(1.4rem,3vw,2rem); color:#fff; margin:0 0 16px; }
+
+    /* Film cards */
+    .films-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr)); gap:24px; }
+    .film-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; overflow:hidden; transition:border-color 0.3s,box-shadow 0.3s; display:flex; flex-direction:column; }
+    .film-card:hover { border-color:rgba(201,168,76,0.8); box-shadow:0 0 20px rgba(201,168,76,0.35), 0 12px 40px rgba(0,0,0,0.6); }
+    .fcard-head { background:linear-gradient(135deg,rgba(184,15,10,0.18),rgba(0,0,0,0.45)); padding:22px 22px 16px; border-bottom:1px solid rgba(255,255,255,0.08); position:relative; }
+    .ftype { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:#b80f0a; border:1px solid rgba(184,15,10,0.4); padding:3px 8px; border-radius:2px; display:inline-block; margin-bottom:10px; }
+    .ftype.doc { color:#c9a84c; border-color:rgba(201,168,76,0.4); }
+    .fthumb { width:100%; height:180px; background-color:#000; background-size:cover; background-position:center; border-bottom:1px solid rgba(255,255,255,0.08); }
+    .fposter { width:100%; height:400px; background-color:#050505; background-size:contain; background-repeat:no-repeat; background-position:center; border-bottom:1px solid rgba(255,255,255,0.08); }
+    .fyear { position:absolute; top:18px; right:18px; font-family:'Cinzel',serif; font-size:1.5rem; font-weight:700; color:rgba(201,168,76,0.6); line-height:1; }
+    .ftitle-en { font-family:'Cinzel',serif; font-size:1.15rem; font-weight:700; color:#fff; margin:0 0 4px; line-height:1.3; }
+    .ftitle-bn { font-family:'Hind Siliguri',sans-serif; font-size:0.9rem; color:#c9a84c; opacity:0.8; }
+    .fcard-body { padding:18px 22px; flex:1; display:flex; flex-direction:column; gap:12px; }
+    .fmeta { display:flex; flex-wrap:wrap; gap:8px 14px; }
+    .fmeta-item { display:flex; align-items:center; gap:5px; font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:rgba(255,255,255,0.5); }
+    .fmeta-item .ic { color:#c9a84c; }
+    .fdesc { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.87rem; color:rgba(255,255,255,0.58); line-height:1.65; margin:0; }
+    .watch-btn { display:inline-flex; align-items:center; gap:8px; background:#b80f0a; color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; padding:10px 18px; border-radius:4px; text-decoration:none; margin-top:auto; transition:background 0.2s,box-shadow 0.2s; align-self:flex-start; }
+    .watch-btn:hover { background:#8b0000; box-shadow:0 4px 16px rgba(184,15,10,0.4); }
+    .watch-btn .pico { width:18px; height:18px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.55rem; }
+    .no-link { font-family:'JetBrains Mono',monospace; font-size:0.63rem; color:rgba(255,255,255,0.2); letter-spacing:1px; margin-top:auto; padding-top:10px; border-top:1px solid rgba(255,255,255,0.06); }
+
+    /* Divider */
+    .strip-div { display:flex; align-items:center; gap:16px; margin:8px 0 20px; overflow:hidden; }
+    .strip-div::before,.strip-div::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent); }
+    .strip-div span { font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:rgba(255,255,255,0.2); white-space:nowrap; letter-spacing:2px; text-transform:uppercase; }
+
+    /* Table */
+    .tbl-wrap { overflow-x:auto; border-radius:8px; border:1px solid rgba(255,255,255,0.08); margin-bottom:24px; }
+    .assist-tbl { width:100%; border-collapse:collapse; font-family:'Plus Jakarta Sans',sans-serif; }
+    .assist-tbl thead tr { background:rgba(184,15,10,0.13); border-bottom:1px solid rgba(184,15,10,0.25); }
+    .assist-tbl thead th { font-family:'JetBrains Mono',monospace; font-size:0.63rem; letter-spacing:2px; text-transform:uppercase; color:#c9a84c; padding:13px 20px; text-align:left; white-space:nowrap; }
+    .assist-tbl tbody tr { border-bottom:1px solid rgba(255,255,255,0.06); transition:background 0.2s; }
+    .assist-tbl tbody tr:hover { background:rgba(255,255,255,0.025); }
+    .assist-tbl tbody tr:last-child { border-bottom:none; }
+    .assist-tbl td { padding:13px 20px; font-size:0.88rem; color:rgba(255,255,255,0.72); vertical-align:middle; }
+    .tfilm-name { font-weight:600; color:#fff; }
+    .tfilm-bn { font-family:'Hind Siliguri',sans-serif; font-size:0.78rem; color:#c9a84c; opacity:0.7; display:block; margin-top:2px; }
+    .yr { font-family:'JetBrains Mono',monospace; font-size:0.8rem; color:#c9a84c; font-weight:600; }
+    .pill { font-family:'JetBrains Mono',monospace; font-size:0.58rem; letter-spacing:1.5px; text-transform:uppercase; padding:3px 10px; border-radius:2px; white-space:nowrap; }
+    .pill.feat { background:rgba(184,15,10,0.18); color:#ff7070; border:1px solid rgba(184,15,10,0.3); }
+    .pill.docu { background:rgba(201,168,76,0.1); color:#c9a84c; border:1px solid rgba(201,168,76,0.3); }
+
+    /* Timeline */
+    .timeline { position:relative; padding-left:32px; }
+    .timeline::before { content:''; position:absolute; left:6px; top:6px; bottom:6px; width:1px; background:linear-gradient(to bottom,#b80f0a,transparent); }
+    .tl-item { position:relative; margin-bottom:26px; }
+    .tl-item::before { content:''; position:absolute; left:-29px; top:6px; width:8px; height:8px; border-radius:50%; background:#b80f0a; box-shadow:0 0 0 2px rgba(184,15,10,0.3); }
+    .tl-item:first-child::before { background:#c9a84c; box-shadow:0 0 0 2px rgba(201,168,76,0.3); }
+    .tl-year { font-family:'JetBrains Mono',monospace; font-size:0.63rem; letter-spacing:2px; color:#c9a84c; margin-bottom:4px; }
+    .tl-text { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.6; }
+    .tl-text strong { color:#fff; }
+
+    /* Contact */
+    .contact-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr)); gap:16px; }
+    .contact-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:18px 22px; display:flex; align-items:center; gap:16px; text-decoration:none; transition:border-color 0.2s,box-shadow 0.2s; }
+    .contact-card:hover { border-color:rgba(201,168,76,0.3); box-shadow:0 8px 24px rgba(0,0,0,0.4); }
+    .contact-card .ico { font-size:1.3rem; width:40px; height:40px; background:rgba(201,168,76,0.08); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .contact-card .info .lbl { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:3px; }
+    .contact-card .info .val { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.88rem; color:#fff; font-weight:600; }
+
+    /* Backgrounds */
+    .bg-alt { background:rgba(255,255,255,0.015); border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06); }
+
+    /* Mobile */
+    @media(max-width:768px){
+      .profile-hero-inner { grid-template-columns:1fr; gap:28px; }
+      .profile-photo-frame { width:200px; height:250px; margin:0 auto; }
+      .profile-info-col { padding-bottom:28px; text-align:center; }
+      .batch-label { justify-content:center; } .batch-label::before { display:none; }
+      .roles { justify-content:center; }
+      .profile-bio { margin:0 auto 28px; }
+      .stats { justify-content:center; gap:20px; }
+    }
+    @media(max-width:480px){
+      .pnav-link { padding:12px 13px; font-size:0.6rem; }
+      .profile-subnav { top:60px; }
+      .films-grid { grid-template-columns:1fr; }
+      .assist-tbl thead { display:none; }
+      .assist-tbl td { display:block; padding:6px 14px; }
+      .assist-tbl tr { display:block; border-bottom:1px solid rgba(255,255,255,0.06); padding:8px 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="site-wrapper">
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration:none;" aria-label="Homepage">
+    <img src="../images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;">
+      <img src="../images/bfi-logo.png" alt="BFI" class="nav-bfi-logo" style="height:16px;width:auto;background:#fff;padding:2px 4px;border-radius:3px;"/> BFI Home
+    </a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="menu">
+  <a href="https://bfiaa.bfibd.org/" role="menuitem">Home</a>
+  <a href="https://bfiaa.bfibd.org/#about" role="menuitem">About BFIAA</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2021" role="menuitem">Conference 2021</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2019" role="menuitem">Conference 2019</a>
+  <a href="https://bfiaa.bfibd.org/#committee" role="menuitem">Committee</a>
+  <a href="https://bfiaa.bfibd.org/#events" role="menuitem">Events</a>
+  <a href="https://bfiaa.bfibd.org/#magazine" role="menuitem">Uralchitra</a>
+  <a href="https://bfiaa.bfibd.org/#picnic" role="menuitem">Picnic</a>
+  <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" role="menuitem" target="_blank" rel="noopener">Join Us</a>
+  <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
+  <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
+</div>
+
+<div class="nav-spacer" style="height:70px;"></div>
+
+<!-- Ticker -->
+<div class="profile-ticker">
+  <span>&#9654; BFIAA ALUMNI PROFILE &nbsp;&middot;&nbsp; SYED OASIUDDIN AHMED &nbsp;&middot;&nbsp; FILMMAKER &amp; DOCUMENTARY DIRECTOR &nbsp;&middot;&nbsp; KHULNA &mdash; DHAKA, BANGLADESH &nbsp;&nbsp;&nbsp;&#9654; BFIAA ALUMNI PROFILE &nbsp;&middot;&nbsp; SYED OASIUDDIN AHMED &nbsp;&middot;&nbsp; FILMMAKER &amp; DOCUMENTARY DIRECTOR &nbsp;&middot;&nbsp; KHULNA &mdash; DHAKA, BANGLADESH &nbsp;&nbsp;&nbsp;</span>
+</div>
+
+<!-- HERO -->
+<section class="profile-hero">
+  <div class="profile-hero-inner">
+    <div>
+      <div class="profile-photo-frame">
+        <img src="../Alumni members indivisual pages/Syed Oasi Uddin Ahmed.jpg" alt="Syed Oasiuddin Ahmed"/>
+        <div class="photo-badge"><span>&#127916; BFIAA Alumni &middot; 2009</span></div>
+      </div>
+    </div>
+    <div class="profile-info-col">
+      <div class="batch-label">Alumni Member &middot; BFI Film Appreciation Course</div>
+      <h1 class="profile-name">Syed Oasiuddin<br>Ahmed</h1>
+      <div class="profile-name-bn">&#x09B8;&#x09C8;&#x09AF;&#x09BC;&#x09A6; &#x993;&#x09AF;&#x09BC;&#x09BE;&#x09B8;&#x09BF;&#x0989;&#x09A6;&#x09CD;&#x09A6;&#x09BF;&#x09A8; &#x986;&#x09B9;&#x09AE;&#x09C7;&#x09A6;</div>
+      <div class="roles">
+        <span class="role-tag primary">Documentary Filmmaker</span>
+        <span class="role-tag">Screenwriter</span>
+        <span class="role-tag">Producer</span>
+        <span class="role-tag">Assistant Director</span>
+      </div>
+      <p class="profile-bio">
+        A passionate documentary filmmaker and screenwriter from Khulna, Bangladesh.
+        A graduate of the Bangladesh Film Institute (2009), Syed Oasiuddin Ahmed has dedicated
+        over a decade to crafting intimate, socially conscious films that illuminate the lives
+        and stories of ordinary people. His works span documentaries and short fiction films,
+        marked by a humane gaze and quiet visual poetry.
+      </p>
+      <div class="stats">
+        <div class="stat"><span class="num">5</span><span class="lbl">Films Directed</span></div>
+        <div class="stat"><span class="num">8</span><span class="lbl">Films Assisted</span></div>
+        <div class="stat"><span class="num">13+</span><span class="lbl">Years Active</span></div>
+        <div class="stat"><span class="num">2012</span><span class="lbl">Debut</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STICKY SUBNAV -->
+<div class="profile-subnav">
+  <div class="subnav-inner">
+    <a href="#films-director" class="pnav-link active">As Director</a>
+    <a href="#films-assistant" class="pnav-link">As Assistant</a>
+    <a href="#education" class="pnav-link">Training</a>
+    <a href="#contact" class="pnav-link">Contact</a>
+  </div>
+</div>
+
+<!-- FILMS AS DIRECTOR -->
+<section id="films-director" style="background:var(--dark,#0d0d0d);">
+  <div class="psec">
+    <div class="ps-label">Filmography &mdash; Director &amp; Producer</div>
+    <h2 class="ps-title" style="margin-bottom:8px;">Films as Director</h2>
+    
+    <h3 style="font-family:'Cinzel',serif; font-size:1.1rem; color:rgba(255,255,255,0.7); margin: 30px 0 20px; letter-spacing:1px; text-transform:uppercase;">Available Online</h3>
+    <div class="films-grid">
+
+      <div class="film-card">
+        <div class="fthumb" style="background-image:url('https://img.youtube.com/vi/VZ3CPW9hlb4/hqdefault.jpg');"></div>
+        <div class="fcard-head">
+          <span class="ftype">Short Film</span>
+          <div class="fyear">2015</div>
+          <div class="ftitle-en">Madhukar &mdash; Way of Life</div>
+          <div class="ftitle-bn">&#x09AE;&#x09A7;&#x09C1;&#x0995;&#x09B0;</div>
+        </div>
+        <div class="fcard-body">
+          <div class="fmeta">
+            <span class="fmeta-item"><span class="ic">&#9202;</span> 10 minutes</span>
+            <span class="fmeta-item"><span class="ic">&#127902;</span> HDTV</span>
+            <span class="fmeta-item"><span class="ic">&#128197;</span> 2015</span>
+          </div>
+          <p class="fdesc">An observational short film about begging as a way of life &mdash; examining the quiet dignity and resilience of those living on the margins of society.</p>
+          <a href="https://youtu.be/VZ3CPW9hlb4" target="_blank" rel="noopener" class="watch-btn">
+            <span class="pico">&#9654;</span> Watch on YouTube
+          </a>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <div class="fthumb" style="background-image:url('https://img.youtube.com/vi/cTTfVWE_uxk/hqdefault.jpg');"></div>
+        <div class="fcard-head">
+          <span class="ftype">Short Film</span>
+          <div class="fyear">2020</div>
+          <div class="ftitle-en">Phera &mdash; Return</div>
+          <div class="ftitle-bn">&#x09AB;&#x09C7;&#x09B0;&#x09BE;</div>
+        </div>
+        <div class="fcard-body">
+          <div class="fmeta">
+            <span class="fmeta-item"><span class="ic">&#9202;</span> 31 minutes</span>
+            <span class="fmeta-item"><span class="ic">&#127902;</span> 2K Digital</span>
+            <span class="fmeta-item"><span class="ic">&#128197;</span> 2020</span>
+          </div>
+          <p class="fdesc">A visually layered meditation on the concept of return &mdash; to one's roots, to memory, to the people and places that define who we are.</p>
+          <a href="https://youtu.be/cTTfVWE_uxk" target="_blank" rel="noopener" class="watch-btn">
+            <span class="pico">&#9654;</span> Watch on YouTube
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <h3 style="font-family:'Cinzel',serif; font-size:1.1rem; color:rgba(255,255,255,0.7); margin: 50px 0 20px; letter-spacing:1px; text-transform:uppercase; border-top:1px solid rgba(255,255,255,0.08); padding-top:40px;">Other Works</h3>
+    <div class="films-grid">
+
+      <div class="film-card">
+        <div class="fposter" style="background-image:url('../images/syed-kumar-kahon.jpg');"></div>
+        <div class="fcard-head">
+          <span class="ftype doc">Documentary</span>
+          <div class="fyear">2012</div>
+          <div class="ftitle-en">Kumar Kahon</div>
+          <div class="ftitle-bn">&#x0995;&#x09C1;&#x09AE;&#x09BE;&#x09B0; &#x0995;&#x09BE;&#x09B9;&#x09A8;</div>
+        </div>
+        <div class="fcard-body">
+          <div class="fmeta">
+            <span class="fmeta-item"><span class="ic">&#9202;</span> 40 minutes</span>
+            <span class="fmeta-item"><span class="ic">&#127902;</span> Digital</span>
+            <span class="fmeta-item"><span class="ic">&#128197;</span> 2012</span>
+          </div>
+          <p class="fdesc">A documentary exploring the life, communities, and culture along the Kumar River in Bangladesh.</p>
+          <div class="no-link">&#128274; Not publicly available online</div>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <div class="fposter" style="background-image:url('../images/syed-water-hyacinth.jpg');"></div>
+        <div class="fcard-head">
+          <span class="ftype doc">Documentary</span>
+          <div class="fyear">2013</div>
+          <div class="ftitle-en">The Soul of Water &mdash; Water Hyacinth</div>
+          <div class="ftitle-bn">&#x0995;&#x099A;&#x09C1;&#x09B0;&#x09BF;&#x09AA;&#x09BE;&#x09A8;&#x09BE;</div>
+        </div>
+        <div class="fcard-body">
+          <div class="fmeta">
+            <span class="fmeta-item"><span class="ic">&#9202;</span> 25 minutes</span>
+            <span class="fmeta-item"><span class="ic">&#127902;</span> Digital</span>
+            <span class="fmeta-item"><span class="ic">&#128197;</span> 2013</span>
+          </div>
+          <p class="fdesc">A portrait of life on Bangladesh's waterways, seen through the metaphor of the water hyacinth &mdash; an invasive plant woven into the daily rhythm of riverine communities.</p>
+          <div class="no-link">&#128274; Not publicly available online</div>
+        </div>
+      </div>
+
+      <div class="film-card">
+        <div class="fposter" style="background-image:url('../images/syed-third-side.jpg');"></div>
+        <div class="fcard-head">
+          <span class="ftype doc">Documentary</span>
+          <div class="fyear">2025</div>
+          <div class="ftitle-en">Third Owner</div>
+          <div class="ftitle-bn">&#x09A4;&#x09C3;&#x09A4;&#x09C0;&#x09AF;&#x09BC; &#x09AA;&#x0995;&#x09CD;&#x09B7;</div>
+        </div>
+        <div class="fcard-body">
+          <div class="fmeta">
+            <span class="fmeta-item"><span class="ic">&#9202;</span> 23 minutes</span>
+            <span class="fmeta-item"><span class="ic">&#127902;</span> HDTV</span>
+            <span class="fmeta-item"><span class="ic">&#128197;</span> 2025</span>
+          </div>
+          <p class="fdesc">His most recent work &mdash; exploring multiple perspectives on a social issue, giving voice to those rarely heard in mainstream narratives. Released in 2025.</p>
+          <div class="no-link">&#128274; Not yet publicly available</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FILMS AS ASSISTANT -->
+<section id="films-assistant" class="bg-alt">
+  <div class="psec">
+    <div class="ps-label">Filmography &mdash; Assistant Director</div>
+    <h2 class="ps-title">Films as Assistant Director</h2>
+
+    <div class="strip-div"><span>Feature Films</span></div>
+    <div class="tbl-wrap">
+      <table class="assist-tbl">
+        <thead><tr><th>Title</th><th>Type</th><th>Duration</th><th>Format</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="tfilm-name">A Tree Without Roots</span><span class="tfilm-bn">&#x09B2;&#x09BE;&#x09B2;&#x09B8;&#x09BE;&#x09B2;&#x09C1; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill feat">Feature</span></td>
+            <td>110 min</td>
+            <td>35mm &middot; Colour</td>
+            <td class="yr">2001</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">Lalon</span><span class="tfilm-bn">&#x09B2;&#x09BE;&#x09B2;&#x09A8; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill feat">Feature</span></td>
+            <td>140 min</td>
+            <td>35mm &middot; Colour</td>
+            <td class="yr">2004</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">The Sister</span><span class="tfilm-bn">&#x09B0;&#x09BE;&#x09AC;&#x09C7;&#x09AF;&#x09BC;&#x09BE; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill feat">Feature</span></td>
+            <td>105 min</td>
+            <td>35mm &middot; Colour</td>
+            <td class="yr">2007</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">The Drummer</span><span class="tfilm-bn">&#x099C;&#x09C0;&#x09AC;&#x09A8;&#x09A7;&#x09C1;&#x09B2;&#x09BF; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill feat">Feature</span></td>
+            <td>90 min</td>
+            <td>2K &middot; Colour</td>
+            <td class="yr">2014</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">Quiet Flows the River Rupsa</span><span class="tfilm-bn">&#x09B0;&#x09C2;&#x09AA;&#x09B8;&#x09BE; &#x09A8;&#x09A6;&#x09C0;&#x09B0; &#x09AC;&#x09BE;&#x0981;&#x0995;&#x09C7; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill feat">Feature</span></td>
+            <td>137 min</td>
+            <td>2K &middot; Colour</td>
+            <td class="yr">2020</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="strip-div"><span>Documentaries</span></div>
+    <div class="tbl-wrap">
+      <table class="assist-tbl">
+        <thead><tr><th>Title</th><th>Type</th><th>Duration</th><th>Format</th><th>Year</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><span class="tfilm-name">'The Japanese Wife'</span><span class="tfilm-bn">&#x099C;&#x09BE;&#x09AA;&#x09BE;&#x09A8;&#x09BF; &#x09AC;&#x09A7;&#x09C2; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill docu">Documentary</span></td>
+            <td>67 min</td>
+            <td>Digital</td>
+            <td class="yr">2012</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">The Borderline</span><span class="tfilm-bn">&#x09B8;&#x09C0;&#x09AE;&#x09BE;&#x09A8;&#x09CD;&#x09A4;&#x09B0;&#x09C7;&#x0996;&#x09BE; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill docu">Documentary</span></td>
+            <td>124 min</td>
+            <td>Digital</td>
+            <td class="yr">2019</td>
+          </tr>
+          <tr>
+            <td><span class="tfilm-name">The Saga of the Motuas</span><span class="tfilm-bn">&#x09AE;&#x09A4;&#x09C1;&#x09AF;&#x09BC;&#x09BE;&#x09AE;&#x0999;&#x09CD;&#x0997;&#x09B2; &nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
+            <td><span class="pill docu">Documentary</span></td>
+            <td>100 min</td>
+            <td>HDTV</td>
+            <td class="yr">2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" style="background:var(--dark,#0d0d0d);">
+  <div class="psec">
+    <div class="ps-label">Training &amp; Education</div>
+    <h2 class="ps-title">Film Education &amp; Training</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(440px,100%),1fr));gap:40px;">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.63rem;letter-spacing:2px;color:#c9a84c;text-transform:uppercase;margin-bottom:20px;">Formal Education</div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-year">2006</div><div class="tl-text"><strong>B.A. (Pass)</strong></div></div>
+          <div class="tl-item"><div class="tl-year">2009</div><div class="tl-text"><strong>Film Appreciation Course</strong><br>Bangladesh Film Institute, Dhaka</div></div>
+          <div class="tl-item"><div class="tl-year">2010</div><div class="tl-text"><strong>Film Language Course</strong><br>Director: Dr. John D. Hood (Australia)</div></div>
+          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Aspects of Cinema: In Search of Reality</strong><br>Gaitri Chatterjee &mdash; Pune Film Institute, India</div></div>
+          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Language of Cinema</strong><br>Madhuja Mukherjee &mdash; Jadavpur University, India</div></div>
+          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Documentary Filmmaking Workshop</strong><br>Andreas Grafenstein, Documentary Filmmaker (Germany)</div></div>
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:0.63rem;letter-spacing:2px;color:#c9a84c;text-transform:uppercase;margin-bottom:20px;">Workshops &amp; Masterclasses</div>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Screenplay Writing Workshop</strong><br>Director: Tanvir Mokammel</div></div>
+          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Television Programme Making Workshop</strong><br>Kausar Chowdhury</div></div>
+          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Basic Cinematography Course</strong><br>Director: Saimandu Ray (India)</div></div>
+          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Documentary Filmmaking Workshop</strong><br>Director: Tanvir Mokammel</div></div>
+          <div class="tl-item"><div class="tl-year">2013</div><div class="tl-text"><strong>Sound Design Workshop</strong><br>Organised by BFDC &mdash; Director: Tapan Bhattacharya (India)</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-alt">
+  <div class="psec">
+    <div class="ps-label">Get in Touch</div>
+    <h2 class="ps-title">Contact</h2>
+    <div class="contact-grid">
+      <a href="mailto:tito.oasi@gmail.com" class="contact-card">
+        <div class="ico">&#9993;&#65039;</div>
+        <div class="info"><div class="lbl">Email</div><div class="val">tito.oasi@gmail.com</div></div>
+      </a>
+      <div class="contact-card" style="cursor:default;">
+        <div class="ico">&#128205;</div>
+        <div class="info"><div class="lbl">Based In</div><div class="val">Dhanmondi, Dhaka</div></div>
+      </div>
+      <div class="contact-card" style="cursor:default;">
+        <div class="ico">&#127968;</div>
+        <div class="info"><div class="lbl">Hometown</div><div class="val">Khulna, Bangladesh</div></div>
+      </div>
+    </div>
+    <div style="margin-top:50px;text-align:center;">
+      <a href="https://bfiaa.bfibd.org/" style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.35);text-decoration:none;border:1px solid rgba(255,255,255,0.1);padding:12px 24px;border-radius:4px;transition:all 0.2s;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,0.3)';" onmouseout="this.style.color='rgba(255,255,255,0.35)';this.style.borderColor='rgba(255,255,255,0.1)';">
+        &larr; Back to BFIAA Home
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="https://bfiaa.bfibd.org/" style="display:inline-block;text-decoration:none;" aria-label="BFIAA Home">
+            <img src="../images/bfiaa-logo.png" alt="BFIAA" style="height:48px;width:auto;" onerror="this.style.display='none'"/>
+          </a>
+        </div>
+        <p class="footer-brand-desc">The official alumni association of the Bangladesh Film Institute &mdash; connecting 1000+ graduates across 86+ batches in a shared love of cinema.</p>
+        <div class="footer-social">
+          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">&#127916;</a>
+          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="#" class="social-btn" title="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="../constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION &middot; bfiaa.bfibd.org</p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">A SUBDOMAIN OF BFIBD.ORG &rarr;</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+<script>
+  // Active subnav on scroll
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.pnav-link');
+  window.addEventListener('scroll', () => {
+    let cur = '';
+    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
+    navLinks.forEach(l => { l.classList.remove('active'); if (l.getAttribute('href') === '#' + cur) l.classList.add('active'); });
+  });
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      const href = link.getAttribute('href');
+      if (href.startsWith('#')) { e.preventDefault(); const t = document.querySelector(href); if (t) t.scrollIntoView({behavior:'smooth'}); }
+    });
+  });
+</script>
+</body>
+</html>
