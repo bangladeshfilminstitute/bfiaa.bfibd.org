@@ -11,144 +11,713 @@
   <meta property="og:image" content="https://bfiaa-bfibd.pages.dev/Alumni%20members%20indivisual%20pages/Syed%20Oasi%20Uddin%20Ahmed.jpg" />
   <meta property="og:url" content="https://bfiaa-bfibd.pages.dev/alumni/syed-oasiuddin-ahmed.html" />
   <meta property="og:type" content="profile" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Syed Oasiuddin Ahmed — Filmmaker | BFIAA" />
-  <meta name="twitter:description" content="Film profile of Syed Oasiuddin Ahmed — filmmaker, documentary director and screenwriter. BFIAA Alumni member." />
-  <meta name="twitter:image" content="https://bfiaa-bfibd.pages.dev/Alumni%20members%20indivisual%20pages/Syed%20Oasi%20Uddin%20Ahmed.jpg" />
   <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#8B0000"/>
+  <meta name="theme-color" content="#0b0f0e"/>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;500;600&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css?v=3.3">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css?v=4.0">
+  
   <style>
-    /* Override global style.css section padding */
-    section { padding: 0 !important; }
-
-    :root { --profile-gold: #c9a84c; --profile-dim: rgba(255,255,255,0.55); --card-bg: rgba(255,255,255,0.03); --card-border: rgba(255,255,255,0.08); }
-
-    /* Ticker */
-    .profile-ticker { background:#0a0a0a; border-bottom:1px solid rgba(255,255,255,0.08); overflow:hidden; white-space:nowrap; padding:8px 0; }
-    .profile-ticker span { display:inline-block; animation:ticker 32s linear infinite; font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:2px; color:#c9a84c; text-transform:uppercase; }
-    @keyframes ticker { 0%{transform:translateX(100vw);} 100%{transform:translateX(-100%);} }
-
-    /* Hero */
-    .profile-hero { background:linear-gradient(160deg,#0d0d0d 0%,#1a0a0a 50%,#0d0d0d 100%); border-bottom:1px solid rgba(255,255,255,0.08); padding:clamp(50px,8vw,90px) 0 clamp(15px,2vw,25px); position:relative; overflow:hidden; }
-    .profile-hero::before { content:''; position:absolute; inset:0; background:radial-gradient(ellipse 60% 60% at 70% 40%,rgba(184,15,10,0.12) 0%,transparent 70%); pointer-events:none; }
-    .profile-hero-inner { max-width:1100px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:300px 1fr; gap:60px; align-items:center; }
-    .profile-photo-frame { width:260px; height:320px; border-radius:4px; overflow:hidden; box-shadow:0 30px 80px rgba(0,0,0,0.8),0 0 0 1px rgba(201,168,76,0.2); position:relative; margin:0 auto; }
-    .profile-photo-frame img { width:100%; height:100%; object-fit:cover; object-position:top center; filter:grayscale(15%) contrast(1.05); transition:filter 0.5s; }
-    .profile-photo-frame:hover img { filter:grayscale(0%) contrast(1.1); }
-    .profile-photo-frame::after { content:''; position:absolute; inset:0; background:linear-gradient(to bottom,transparent 55%,rgba(13,13,13,0.88) 100%); }
-    .photo-badge { position:absolute; bottom:12px; left:0; right:0; text-align:center; z-index:2; }
-    .photo-badge span { background:var(--crimson,#b80f0a); color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; padding:5px 12px; border-radius:2px; display:inline-block; }
-    .profile-info-col { padding:0; }
-    .batch-label { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:3px; color:#c9a84c; text-transform:uppercase; margin-bottom:14px; display:flex; align-items:center; gap:10px; }
-    .batch-label::before { content:''; width:30px; height:1px; background:#c9a84c; }
-    .profile-name { font-family:'Cinzel',serif; font-size:clamp(2rem,4.5vw,3.4rem); font-weight:700; color:#fff; line-height:1.15; margin:0 0 6px; }
-    .profile-name-bn { font-family:'Hind Siliguri',sans-serif; font-size:clamp(1rem,2.5vw,1.25rem); color:#c9a84c; margin-bottom:22px; opacity:0.85; }
-    .roles { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:26px; }
-    .role-tag { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; padding:5px 14px; border:1px solid rgba(201,168,76,0.3); border-radius:2px; color:#c9a84c; }
-    .role-tag.primary { background:rgba(201,168,76,0.1); border-color:rgba(201,168,76,0.5); }
-    .profile-bio { font-family:'Plus Jakarta Sans',sans-serif; font-size:1.02rem; color:rgba(255,255,255,0.72); line-height:1.78; max-width:560px; margin-bottom:30px; }
-    .stats { display:flex; gap:28px; flex-wrap:wrap; }
-    .stat .num { font-family:'Cinzel',serif; font-size:2rem; font-weight:700; color:#b80f0a; display:block; line-height:1; }
-    .stat .lbl { font-family:'JetBrains Mono',monospace; font-size:0.62rem; letter-spacing:2px; color:rgba(255,255,255,0.4); text-transform:uppercase; margin-top:4px; display:block; }
-
-    /* Subnav */
-    .profile-subnav { background:rgba(10,10,10,0.96); backdrop-filter:blur(12px); border-bottom:1px solid rgba(255,255,255,0.08); position:sticky; top:70px; z-index:100; }
-    .subnav-inner { max-width:1100px; margin:0 auto; padding:0 24px; display:flex; overflow-x:auto; }
-    .subnav-inner::-webkit-scrollbar { display:none; }
-    .pnav-link { font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; color:rgba(255,255,255,0.4); text-decoration:none; padding:14px 20px; border-bottom:2px solid transparent; white-space:nowrap; transition:color 0.2s,border-color 0.2s; }
-    .pnav-link:hover,.pnav-link.active { color:#c9a84c; border-bottom-color:#c9a84c; }
-
-    /* Sections */
-    .psec { max-width:1100px; margin:0 auto; padding:clamp(20px,2vw,30px) 24px; }
-    .ps-label { font-family:'JetBrains Mono',monospace; font-size:0.66rem; letter-spacing:3px; color:#c9a84c; text-transform:uppercase; margin-bottom:10px; display:flex; align-items:center; gap:12px; }
-    .ps-label::after { content:''; flex:1; height:1px; background:rgba(201,168,76,0.18); }
-    .ps-title { font-family:'Cinzel',serif; font-size:clamp(1.4rem,3vw,2rem); color:#fff; margin:0 0 16px; }
-
-    /* Film cards */
-    .films-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr)); gap:24px; }
-    .film-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; overflow:hidden; transition:border-color 0.3s,box-shadow 0.3s; display:flex; flex-direction:column; }
-    .film-card:hover { border-color:rgba(201,168,76,0.8); box-shadow:0 0 20px rgba(201,168,76,0.35), 0 12px 40px rgba(0,0,0,0.6); }
-    .fcard-head { background:linear-gradient(135deg,rgba(184,15,10,0.18),rgba(0,0,0,0.45)); padding:22px 22px 16px; border-bottom:1px solid rgba(255,255,255,0.08); position:relative; }
-    .ftype { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:#b80f0a; border:1px solid rgba(184,15,10,0.4); padding:3px 8px; border-radius:2px; display:inline-block; margin-bottom:10px; }
-    .ftype.doc { color:#c9a84c; border-color:rgba(201,168,76,0.4); }
-    .fthumb { width:100%; height:180px; background-color:#000; background-size:cover; background-position:center; border-bottom:1px solid rgba(255,255,255,0.08); }
-    .fposter { width:100%; height:320px; background-color:#050505; background-size:contain; background-repeat:no-repeat; background-position:center; border-bottom:1px solid rgba(255,255,255,0.08); }
-    .fyear { position:absolute; top:18px; right:18px; font-family:'Cinzel',serif; font-size:1.5rem; font-weight:700; color:rgba(201,168,76,0.6); line-height:1; }
-    .ftitle-en { font-family:'Cinzel',serif; font-size:0.85rem; font-weight:700; color:#c9a84c; opacity:0.9; letter-spacing:0.5px; }
-    .ftitle-bn { font-family:'Hind Siliguri',sans-serif; font-size:1.2rem; font-weight:600; color:#fff; margin:0 0 4px; line-height:1.3; }
-    .fcard-body { padding:18px 22px; flex:1; display:flex; flex-direction:column; gap:12px; }
-    .fmeta { display:flex; flex-wrap:wrap; gap:8px 14px; }
-    .fmeta-item { display:flex; align-items:center; gap:5px; font-family:'JetBrains Mono',monospace; font-size:0.68rem; color:rgba(255,255,255,0.5); }
-    .fmeta-item .ic { color:#c9a84c; }
-    .fdesc { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.87rem; color:rgba(255,255,255,0.58); line-height:1.65; margin:0; }
-    .watch-btn { display:inline-flex; align-items:center; gap:8px; background:#b80f0a; color:#fff; font-family:'JetBrains Mono',monospace; font-size:0.68rem; letter-spacing:1.5px; text-transform:uppercase; padding:10px 18px; border-radius:4px; text-decoration:none; margin-top:auto; transition:background 0.2s,box-shadow 0.2s; align-self:flex-start; }
-    .watch-btn:hover { background:#8b0000; box-shadow:0 4px 16px rgba(184,15,10,0.4); }
-    .watch-btn .pico { width:18px; height:18px; background:rgba(255,255,255,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:0.55rem; }
-    .no-link { font-family:'JetBrains Mono',monospace; font-size:0.65rem; color:rgba(255,255,255,0.4); letter-spacing:1px; margin-top:auto; padding-top:10px; border-top:1px solid rgba(255,255,255,0.08); }
-
-    /* Divider */
-    .strip-div { display:flex; align-items:center; gap:16px; margin:8px 0 20px; overflow:hidden; }
-    .strip-div::before,.strip-div::after { content:''; flex:1; height:1px; background:linear-gradient(90deg,transparent,rgba(255,255,255,0.08),transparent); }
-    .strip-div span { font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:#c9a84c; opacity:0.8; white-space:nowrap; letter-spacing:3px; text-transform:uppercase; }
-
-    /* Table */
-    .tbl-wrap { overflow-x:auto; border-radius:8px; border:1px solid rgba(255,255,255,0.08); margin-bottom:24px; }
-    .assist-tbl { width:100%; border-collapse:collapse; font-family:'Plus Jakarta Sans',sans-serif; }
-    .assist-tbl thead tr { background:rgba(184,15,10,0.13); border-bottom:1px solid rgba(184,15,10,0.25); }
-    .assist-tbl thead th { font-family:'JetBrains Mono',monospace; font-size:0.63rem; letter-spacing:2px; text-transform:uppercase; color:#c9a84c; padding:13px 20px; text-align:left; white-space:nowrap; }
-    .assist-tbl tbody tr { border-bottom:1px solid rgba(255,255,255,0.06); transition:background 0.2s; }
-    .assist-tbl tbody tr:hover { background:rgba(255,255,255,0.025); }
-    .assist-tbl tbody tr:last-child { border-bottom:none; }
-    .assist-tbl td { padding:13px 20px; font-size:0.88rem; color:rgba(255,255,255,0.72); vertical-align:middle; }
-    .tfilm-name { font-size:0.8rem; color:#c9a84c; opacity:0.9; display:block; margin-top:3px; font-weight:500; }
-    .tfilm-bn { font-family:'Hind Siliguri',sans-serif; font-size:1.1rem; font-weight:600; color:#fff; display:block; }
-    .yr { font-family:'JetBrains Mono',monospace; font-size:0.8rem; color:#c9a84c; font-weight:600; }
-    .pill { font-family:'JetBrains Mono',monospace; font-size:0.58rem; letter-spacing:1.5px; text-transform:uppercase; padding:3px 10px; border-radius:2px; white-space:nowrap; }
-    .pill.feat { background:rgba(184,15,10,0.18); color:#ff7070; border:1px solid rgba(184,15,10,0.3); }
-    .pill.docu { background:rgba(201,168,76,0.1); color:#c9a84c; border:1px solid rgba(201,168,76,0.3); }
-
-    /* Timeline */
-    .timeline { position:relative; padding-left:32px; }
-    .timeline::before { content:''; position:absolute; left:6px; top:6px; bottom:6px; width:1px; background:linear-gradient(to bottom,#b80f0a,transparent); }
-    .tl-item { position:relative; margin-bottom:26px; }
-    .tl-item::before { content:''; position:absolute; left:-29px; top:6px; width:8px; height:8px; border-radius:50%; background:#b80f0a; box-shadow:0 0 0 2px rgba(184,15,10,0.3); }
-    .tl-item:first-child::before { background:#c9a84c; box-shadow:0 0 0 2px rgba(201,168,76,0.3); }
-    .tl-year { font-family:'JetBrains Mono',monospace; font-size:0.63rem; letter-spacing:2px; color:#c9a84c; margin-bottom:4px; }
-    .tl-text { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.88rem; color:rgba(255,255,255,0.72); line-height:1.6; }
-    .tl-text strong { color:#fff; }
-
-    /* Contact */
-    .contact-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(min(240px,100%),1fr)); gap:16px; }
-    .contact-card { background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:8px; padding:18px 22px; display:flex; align-items:center; gap:16px; text-decoration:none; transition:border-color 0.2s,box-shadow 0.2s; }
-    .contact-card:hover { border-color:rgba(201,168,76,0.3); box-shadow:0 8px 24px rgba(0,0,0,0.4); }
-    .contact-card .ico { font-size:1.3rem; width:40px; height:40px; background:rgba(201,168,76,0.08); border-radius:50%; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
-    .contact-card .info .lbl { font-family:'JetBrains Mono',monospace; font-size:0.6rem; letter-spacing:2px; text-transform:uppercase; color:rgba(255,255,255,0.4); margin-bottom:3px; }
-    .contact-card .info .val { font-family:'Plus Jakarta Sans',sans-serif; font-size:0.88rem; color:#fff; font-weight:600; }
-
-    /* Backgrounds */
-    .bg-alt { background:rgba(255,255,255,0.015); border-top:1px solid rgba(255,255,255,0.06); border-bottom:1px solid rgba(255,255,255,0.06); }
-
-    /* Mobile */
-    @media(max-width:768px){
-      .profile-hero-inner { grid-template-columns:1fr; gap:28px; }
-      .profile-photo-frame { width:200px; height:250px; margin:0 auto; }
-      .profile-info-col { padding-bottom:28px; text-align:center; }
-      .batch-label { justify-content:center; } .batch-label::before { display:none; }
-      .roles { justify-content:center; }
-      .profile-bio { margin:0 auto 28px; }
-      .stats { justify-content:center; gap:20px; }
+    /* Local Page Variables */
+    :root {
+      --alumni-bg: #0b0f0e;
+      --alumni-bg-soft: #121715;
+      --alumni-cream: #eee7d8;
+      --alumni-muted: #aaa89f;
+      --alumni-line: rgba(238,231,216,0.15);
+      --alumni-accent: #c9b48a;
     }
-    @media(max-width:480px){
-      .pnav-link { padding:12px 13px; font-size:0.6rem; }
-      .profile-subnav { top:60px; }
-      .films-grid { grid-template-columns:1fr; }
-      .assist-tbl thead { display:none; }
-      .assist-tbl td { display:block; padding:6px 14px; }
-      .assist-tbl tr { display:block; border-bottom:1px solid rgba(255,255,255,0.06); padding:8px 0; }
+
+    body {
+      background-color: var(--alumni-bg);
+      color: var(--alumni-cream);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Utility Overrides for this page to isolate from global css */
+    .alumni-page-wrapper section { padding: 0; background: transparent; }
+    
+    /* Typography */
+    .font-serif { font-family: 'Cinzel', serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .font-bn { font-family: 'Hind Siliguri', sans-serif; }
+    
+    .text-cream { color: var(--alumni-cream); }
+    .text-muted { color: var(--alumni-muted); }
+    .text-accent { color: var(--alumni-accent); }
+    
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 80px;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 55%;
+      filter: contrast(1.1) brightness(0.8) grayscale(15%);
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(11, 15, 14, 0.95) 0%, rgba(11, 15, 14, 0.6) 55%, transparent 100%),
+                  linear-gradient(to top, var(--alumni-bg) 0%, rgba(11, 15, 14, 0.3) 25%, transparent 60%);
+      z-index: 2;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 5% 40px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-portrait-float {
+      float: left;
+      width: 320px;
+      margin: 0 40px 20px 0;
+      border-radius: 4px;
+      border: 1px solid var(--alumni-line);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    @media (max-width: 768px) {
+      .about-portrait-float {
+        float: none;
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+    }
+    
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background-color: var(--alumni-accent);
+    }
+    
+    .hero-title {
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1.1;
+      font-weight: 500;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .hero-title-bn {
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 500;
+      margin: 0 0 25px;
+      opacity: 0.9;
+    }
+    
+    .hero-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+    
+    .role-pill {
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 1px solid var(--alumni-line);
+      padding: 6px 14px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+    }
+    
+    .hero-location {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.8;
+      margin-bottom: 35px;
+    }
+    
+    .hero-actions {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: var(--alumni-cream);
+      color: var(--alumni-bg);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid var(--alumni-cream);
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--alumni-cream);
+    }
+    
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--alumni-cream);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      border: 1px solid var(--alumni-line);
+    }
+    .btn-secondary:hover {
+      border-color: var(--alumni-cream);
+    }
+    
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      border-left: 1px solid var(--alumni-line);
+      padding-left: 40px;
+    }
+    
+    .stat-item .stat-num {
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .stat-item .stat-lbl {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    /* Layout Shared */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+    
+    .section-header {
+      margin-bottom: 50px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    /* About & Education */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 100px;
+    }
+    
+    .about-bio {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+    .about-bio p { margin-bottom: 1.5rem; }
+    
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .tl-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 25px;
+    }
+    .tl-item:last-child {
+      border-bottom: none;
+    }
+    .tl-year {
+      font-size: 0.85rem;
+      padding-top: 5px;
+    }
+    .tl-content {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .tl-content .tl-org {
+      font-size: 0.8rem;
+      margin-top: 4px;
+      display: block;
+    }
+    
+    /* Filmography */
+    .films-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      justify-content: center;
+      gap: 60px;
+      margin-bottom: 100px;
+    }
+    
+    .film-card {
+      display: flex;
+      flex-direction: column;
+      group: hover;
+    }
+    
+    .film-image-wrap {
+      width: 100%;
+      aspect-ratio: 2/3;
+      overflow: hidden;
+      margin-bottom: 20px;
+      position: relative;
+      background: var(--alumni-bg-soft);
+      border: 1px solid var(--alumni-line);
+    }
+    
+    .film-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    
+    .film-card:hover .film-image-wrap img {
+      transform: scale(1.05);
+    }
+    
+    .film-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 15, 14, 0.3);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .film-card:hover .film-overlay {
+      opacity: 1;
+    }
+    
+    .film-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 8px;
+    }
+    
+    .film-title-bn {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0 0 2px;
+      line-height: 1.2;
+    }
+    
+    .film-title-en {
+      font-size: 1rem;
+      margin: 0 0 15px;
+      letter-spacing: 0.5px;
+    }
+    
+    .film-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    
+    .film-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--alumni-cream);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .film-cta:hover { color: var(--alumni-accent); }
+    .film-cta.disabled { color: var(--alumni-muted); pointer-events: none; }
+    
+    /* Assistant Credits */
+    .credits-section {
+      margin-bottom: 100px;
+    }
+    .credits-group {
+      margin-bottom: 60px;
+    }
+    .credits-group-title {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: var(--alumni-accent);
+      text-align: center;
+    }
+    
+    .cinematic-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--alumni-line);
+      border-radius: 4px;
+      background: var(--alumni-bg-soft);
+    }
+    .cinematic-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 800px;
+    }
+    .cinematic-table th {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--alumni-muted);
+      padding: 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      background: rgba(0,0,0,0.2);
+    }
+    .cinematic-table td {
+      padding: 25px 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      vertical-align: middle;
+      color: var(--alumni-cream);
+    }
+    .cinematic-table tr:last-child td {
+      border-bottom: none;
+    }
+    .cinematic-table tr:hover td {
+      background: rgba(255,255,255,0.03);
+    }
+    
+    .ct-title-bn {
+      font-family: var(--font-bn, sans-serif);
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    .ct-title-en {
+      font-size: 0.9rem;
+      color: var(--alumni-muted);
+    }
+    
+    .ct-pill {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.65rem;
+      padding: 4px 10px;
+      border: 1px solid var(--alumni-accent);
+      color: var(--alumni-accent);
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .ct-meta {
+      font-family: var(--font-sans, sans-serif);
+      font-size: 0.95rem;
+    }
+    
+    .ct-year {
+      font-family: var(--font-mono, monospace);
+      font-size: 1.1rem;
+      color: var(--alumni-accent);
+    }
+    
+    /* Contact */
+    .contact-section {
+      background: var(--alumni-bg-soft);
+      padding: 80px 0;
+      border-top: 1px solid var(--alumni-line);
+      text-align: center;
+    }
+    .contact-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto 60px;
+    }
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      border: 1px solid var(--alumni-line);
+      background: var(--alumni-bg);
+    }
+    .contact-item-lbl {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      color: var(--alumni-muted);
+    }
+    .contact-item-val {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    .contact-item a {
+      color: var(--alumni-accent);
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .contact-item a:hover { opacity: 0.8; }
+    
+    /* Scroll to Top Button */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 45px;
+      height: 45px;
+      background: var(--alumni-bg-soft);
+      border: 1px solid var(--alumni-accent);
+      color: var(--alumni-accent);
+      border-radius: 50%;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .scroll-top-btn:hover {
+      background: var(--alumni-accent);
+      color: var(--alumni-bg);
+    }
+    
+    /* ===========================
+       RESPONSIVE BREAKPOINTS
+       =========================== */
+
+    /* Large Tablet / Small Desktop (max 1200px) */
+    @media (max-width: 1200px) {
+      .hero-title { font-size: 5rem; }
+      .about-portrait-float { width: 260px; }
+    }
+
+    /* Tablet Landscape (max 1024px) */
+    @media (max-width: 1024px) {
+      .container { padding: 0 30px; }
+      
+      /* Hero */
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 120px 30px 50px;
+      }
+      .hero-title { font-size: 4.5rem; }
+      .hero-stats {
+        border-left: none;
+        border-top: 1px solid var(--alumni-line);
+        padding-left: 0;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .stat-item { flex: 1 1 120px; }
+
+      /* Films grid */
+      .films-grid { grid-template-columns: repeat(2, 260px); justify-content: center; gap: 30px; }
+
+      /* About */
+      .about-portrait-float { width: 220px; margin: 0 25px 15px 0; }
+    }
+
+    /* Tablet Portrait (max 768px) */
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+
+      /* Hero */
+      .hero-section { 
+        min-height: 100svh; 
+        align-items: flex-end; /* Push content to the bottom */
+      }
+      .hero-bg {
+        height: 75svh; /* Image spans down to 75% of screen */
+        bottom: auto;
+      }
+      .hero-bg img { 
+        object-position: center bottom; 
+        transform: scale(1.15); /* Slight zoom to frame face nicely */
+        transform-origin: center bottom;
+      }
+      .hero-overlay {
+        /* Clear at the top where the face is, fading to solid at the bottom where the text is */
+        background: linear-gradient(to bottom, 
+          rgba(11,15,14,0.1) 0%, 
+          rgba(11,15,14,0.4) 40%, 
+          rgba(11,15,14,0.98) 75%,
+          var(--alumni-bg) 100%
+        );
+      }
+      .hero-content { 
+        padding: 40svh 20px 40px; /* Push text down below the eyes/face */
+        width: 100%;
+      }
+      .hero-title { font-size: 3rem; line-height: 1.1; }
+      .hero-title-bn { font-size: 1.2rem; margin-bottom: 25px; }
+      .hero-roles { flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+      .role-pill { font-size: 0.65rem; padding: 5px 12px; }
+      .hero-location { margin-bottom: 30px; }
+      .hero-actions { flex-direction: column; gap: 10px; margin-top: 20px; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 14px 20px; }
+      .hero-stats { gap: 15px; margin-top: 30px; }
+      .stat-num { font-size: 2rem; }
+
+      /* About / Bio */
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-portrait-float {
+        float: none;
+        width: calc(100% - 40px);
+        max-width: 360px;
+        display: block;
+        margin: 0 auto 25px;
+        border-radius: 6px;
+      }
+      .about-bio p { margin-bottom: 20px; line-height: 1.8; }
+
+      /* Filmography */
+      .films-grid { grid-template-columns: repeat(2, 1fr); column-gap: 20px; row-gap: 60px; }
+      .film-title { font-size: 1.1rem; }
+      .film-title-en { font-size: 0.75rem; }
+
+      /* Cinematic Table — stacked mobile cards */
+      .cinematic-table-wrap { border: none; background: transparent; }
+      .cinematic-table { min-width: unset; }
+      .cinematic-table thead { display: none; }
+      .cinematic-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 20px 15px;
+        border: 1px solid var(--alumni-line);
+        border-radius: 4px;
+        margin-bottom: 12px;
+        background: var(--alumni-bg-soft);
+      }
+      .cinematic-table td { padding: 0; border: none; display: block; width: 100%; }
+      .cinematic-table td:nth-child(1) { padding-right: 60px; margin-bottom: 12px; }
+      .cinematic-table td:nth-child(2) { margin-bottom: 8px; }
+      
+      .cinematic-table td:nth-child(3) { display: inline-block; width: auto; }
+      .cinematic-table td:nth-child(3)::after { content: ' · '; color: var(--alumni-muted); padding: 0 5px; }
+      .cinematic-table td:nth-child(4) { display: inline-block; width: auto; }
+      
+      .cinematic-table td:nth-child(5) { 
+        position: absolute; 
+        top: 20px; 
+        right: 15px; 
+        width: auto; 
+      }
+      .cinematic-table tr:hover td { background: transparent; }
+
+      /* Contact */
+      .contact-grid { grid-template-columns: 1fr; gap: 15px; }
+      .contact-section { padding: 60px 0; }
+
+      /* Scroll button */
+      .scroll-top-btn { bottom: 20px; right: 15px; width: 40px; height: 40px; }
+    }
+
+    /* Mobile (max 480px) */
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }
+      .hero-title { font-size: 2.4rem; }
+      .hero-title-bn { font-size: 1rem; }
+      .hero-eyebrow { font-size: 0.65rem; }
+      .section-title { font-size: 2rem; }
+
+      /* Films — 1 column centered, but with constrained poster size so it's not massive */
+      .films-grid { grid-template-columns: 1fr; row-gap: 60px; max-width: 100%; }
+      .film-card { text-align: center; }
+      .film-image-wrap { width: 240px; margin-left: auto; margin-right: auto; margin-bottom: 25px; }
+      .film-meta-bar { justify-content: center; gap: 15px; margin-bottom: 15px; font-size: 0.7rem; }
+      .film-title { font-size: 1.2rem; }
+      .film-title-en { font-size: 0.8rem; }
+      .film-desc { font-size: 0.85rem; }
+
+      /* Education timeline */
+      .edu-item { padding-left: 20px; }
+
+      /* Credits */
+      .credits-group-title { font-size: 0.7rem; letter-spacing: 1px; }
+      .ct-title-bn { font-size: 1.1rem; }
+      .ct-title-en { font-size: 0.8rem; }
     }
   </style>
 
@@ -174,6 +743,7 @@
 <body>
 <div class="site-wrapper">
 
+<!-- EXACLTY REUSED HEADER -->
 <nav class="site-nav" role="navigation" aria-label="Main navigation">
   <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration:none;" aria-label="Homepage">
     <img src="../images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
@@ -213,337 +783,392 @@
   <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
   <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
 </div>
+<!-- END HEADER -->
 
 <div class="nav-spacer" style="height:70px;"></div>
 
-<!-- Ticker -->
-<div class="profile-ticker">
-  <span>&#9654; BFIAA ALUMNI PROFILE &nbsp;&middot;&nbsp; SYED OASIUDDIN AHMED &nbsp;&middot;&nbsp; FILMMAKER &amp; DOCUMENTARY DIRECTOR &nbsp;&middot;&nbsp; KHULNA &mdash; DHAKA, BANGLADESH &nbsp;&nbsp;&nbsp;&#9654; BFIAA ALUMNI PROFILE &nbsp;&middot;&nbsp; SYED OASIUDDIN AHMED &nbsp;&middot;&nbsp; FILMMAKER &amp; DOCUMENTARY DIRECTOR &nbsp;&middot;&nbsp; KHULNA &mdash; DHAKA, BANGLADESH &nbsp;&nbsp;&nbsp;</span>
-</div>
+<div class="alumni-page-wrapper">
 
-<!-- HERO -->
-<section class="profile-hero">
-  <div class="profile-hero-inner">
-    <div>
-      <div class="profile-photo-frame">
-        <img src="../Alumni members indivisual pages/Syed Oasi Uddin Ahmed.jpg" alt="Syed Oasiuddin Ahmed"/>
-        <div class="photo-badge"><span>&#127916; BFIAA Alumni &middot; 2009</span></div>
-      </div>
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <img src="../images/syed-hero-bg.webp" alt="Syed Oasiuddin Ahmed Background" />
     </div>
-    <div class="profile-info-col">
-      <div class="batch-label">Alumni Member &middot; BFI Film Appreciation Course</div>
-      <h1 class="profile-name">Syed Oasiuddin<br>Ahmed</h1>
-      <div class="profile-name-bn">&#x09B8;&#x09C8;&#x09AF;&#x09BC;&#x09A6; &#x993;&#x09AF;&#x09BC;&#x09BE;&#x09B8;&#x09BF;&#x0989;&#x09A6;&#x09CD;&#x09A6;&#x09BF;&#x09A8; &#x986;&#x09B9;&#x09AE;&#x09C7;&#x09A6;</div>
-      <div class="roles">
-        <span class="role-tag primary">Documentary Filmmaker</span>
-        <span class="role-tag">Screenwriter</span>
-        <span class="role-tag">Producer</span>
-        <span class="role-tag">Assistant Director</span>
-      </div>
-      <p class="profile-bio">
-        A passionate documentary filmmaker and screenwriter from Khulna, Bangladesh.
-        A graduate of the Bangladesh Film Institute (2009), Syed Oasiuddin Ahmed has dedicated
-        over a decade to crafting intimate, socially conscious films that illuminate the lives
-        and stories of ordinary people. His works span documentaries and short fiction films,
-        marked by a humane gaze and quiet visual poetry.
-      </p>
-      <div class="stats">
-        <div class="stat"><span class="num">5</span><span class="lbl">Films Directed</span></div>
-        <div class="stat"><span class="num">8</span><span class="lbl">Films Assisted</span></div>
-        <div class="stat"><span class="num">13+</span><span class="lbl">Years Active</span></div>
-        <div class="stat"><span class="num">2012</span><span class="lbl">Debut</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- STICKY SUBNAV -->
-<div class="profile-subnav">
-  <div class="subnav-inner">
-    <a href="#films-director" class="pnav-link active">As Director</a>
-    <a href="#films-assistant" class="pnav-link">As Assistant</a>
-    <a href="#education" class="pnav-link">Training</a>
-    <a href="#contact" class="pnav-link">Contact</a>
-  </div>
-</div>
-
-<!-- FILMS AS DIRECTOR -->
-<section id="films-director" style="background:var(--dark,#0d0d0d);">
-  <div class="psec">
-    <div class="ps-label">Filmography &mdash; Director &amp; Producer</div>
-    <h2 class="ps-title" style="margin-bottom:8px;">Films as Director</h2>
-    
-    <h3 style="font-family:'Cinzel',serif; font-size:1.1rem; color:rgba(255,255,255,0.7); margin: 30px 0 20px; letter-spacing:1px; text-transform:uppercase;">Available Online</h3>
-    <div class="films-grid">
-
-      <div class="film-card">
-        <div class="fposter" style="background-image:url('../images/syed-madhukar.webp');"></div>
-        <div class="fcard-head">
-          <span class="ftype">Short Film</span>
-          <div class="fyear">2015</div>
-          <div class="ftitle-bn">&#x09AE;&#x09A7;&#x09C1;&#x0995;&#x09B0;</div>
-          <div class="ftitle-en">Madhukar &mdash; Way of Life</div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-main">
+        <div class="hero-eyebrow font-mono text-accent">Alumni Profile</div>
+        <h1 class="hero-title font-serif">Syed Oasiuddin<br/>Ahmed</h1>
+        <div class="hero-title-bn font-bn text-accent">সৈয়দ ওয়াসিউদ্দিন আহমেদ</div>
+        
+        <div class="hero-roles font-mono text-muted">
+          <div class="role-pill">Documentary Filmmaker</div>
+          <div class="role-pill">Screenwriter</div>
+          <div class="role-pill">Producer</div>
+          <div class="role-pill">Assistant Director</div>
         </div>
-        <div class="fcard-body">
-          <div class="fmeta">
-            <span class="fmeta-item"><span class="ic">&#9202;</span> 10 minutes</span>
-            <span class="fmeta-item"><span class="ic">&#127902;</span> HDTV</span>
-            <span class="fmeta-item"><span class="ic">&#128197;</span> 2015</span>
-          </div>
-          <p class="fdesc">An observational short film about begging as a way of life &mdash; examining the quiet dignity and resilience of those living on the margins of society.</p>
-          <a href="https://youtu.be/VZ3CPW9hlb4" target="_blank" rel="noopener" class="watch-btn">
-            <span class="pico">&#9654;</span> Watch on YouTube
-          </a>
+        
+        <div class="hero-location font-sans text-muted">
+          <span>Khulna &rarr; Dhaka, Bangladesh</span>
+        </div>
+        
+        <div class="hero-actions font-mono">
+          <a href="#filmography" class="btn-primary">Watch Films</a>
+          <a href="#credits" class="btn-secondary">View Credits</a>
         </div>
       </div>
-
-      <div class="film-card">
-        <div class="fposter" style="background-image:url('https://img.youtube.com/vi/cTTfVWE_uxk/hqdefault.jpg'); background-size:cover;"></div>
-        <div class="fcard-head">
-          <span class="ftype">Short Film</span>
-          <div class="fyear">2020</div>
-          <div class="ftitle-bn">&#x09AB;&#x09C7;&#x09B0;&#x09BE;</div>
-          <div class="ftitle-en">Phera &mdash; Return</div>
-        </div>
-        <div class="fcard-body">
-          <div class="fmeta">
-            <span class="fmeta-item"><span class="ic">&#9202;</span> 31 minutes</span>
-            <span class="fmeta-item"><span class="ic">&#127902;</span> 2K Digital</span>
-            <span class="fmeta-item"><span class="ic">&#128197;</span> 2020</span>
-          </div>
-          <p class="fdesc">A visually layered meditation on the concept of return &mdash; to one's roots, to memory, to the people and places that define who we are.</p>
-          <a href="https://youtu.be/cTTfVWE_uxk" target="_blank" rel="noopener" class="watch-btn">
-            <span class="pico">&#9654;</span> Watch on YouTube
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <h3 style="font-family:'Cinzel',serif; font-size:1.1rem; color:rgba(255,255,255,0.7); margin: 50px 0 20px; letter-spacing:1px; text-transform:uppercase; border-top:1px solid rgba(255,255,255,0.08); padding-top:40px;">Other Works</h3>
-    <div class="films-grid">
-
-      <div class="film-card">
-        <div class="fposter" style="background-image:url('../images/syed-kumar-kahon.webp');"></div>
-        <div class="fcard-head">
-          <span class="ftype doc">Documentary</span>
-          <div class="fyear">2012</div>
-          <div class="ftitle-bn">&#x0995;&#x09C1;&#x09AE;&#x09BE;&#x09B0; &#x0995;&#x09BE;&#x09B9;&#x09A8;</div>
-          <div class="ftitle-en">Kumar Kahon</div>
-        </div>
-        <div class="fcard-body">
-          <div class="fmeta">
-            <span class="fmeta-item"><span class="ic">&#9202;</span> 40 minutes</span>
-            <span class="fmeta-item"><span class="ic">&#127902;</span> Digital</span>
-            <span class="fmeta-item"><span class="ic">&#128197;</span> 2012</span>
-          </div>
-          <p class="fdesc">A documentary exploring the life, communities, and culture along the Kumar River in Bangladesh.</p>
-          <div class="no-link">&#128274; Not publicly available online</div>
-        </div>
-      </div>
-
-      <div class="film-card">
-        <div class="fposter" style="background-image:url('../images/syed-water-hyacinth.webp');"></div>
-        <div class="fcard-head">
-          <span class="ftype doc">Documentary</span>
-          <div class="fyear">2013</div>
-          <div class="ftitle-bn">&#x0995;&#x099A;&#x09C1;&#x09B0;&#x09BF;&#x09AA;&#x09BE;&#x09A8;&#x09BE;</div>
-          <div class="ftitle-en">The Soul of Water</div>
-        </div>
-        <div class="fcard-body">
-          <div class="fmeta">
-            <span class="fmeta-item"><span class="ic">&#9202;</span> 25 minutes</span>
-            <span class="fmeta-item"><span class="ic">&#127902;</span> Digital</span>
-            <span class="fmeta-item"><span class="ic">&#128197;</span> 2013</span>
-          </div>
-          <p class="fdesc">A portrait of life on Bangladesh's waterways, seen through the metaphor of the water hyacinth &mdash; an invasive plant woven into the daily rhythm of riverine communities.</p>
-          <div class="no-link">&#128274; Not publicly available online</div>
-        </div>
-      </div>
-
       
-        <div class="film-card">
-          <div class="fposter" style="background-image:url('../images/syed-mande.webp');"></div>
-          <div class="fcard-head">
-            <span class="ftype doc">Documentary</span>
-            <div class="fyear">2015</div>
-            <div class="ftitle-bn">&#x09AE;&#x09BE;&#x09A8;&#x09CD;&#x09A6;&#x09BF;</div>
-            <div class="ftitle-en">Mande &mdash; The Soul of Nature</div>
+      <div class="hero-stats font-serif">
+        <div class="stat-item">
+          <div class="stat-num text-cream">5</div>
+          <div class="stat-lbl font-mono text-muted">Films Directed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">8</div>
+          <div class="stat-lbl font-mono text-muted">Films Assisted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">13+</div>
+          <div class="stat-lbl font-mono text-muted">Years Active</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">2012</div>
+          <div class="stat-lbl font-mono text-muted">Debut</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-header">
+          <h2 class="section-title font-serif">About The Filmmaker</h2>
+        </div>
+        <div class="about-bio font-sans text-muted">
+          <img src="../Alumni members indivisual pages/Syed Oasi Uddin Ahmed.jpg" class="about-portrait-float" alt="Syed Oasiuddin Ahmed Portrait"/>
+          <p>A passionate documentary filmmaker and screenwriter from Khulna, Bangladesh. A graduate of the Bangladesh Film Institute (2009), Syed Oasiuddin Ahmed has dedicated over a decade to crafting intimate, socially conscious films that illuminate the lives and stories of ordinary people.</p>
+          <p>His works span documentaries and short fiction films, marked by a humane gaze and quiet visual poetry.</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-header">
+          <h2 class="section-title font-serif">Education & Training</h2>
+        </div>
+        <div class="timeline font-sans text-muted">
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2006</div>
+            <div class="tl-content"><span class="text-cream">B.A. (Pass)</span></div>
           </div>
-          <div class="fcard-body">
-            <div class="fmeta">
-              <span class="fmeta-item"><span class="ic">&#9202;</span> Unknown</span>
-              <span class="fmeta-item"><span class="ic">&#127902;</span> Digital</span>
-              <span class="fmeta-item"><span class="ic">&#128197;</span> 2015</span>
-            </div>
-            <p class="fdesc">An intimate documentary exploring the lives, culture, and rich traditions of the indigenous Mande (Garo) community, illustrating their deep connection to nature.</p>
-            <div class="no-link">&#128274; Not publicly available online</div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2009</div>
+            <div class="tl-content"><span class="text-cream">Film Appreciation Course</span><span class="tl-org">Bangladesh Film Institute, Dhaka</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2010</div>
+            <div class="tl-content"><span class="text-cream">Film Language Course</span><span class="tl-org">Director: Dr. John D. Hood</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Aspects of Cinema: In Search of Reality</span><span class="tl-org">Pune Film Institute, India</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Language of Cinema</span><span class="tl-org">Jadavpur University, India</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Documentary Filmmaking Workshop</span><span class="tl-org">Andreas Grafenstein, Germany</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2012</div>
+            <div class="tl-content"><span class="text-cream">Screenplay / TV / Cinematography / Documentary Workshops</span><span class="tl-org">Various Institutions</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2013</div>
+            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organised by BFDC</span></div>
           </div>
         </div>
-<div class="film-card">
-        <div class="fposter" style="background-image:url('../images/syed-third-side.webp');"></div>
-        <div class="fcard-head">
-          <span class="ftype doc">Documentary</span>
-          <div class="fyear">2025</div>
-          <div class="ftitle-bn">&#x09A4;&#x09C3;&#x09A4;&#x09C0;&#x09AF;&#x09BC; &#x09AA;&#x0995;&#x09CD;&#x09B7;</div>
-          <div class="ftitle-en">Third Owner</div>
-        </div>
-        <div class="fcard-body">
-          <div class="fmeta">
-            <span class="fmeta-item"><span class="ic">&#9202;</span> 23 minutes</span>
-            <span class="fmeta-item"><span class="ic">&#127902;</span> HDTV</span>
-            <span class="fmeta-item"><span class="ic">&#128197;</span> 2025</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMOGRAPHY -->
+  <section class="container" id="filmography">
+    <div class="section-header">
+      <h2 class="section-title font-serif">Films As Director</h2>
+    </div>
+    
+    <div class="films-grid">
+      <!-- Madhukar -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-madhukar.webp" alt="Madhukar Poster"/>
+          <div class="film-overlay">
+            <a href="https://youtu.be/VZ3CPW9hlb4" target="_blank" rel="noopener" class="btn-primary" style="padding:10px 20px; font-size:0.7rem;">Play Film</a>
           </div>
-          <p class="fdesc">His most recent work &mdash; exploring multiple perspectives on a social issue, giving voice to those rarely heard in mainstream narratives. Released in 2025.</p>
-          <div class="no-link">&#128274; Not yet publicly available</div>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2015</span>
+          <span>10 MIN</span>
+          <span>HDTV</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">মধুকর</h3>
+        <h4 class="film-title-en font-serif text-accent">Madhukar — Way of Life</h4>
+        <p class="film-desc font-sans text-muted">An observational short film about begging as a way of life — examining the quiet dignity and resilience of those living on the margins of society.</p>
+        <a href="https://youtu.be/VZ3CPW9hlb4" target="_blank" rel="noopener" class="film-cta font-mono">
+          <span style="font-size:1.2em;">&#9654;</span> Watch Film
+        </a>
+      </div>
+
+      <!-- Phera -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="https://img.youtube.com/vi/cTTfVWE_uxk/hqdefault.jpg" alt="Phera Poster"/>
+          <div class="film-overlay">
+            <a href="https://youtu.be/cTTfVWE_uxk" target="_blank" rel="noopener" class="btn-primary" style="padding:10px 20px; font-size:0.7rem;">Play Film</a>
+          </div>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2020</span>
+          <span>31 MIN</span>
+          <span>2K Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">ফেরা</h3>
+        <h4 class="film-title-en font-serif text-accent">Phera — Return</h4>
+        <p class="film-desc font-sans text-muted">A visually layered meditation on the concept of return — to one's roots, to memory, to the people and places that define who we are.</p>
+        <a href="https://youtu.be/cTTfVWE_uxk" target="_blank" rel="noopener" class="film-cta font-mono">
+          <span style="font-size:1.2em;">&#9654;</span> Watch Film
+        </a>
+      </div>
+      
+      <!-- Kumar Kahon -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-kumar-kahon.webp" alt="Kumar Kahon Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2012</span>
+          <span>40 MIN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">কুমার কাহন</h3>
+        <h4 class="film-title-en font-serif text-accent">Kumar Kahon</h4>
+        <p class="film-desc font-sans text-muted">A documentary exploring the life, communities, and culture along the Kumar River in Bangladesh.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- The Soul of Water -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-water-hyacinth.webp" alt="The Soul of Water Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2013</span>
+          <span>25 MIN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">কচুরিপানা</h3>
+        <h4 class="film-title-en font-serif text-accent">The Soul of Water</h4>
+        <p class="film-desc font-sans text-muted">A portrait of life on Bangladesh's waterways, seen through the metaphor of the water hyacinth — an invasive plant woven into the daily rhythm of riverine communities.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- Mande -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-mande.webp" alt="Mande Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2015</span>
+          <span>UNKNOWN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">মান্দি</h3>
+        <h4 class="film-title-en font-serif text-accent">Mande — The Soul of Nature</h4>
+        <p class="film-desc font-sans text-muted">An intimate documentary exploring the lives, culture, and rich traditions of the indigenous Mande (Garo) community, illustrating their deep connection to nature.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- Third Owner -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-third-side.webp" alt="Third Owner Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2025</span>
+          <span>23 MIN</span>
+          <span>HDTV</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">তৃতীয় পক্ষ</h3>
+        <h4 class="film-title-en font-serif text-accent">Third Owner</h4>
+        <p class="film-desc font-sans text-muted">His most recent work — exploring multiple perspectives on a social issue, giving voice to those rarely heard in mainstream narratives. Released in 2025.</p>
+        <span class="film-cta disabled font-mono">Not Publicly Available</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTANT CREDITS -->
+  <section class="container credits-section" id="credits">
+    <div class="section-header">
+      <h2 class="section-title font-serif">Selected Credits</h2>
+      <p class="font-mono text-accent" style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; margin-top:10px;">Films as Assistant Director</p>
+    </div>
+    
+    <div class="credits-group">
+      <div class="credits-group-title font-mono">&mdash; Feature Films &mdash;</div>
+      <div class="cinematic-table-wrap">
+        <table class="cinematic-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Title</th>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Format</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="ct-title-bn">লালসালু</div>
+                <div class="ct-title-en">A Tree Without Roots &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">110 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2001</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">লালন</div>
+                <div class="ct-title-en">Lalon &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">140 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2004</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">রাবেয়া</div>
+                <div class="ct-title-en">The Sister &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">105 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2007</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">জীবনঢুলি</div>
+                <div class="ct-title-en">The Drummer &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">90 min</td>
+              <td class="ct-meta">2K &middot; Colour</td>
+              <td class="ct-year">2014</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">রূপসা নদীর বাঁকে</div>
+                <div class="ct-title-en">Quiet Flows the River Rupsa &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">137 min</td>
+              <td class="ct-meta">2K &middot; Colour</td>
+              <td class="ct-year">2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="credits-group">
+      <div class="credits-group-title font-mono">&mdash; Documentaries &mdash;</div>
+      <div class="cinematic-table-wrap">
+        <table class="cinematic-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Title</th>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Format</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="ct-title-bn">জাপানি বধূ</div>
+                <div class="ct-title-en">'The Japanese Wife' &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">67 min</td>
+              <td class="ct-meta">Digital</td>
+              <td class="ct-year">2012</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">সীমান্তরেখা</div>
+                <div class="ct-title-en">The Borderline &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">124 min</td>
+              <td class="ct-meta">Digital</td>
+              <td class="ct-year">2019</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">মতুয়ামঙ্গল</div>
+                <div class="ct-title-en">The Saga of the Motuas &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">100 min</td>
+              <td class="ct-meta">HDTV</td>
+              <td class="ct-year">2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="contact-title font-serif text-cream">Get In Touch</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Email</div>
+          <div class="contact-item-val font-sans"><a href="mailto:tito.oasi@gmail.com">tito.oasi@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Social</div>
+          <div class="contact-item-val font-sans"><a href="https://www.facebook.com/oasiuddinahmedtito" target="_blank" rel="noopener">Facebook</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Based In</div>
+          <div class="contact-item-val font-sans text-cream">Dhanmondi, Dhaka</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Hometown</div>
+          <div class="contact-item-val font-sans text-cream">Khulna, Bangladesh</div>
         </div>
       </div>
-
+      
+      <a href="https://bfiaa.bfibd.org/" class="btn-secondary font-mono">Back to Alumni Directory</a>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- FILMS AS ASSISTANT -->
-<section id="films-assistant" class="bg-alt">
-  <div class="psec">
-    <div class="ps-label">Filmography &mdash; Assistant Director</div>
-    <h2 class="ps-title">Films as Assistant Director</h2>
+</div>
 
-    <div class="strip-div"><span>Feature Films</span></div>
-    <div class="tbl-wrap">
-      <table class="assist-tbl">
-        <thead><tr><th>Title</th><th>Type</th><th>Duration</th><th>Format</th><th>Year</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><span class="tfilm-bn">&#x09B2;&#x09BE;&#x09B2;&#x09B8;&#x09BE;&#x09B2;&#x09C1;</span><span class="tfilm-name">A Tree Without Roots&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill feat">Feature</span></td>
-            <td>110 min</td>
-            <td>35mm &middot; Colour</td>
-            <td class="yr">2001</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x09B2;&#x09BE;&#x09B2;&#x09A8;</span><span class="tfilm-name">Lalon&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill feat">Feature</span></td>
-            <td>140 min</td>
-            <td>35mm &middot; Colour</td>
-            <td class="yr">2004</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x09B0;&#x09BE;&#x09AC;&#x09C7;&#x09AF;&#x09BC;&#x09BE;</span><span class="tfilm-name">The Sister&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill feat">Feature</span></td>
-            <td>105 min</td>
-            <td>35mm &middot; Colour</td>
-            <td class="yr">2007</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x099C;&#x09C0;&#x09AC;&#x09A8;&#x09A7;&#x09C1;&#x09B2;&#x09BF;</span><span class="tfilm-name">The Drummer&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill feat">Feature</span></td>
-            <td>90 min</td>
-            <td>2K &middot; Colour</td>
-            <td class="yr">2014</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x09B0;&#x09C2;&#x09AA;&#x09B8;&#x09BE; &#x09A8;&#x09A6;&#x09C0;&#x09B0; &#x09AC;&#x09BE;&#x0981;&#x0995;&#x09C7;</span><span class="tfilm-name">Quiet Flows the River Rupsa&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill feat">Feature</span></td>
-            <td>137 min</td>
-            <td>2K &middot; Colour</td>
-            <td class="yr">2020</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<!-- Scroll to Top Button -->
+<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#9650;</button>
 
-    <div class="strip-div"><span>Documentaries</span></div>
-    <div class="tbl-wrap">
-      <table class="assist-tbl">
-        <thead><tr><th>Title</th><th>Type</th><th>Duration</th><th>Format</th><th>Year</th></tr></thead>
-        <tbody>
-          <tr>
-            <td><span class="tfilm-bn">&#x099C;&#x09BE;&#x09AA;&#x09BE;&#x09A8;&#x09BF; &#x09AC;&#x09A7;&#x09C2;</span><span class="tfilm-name">'The Japanese Wife'&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill docu">Documentary</span></td>
-            <td>67 min</td>
-            <td>Digital</td>
-            <td class="yr">2012</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x09B8;&#x09C0;&#x09AE;&#x09BE;&#x09A8;&#x09CD;&#x09A4;&#x09B0;&#x09C7;&#x0996;&#x09BE;</span><span class="tfilm-name">The Borderline&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill docu">Documentary</span></td>
-            <td>124 min</td>
-            <td>Digital</td>
-            <td class="yr">2019</td>
-          </tr>
-          <tr>
-            <td><span class="tfilm-bn">&#x09AE;&#x09A4;&#x09C1;&#x09AF;&#x09BC;&#x09BE;&#x09AE;&#x0999;&#x09CD;&#x0997;&#x09B2;</span><span class="tfilm-name">The Saga of the Motuas&nbsp;&middot;&nbsp; by Tanvir Mokammel</span></td>
-            <td><span class="pill docu">Documentary</span></td>
-            <td>100 min</td>
-            <td>HDTV</td>
-            <td class="yr">2025</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" style="background:var(--dark,#0d0d0d);">
-  <div class="psec">
-    <div class="ps-label">Training &amp; Education</div>
-    <h2 class="ps-title">Film Education &amp; Training</h2>
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(440px,100%),1fr));gap:40px;">
-      <div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.63rem;letter-spacing:2px;color:#c9a84c;text-transform:uppercase;margin-bottom:20px;">Formal Education</div>
-        <div class="timeline">
-          <div class="tl-item"><div class="tl-year">2006</div><div class="tl-text"><strong>B.A. (Pass)</strong></div></div>
-          <div class="tl-item"><div class="tl-year">2009</div><div class="tl-text"><strong>Film Appreciation Course</strong><br>Bangladesh Film Institute, Dhaka</div></div>
-          <div class="tl-item"><div class="tl-year">2010</div><div class="tl-text"><strong>Film Language Course</strong><br>Director: Dr. John D. Hood (Australia)</div></div>
-          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Aspects of Cinema: In Search of Reality</strong><br>Gaitri Chatterjee &mdash; Pune Film Institute, India</div></div>
-          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Language of Cinema</strong><br>Madhuja Mukherjee &mdash; Jadavpur University, India</div></div>
-          <div class="tl-item"><div class="tl-year">2011</div><div class="tl-text"><strong>Documentary Filmmaking Workshop</strong><br>Andreas Grafenstein, Documentary Filmmaker (Germany)</div></div>
-        </div>
-      </div>
-      <div>
-        <div style="font-family:'JetBrains Mono',monospace;font-size:0.63rem;letter-spacing:2px;color:#c9a84c;text-transform:uppercase;margin-bottom:20px;">Workshops &amp; Masterclasses</div>
-        <div class="timeline">
-          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Screenplay Writing Workshop</strong><br>Director: Tanvir Mokammel</div></div>
-          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Television Programme Making Workshop</strong><br>Kausar Chowdhury</div></div>
-          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Basic Cinematography Course</strong><br>Director: Saimandu Ray (India)</div></div>
-          <div class="tl-item"><div class="tl-year">2012</div><div class="tl-text"><strong>Documentary Filmmaking Workshop</strong><br>Director: Tanvir Mokammel</div></div>
-          <div class="tl-item"><div class="tl-year">2013</div><div class="tl-text"><strong>Sound Design Workshop</strong><br>Organised by BFDC &mdash; Director: Tapan Bhattacharya (India)</div></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="bg-alt">
-  <div class="psec">
-    <div class="ps-label">Get in Touch</div>
-    <h2 class="ps-title">Contact</h2>
-    <div class="contact-grid">
-      <a href="mailto:tito.oasi@gmail.com" class="contact-card">
-        <div class="ico">&#9993;&#65039;</div>
-        <div class="info"><div class="lbl">Email</div><div class="val">tito.oasi@gmail.com</div></div>
-      </a>
-      <div class="contact-card" style="cursor:default;">
-        <div class="ico">&#128205;</div>
-        <div class="info"><div class="lbl">Based In</div><div class="val">Dhanmondi, Dhaka</div></div>
-      </div>
-      <div class="contact-card" style="cursor:default;">
-        <div class="ico">&#127968;</div>
-        <div class="info"><div class="lbl">Hometown</div><div class="val">Khulna, Bangladesh</div></div>
-      </div>
-    </div>
-    <div style="margin-top:50px;text-align:center;">
-      <a href="https://bfiaa.bfibd.org/" style="display:inline-flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:0.68rem;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.6);text-decoration:none;border:1px solid rgba(255,255,255,0.1);padding:12px 24px;border-radius:4px;transition:all 0.2s;" onmouseover="this.style.color='#fff';this.style.borderColor='rgba(255,255,255,0.3)';" onmouseout="this.style.color='rgba(255,255,255,0.35)';this.style.borderColor='rgba(255,255,255,0.1)';">
-        &larr; Back to BFIAA Home
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
+<!-- EXACTLY REUSED FOOTER -->
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-top">
@@ -592,23 +1217,24 @@
     </div>
   </div>
 </footer>
+<!-- END FOOTER -->
 
 <script src="../js/main.js"></script>
 <script>
-  // Active subnav on scroll
-  const sections = document.querySelectorAll('section[id]');
-  const navLinks = document.querySelectorAll('.pnav-link');
-  window.addEventListener('scroll', () => {
-    let cur = '';
-    sections.forEach(s => { if (window.scrollY >= s.offsetTop - 130) cur = s.id; });
-    navLinks.forEach(l => { l.classList.remove('active'); if (l.getAttribute('href') === '#' + cur) l.classList.add('active'); });
-  });
-  navLinks.forEach(link => {
-    link.addEventListener('click', e => {
-      const href = link.getAttribute('href');
-      if (href.startsWith('#')) { e.preventDefault(); const t = document.querySelector(href); if (t) t.scrollIntoView({behavior:'smooth'}); }
+  // Scroll to Top Logic
+  const scrollTopBtn = document.getElementById('scrollTopBtn');
+  if (scrollTopBtn) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
     });
-  });
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  }
 </script>
 </body>
 </html>
