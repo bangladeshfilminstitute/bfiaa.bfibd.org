@@ -605,25 +605,25 @@
         align-items: flex-end; /* Push content to the bottom */
       }
       .hero-bg {
-        height: 70svh; /* Slightly shorter so it blends earlier */
+        height: 65svh; /* Slightly shorter */
         bottom: auto;
       }
       .hero-bg img { 
         object-position: center center; 
-        transform: scale(1.35) translateY(-8%); /* Scale up and translate up to remove empty top space */
+        transform: scale(1.45) translateY(-16%); /* Scale more to safely shift even further UP */
         transform-origin: center center;
       }
       .hero-overlay {
         /* Clear at the top where the face is, fading to solid at the bottom where the text is */
         background: linear-gradient(to bottom, 
           rgba(11,15,14,0.1) 0%, 
-          rgba(11,15,14,0.4) 35%, 
-          rgba(11,15,14,0.98) 75%,
+          rgba(11,15,14,0.6) 25%, 
+          rgba(11,15,14,0.98) 65%,
           var(--alumni-bg) 100%
         );
       }
       .hero-content { 
-        padding: 30svh 20px 40px; /* Push text up slightly */
+        padding: 24svh 20px 40px; /* Push text even further up */
         width: 100%;
       }
       .hero-title { font-size: 3rem; line-height: 1.1; }
