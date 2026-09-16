@@ -97,17 +97,15 @@
     }
 
     .about-portrait-float {
-      float: left;
-      width: 320px;
-      margin: 0 40px 20px 0;
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 30px auto;
       border-radius: 4px;
       border: 1px solid var(--alumni-line);
       box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
     
-    @media (max-width: 768px) {
-      .about-portrait-float {
-        float: none;
         width: 100%;
         margin: 0 0 30px 0;
       }
@@ -566,7 +564,6 @@
     /* Large Tablet / Small Desktop (max 1200px) */
     @media (max-width: 1200px) {
       .hero-title { font-size: 5rem; }
-      .about-portrait-float { width: 260px; }
     }
 
     /* Tablet Landscape (max 1024px) */
