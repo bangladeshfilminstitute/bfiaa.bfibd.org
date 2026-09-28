@@ -900,7 +900,7 @@
           </div>
           <div class="tl-item">
             <div class="tl-year font-mono text-accent">2013</div>
-            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organised by BFDC</span></div>
+            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organized by BFDC</span></div>
           </div>
         </div>
       </div>
@@ -1179,7 +1179,11 @@
 </div>
 
 <!-- Scroll to Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#9650;</button>
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
 
 <!-- EXACTLY REUSED FOOTER -->
 <footer class="site-footer" role="contentinfo">
@@ -1191,7 +1195,7 @@
             <img src="../images/bfiaa-logo.png" alt="BFIAA" style="height:48px;width:auto;" onerror="this.style.display='none'"/>
           </a>
         </div>
-        <p class="footer-brand-desc">The official alumni association of the Bangladesh Film Institute &mdash; connecting 1000+ graduates across 8X+ batches in a shared love of cinema.</p>
+        <p class="footer-brand-desc">The official alumni association of the Bangladesh Film Institute &mdash; connecting 1000+ graduates across 86+ batches in a shared love of cinema.</p>
         <div class="footer-social">
           <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">&#127916;</a>
           <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
@@ -1233,21 +1237,6 @@
 <!-- END FOOTER -->
 
 <script src="../js/main.js"></script>
-<script>
-  // Scroll to Top Logic
-  const scrollTopBtn = document.getElementById('scrollTopBtn');
-  if (scrollTopBtn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        scrollTopBtn.classList.add('visible');
-      } else {
-        scrollTopBtn.classList.remove('visible');
-      }
-    });
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-</script>
+<script src="../js/scroll-top.js"></script>
 </body>
 </html>

@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Syed Oasiuddin Ahmed — Filmmaker | BFIAA</title>
-    <link rel="canonical" href="https://bfiaa.bfibd.org/alumni/syed-oasiuddin-ahmed" />
-    <meta name="description" content="Film profile of Syed Oasiuddin Ahmed — filmmaker, documentary director and screenwriter. BFIAA Alumni member."/>
+    <title>Syed Oasiuddin Ahmed — Filmmaker | BFIAA Alumni</title>
+    <link rel="canonical" href="https://bfiaa.bfibd.org/alumni/syed-oasiuddin-ahmed.html"/>
+    <meta name="description" content="Alumni profile of Syed Oasiuddin Ahmed — BFI graduate, director, and screenwriter known for The Third Owner, Mande, and Madhukar. Featured filmmaker of BFIAA."/>
     
     <!-- Open Graph (Facebook, LinkedIn, iMessage) -->
-    <meta property="og:title" content="Syed Oasiuddin Ahmed — Filmmaker | BFIAA" />
-    <meta property="og:description" content="Film profile of Syed Oasiuddin Ahmed — filmmaker, documentary director and screenwriter. BFIAA Alumni member." />
-    <meta property="og:image" content="https://bfiaa-bfibd.pages.dev/images/syed-og-thumbnail.jpg" />
-    <meta property="og:url" content="https://bfiaa-bfibd.pages.dev/alumni/syed-oasiuddin-ahmed" />
+    <meta property="og:title" content="Syed Oasiuddin Ahmed — Filmmaker | BFIAA Alumni"/>
+    <meta property="og:description" content="Alumni profile of Syed Oasiuddin Ahmed — BFI graduate, director, and screenwriter known for The Third Owner, Mande, and Madhukar. Featured filmmaker of BFIAA."/>
+    <meta property="og:image" content="https://bfiaa.bfibd.org/images/syed-og-thumbnail.jpg"/>
+    <meta property="og:url" content="https://bfiaa.bfibd.org/alumni/syed-oasiuddin-ahmed.html"/>
     <meta property="og:type" content="profile" />
     
     <!-- Twitter Cards (Twitter/X, Discord) -->
@@ -21,7 +21,7 @@
     <meta name="twitter:image" content="https://bfiaa-bfibd.pages.dev/images/syed-og-thumbnail.jpg" />
     
     <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#0b0f0e"/>
+  <meta name="theme-color" content="#1B3A2D"/>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -900,7 +900,7 @@
           </div>
           <div class="tl-item">
             <div class="tl-year font-mono text-accent">2013</div>
-            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organised by BFDC</span></div>
+            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organized by BFDC</span></div>
           </div>
         </div>
       </div>
@@ -1179,7 +1179,11 @@
 </div>
 
 <!-- Scroll to Top Button -->
-<button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top">&#9650;</button>
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
 
 <!-- EXACTLY REUSED FOOTER -->
 <footer class="site-footer" role="contentinfo">
@@ -1233,21 +1237,6 @@
 <!-- END FOOTER -->
 
 <script src="../js/main.js"></script>
-<script>
-  // Scroll to Top Logic
-  const scrollTopBtn = document.getElementById('scrollTopBtn');
-  if (scrollTopBtn) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 400) {
-        scrollTopBtn.classList.add('visible');
-      } else {
-        scrollTopBtn.classList.remove('visible');
-      }
-    });
-    scrollTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-  }
-</script>
+<script src="../js/scroll-top.js"></script>
 </body>
 </html>

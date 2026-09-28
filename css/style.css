@@ -1502,13 +1502,24 @@ img.president-avatar {
   margin-bottom: 40px;
 }
 .footer-brand { }
+.footer-brand-link {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.footer-brand-link:hover {
+  opacity: 0.82;
+  transform: translateY(-1px);
+}
 .footer-logo {
   display: flex;
   align-items: center;
   gap: 12px;
   margin-bottom: 16px;
 }
-.footer-logo img { height: 40px; }
+.footer-logo img,
+.footer-brand-link img { height: 40px; }
 .footer-logo-text {
   font-family: var(--font-title);
   font-size: 14px;
@@ -2135,5 +2146,64 @@ img.president-avatar {
     flex-direction: column;
     gap: 10px;
     align-items: flex-start;
+  }
+}
+
+/* ── SCROLL TO TOP BUTTON ── */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--dark-green, #0B211F);
+  color: var(--cream, #F3F0E7);
+  border: 1px solid rgba(183, 164, 119, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: opacity 280ms cubic-bezier(0.16, 1, 0.3, 1),
+              transform 280ms cubic-bezier(0.16, 1, 0.3, 1),
+              background 200ms ease,
+              border-color 200ms ease,
+              box-shadow 200ms ease;
+  box-shadow: 0 4px 18px rgba(7, 23, 21, 0.28);
+  outline: none;
+}
+.scroll-top-btn.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.scroll-top-btn:hover {
+  background: var(--burgundy, var(--crimson, #9E3030));
+  border-color: var(--gold, #B7A477);
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 22px rgba(158, 48, 48, 0.4);
+}
+.scroll-top-btn:active {
+  transform: translateY(-1px);
+}
+.scroll-top-btn:focus-visible {
+  outline: 2px solid var(--gold, #B7A477);
+  outline-offset: 3px;
+}
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+  .scroll-top-btn svg {
+    width: 18px;
+    height: 18px;
   }
 }
