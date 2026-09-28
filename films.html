@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alumni Films — BFIAA | Bangladesh Film Institute Alumni Association</title>
+  <meta name="description" content="Complete archive of films directed by BFIAA members — documentaries, short films and features spanning decades of independent cinema in Bangladesh."/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/films.html"/>
+  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#06100d"/>
+  <meta property="og:title" content="Alumni Films — BFIAA"/>
+  <meta property="og:description" content="Films by Bangladesh Film Institute alumni — a growing archive of independent cinema."/>
+  <meta property="og:url" content="https://bfiaa.bfibd.org/films.html"/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:image" content="https://bfiaa.bfibd.org/images/syed-og-thumbnail.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Hind+Siliguri:wght@400;500;600;700&family=Space+Mono:wght@0,400;0,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/editorial.css"/>
+  <style>
+    /* ═══════════════════════════════════════════════════
+       ALUMNI FILMS ARCHIVE — Page Styles
+    ════════════════════════════════════════════════════ */
+    :root {
+      --fp-bg:      #06100d;
+      --fp-surface: #0d1a14;
+      --fp-card:    #111e17;
+      --fp-cream:   #f1eadc;
+      --fp-muted:   #7a8882;
+      --fp-accent:  #d2ad6b;
+      --fp-border:  rgba(255,255,255,0.08);
+      --fp-ease:    cubic-bezier(0.33, 1, 0.68, 1);
+    }
+
+    /* ── PAGE SHELL ─────────────────────────────────── */
+    .fp-page {
+      background: var(--fp-bg);
+      min-height: 100vh;
+      color: var(--fp-cream);
+    }
+
+    /* ── TOP HERO BAND ──────────────────────────────── */
+    .fp-hero {
+      position: relative;
+      background: #06100d;
+      border-bottom: 1px solid var(--fp-border);
+      padding: 104px 0 60px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .fp-hero-bg-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .fp-hero-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url('images/films-hero-bg.webp');
+      background-size: cover;
+      background-position: right 30%;
+      background-repeat: no-repeat;
+      opacity: 0.48;
+      filter: brightness(0.74) contrast(1.18) saturate(0.9);
+      transform: scale(1.02);
+    }
+    .fp-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(6, 16, 13, 0.94) 0%,
+        rgba(6, 16, 13, 0.82) 42%,
+        rgba(6, 16, 13, 0.32) 75%,
+        rgba(6, 16, 13, 0.60) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(6, 16, 13, 0.82) 0%,
+        transparent 35%,
+        rgba(6, 16, 13, 0.96) 100%
+      );
+    }
+    .fp-hero-grain {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .fp-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 40px;
+    }
+    .fp-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--fp-muted);
+      text-decoration: none;
+      margin-bottom: 40px;
+      transition: color 0.2s;
+    }
+    .fp-back:hover { color: var(--fp-cream); }
+    .fp-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .fp-eyebrow-line { display:block; width:36px; height:1px; background:var(--fp-accent); }
+    .fp-eyebrow-text {
+      font-family: 'Space Mono', monospace;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--fp-accent);
+    }
+    .fp-heading {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.6rem, 5vw, 4.8rem);
+      font-weight: 700;
+      color: var(--fp-cream);
+      line-height: 1.1;
+      margin: 0 0 18px;
+      letter-spacing: -0.5px;
+    }
+    .fp-heading em { font-style: italic; color: var(--fp-accent); }
+    .fp-tagline {
+      font-size: 1rem;
+      color: var(--fp-muted);
+      line-height: 1.75;
+      max-width: 520px;
+      margin: 0 0 40px;
+    }
+
+    /* Stat pills */
+    .fp-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border: 1px solid var(--fp-border);
+      border-radius: 8px;
+      overflow: hidden;
+      display: inline-flex;
+    }
+    .fp-stat {
+      padding: 18px 32px;
+      border-right: 1px solid var(--fp-border);
+      text-align: center;
+    }
+    .fp-stat:last-child { border-right: none; }
+    .fp-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--fp-accent);
+      line-height: 1;
+      display: block;
+    }
+    .fp-stat-lbl {
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--fp-muted);
+      display: block;
+      margin-top: 6px;
+    }
+
+    /* ── MAIN CONTENT ───────────────────────────────── */
+    .fp-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 72px 40px 96px;
+    }
+
+    /* ── ALUMNUS GROUP ──────────────────────────────── */
+    .fa-alumnus-group {
+      margin-bottom: 80px;
+    }
+    .fa-alumnus-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 24px;
+      margin-bottom: 36px;
+      border-bottom: 1px solid var(--fp-border);
+    }
+    .fa-alumnus-role {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--fp-accent);
+      margin: 0 0 6px;
+    }
+    .fa-alumnus-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--fp-cream);
+      margin: 0 0 4px;
+      line-height: 1.15;
+    }
+    .fa-alumnus-count {
+      font-family: 'Space Mono', monospace;
+      font-size: 9px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--fp-muted);
+      margin: 0;
+    }
+    .fa-profile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Space Mono', monospace;
+      font-size: 9.5px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--fp-accent);
+      text-decoration: none;
+      border: 1.5px solid rgba(210,173,107,0.35);
+      padding: 10px 18px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: all 0.25s ease;
+    }
+    .fa-profile-link:hover {
+      background: rgba(210,173,107,0.08);
+      border-color: var(--fp-accent);
+      box-shadow: 0 0 16px rgba(210,173,107,0.1);
+    }
+    .fa-profile-link:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 3px var(--fp-accent);
+    }
+
+    /* ── FILM GRID ──────────────────────────────────── */
+    .fa-film-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(235px, 268px));
+      gap: 32px 24px;
+    }
+
+    /* ── FILM CARD ──────────────────────────────────── */
+    .fa-film-card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--fp-card);
+      border: 1px solid var(--fp-border);
+      transition: border-color 0.35s var(--fp-ease),
+                  box-shadow 0.35s var(--fp-ease);
+      outline: none;
+      cursor: pointer;
+      position: relative;
+    }
+    .fa-film-card:hover {
+      transform: none; /* Card does not move on hover */
+      box-shadow: 0 16px 40px rgba(0,0,0,0.55),
+                  0 0 0 1px rgba(210,173,107,0.30);
+      border-color: rgba(210,173,107,0.30);
+    }
+    .fa-film-card:focus-visible {
+      box-shadow: 0 0 0 3px var(--fp-accent);
+    }
+
+    /* Poster */
+    .fa-poster-wrap {
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+      background: #0d1a14;
+      aspect-ratio: 2 / 3;
+    }
+    .fa-poster-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      outline: none;
+      overflow: hidden;
+    }
+    .fa-film-poster {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 2 / 3;
+      object-fit: cover;
+      display: block;
+      transform: scale(1);
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .fa-film-card:hover .fa-film-poster {
+      transform: scale(1.08); /* Poster zooms smoothly */
+    }
+
+    /* Format badge */
+    .fa-format-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      font-family: 'Space Mono', monospace;
+      font-size: 8px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: rgba(241,234,220,0.92);
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      padding: 4px 8px;
+      border-radius: 3px;
+      border: 1px solid rgba(255,255,255,0.14);
+      pointer-events: none;
+    }
+
+    /* YouTube red badge */
+    .fa-yt-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 38px;
+      height: 27px;
+      background: #FF0000;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      transition: transform 0.2s ease, background 0.2s ease;
+      z-index: 5;
+    }
+    .fa-yt-badge:hover {
+      background: #cc0000;
+      transform: scale(1.12);
+    }
+    .fa-yt-badge:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px #fff, 0 0 0 4px #FF0000;
+    }
+
+    /* Info block */
+    .fa-film-info {
+      padding: 16px 18px 20px;
+      border-top: 1px solid rgba(210,173,107,0.14);
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+    }
+    .fa-film-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      font-family: 'Space Mono', monospace;
+      font-size: 8.5px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--fp-muted);
+      margin-bottom: 6px;
+    }
+    .fa-film-meta span + span::before {
+      content: '|';
+      margin-right: 6px;
+      opacity: 0.3;
+    }
+    .fa-title-link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .fa-title-link:hover {
+      color: var(--fp-accent);
+    }
+    .fa-film-title-bn {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--fp-cream);
+      margin: 0 0 2px;
+      line-height: 1.3;
+    }
+    .fa-film-title-en {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: var(--fp-accent);
+      margin: 0 0 10px;
+      line-height: 1.4;
+    }
+    .fa-film-subtitle {
+      opacity: 0.75;
+    }
+    .fa-film-desc {
+      font-size: 0.8rem;
+      color: var(--fp-muted);
+      line-height: 1.6;
+      margin: 0;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── EMPTY STATE ────────────────────────────────── */
+    .fp-empty {
+      text-align: center;
+      padding: 80px 20px;
+      color: var(--fp-muted);
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 900px) {
+      .fp-hero { padding: 90px 0 44px; }
+      .fp-hero-inner, .fp-content { padding-left: 24px; padding-right: 24px; }
+      .fa-film-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+      .fp-stats { display: flex; flex-wrap: wrap; }
+      .fp-stat { padding: 14px 22px; }
+    }
+    @media (max-width: 540px) {
+      .fp-hero-inner, .fp-content { padding-left: 16px; padding-right: 16px; }
+      .fp-heading { font-size: 2.4rem; }
+      .fa-alumnus-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .fa-film-grid { grid-template-columns: 1fr; gap: 18px; }
+      .fa-profile-link { width: 100%; justify-content: center; }
+      .fp-stats { border-radius: 6px; }
+      .fp-stat { padding: 12px 18px; }
+      .fp-stat-num { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body class="fp-page">
+
+  <!-- ── HEADER ─────────────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="header-brand" aria-label="BFIAA Home">
+        <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+      </a>
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#founder">Founder</a>
+        <a href="index.html#committee">Committee</a>
+        <a href="index.html#conferences">Conferences</a>
+        <a href="index.html#alumni">Alumni</a>
+        <a href="index.html#alumni-films" class="active">Films</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#retrospective">30 Years</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://bfibd.org" target="_blank" rel="noopener" class="btn-bfi-home">
+          <img src="images/bfi-logo.png" alt="BFI" style="height:14px;width:auto;"/>
+          BFI Main Site
+        </a>
+        <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-member">
+          Become a Member
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About BFIAA</a>
+    <a href="index.html#founder">Founder &amp; Patron</a>
+    <a href="index.html#committee">Executive Committee</a>
+    <a href="index.html#alumni">Featured Alumni</a>
+    <a href="index.html#alumni-films">Alumni Films</a>
+    <a href="index.html#events">Events &amp; Screenings</a>
+    <a href="index.html#contact">Contact &amp; Join</a>
+    <div class="mobile-cta-group">
+      <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site &#8594;</a>
+    </div>
+  </nav>
+
+  <!-- ── HERO BAND ───────────────────────────────────────────────────── -->
+  <div class="fp-hero">
+    <div class="fp-hero-bg-layer" aria-hidden="true">
+      <div class="fp-hero-photo"></div>
+      <div class="fp-hero-overlay"></div>
+      <div class="fp-hero-grain"></div>
+    </div>
+    <div class="fp-hero-inner">
+      <a href="index.html#alumni-films" class="fp-back">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+             stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="15 18 9 12 15 6"/>
+        </svg>
+        Back to Homepage
+      </a>
+      <div class="fp-eyebrow">
+        <span class="fp-eyebrow-line"></span>
+        <span class="fp-eyebrow-text">Full Archive</span>
+      </div>
+      <h1 class="fp-heading">Alumni <em>Film Archive</em></h1>
+      <p class="fp-tagline">
+        A growing archive of films directed by Bangladesh Film Institute alumni &mdash;
+        documentaries, short films and features shaped by BFI&rsquo;s filmmaking education.
+        Click any poster to visit the filmmaker&rsquo;s profile.
+      </p>
+      <div class="fp-stats">
+        <div class="fp-stat">
+          <span class="fp-stat-num">6</span>
+          <span class="fp-stat-lbl">Films</span>
+        </div>
+        <div class="fp-stat">
+          <span class="fp-stat-num">1</span>
+          <span class="fp-stat-lbl">Filmmaker</span>
+        </div>
+        <div class="fp-stat">
+          <span class="fp-stat-num">2012–2025</span>
+          <span class="fp-stat-lbl">Active Years</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT ────────────────────────────────────────────────── -->
+  <main class="fp-content" id="main" role="main">
+    
+      <section class="fa-alumnus-group" aria-label="Films by Syed Oasiuddin Ahmed">
+        <div class="fa-alumnus-header">
+          <div class="fa-alumnus-info">
+            <p class="fa-alumnus-role">Documentary Filmmaker & Director</p>
+            <h2 class="fa-alumnus-name">Syed Oasiuddin Ahmed</h2>
+            <p class="fa-alumnus-count">6 Films as Director</p>
+          </div>
+          <a href="alumni/syed-oasiuddin-ahmed.html#filmography"
+             class="fa-profile-link"
+             aria-label="View Syed Oasiuddin Ahmed's full profile">
+            View Full Profile
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor"
+                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+        <div class="fa-film-grid">
+          
+        <article class="fa-film-card" data-href="alumni/syed-oasiuddin-ahmed.html#filmography" tabindex="0" role="article"
+           aria-label="Madhukar by Syed Oasiuddin Ahmed">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/syed-oasiuddin-ahmed.html#filmography" aria-label="View Madhukar in Syed Oasiuddin Ahmed's profile">
+              <img src="images/syed-madhukar.webp"
+                   alt="Madhukar — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">HDTV</div>
+            <a class="fa-yt-badge" href="https://youtu.be/VZ3CPW9hlb4" target="_blank" rel="noopener noreferrer"
+          aria-label="Watch Madhukar on YouTube" title="Watch on YouTube">
+         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+           <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+         </svg>
+       </a>
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2015</span>
+              <span>10 min</span>
+              <span>HDTV</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">মধুকর</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">Madhukar <span class="fa-film-subtitle">— Way of Life</span></a></p>
+            <p class="fa-film-desc">An observational short film about begging as a way of life.</p>
+          </div>
+        </article>
+
+        <article class="fa-film-card" data-href="alumni/syed-oasiuddin-ahmed.html#filmography" tabindex="0" role="article"
+           aria-label="Phera by Syed Oasiuddin Ahmed">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/syed-oasiuddin-ahmed.html#filmography" aria-label="View Phera in Syed Oasiuddin Ahmed's profile">
+              <img src="https://img.youtube.com/vi/cTTfVWE_uxk/hqdefault.jpg"
+                   alt="Phera — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">2K Digital</div>
+            <a class="fa-yt-badge" href="https://youtu.be/cTTfVWE_uxk" target="_blank" rel="noopener noreferrer"
+          aria-label="Watch Phera on YouTube" title="Watch on YouTube">
+         <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+           <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+         </svg>
+       </a>
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2020</span>
+              <span>31 min</span>
+              <span>2K Digital</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">ফেরা</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">Phera <span class="fa-film-subtitle">— Return</span></a></p>
+            <p class="fa-film-desc">A layered meditation on the concept of return — to roots, memory, and identity.</p>
+          </div>
+        </article>
+
+        <article class="fa-film-card" data-href="alumni/syed-oasiuddin-ahmed.html#filmography" tabindex="0" role="article"
+           aria-label="Kumar Kahon by Syed Oasiuddin Ahmed">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/syed-oasiuddin-ahmed.html#filmography" aria-label="View Kumar Kahon in Syed Oasiuddin Ahmed's profile">
+              <img src="images/syed-kumar-kahon.webp"
+                   alt="Kumar Kahon — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">Digital</div>
+            
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2012</span>
+              <span>40 min</span>
+              <span>Digital</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">কুমার কাহন</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">Kumar Kahon</a></p>
+            <p class="fa-film-desc">A documentary exploring life, communities and culture along the Kumar River.</p>
+          </div>
+        </article>
+
+        <article class="fa-film-card" data-href="alumni/syed-oasiuddin-ahmed.html#filmography" tabindex="0" role="article"
+           aria-label="Mande by Syed Oasiuddin Ahmed">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/syed-oasiuddin-ahmed.html#filmography" aria-label="View Mande in Syed Oasiuddin Ahmed's profile">
+              <img src="images/syed-mande.webp"
+                   alt="Mande — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">Digital</div>
+            
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2015</span>
+              <span>—</span>
+              <span>Digital</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">মান্দে</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">Mande <span class="fa-film-subtitle">— The Soul of Nature</span></a></p>
+            <p class="fa-film-desc">An intimate documentary on the indigenous Mande (Garo) community.</p>
+          </div>
+        </article>
+
+        <article class="fa-film-card" data-href="alumni/syed-oasiuddin-ahmed.html#filmography" tabindex="0" role="article"
+           aria-label="Third Owner by Syed Oasiuddin Ahmed">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/syed-oasiuddin-ahmed.html#filmography" aria-label="View Third Owner in Syed Oasiuddin Ahmed's profile">
+              <img src="images/syed-third-owner-poster.jpg"
+                   alt="Third Owner — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">HDTV</div>
+            
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2025</span>
+              <span>23 min</span>
+              <span>HDTV</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">তৃতীয় পক্ষ</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/syed-oasiuddin-ahmed.html#filmography" class="fa-title-link">Third Owner</a></p>
+            <p class="fa-film-desc">His most recent work exploring multiple social perspectives. Released 2025.</p>
+          </div>
+        </article>
+
+        <article class="fa-film-card" data-href="alumni/sohel-ahmed-siddiquee.html#filmography" tabindex="0" role="article"
+           aria-label="Rupban Kanya by Sohel Ahmed Siddiquee">
+          <div class="fa-poster-wrap">
+            <a class="fa-poster-link" href="alumni/sohel-ahmed-siddiquee.html#filmography" aria-label="View Rupban Kanya in Sohel Ahmed Siddiquee's profile">
+              <img src="images/rupban-kanya.png"
+                   alt="Rupban Kanya — Film Poster"
+                   class="fa-film-poster"
+                   loading="lazy"
+                   decoding="async"
+                   onerror="this.style.opacity='0.5'"/>
+            </a>
+            <div class="fa-format-badge">Digital</div>
+            
+          </div>
+          <div class="fa-film-info">
+            <div class="fa-film-meta">
+              <span>2023</span>
+              <span>Docu</span>
+              <span>Digital</span>
+            </div>
+            <h3 class="fa-film-title-bn"><a href="alumni/sohel-ahmed-siddiquee.html#filmography" class="fa-title-link">রূপবান কন্যা</a></h3>
+            <p class="fa-film-title-en"><a href="alumni/sohel-ahmed-siddiquee.html#filmography" class="fa-title-link">Rupban Kanya</a></p>
+            <p class="fa-film-desc">একুশে পদক প্রাপ্ত অভিনেত্রী সুজাতা আজিমের জীবন ও কর্মের উপর নির্মিত প্রামাণ্যচিত্র। পরিচালনা: মোঃ সোহেল আহমেদ সিদ্দিকী।</p>
+          </div>
+        </article>
+        </div>
+      </section>
+  </main>
+
+  <!-- ── FOOTER ─────────────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="filmstrip-border left" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="filmstrip-border right" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="container footer-top">
+      <div class="footer-cols">
+        <div>
+          <a href="index.html" style="display:inline-block;text-decoration:none;">
+            <img src="images/bfiaa-logo.png" alt="BFIAA Logo"
+                 style="height:42px;width:auto;margin-bottom:16px;display:block;"
+                 onerror="this.style.display='none'"/>
+          </a>
+          <p class="footer-brand-desc">
+            The official alumni body of Bangladesh Film Institute,
+            connecting over 1,000 graduates across 86+ batches.
+          </p>
+        </div>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html#home">Homepage</a></li>
+            <li><a href="index.html#alumni">Featured Alumni</a></li>
+            <li><a href="index.html#alumni-films">Film Showcase</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Alumni Profiles</div>
+          <ul class="footer-links-list">
+            <li><a href="alumni/syed-oasiuddin-ahmed.html">Syed Oasiuddin Ahmed</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">BFI Network</div>
+          <ul class="footer-links-list">
+            <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org</a></li>
+            <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.</div>
+        <div>Dedicated to Alternative &amp; Independent Cinema in Bangladesh.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile nav toggle -->
+  <script>
+    (function(){
+      var h = document.getElementById('hamburger');
+      var n = document.getElementById('mobileNav');
+      if (!h || !n) return;
+      h.addEventListener('click', function(){
+        var o = n.classList.toggle('open');
+        h.setAttribute('aria-expanded', o);
+      });
+      n.querySelectorAll('a').forEach(function(l){
+        l.addEventListener('click', function(){
+          n.classList.remove('open');
+          h.setAttribute('aria-expanded','false');
+        });
+      });
+    })();
+  </script>
+
+  <!-- Card click delegation -->
+  <script>
+    document.addEventListener('click', function(e) {
+      var card = e.target.closest('.fa-film-card');
+      if (!card) return;
+      // If user clicked the youtube badge or any link directly, let it work natively
+      if (e.target.closest('.fa-yt-badge') || e.target.closest('a')) return;
+      var href = card.getAttribute('data-href');
+      if (href) {
+        window.location.href = href;
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        var card = document.activeElement && document.activeElement.closest('.fa-film-card');
+        if (card && !document.activeElement.closest('a')) {
+          e.preventDefault();
+          var href = card.getAttribute('data-href');
+          if (href) window.location.href = href;
+        }
+      }
+    });
+  </script>
+
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+  <script src="js/scroll-top.js"></script>
+
+</body>
+</html>
