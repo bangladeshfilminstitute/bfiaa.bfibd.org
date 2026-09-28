@@ -1,4 +1,6 @@
-/home        /           301
-/index       /           301
-/alumni      /           301
-/*           /index.html 404
+/home                              /                                 301
+/index                             /                                 301
+/alumni                            /                                 301
+/alumni/sohel-ahmed-siddiquee      /alumni/sohel-ahmmad-siddiquee   301
+/alumni/sohel-ahmed-siddiquee.html /alumni/sohel-ahmmad-siddiquee   301
+/*                                 /index.html                       404
