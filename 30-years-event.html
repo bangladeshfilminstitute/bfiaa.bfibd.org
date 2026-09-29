@@ -3,50 +3,799 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>30 Years of Tanvir Mokammel — BFIAA Retrospective 2023</title>
-  <meta name="description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring screenings, a masterclass, and the Uralchitra magazine launch."/>
+  <title>30 Years of Tanvir Mokammel — BFIAA Retrospective Festival 2023</title>
+  <meta name="description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring 7 film screenings, a masterclass, and the Uralchitra magazine launch."/>
   <link rel="canonical" href="https://bfiaa.bfibd.org/30-years-event.html"/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#1B3A2D"/>
-  <link rel="stylesheet" href="css/editorial.css"/>
-  <meta property="og:title" content="30 Years of Tanvir Mokammel — BFIAA Retrospective 2023"/>
-  <meta property="og:description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring screenings, a masterclass, and the Uralchitra magazine launch."/>
+  <meta name="theme-color" content="#071715"/>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="30 Years of Tanvir Mokammel — BFIAA Retrospective Festival 2023"/>
+  <meta property="og:description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring 7 film screenings, a masterclass, and the Uralchitra magazine launch."/>
   <meta property="og:url" content="https://bfiaa.bfibd.org/30-years-event.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/30-years/photo-1.jpg"/>
   <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="30 Years of Tanvir Mokammel — BFIAA Retrospective 2023"/>
-  <meta name="twitter:description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring screenings, a masterclass, and the Uralchitra magazine launch."/>
+  <meta name="twitter:title" content="30 Years of Tanvir Mokammel — BFIAA Retrospective Festival 2023"/>
+  <meta name="twitter:description" content="BFIAA hosted a 3-day retrospective festival in March 2023 celebrating 30 years of documentary filmmaking by Tanvir Mokammel — featuring 7 film screenings, a masterclass, and the Uralchitra magazine launch."/>
   <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/30-years/photo-1.jpg"/>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Editorial Design System Stylesheet -->
+  <link rel="stylesheet" href="css/editorial.css?v=4.0">
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "30 Years of Documentary Filmmaking — Tanvir Mokammel Retrospective",
-  "startDate": "2023-03-01",
-  "endDate": "2023-03-03",
-  "url": "https://bfiaa.bfibd.org/30-years-event.html",
-  "location": {
-    "@type": "Place",
-    "name": "Jatiya Chitrashala, Dhaka",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Dhaka",
-      "addressCountry": "BD"
-    }
-  },
-  "organizer": {
-    "@type": "Organization",
-    "name": "BFIAA",
-    "url": "https://bfiaa.bfibd.org"
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "30 Years of Documentary Filmmaking — Tanvir Mokammel Retrospective",
+    "startDate": "2023-03-06T17:00:00+06:00",
+    "endDate": "2023-03-08T21:30:00+06:00",
+    "url": "https://bfiaa.bfibd.org/30-years-event.html",
+    "location": {
+      "@type": "Place",
+      "name": "Jatiya Chitrashala Auditorium, Bangladesh Shilpakala Academy",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Segunbagicha, Dhaka",
+        "addressCountry": "BD"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "BFIAA",
+      "url": "https://bfiaa.bfibd.org"
+    },
+    "description": "3-day retrospective festival celebrating 30 years of documentary filmmaking by Tanvir Mokammel featuring screenings, academic masterclass, and Uralchitra special edition release."
   }
-}
   </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       BFIAA 30-YEARS RETROSPECTIVE EDITORIAL ARCHITECTURE
+       Unified with conference-2021 & editorial frameworks
+       Strict adherence: Zero movement/transform on hover
+       ═══════════════════════════════════════════════════ */
+
+    :root {
+      --retro-card-bg: #FAF9F5;
+      --retro-card-border: #D8D5CC;
+      --retro-card-hover: #B7A477;
+    }
+
+    /* ─── Hero Section ─── */
+    .retro-hero-section {
+      background-color: var(--deep-green);
+      background-image: 
+        linear-gradient(180deg, rgba(7, 23, 21, 0.94) 0%, rgba(7, 23, 21, 0.98) 100%),
+        radial-gradient(ellipse at 80% 20%, rgba(183, 164, 119, 0.14) 0%, transparent 60%);
+      color: var(--cream);
+      padding: 46px 0 56px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .retro-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .retro-breadcrumb {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(243, 240, 231, 0.6);
+      margin-bottom: 22px;
+    }
+    .retro-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+    .retro-breadcrumb a:hover {
+      color: #FFFFFF;
+    }
+    .retro-breadcrumb .sep {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .retro-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .retro-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--burgundy);
+      color: #FFFFFF;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
+    }
+
+    .retro-badge-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 3px;
+    }
+
+    .retro-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4.6vw, 54px);
+      font-weight: 500;
+      color: #FAF8F2;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .retro-hero-bn-title {
+      font-family: var(--bn);
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1.35;
+      margin-bottom: 22px;
+      display: block;
+    }
+
+    .retro-hero-quote {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(243, 240, 231, 0.88);
+      border-left: 3px solid var(--gold);
+      padding: 6px 0 6px 18px;
+      margin-bottom: 26px;
+      line-height: 1.6;
+      max-width: 880px;
+    }
+
+    /* ─── Hero Stat Bar ─── */
+    .retro-stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+      padding-top: 6px;
+    }
+
+    .retro-stat-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 4px;
+      padding: 14px 18px;
+    }
+
+    .retro-stat-num {
+      font-family: var(--serif);
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .retro-stat-lbl {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(243, 240, 231, 0.75);
+    }
+
+    /* ─── Page Body on Cream ─── */
+    .retro-page-body {
+      background: var(--cream);
+      padding: 50px 0 80px;
+    }
+
+    .retro-body-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ─── Section Header ─── */
+    .retro-section-header {
+      margin-bottom: 24px;
+    }
+
+    .retro-section-label {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .retro-section-title {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3.2vw, 34px);
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    /* ─── Metadata Cards Grid ─── */
+    .retro-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 46px;
+    }
+
+    .retro-meta-card {
+      background: var(--retro-card-bg);
+      border: 1px solid var(--retro-card-border);
+      border-radius: 4px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+    .retro-meta-card:hover {
+      border-color: var(--retro-card-hover);
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.08);
+    }
+
+    .retro-meta-card-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .retro-meta-card-value {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.4;
+    }
+
+    .retro-meta-card-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ─── Photo Showcase Stage & Dual Column ─── */
+    .retro-showcase-grid {
+      display: grid;
+      grid-template-columns: 480px 1fr;
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 980px) {
+      .retro-showcase-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .photo-stage-card {
+      background: var(--retro-card-bg);
+      border: 1px solid var(--retro-card-border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(7, 23, 21, 0.06);
+    }
+
+    .main-photo-frame {
+      position: relative;
+      background: #0B211F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .main-photo-frame img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+      transition: opacity 200ms ease;
+    }
+
+    .thumbnails-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 5px;
+      padding: 10px;
+      background: #071715;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .thumb-box {
+      cursor: pointer;
+      border-radius: 3px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      transition: border-color 150ms ease;
+      background: #0B211F;
+    }
+    .thumb-box.active,
+    .thumb-box:hover {
+      border-color: var(--gold);
+    }
+    .thumb-box img {
+      width: 100%;
+      height: 52px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .stage-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      background: #F3F0E7;
+      border-top: 1px solid var(--retro-card-border);
+    }
+
+    .btn-stage {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 9px 12px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+    }
+    .btn-stage.gold-btn {
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--gold);
+    }
+    .btn-stage.gold-btn:hover {
+      background: #0D2D2A;
+      color: #FFFFFF;
+    }
+    .btn-stage.outline-btn {
+      background: #FFFFFF;
+      border: 1px solid var(--retro-card-border);
+      color: var(--dark-text);
+    }
+    .btn-stage.outline-btn:hover {
+      border-color: var(--gold);
+      color: var(--burgundy);
+    }
+
+    /* ─── Narrative Content Column ─── */
+    .retro-narrative-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .bengali-quote-card {
+      background: #FFFFFF;
+      border: 1px solid var(--retro-card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.04);
+    }
+
+    .bengali-quote-card h4 {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--burgundy);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0 0 10px;
+    }
+
+    .bengali-quote-card p {
+      font-family: var(--bn);
+      font-size: 16px;
+      line-height: 1.95;
+      color: var(--dark-text);
+      margin: 0;
+    }
+
+    .editorial-prose-card {
+      background: var(--retro-card-bg);
+      border: 1px solid var(--retro-card-border);
+      border-radius: 4px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+    }
+
+    .editorial-prose-card h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--dark-text);
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--retro-card-border);
+    }
+
+    .editorial-prose-card p {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.85;
+      color: #384A44;
+      margin-bottom: 16px;
+    }
+    .editorial-prose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ─── Screened Films Cards Grid ─── */
+    .films-section-block {
+      margin-bottom: 50px;
+    }
+
+    .films-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .film-card {
+      background: #FFFFFF;
+      border: 1px solid var(--retro-card-border);
+      border-radius: 4px;
+      padding: 18px 22px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+    .film-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.07);
+    }
+
+    .film-num {
+      font-family: var(--mono);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--gold);
+      background: var(--deep-green);
+      padding: 4px 8px;
+      border-radius: 3px;
+      flex-shrink: 0;
+      letter-spacing: 0.05em;
+    }
+
+    .film-info {
+      flex: 1;
+    }
+
+    .film-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.3;
+      margin-bottom: 6px;
+    }
+
+    .film-desc {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      line-height: 1.6;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ─── Masterclass & Uralchitra Spotlight Block ─── */
+    .spotlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 860px) {
+      .spotlight-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .spotlight-card {
+      background: #FFFFFF;
+      border: 1px solid var(--retro-card-border);
+      border-radius: 6px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .spotlight-card-tag {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .spotlight-card-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.3;
+      margin: 0 0 12px;
+    }
+
+    .spotlight-card-desc {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      line-height: 1.75;
+      color: #384A44;
+      margin: 0 0 20px;
+    }
+
+    .spotlight-card-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--deep-green);
+      border-bottom: 1.5px solid var(--gold);
+      padding-bottom: 4px;
+      align-self: flex-start;
+      transition: color 150ms ease, border-color 150ms ease;
+    }
+    .spotlight-card-btn:hover {
+      color: var(--burgundy);
+      border-color: var(--burgundy);
+    }
+
+    /* ─── 3-Day Event Schedule Block (অনুষ্ঠানসূচী) ─── */
+    .schedule-section-block {
+      background: #FFFFFF;
+      border: 1px solid var(--retro-card-border);
+      border-radius: 6px;
+      padding: 34px 36px;
+      box-shadow: 0 2px 14px rgba(7, 23, 21, 0.04);
+      margin-bottom: 44px;
+    }
+
+    .schedule-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .schedule-title-bn {
+      font-family: var(--bn);
+      color: var(--dark-text);
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .schedule-sub-lbl {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .schedule-days-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .schedule-day-card {
+      background: var(--retro-card-bg);
+      border: 1px solid var(--retro-card-border);
+      border-top: 3px solid var(--burgundy);
+      border-radius: 4px;
+      padding: 22px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+    }
+
+    .schedule-day-date {
+      font-family: var(--bn);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--dark-text);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--retro-card-border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .schedule-day-date .highlight {
+      color: #9C2A3C;
+    }
+
+    .schedule-slot-wrap {
+      margin-bottom: 14px;
+      font-family: var(--bn);
+    }
+
+    .schedule-slot-header {
+      color: #7D5D1C;
+      font-size: 13px;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-family: var(--mono);
+      letter-spacing: 0.04em;
+    }
+
+    .schedule-item {
+      color: var(--dark-text);
+      font-size: 14.5px;
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+
+    .schedule-item-note {
+      color: var(--muted);
+      font-size: 12.5px;
+      margin-left: 12px;
+      display: block;
+    }
+
+    .schedule-break {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12.5px;
+      margin: 12px 0;
+      font-style: italic;
+      font-family: var(--bn);
+      background: rgba(183, 164, 119, 0.12);
+      padding: 4px 8px;
+      border-radius: 3px;
+    }
+
+    .schedule-venue-banner {
+      margin-top: 24px;
+      text-align: center;
+      padding: 12px 16px;
+      background: #F3F0E7;
+      border: 1px solid var(--retro-card-border);
+      border-radius: 4px;
+      font-family: var(--bn);
+      font-size: 14.5px;
+      font-weight: 500;
+      color: var(--dark-text);
+    }
+
+    /* ─── Navigation Strip ─── */
+    .retro-nav-strip {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 16px;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--retro-card-border);
+    }
+
+    @media (max-width: 720px) {
+      .retro-nav-strip {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .retro-nav-link {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 14px 18px;
+      background: var(--retro-card-bg);
+      border: 1px solid var(--retro-card-border);
+      border-radius: 4px;
+      transition: border-color 150ms ease, box-shadow 150ms ease;
+    }
+    .retro-nav-link:hover {
+      border-color: var(--gold);
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.06);
+    }
+    .retro-nav-dir {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .retro-nav-title {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.3;
+    }
+
+    .retro-hub-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 20px;
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--cream);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 150ms ease, border-color 150ms ease;
+    }
+    .retro-hub-btn:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: #FFFFFF;
+    }
+  </style>
 </head>
 <body>
-  
+
+  <!-- ─── Site Header ─── -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
@@ -60,8 +809,8 @@
         <a href="index.html#committee">Committee</a>
         <a href="index.html#conferences">Conferences</a>
         <a href="index.html#alumni">Alumni</a>
-        <a href="index.html#events" class="active">Events</a>
-        <a href="index.html#retrospective">30 Years</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#retrospective" class="active">30 Years</a>
         <a href="index.html#publications">Publications</a>
         <a href="index.html#picnic">Picnic</a>
         <a href="index.html#contact">Contact</a>
@@ -80,6 +829,7 @@
     </div>
   </header>
 
+  <!-- ─── Mobile Navigation Drawer ─── -->
   <nav class="mobile-nav" id="mobileNav">
     <a href="index.html#home">Home</a>
     <a href="index.html#about">About BFIAA</a>
@@ -95,225 +845,362 @@
     <a href="index.html#contact">Contact &amp; Join</a>
     <div class="mobile-cta-group">
       <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
-      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site ↗</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site &rarr;</a>
     </div>
   </nav>
 
-  <main class="editorial-page-hero">
-    <div class="container">
-      
-  <nav class="event-breadcrumb" aria-label="Breadcrumb">
-    <a href="index.html#home">Home</a>
-    <span class="sep">/</span>
-    <a href="index.html#retrospective">Retrospective</a>
-    <span class="sep">/</span>
-    <span>30 Years Celebration</span>
-  </nav>
+  <!-- ─── Cinematic Hero ─── -->
+  <section class="retro-hero-section">
+    <div class="container retro-hero-inner">
 
-  <div class="editorial-badge">🎞️ 30 YEARS MILESTONE &middot; 6–8 MARCH 2023</div>
-  <h1 class="editorial-title">30 Years of Documentary Filmmaking</h1>
-  <h2 class="editorial-bengali-title">তানভীর মোকাম্মেলের প্রামাণ্যচিত্রের ৩০ বছর পূর্তি উৎসব</h2>
+      <nav class="retro-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html#home">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#retrospective">Retrospective</a>
+        <span class="sep">/</span>
+        <span>30 Years Celebration</span>
+      </nav>
 
-  <div class="editorial-meta-table">
-    <div class="meta-col">
-      <label>Festival Dates</label>
-      <span>6–8 March 2023 (Three Days)</span>
-    </div>
-    <div class="meta-col">
-      <label>Auditorium Venue</label>
-      <span>Jatiya Chitrashala Auditorium, BSA, Dhaka</span>
-    </div>
-    <div class="meta-col">
-      <label>Celebrated Filmmaker</label>
-      <span>Tanvir Mokammel (Director, BFI)</span>
-    </div>
-    <div class="meta-col">
-      <label>Featured Screenings</label>
-      <span>7 Acclaimed Documentaries</span>
-    </div>
-    <div class="meta-col">
-      <label>Academic Session</label>
-      <span>Masterclass on "The Art of Documentary"</span>
-    </div>
-    <div class="meta-col">
-      <label>Publication Launch</label>
-      <span>Uralchitra Special Retrospective Edition</span>
-    </div>
-  </div>
-
-  <div class="editorial-grid">
-    <aside class="editorial-sticky-side">
-      <div class="photo-stage-card">
-        <div class="main-photo-frame">
-          <img id="activePhoto" src="images/30-years/photo-2.jpg" alt="Uralchitra Special Edition Launch"/>
-        </div>
-        <div class="thumbnails-strip" style="grid-template-columns: repeat(5, 1fr);">
-          <div class="thumb-box active" onclick="switchPhoto('images/30-years/photo-2.jpg', this)">
-            <img src="images/30-years/photo-2.jpg" alt="Magazine Launch"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-1.jpg', this)">
-            <img src="images/30-years/photo-1.jpg" alt="Stage Inauguration"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-3.jpg', this)">
-            <img src="images/30-years/photo-3.jpg" alt="Birthday Tribute"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-4.jpg', this)">
-            <img src="images/30-years/photo-4.jpg" alt="Tanvir Mokammel Address"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-5.jpg', this)">
-            <img src="images/30-years/photo-5.jpg" alt="Audience Gathering"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-6.jpg', this)">
-            <img src="images/30-years/photo-6.jpg" alt="Alumni Fellowship I"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-7.jpg', this)">
-            <img src="images/30-years/photo-7.jpg" alt="Alumni Fellowship II"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-8.jpg', this)">
-            <img src="images/30-years/photo-8.jpg" alt="Documentary Filmmakers"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-9.jpg', this)">
-            <img src="images/30-years/photo-9.jpg" alt="Festival Concourse"/>
-          </div>
-          <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-10.jpg', this)">
-            <img src="images/30-years/photo-10.jpg" alt="Closing Commemoration"/>
-          </div>
-        </div>
-        <div class="stage-actions">
-          <a id="viewFullBtn" href="images/30-years/photo-2.jpg" class="btn-stage gold-btn">🔍 Inspect Full Photo</a>
-          <a id="downloadBtn" href="images/30-years/photo-2.jpg" download class="btn-stage">⬇ Download Photo</a>
-        </div>
-      </div>
-      <div class="stats-summary-row">
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">7</div>
-          <div class="stat-summary-lbl">Films Screened</div>
-        </div>
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">3</div>
-          <div class="stat-summary-lbl">Festival Days</div>
-        </div>
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">30</div>
-          <div class="stat-summary-lbl">Years Honored</div>
-        </div>
-      </div>
-    </aside>
-
-    <div class="editorial-prose">
-      <div class="bengali-quote-card">
-        <h4>ত্রিশ বছরের অবিচল সৃজনযাত্রা</h4>
-        <p>
-          "মার্চ ২০২৩-এ বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশন (BFIAA) আয়োজন করে তিন দিনব্যাপী এক ঐতিহাসিক চলচ্চিত্র উৎসব। বরেণ্য চলচ্চিত্রকার তানভীর মোকাম্মেলের প্রামাণ্যচিত্র নির্মাণের তিন দশক উদযাপনে জাতীয় চিত্রশালা মিলনায়তনে সমবেত হন শত শত চলচ্চিত্রপ্রেমী ও গবেষক।"
-        </p>
+      <div class="retro-badges-row">
+        <span class="retro-badge-pill">🎞️ 30 Years Milestone</span>
+        <span class="retro-badge-outline">🏛️ Jatiya Chitrashala, BSA</span>
+        <span class="retro-badge-outline">📅 6–8 March 2023</span>
       </div>
 
-      <p>
-        The three-day retrospective presented a comprehensive chronological journey through Tanvir Mokammel's monumental non-fiction filmography. As one of South Asia's most distinguished documentary practitioners, Tanvir Mokammel has unflinchingly documented liberation struggles, religious pluralism, marginalized cultures, environmental crises, and subcontinental history throughout his three-decade career.
-      </p>
+      <h1 class="retro-hero-title">30 Years of Documentary Filmmaking</h1>
+      <span class="retro-hero-bn-title">তানভীর মোকাম্মেলের প্রামাণ্যচিত্রের ৩০ বছর পূর্তি উৎসব</span>
 
-      <div class="editorial-quote">
+      <div class="retro-hero-quote">
         "A documentary is not just an objective mirror of reality; it is a moral testimony and an act of remembrance." — Tanvir Mokammel
       </div>
 
-      <h3 style="font-family: var(--serif); color: var(--gold); font-size: 24px; margin: 30px 0 16px;">Screened Documentaries</h3>
-      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px;">
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">1. The Garment Girls of Bangladesh (২০০১)</strong> — Exploration of working-class women laboring in Dhaka's textile sector.
+      <div class="retro-stats-row">
+        <div class="retro-stat-box">
+          <div class="retro-stat-num">30</div>
+          <div class="retro-stat-lbl">Years Honored (1993–2023)</div>
         </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">2. A Tale of the Jamuna River (২০০২)</strong> — Life, erosion, and resilience along the majestic river basin.
+        <div class="retro-stat-box">
+          <div class="retro-stat-num">7</div>
+          <div class="retro-stat-lbl">Acclaimed Films Screened</div>
         </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">3. Tajuddin Ahmad: An Unsung Hero (২০০৭)</strong> — Landmark historical documentary on Bangladesh's first Prime Minister.
+        <div class="retro-stat-box">
+          <div class="retro-stat-num">3</div>
+          <div class="retro-stat-lbl">Festival Days (6–8 March)</div>
         </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">4. 1971 (২০০৬)</strong> — Monumental multi-hour epic oral history of the Bangladesh Liberation War.
-        </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">5. The Promised Land (২০০৭)</strong> — Poignant chronicle of Urdu-speaking communities (Biharis) in Bangladesh.
-        </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">6. Teardrops of Karnaphuli (২০১৪)</strong> — Devastation and displacement of indigenous hill peoples in the Chittagong Hill Tracts.
-        </div>
-        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); padding: 14px 18px; border-radius: 4px;">
-          <strong style="color: var(--gold);">7. Seemantorekha (The Borderline) (২০১৭)</strong> — An epic reflection on the 1947 Bengal Partition and its enduring trauma.
+        <div class="retro-stat-box">
+          <div class="retro-stat-num">200+</div>
+          <div class="retro-stat-lbl">Pages · Uralchitra Edition</div>
         </div>
       </div>
 
-      <h3 style="font-family: var(--serif); color: var(--gold); font-size: 24px; margin: 30px 0 16px;">Masterclass &amp; Magazine Launch</h3>
-      <p>
-        Alongside the film screenings, Tanvir Mokammel conducted an exclusive Masterclass on <em>"The Art and Ethics of Documentary Filmmaking"</em> for BFI alumni and young cinematographers. The festival culminated in the release of the <strong><em>Uralchitra</em> Special Retrospective Edition</strong> containing 200+ pages of academic essays, reviews, interviews, and archival photo documentation.
-      </p>
+    </div>
+  </section>
 
-      <!-- 3-Day Event Schedule (অনুষ্ঠানসূচী) -->
-      <div style="margin-top: 36px; padding: 28px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); border-radius: 8px;">
-        <div style="text-align: center; margin-bottom: 24px;">
-          <h3 style="font-family: var(--bn); color: var(--gold); font-size: 26px; margin-bottom: 4px;">অনুষ্ঠানসূচী</h3>
-          <p style="color: rgba(243,240,231,0.6); font-family: var(--mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase;">Official 3-Day Festival Schedule</p>
+  <!-- ─── Main Event Body ─── -->
+  <main class="retro-page-body">
+    <div class="container retro-body-inner">
+
+      <!-- Metadata Cards Grid -->
+      <div class="retro-meta-grid">
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">📅 Festival Dates</div>
+          <div class="retro-meta-card-value">6–8 March 2023</div>
+          <div class="retro-meta-card-note">Three Days of Continuous Screenings</div>
         </div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px;">
-          <!-- Day 1 -->
-          <div style="background: var(--dark-green); padding: 20px; border-radius: 6px; border-top: 3px solid var(--burgundy); border: 1px solid var(--border-dark); border-top-width: 3px;">
-            <h4 style="font-family: var(--bn); color: var(--cream); font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-              <span style="color: var(--gold);">৬ মার্চ</span> (সোমবার)
-            </h4>
-            <div style="margin-bottom: 14px; font-family: var(--bn);">
-              <div style="color: var(--gold); font-size: 13px; margin-bottom: 6px; font-weight: 600;">#১ম_স্লট (বিকাল ৫ টা – সন্ধ্যা ৬.৩০)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px; margin-bottom: 4px;">• উদ্বোধনী অনুষ্ঠান</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px;">• “প্রামাণ্যচিত্রের শিল্পরূপ” (৭৮ মি)<br/><span style="color: rgba(243,240,231,0.6); font-size: 12px; margin-left: 10px;">- আলোচক: তানভীর মোকাম্মেল</span></div>
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">🏛️ Auditorium Venue</div>
+          <div class="retro-meta-card-value">Jatiya Chitrashala Auditorium</div>
+          <div class="retro-meta-card-note">Bangladesh Shilpakala Academy, Segunbagicha</div>
+        </div>
+
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">🎬 Celebrated Filmmaker</div>
+          <div class="retro-meta-card-value">Tanvir Mokammel</div>
+          <div class="retro-meta-card-note">Director, Bangladesh Film Institute</div>
+        </div>
+
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">🎞️ Film Program</div>
+          <div class="retro-meta-card-value">7 Landmark Documentaries</div>
+          <div class="retro-meta-card-note">Liberation War, River Ecology &amp; History</div>
+        </div>
+
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">🎓 Academic Session</div>
+          <div class="retro-meta-card-value">The Art of Documentary</div>
+          <div class="retro-meta-card-note">Masterclass Conducted by the Filmmaker</div>
+        </div>
+
+        <div class="retro-meta-card">
+          <div class="retro-meta-card-label">📚 Archival Publication</div>
+          <div class="retro-meta-card-value">Uralchitra Special Edition</div>
+          <div class="retro-meta-card-note">Official Book &amp; Anthology Launch</div>
+        </div>
+      </div>
+
+      <!-- Main Showcase Grid (Photo Gallery + Narrative) -->
+      <div class="retro-showcase-grid">
+
+        <!-- Left Column: Interactive Archival Photo Stage -->
+        <aside class="photo-stage-card">
+          <div class="main-photo-frame">
+            <img id="activePhoto" src="images/30-years/photo-2.jpg" alt="Uralchitra Special Edition Launch at Retrospective" loading="lazy"/>
+          </div>
+          <div class="thumbnails-strip">
+            <div class="thumb-box active" onclick="switchPhoto('images/30-years/photo-2.jpg', this)">
+              <img src="images/30-years/photo-2.jpg" alt="Magazine Launch" loading="lazy"/>
             </div>
-            <div style="text-align: center; color: rgba(243,240,231,0.5); font-size: 12px; margin: 12px 0; font-style: italic; font-family: var(--bn);">☕ চা বিরতি (৬.৩০ – ৬.৪৫)</div>
-            <div style="font-family: var(--bn);">
-              <div style="color: var(--gold); font-size: 13px; margin-bottom: 6px; font-weight: 600;">#২য়_স্লট (সন্ধ্যা ৬.৪৫ – রাত ৮.৩৫)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px; margin-bottom: 4px;">• ”অচিন পাখী” (৬০ মি)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px;">• “ইমেজেস এন্ড ইম্পেশনস” (৪৭ মি)</div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-1.jpg', this)">
+              <img src="images/30-years/photo-1.jpg" alt="Stage Inauguration" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-3.jpg', this)">
+              <img src="images/30-years/photo-3.jpg" alt="Birthday Tribute" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-4.jpg', this)">
+              <img src="images/30-years/photo-4.jpg" alt="Tanvir Mokammel Address" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-5.jpg', this)">
+              <img src="images/30-years/photo-5.jpg" alt="Audience Gathering" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-6.jpg', this)">
+              <img src="images/30-years/photo-6.jpg" alt="Alumni Fellowship I" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-7.jpg', this)">
+              <img src="images/30-years/photo-7.jpg" alt="Alumni Fellowship II" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-8.jpg', this)">
+              <img src="images/30-years/photo-8.jpg" alt="Documentary Filmmakers" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-9.jpg', this)">
+              <img src="images/30-years/photo-9.jpg" alt="Festival Concourse" loading="lazy"/>
+            </div>
+            <div class="thumb-box" onclick="switchPhoto('images/30-years/photo-10.jpg', this)">
+              <img src="images/30-years/photo-10.jpg" alt="Closing Commemoration" loading="lazy"/>
+            </div>
+          </div>
+          <div class="stage-actions">
+            <a id="viewFullBtn" href="images/30-years/photo-2.jpg" target="_blank" class="btn-stage gold-btn">🔍 Full Photo</a>
+            <a id="downloadBtn" href="images/30-years/photo-2.jpg" download="Tanvir-Mokammel-30-Years.jpg" class="btn-stage outline-btn">⬇ Download</a>
+          </div>
+        </aside>
+
+        <!-- Right Column: Official Bengali Card & Overview -->
+        <div class="retro-narrative-col">
+
+          <!-- Verbatim Bengali Commemoration Card -->
+          <article class="bengali-quote-card">
+            <h4>ত্রিশ বছরের অবিচল সৃজনযাত্রা</h4>
+            <p>
+              মার্চ ২০২৩-এ বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশন (BFIAA) আয়োজন করে তিন দিনব্যাপী এক ঐতিহাসিক চলচ্চিত্র উৎসব। বরেণ্য চলচ্চিত্রকার তানভীর মোকাম্মেলের প্রামাণ্যচিত্র নির্মাণের তিন দশক উদযাপনে জাতীয় চিত্রশালা মিলনায়তনে সমবেত হন শত শত চলচ্চিত্রপ্রেমী ও গবেষক।
+            </p>
+          </article>
+
+          <!-- Festival Narrative & Historical Trajectory -->
+          <article class="editorial-prose-card">
+            <h3>Archival Chronicle &amp; Legacy</h3>
+            <p>
+              The three-day retrospective presented a comprehensive chronological journey through Tanvir Mokammel's monumental non-fiction filmography. As one of South Asia's most distinguished documentary practitioners, Tanvir Mokammel has unflinchingly documented liberation struggles, religious pluralism, marginalized cultures, environmental crises, and subcontinental history throughout his three-decade career.
+            </p>
+            <p>
+              From the historic struggles of working-class garment workers to the oral history of 1971 survivors, the displacement of indigenous peoples in the Chittagong Hill Tracts, and the lingering scars of the 1947 Bengal Partition, the festival served as an enduring archive of human resilience and moral witness.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- Section: The 7 Screened Documentaries -->
+      <section class="films-section-block">
+        <div class="retro-section-header">
+          <span class="retro-section-label">Festival Filmography · প্রদর্শিত প্রামাণ্যচিত্রসমূহ</span>
+          <h2 class="retro-section-title">The 7 Screened Documentaries</h2>
+        </div>
+
+        <div class="films-grid">
+          <!-- Film 1 -->
+          <div class="film-card">
+            <span class="film-num">01</span>
+            <div class="film-info">
+              <div class="film-title">The Garment Girls of Bangladesh (২০০১)</div>
+              <p class="film-desc">Exploration of working-class women laboring in Dhaka's textile and readymade garment sector, chronicling their socio-economic resilience.</p>
+            </div>
+          </div>
+
+          <!-- Film 2 -->
+          <div class="film-card">
+            <span class="film-num">02</span>
+            <div class="film-info">
+              <div class="film-title">A Tale of the Jamuna River (২০০২)</div>
+              <p class="film-desc">Life, riverbank erosion, displacement, and environmental resilience along the majestic Jamuna river basin.</p>
+            </div>
+          </div>
+
+          <!-- Film 3 -->
+          <div class="film-card">
+            <span class="film-num">03</span>
+            <div class="film-info">
+              <div class="film-title">Tajuddin Ahmad: An Unsung Hero (২০০৭)</div>
+              <p class="film-desc">Landmark biographical and political documentary on Bangladesh's first Prime Minister and wartime architect of the 1971 liberation.</p>
+            </div>
+          </div>
+
+          <!-- Film 4 -->
+          <div class="film-card">
+            <span class="film-num">04</span>
+            <div class="film-info">
+              <div class="film-title">1971 (২০০৬)</div>
+              <p class="film-desc">Monumental multi-hour epic oral history capturing the harrowing testimony and grassroots heroism of the Bangladesh Liberation War.</p>
+            </div>
+          </div>
+
+          <!-- Film 5 -->
+          <div class="film-card">
+            <span class="film-num">05</span>
+            <div class="film-info">
+              <div class="film-title">The Promised Land (২০০৭)</div>
+              <p class="film-desc">Poignant chronicle of the Urdu-speaking communities (Biharis) stranded in refugee settlements across Bangladesh.</p>
+            </div>
+          </div>
+
+          <!-- Film 6 -->
+          <div class="film-card">
+            <span class="film-num">06</span>
+            <div class="film-info">
+              <div class="film-title">Teardrops of Karnaphuli (২০১৪)</div>
+              <p class="film-desc">Devastation and forced displacement of indigenous Chakma and hill peoples caused by the Kaptai Dam in the Chittagong Hill Tracts.</p>
+            </div>
+          </div>
+
+          <!-- Film 7 -->
+          <div class="film-card">
+            <span class="film-num">07</span>
+            <div class="film-info">
+              <div class="film-title">Seemantorekha (The Borderline) (২০১৭)</div>
+              <p class="film-desc">An epic, meditative reflection on the 1947 Bengal Partition, crossing borders to investigate its enduring multi-generational trauma.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Masterclass & Uralchitra Spotlight -->
+      <section class="spotlight-grid">
+        <div class="spotlight-card">
+          <div>
+            <span class="spotlight-card-tag">Academic Masterclass · চলচ্চিত্র পাঠ</span>
+            <h3 class="spotlight-card-title">The Art &amp; Ethics of Documentary Filmmaking</h3>
+            <p class="spotlight-card-desc">
+              Alongside the film screenings, Tanvir Mokammel conducted an exclusive Masterclass for BFI alumni and young cinematographers. The session dissected non-fiction aesthetics, ethical responsibilities when filming vulnerable communities, research methodologies, and cinematic storytelling.
+            </p>
+          </div>
+          <span class="spotlight-card-btn">Conducted by Tanvir Mokammel &rarr;</span>
+        </div>
+
+        <div class="spotlight-card">
+          <div>
+            <span class="spotlight-card-tag">Archival Publication · বিশেষ প্রকাশনা</span>
+            <h3 class="spotlight-card-title">Uralchitra Special Retrospective Edition</h3>
+            <p class="spotlight-card-desc">
+              The festival culminated in the historic unveiling of the <em>Uralchitra</em> Special Retrospective Edition — a 200+ page commemorative volume containing critical essays, filmography analyses, archival photographs, and scholarly reviews of Tanvir Mokammel's cinematic oeuvre.
+            </p>
+          </div>
+          <a href="uralchitra-special.html" class="spotlight-card-btn">Explore Uralchitra Special Record &rarr;</a>
+        </div>
+      </section>
+
+      <!-- Section: Official 3-Day Program Schedule (অনুষ্ঠানসূচী) -->
+      <section class="schedule-section-block">
+        <div class="schedule-header">
+          <h3 class="schedule-title-bn">অনুষ্ঠানসূচী</h3>
+          <p class="schedule-sub-lbl">Official 3-Day Festival Schedule · 6–8 March 2023</p>
+        </div>
+
+        <div class="schedule-days-grid">
+          <!-- Day 1 -->
+          <div class="schedule-day-card">
+            <div class="schedule-day-date">
+              <span class="highlight">৬ মার্চ</span> (সোমবার)
+            </div>
+
+            <div class="schedule-slot-wrap">
+              <div class="schedule-slot-header">#১ম_স্লট (বিকাল ৫ টা – সন্ধ্যা ৬.৩০)</div>
+              <div class="schedule-item">• উদ্বোধনী অনুষ্ঠান</div>
+              <div class="schedule-item">• “প্রামাণ্যচিত্রের শিল্পরূপ” (৭৮ মি)<span class="schedule-item-note">- আলোচক: তানভীর মোকাম্মেল</span></div>
+            </div>
+
+            <div class="schedule-break">☕ চা বিরতি (সন্ধ্যা ৬.৩০ – ৬.৪৫)</div>
+
+            <div class="schedule-slot-wrap">
+              <div class="schedule-slot-header">#২য়_স্লট (সন্ধ্যা ৬.৪৫ – রাত ৮.৩৫)</div>
+              <div class="schedule-item">• ”অচিন পাখী” (৬০ মি)</div>
+              <div class="schedule-item">• “ইমেজেস এন্ড ইম্পেশনস” (৪৭ মি)</div>
             </div>
           </div>
 
           <!-- Day 2 -->
-          <div style="background: var(--dark-green); padding: 20px; border-radius: 6px; border-top: 3px solid var(--burgundy); border: 1px solid var(--border-dark); border-top-width: 3px;">
-            <h4 style="font-family: var(--bn); color: var(--cream); font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-              <span style="color: var(--gold);">৭ মার্চ</span> (মঙ্গলবার)
-            </h4>
-            <div style="margin-bottom: 14px; font-family: var(--bn);">
-              <div style="color: var(--gold); font-size: 13px; margin-bottom: 6px; font-weight: 600;">#১ম_স্লট (বিকাল ৫টা – রাত ৭.১৫)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px; margin-bottom: 4px;">• “অয়ি যমুনা” (৬০ মি)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px;">• “বনযাত্রী” (৬০ মি)</div>
+          <div class="schedule-day-card">
+            <div class="schedule-day-date">
+              <span class="highlight">৭ মার্চ</span> (মঙ্গলবার)
             </div>
-            <div style="text-align: center; color: rgba(243,240,231,0.5); font-size: 12px; margin: 12px 0; font-style: italic; font-family: var(--bn);">☕ চা বিরতি (৭.১৫ – ৭.৩০)</div>
-            <div style="font-family: var(--bn);">
-              <div style="color: var(--gold); font-size: 13px; margin-bottom: 6px; font-weight: 600;">#২য়_স্লট (রাত ৭.৩০ – ৯.২০)</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px;">• “তাজউদ্দীন আহমদ: নি:সঙ্গ সারথি” (১০৪ মি)</div>
+
+            <div class="schedule-slot-wrap">
+              <div class="schedule-slot-header">#১ম_স্লট (বিকাল ৫টা – রাত ৭.১৫)</div>
+              <div class="schedule-item">• “অয়ি যমুনা” (৬০ মি)</div>
+              <div class="schedule-item">• “বনযাত্রী” (৬০ মি)</div>
+            </div>
+
+            <div class="schedule-break">☕ চা বিরতি (রাত ৭.১৫ – ৭.৩০)</div>
+
+            <div class="schedule-slot-wrap">
+              <div class="schedule-slot-header">#২য়_স্লট (রাত ৭.৩০ – ৯.২০)</div>
+              <div class="schedule-item">• “তাজউদ্দীন আহমদ: নি:সঙ্গ সারথি” (১০৪ মি)</div>
             </div>
           </div>
 
           <!-- Day 3 -->
-          <div style="background: var(--dark-green); padding: 20px; border-radius: 6px; border-top: 3px solid var(--burgundy); border: 1px solid var(--border-dark); border-top-width: 3px;">
-            <h4 style="font-family: var(--bn); color: var(--cream); font-size: 18px; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
-              <span style="color: var(--gold);">৮ মার্চ</span> (বুধবার)
-            </h4>
-            <div style="font-family: var(--bn);">
-              <div style="color: rgba(243,240,231,0.9); margin-bottom: 10px; font-size: 14px;">• “কর্ণফুলীর কান্না” (৬০ মি)</div>
-              <div style="color: var(--gold); margin-bottom: 10px; font-size: 14px; font-weight: 600;">• “উড়ালচিত্র”-র মোড়ক উন্মোচন</div>
-              <div style="color: rgba(243,240,231,0.9); margin-bottom: 10px; font-size: 14px;">• তানভীর মোকাম্মেলের জন্মদিন উদযাপন</div>
-              <div style="color: rgba(243,240,231,0.9); margin-bottom: 10px; font-size: 14px;">• মীট দ্যা ডিরেক্টর</div>
-              <div style="color: rgba(243,240,231,0.9); font-size: 14px;">• “সীমান্তরেখা” (১৪৪ মি)</div>
+          <div class="schedule-day-card">
+            <div class="schedule-day-date">
+              <span class="highlight">৮ মার্চ</span> (বুধবার)
+            </div>
+
+            <div class="schedule-slot-wrap">
+              <div class="schedule-slot-header">#পূর্ণাঙ্গ_সমাপনী_অধিবেশন</div>
+              <div class="schedule-item">• “কর্ণফুলীর কান্না” (৬০ মি)</div>
+              <div class="schedule-item" style="font-weight: 600; color: #9C2A3C;">• “উড়ালচিত্র”-র মোড়ক উন্মোচন</div>
+              <div class="schedule-item">• তানভীর মোকাম্মেলের জন্মদিন উদযাপন</div>
+              <div class="schedule-item">• মীট দ্যা ডিরেক্টর</div>
+              <div class="schedule-item">• “সীমান্তরেখা” (১৪৪ মি)</div>
             </div>
           </div>
         </div>
 
-        <div style="margin-top: 20px; text-align: center; padding: 12px; background: rgba(0,0,0,0.2); border-radius: 4px; font-family: var(--bn); font-size: 14px; color: var(--gold);">
+        <div class="schedule-venue-banner">
           📍 স্থান: চিত্রশালা মিলনায়তন, বাংলাদেশ শিল্পকলা একাডেমী, সেগুনবাগিচা, ঢাকা
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+
+      <!-- Retrospective Navigation Strip -->
+      <nav class="retro-nav-strip" aria-label="Retrospective Navigation">
+        <a href="uralchitra-special.html" class="retro-nav-link" style="text-align: left;">
+          <span class="retro-nav-dir">&larr; Publication Record</span>
+          <span class="retro-nav-title">Uralchitra Special Edition</span>
+        </a>
+
+        <a href="index.html#retrospective" class="retro-hub-btn">
+          <span>&uarr; Retrospective Hub</span>
+        </a>
+
+        <a href="conference-2021.html" class="retro-nav-link" style="text-align: right;">
+          <span class="retro-nav-dir">Biennial Assembly &rarr;</span>
+          <span class="retro-nav-title">Conference 2021 Record</span>
+        </a>
+      </nav>
 
     </div>
   </main>
-  
+
+  <!-- ─── Site Footer ─── -->
   <footer class="site-footer" role="contentinfo">
     <div class="filmstrip-border left" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span></span>
@@ -335,6 +1222,14 @@
           <p class="footer-brand-desc">
             The official alumni body of Bangladesh Film Institute, connecting over 1,000 graduates across 86+ batches in a shared commitment to cinema culture.
           </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener" class="social-link" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://bfibd.org" target="_blank" rel="noopener" class="social-link" title="BFI Main Site">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
         </div>
 
         <div>
@@ -396,17 +1291,18 @@
         });
       });
     }
-      function switchPhoto(src, thumb) {
+
+    function switchPhoto(src, thumb) {
       const activePhoto = document.getElementById('activePhoto');
       const viewFullBtn = document.getElementById('viewFullBtn');
       const downloadBtn = document.getElementById('downloadBtn');
 
       if (activePhoto) {
-        activePhoto.style.opacity = '0';
+        activePhoto.style.opacity = '0.5';
         setTimeout(() => {
           activePhoto.src = src;
           activePhoto.style.opacity = '1';
-        }, 150);
+        }, 120);
       }
 
       const allThumbs = document.querySelectorAll('.thumb-box');
