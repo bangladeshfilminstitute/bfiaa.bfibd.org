@@ -225,9 +225,9 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
-        opacity: 0.35;
-        filter: grayscale(40%) contrast(110%);
+        object-position: 55% top;
+        opacity: 0.45;
+        filter: grayscale(30%) contrast(110%);
         transform: scale(1.02);
       }
       
@@ -237,11 +237,17 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(to right, 
-          rgba(11,15,14,0.96) 0%, 
-          rgba(11,15,14,0.85) 45%, 
-          rgba(11,15,14,0.4) 100%
-        );
+        background: 
+          linear-gradient(to right, 
+            rgba(11,15,14,0.97) 0%, 
+            rgba(11,15,14,0.82) 42%, 
+            rgba(11,15,14,0.20) 68%,
+            rgba(11,15,14,0.10) 100%
+          ),
+          linear-gradient(to top,
+            rgba(11,15,14,0.65) 0%,
+            rgba(11,15,14,0.0) 30%
+          );
         z-index: 2;
       }
       
@@ -693,6 +699,20 @@
         .hero-section { min-height: 90svh; align-items: flex-end; }
         .hero-content { padding: 18svh 20px 40px; }
         .hero-title { font-size: 2.6rem; }
+        /* On mobile, shift image right so Sandip's face stays visible */
+        .hero-bg img {
+          object-position: 60% top;
+        }
+        /* On mobile, lighten the overlay more since full width shows face */
+        .hero-overlay {
+          background:
+            linear-gradient(to bottom,
+              rgba(11,15,14,0.60) 0%,
+              rgba(11,15,14,0.30) 35%,
+              rgba(11,15,14,0.70) 75%,
+              rgba(11,15,14,0.90) 100%
+            );
+        }
         .about-portrait-float {
           float: none;
           width: calc(100% - 40px);
