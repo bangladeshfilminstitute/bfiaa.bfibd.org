@@ -355,12 +355,11 @@
       border-radius: 6px;
       overflow: hidden;
       box-shadow: 0 4px 18px rgba(7, 23, 21, 0.04);
-      transition: transform 250ms ease, box-shadow 250ms ease;
+      transition: box-shadow 250ms ease, border-color 250ms ease;
       display: flex;
       flex-direction: column;
     }
     .featured-card:hover {
-      transform: translateY(-4px);
       box-shadow: 0 16px 36px rgba(7, 23, 21, 0.09);
     }
     .featured-badge {
@@ -389,10 +388,11 @@
       height: 100%;
       object-fit: cover;
       object-position: center top;
-      transition: transform 350ms ease;
+      transition: opacity 350ms ease, filter 350ms ease;
     }
     .featured-card:hover .featured-img-wrap img {
-      transform: scale(1.04);
+      opacity: 0.85;
+      filter: brightness(1.08);
     }
     .featured-body {
       padding: 26px;
@@ -477,7 +477,6 @@
     .roster-card:hover {
       border-color: var(--dark-green);
       box-shadow: 0 8px 24px rgba(7, 23, 21, 0.06);
-      transform: translateY(-2px);
     }
     .roster-top {
       display: flex;

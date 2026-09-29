@@ -371,11 +371,12 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+        transition: opacity 0.5s ease, filter 0.5s ease;
       }
       
       .film-card:hover .film-image-wrap img {
-        transform: scale(1.05);
+        opacity: 0.86;
+        filter: brightness(1.1) contrast(1.05);
       }
       
       .film-overlay {

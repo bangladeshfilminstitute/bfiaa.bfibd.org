@@ -755,10 +755,10 @@
       border: 1px solid var(--border-light);
       border-radius: 4px;
       padding: 30px 24px;
-      transition: transform 250ms ease, box-shadow 250ms ease;
+      transition: box-shadow 250ms ease, border-color 250ms ease;
     }
     .mission-card:hover {
-      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
       box-shadow: 0 16px 36px rgba(7,23,21,0.08);
     }
     .mission-icon {
@@ -909,9 +909,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 350ms ease;
+      transition: opacity 350ms ease, filter 350ms ease;
     }
-    .conf-card:hover .conf-img-wrap img { transform: scale(1.03); }
+    .conf-card:hover .conf-img-wrap img { opacity: 0.88; filter: brightness(1.06); }
     .conf-body {
       padding: 26px;
       display: flex;
@@ -990,10 +990,10 @@
       border: 1px solid var(--border-light);
       border-radius: 4px;
       overflow: hidden;
-      transition: transform 250ms ease, box-shadow 250ms ease;
+      transition: box-shadow 250ms ease, border-color 250ms ease;
     }
     .alumni-card:hover {
-      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(7, 23, 21, 0.12);
       box-shadow: 0 16px 36px rgba(7, 23, 21, 0.08);
     }
     .alumni-card-img {
@@ -1006,9 +1006,9 @@
       height: 100%;
       object-fit: cover;
       object-position: center top;
-      transition: transform 300ms ease;
+      transition: opacity 300ms ease, filter 300ms ease;
     }
-    .alumni-card:hover .alumni-card-img img { transform: scale(1.04); }
+    .alumni-card:hover .alumni-card-img img { opacity: 0.88; filter: brightness(1.08); }
     .alumni-card-body { padding: 20px; }
     .alumni-role {
       font-size: 9px;
@@ -1068,7 +1068,7 @@
       transition: transform 250ms ease, background 200ms ease;
     }
     .event-card:hover {
-      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
       background: rgba(255,255,255,0.06);
     }
     .event-thumb {
@@ -1250,11 +1250,11 @@
       border: 1px solid var(--border-light);
       display: flex;
       flex-direction: column;
-      transition: transform 250ms ease, box-shadow 250ms ease;
+      transition: box-shadow 250ms ease, border-color 250ms ease;
       cursor: pointer;
     }
     .pub-book-card:hover {
-      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
       box-shadow: 0 20px 45px rgba(7,23,21,0.25);
     }
     .pub-book-cover {
@@ -1398,7 +1398,7 @@
       transition: transform 250ms ease, border-color 250ms ease, box-shadow 250ms ease;
     }
     .picnic-card-featured:hover {
-      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
       border-color: var(--gold);
       box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
     }
@@ -1412,11 +1412,9 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 400ms ease;
+      transition: opacity 400ms ease, filter 400ms ease;
     }
-    .picnic-card-featured:hover .picnic-img-wrap img {
-      transform: scale(1.05);
-    }
+    .picnic-card-featured:hover .picnic-img-wrap img { opacity: 0.84; filter: brightness(1.08); }
     .picnic-card-caption {
       padding: 14px 18px;
     }
@@ -1521,15 +1519,13 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 350ms ease;
+      transition: opacity 350ms ease, filter 350ms ease;
     }
     .picnic-item:hover {
-      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
       border-color: var(--gold);
     }
-    .picnic-item:hover img {
-      transform: scale(1.06);
-    }
+    .picnic-item:hover img { opacity: 0.85; filter: brightness(1.08); }
     .picnic-overlay {
       position: absolute;
       inset: 0;
@@ -1805,11 +1801,11 @@
       display: inline-block;
       text-decoration: none;
       cursor: pointer;
-      transition: opacity 0.2s ease, transform 0.2s ease;
+      transition: opacity 0.2s ease;
     }
     .footer-brand-link:hover {
       opacity: 0.82;
-      transform: translateY(-1px);
+      
     }
     .footer-brand-title {
       font-family: var(--serif);
@@ -1850,11 +1846,11 @@
       color: rgba(243,240,231,0.6);
       display: inline-block;
       padding: 2px 0;
-      transition: color 200ms ease, transform 150ms ease;
+      transition: color 200ms ease, letter-spacing 150ms ease;
     }
     .footer-links-list a:hover {
       color: var(--cream);
-      transform: translateX(2px);
+      letter-spacing: 0.2px;
     }
     .footer-bottom {
       border-top: 1px solid rgba(255,255,255,0.08);
@@ -2016,7 +2012,7 @@
       background: var(--gold);
       border-color: var(--gold);
       color: #000;
-      transform: scale(1.08);
+      box-shadow: 0 0 15px rgba(183, 164, 119, 0.4);
     }
     .lb-canvas {
       flex: 1;
@@ -2330,7 +2326,7 @@
       background: var(--burgundy, #9E3030);
       border-color: var(--gold, #B7A477);
       color: #ffffff;
-      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
       box-shadow: 0 6px 22px rgba(158, 48, 48, 0.4);
     }
     .scroll-top-btn:active {
@@ -2913,7 +2909,7 @@
     border-color: var(--afs-accent);
     color: var(--afs-accent);
     background: rgba(210,173,107,0.08);
-    transform: scale(1.08);
+    box-shadow: 0 0 12px rgba(210, 173, 107, 0.35);
   }
   .afs-nav-btn:focus-visible {
     box-shadow: 0 0 0 3px var(--afs-accent);
@@ -2984,10 +2980,10 @@
     position: absolute;
     inset: 0;
     background: rgba(210,173,107,0.07);
-    transform: translateX(-100%);
-    transition: transform 0.35s ease;
+    opacity: 0;
+    transition: opacity 0.35s ease;
   }
-  .afs-see-all-btn:hover::before { transform: translateX(0); }
+  .afs-see-all-btn:hover::before { opacity: 1; }
   .afs-see-all-btn:hover {
     border-color: var(--afs-accent);
     color: var(--afs-accent);
@@ -3068,13 +3064,13 @@
     cursor: pointer;
     z-index: 20;
     box-shadow: 0 2px 8px rgba(0,0,0,0.55);
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: background 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
     flex-shrink: 0;
   }
   .afs-yt-badge:hover {
     background: #cc0000;
-    transform: scale(1.12);
+    box-shadow: 0 2px 12px rgba(204, 0, 0, 0.5);
   }
   .afs-yt-badge:focus-visible {
     outline: none;

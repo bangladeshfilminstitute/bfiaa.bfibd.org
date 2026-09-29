@@ -225,28 +225,25 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 55% top;
-        opacity: 0.45;
-        filter: grayscale(30%) contrast(110%);
-        transform: scale(1.02);
+        object-position: 52% 30%;
+        opacity: 0.55;
+        filter: contrast(1.1) brightness(0.92) grayscale(12%);
       }
       
       .hero-overlay {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        inset: 0;
         background: 
           linear-gradient(to right, 
-            rgba(11,15,14,0.97) 0%, 
-            rgba(11,15,14,0.82) 42%, 
-            rgba(11,15,14,0.20) 68%,
-            rgba(11,15,14,0.10) 100%
+            rgba(11,15,14,0.96) 0%, 
+            rgba(11,15,14,0.82) 38%, 
+            rgba(11,15,14,0.35) 65%,
+            rgba(11,15,14,0.12) 100%
           ),
           linear-gradient(to top,
-            rgba(11,15,14,0.65) 0%,
-            rgba(11,15,14,0.0) 30%
+            rgba(11,15,14,0.85) 0%,
+            rgba(11,15,14,0.3) 25%,
+            transparent 60%
           );
         z-index: 2;
       }
@@ -466,11 +463,11 @@
         background: rgba(255,255,255,0.015);
         border: 1px solid var(--alumni-line);
         padding: 16px;
-        transition: transform 0.3s ease, border-color 0.3s ease;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
       }
       .film-card:hover {
-        transform: translateY(-5px);
         border-color: var(--alumni-accent);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
       }
       
       .film-image-wrap {
@@ -486,10 +483,11 @@
         height: 100%;
         object-fit: cover;
         object-position: center top;
-        transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        transition: opacity 0.5s ease, filter 0.5s ease;
       }
       .film-card:hover .film-image-wrap img {
-        transform: scale(1.05);
+        opacity: 0.86;
+        filter: brightness(1.1) contrast(1.05);
       }
       
       .film-meta-bar {
@@ -699,18 +697,18 @@
         .hero-section { min-height: 90svh; align-items: flex-end; }
         .hero-content { padding: 18svh 20px 40px; }
         .hero-title { font-size: 2.6rem; }
-        /* On mobile, shift image right so Sandip's face stays visible */
+        /* On mobile, center Sandip's face at top half of viewport */
         .hero-bg img {
-          object-position: 60% top;
+          object-position: 50% 25%;
         }
-        /* On mobile, lighten the overlay more since full width shows face */
+        /* On mobile, lighten upper area for face clarity and darken lower area for text contrast */
         .hero-overlay {
           background:
             linear-gradient(to bottom,
-              rgba(11,15,14,0.60) 0%,
-              rgba(11,15,14,0.30) 35%,
-              rgba(11,15,14,0.70) 75%,
-              rgba(11,15,14,0.90) 100%
+              rgba(11,15,14,0.35) 0%,
+              rgba(11,15,14,0.15) 30%,
+              rgba(11,15,14,0.75) 65%,
+              rgba(11,15,14,0.96) 100%
             );
         }
         .about-portrait-float {
