@@ -1,12 +1,10 @@
 /home                                            /                                           301
 /index                                           /                                           301
-/alumni                                          /honorablemembers/                          301
-/alumni/                                         /honorablemembers/                          301
-/alumni/sohel-ahmed-siddiquee                    /honorablemembers/sohel-ahmmad-siddiquee   301
-/alumni/sohel-ahmed-siddiquee.html               /honorablemembers/sohel-ahmmad-siddiquee   301
-/alumni/*                                        /honorablemembers/:splat                    301
 /honorable-members                               /honorablemembers/                          301
 /honorable-members/*                             /honorablemembers/:splat                    301
 /honorablemembers/sohel-ahmed-siddiquee          /honorablemembers/sohel-ahmmad-siddiquee   301
 /honorablemembers/sohel-ahmed-siddiquee.html     /honorablemembers/sohel-ahmmad-siddiquee   301
-/*                                               /index.html                                 404
+/alumni                                          /404.html                                   404
+/alumni/                                         /404.html                                   404
+/alumni/*                                        /404.html                                   404
+/*                                               /404.html                                   404
