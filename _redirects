@@ -4,7 +4,6 @@
 /honorable-members/*                             /honorablemembers/:splat                    301
 /honorablemembers/sohel-ahmed-siddiquee          /honorablemembers/sohel-ahmmad-siddiquee   301
 /honorablemembers/sohel-ahmed-siddiquee.html     /honorablemembers/sohel-ahmmad-siddiquee   301
-/alumni                                          /404.html                                   404
-/alumni/                                         /404.html                                   404
-/alumni/*                                        /404.html                                   404
-/*                                               /404.html                                   404
+/alumni                                          /404.html                                   302
+/alumni/                                         /404.html                                   302
+/alumni/*                                        /404.html                                   302

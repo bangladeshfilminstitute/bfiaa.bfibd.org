@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 — Page Not Found | BFIAA</title>
+  <meta name="robots" content="noindex, nofollow"/>
+  <link rel="icon" type="image/png" href="/images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#0B211F"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/editorial.css?v=4.0">
+
+  <style>
+    :root {
+      --cream: #F3F0E7;
+      --warm-white: #FAF9F5;
+      --deep-green: #071715;
+      --dark-green: #0B211F;
+      --burgundy: #9E3030;
+      --gold: #C2AB72;
+    }
+    body {
+      background-color: var(--dark-green);
+      color: var(--cream);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .notfound-header {
+      padding: 24px 32px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .notfound-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+      color: var(--cream);
+    }
+    .notfound-brand img {
+      height: 38px;
+      width: auto;
+    }
+    .notfound-brand span {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 20px;
+      letter-spacing: 0.5px;
+      font-weight: 600;
+    }
+    .notfound-main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .notfound-card {
+      max-width: 620px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 56px 40px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+    .notfound-badge {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    .notfound-code {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1;
+      color: var(--cream);
+      margin: 0 0 16px;
+      letter-spacing: -2px;
+    }
+    .notfound-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 28px;
+      font-weight: 600;
+      margin: 0 0 12px;
+      color: var(--cream);
+    }
+    .notfound-bn {
+      font-family: 'Hind Siliguri', sans-serif;
+      font-size: 18px;
+      color: var(--gold);
+      margin: 0 0 24px;
+    }
+    .notfound-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #A3ACA9;
+      margin-bottom: 36px;
+    }
+    .notfound-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-action-primary {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background: var(--burgundy);
+      color: #fff;
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+      transition: background 0.2s ease;
+    }
+    .btn-action-primary:hover {
+      background: #852626;
+    }
+    .btn-action-secondary {
+      display: inline-flex;
+      align-items: center;
+      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--cream);
+      font-weight: 500;
+      font-size: 14px;
+      text-decoration: none;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      letter-spacing: 0.5px;
+      transition: all 0.2s ease;
+    }
+    .btn-action-secondary:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .notfound-footer {
+      padding: 24px;
+      text-align: center;
+      font-size: 13px;
+      color: #6B7572;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+  </style>
+</head>
+<body>
+  <header class="notfound-header">
+    <a href="/" class="notfound-brand">
+      <img src="/images/bfiaa-logo.png" alt="BFIAA Logo"/>
+      <span>BFIAA</span>
+    </a>
+    <a href="/" class="btn-action-secondary" style="padding: 8px 16px; font-size: 13px;">Back to Home</a>
+  </header>
+
+  <main class="notfound-main">
+    <div class="notfound-card">
+      <span class="notfound-badge">Error 404</span>
+      <h1 class="notfound-code">404</h1>
+      <h2 class="notfound-title">Page Not Found</h2>
+      <p class="notfound-bn">পৃষ্ঠাটি পাওয়া যায়নি</p>
+      <p class="notfound-desc">
+        The link you followed does not exist, has been removed, or has been relocated to our official honorable members directory.
+      </p>
+      <div class="notfound-actions">
+        <a href="/honorablemembers/" class="btn-action-primary">View Honorable Members &rarr;</a>
+        <a href="/" class="btn-action-secondary">Return to Homepage</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="notfound-footer">
+    &copy; 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.
+  </footer>
+</body>
+</html>
