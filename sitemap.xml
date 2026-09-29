@@ -46,6 +46,16 @@
       <image:title>Sandip Kumar Mistry — Documentary Filmmaker, Researcher &amp; Musician, BFIAA Alumni</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/kazi-mushfiqus-saleheen</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bfiaa.bfibd.org/images/kazi-saleheen-og-thumbnail.jpg</image:loc>
+      <image:title>Kazi Mushfiqus Saleheen — Filmmaker, Assistant Director &amp; BFIAA Alumni</image:title>
+    </image:image>
+  </url>
   <!-- Films Page -->
   <url>
     <loc>https://bfiaa.bfibd.org/films</loc>
