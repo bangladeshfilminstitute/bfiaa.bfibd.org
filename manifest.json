@@ -1,12 +1,12 @@
 {
   "name": "Bangladesh Film Institute Alumni Association",
   "short_name": "BFIAA",
-  "description": "Alumni association of Bangladesh Film Institute graduates",
+  "description": "The official alumni association of the Bangladesh Film Institute (BFIAA)",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#080808",
-  "theme_color": "#8B0000",
-  "lang": "bn",
+  "background_color": "#071715",
+  "theme_color": "#0B211F",
+  "lang": "en",
   "dir": "ltr",
   "categories": ["entertainment", "education"],
   "icons": [

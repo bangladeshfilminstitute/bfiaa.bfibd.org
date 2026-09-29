@@ -3,458 +3,1749 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Constitution — BFIAA | Bangladesh Film Institute Alumni Association</title>
-  <meta name="description" content="The official constitution of the Bangladesh Film Institute Alumni Association (BFIAA), establishing its objectives, membership, governance and activities."/>
-  <link rel="canonical" href="https://bfiaa.bfibd.org/constitution.html"/>
+  <title>BFIAA Constitution — Official Governing Document</title>
+  <meta name="description" content="The full official constitution of the Bangladesh Film Institute Alumni Association (BFIAA) — all 15 Articles covering governance, membership, committees, and biennial assembly."/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#8B0000"/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/constitution.html"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#1B3A2D"/>
 
-  <meta property="og:title" content="Constitution — BFIAA"/>
-  <meta property="og:description" content="The official constitution of the Bangladesh Film Institute Alumni Association (BFIAA)."/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/editorial.css?v=4.0">
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       CONSTITUTION CINEMATIC EDITORIAL STYLING
+       Matches reference design: media_1789636741540.png
+       ═══════════════════════════════════════════════════ */
+
+    :root {
+      --cream: #F3F0E7;
+      --warm-white: #F8F6F0;
+      --deep-green: #071715;
+      --dark-green: #0B211F;
+      --black: #080D0C;
+      --charcoal: #18201F;
+      --dark-text: #10201E;
+      --muted: #737A76;
+      --light-border: #D8D5CC;
+      --dark-border: rgba(255, 255, 255, 0.18);
+      --burgundy: #9E3030;
+      --dark-burgundy: #7C2424;
+      --gold: #B7A477;
+    }
+
+    html {
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--cream);
+      color: var(--dark-text);
+      font-family: var(--sans);
+      overflow-x: hidden;
+      max-width: 100vw;
+      width: 100%;
+      position: relative;
+    }
+
+    .anchor-alias {
+      display: block;
+      position: relative;
+      top: -85px;
+      visibility: hidden;
+      height: 0;
+      pointer-events: none;
+    }
+
+    /* ─── Hero Section ─── */
+    .constitution-hero {
+      position: relative;
+      background-color: var(--deep-green);
+      background-image: linear-gradient(
+          90deg,
+          rgba(4, 15, 14, 0.98) 0%,
+          rgba(4, 15, 14, 0.92) 28%,
+          rgba(4, 15, 14, 0.70) 55%,
+          rgba(4, 15, 14, 0.32) 80%,
+          rgba(4, 15, 14, 0.15) 100%
+        ),
+        url('images/constitution-hero-bg.jpg');
+      background-size: cover;
+      background-position: right center;
+      background-repeat: no-repeat;
+      min-height: 290px;
+      padding: 60px 0 54px;
+      border-bottom: 1px solid var(--dark-border);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .constitution-hero-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    .hero-content {
+      max-width: 620px;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      box-sizing: border-box;
+    }
+
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .hero-eyebrow-line {
+      width: 28px;
+      height: 2px;
+      background-color: var(--burgundy);
+      display: inline-block;
+    }
+
+    .hero-eyebrow-text {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(243, 240, 231, 0.85);
+      font-weight: 500;
+    }
+
+    .hero-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 5.5vw, 68px);
+      line-height: 1.02;
+      font-weight: 500;
+      color: #FAF8F2;
+      margin-bottom: 18px;
+      letter-spacing: -0.01em;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .hero-title span {
+      display: block;
+      font-weight: 400;
+    }
+
+    .hero-desc {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: rgba(243, 240, 231, 0.75);
+      margin-bottom: 22px;
+      max-width: 540px;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .hero-meta {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 10px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+    }
+
+    .hero-meta .sep {
+      color: rgba(243, 240, 231, 0.35);
+    }
+
+    /* ─── Main Document Layout ─── */
+    .document-page-wrap {
+      padding: 60px 0 90px;
+      background: var(--cream);
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    .document-container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 230px minmax(0, 1fr);
+      gap: 56px;
+      align-items: start;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    /* ─── Sidebar (TOC) ─── */
+    .contents-sidebar {
+      position: sticky;
+      top: 96px;
+      background: transparent;
+      padding-right: 12px;
+    }
+
+    .sidebar-header-label {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--light-border);
+    }
+
+    .sidebar-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 28px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .sidebar-nav-item {
+      display: flex;
+      align-items: baseline;
+      padding: 6px 10px 6px 8px;
+      font-size: 12.5px;
+      color: var(--muted);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: all 180ms ease;
+      line-height: 1.35;
+    }
+
+    .sidebar-nav-item:hover {
+      color: var(--dark-text);
+      background: rgba(0, 0, 0, 0.025);
+    }
+
+    .sidebar-nav-item.active {
+      color: var(--dark-text);
+      font-weight: 600;
+      border-left-color: var(--burgundy);
+      background: rgba(158, 48, 48, 0.04);
+    }
+
+    .sidebar-nav-item .art-num {
+      width: 68px;
+      flex-shrink: 0;
+      font-family: var(--sans);
+      font-size: 11.5px;
+      color: inherit;
+    }
+
+    .sidebar-nav-item .art-title {
+      flex: 1;
+      color: inherit;
+    }
+
+    /* Special row for Preamble */
+    .sidebar-nav-item.preamble-link {
+      padding-left: 8px;
+    }
+
+    .btn-download-print {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      height: 42px;
+      background: var(--dark-green);
+      color: var(--cream);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      border: 1px solid var(--dark-green);
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 200ms ease;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.12);
+      margin-bottom: 28px;
+    }
+
+    .btn-download-print:hover {
+      background: #143532;
+      border-color: #143532;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(7, 23, 21, 0.2);
+    }
+
+    .sidebar-quote-box {
+      position: relative;
+      padding-top: 18px;
+      border-top: 1px solid var(--light-border);
+    }
+
+    .sidebar-quote-text {
+      font-family: var(--serif);
+      font-size: 14px;
+      font-style: italic;
+      line-height: 1.55;
+      color: #3B4B48;
+      margin-bottom: 10px;
+    }
+
+    .sidebar-quote-line {
+      width: 32px;
+      height: 2px;
+      background-color: var(--burgundy);
+    }
+
+    /* Faint Filmstrip Decoration in Sidebar */
+    .sidebar-filmstrip-watermark {
+      margin-top: 32px;
+      opacity: 0.07;
+      pointer-events: none;
+      user-select: none;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sidebar-filmstrip-watermark svg {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+
+    /* ─── Right Document Reader ─── */
+    .constitution-document {
+      background: var(--warm-white);
+      border: 1px solid var(--light-border);
+      box-shadow: 0 4px 25px rgba(7, 23, 21, 0.04);
+      padding: 42px 50px 56px;
+      border-radius: 2px;
+      min-width: 0;
+      max-width: 100%;
+      box-sizing: border-box;
+      overflow-x: hidden;
+    }
+
+    /* Document Top Metadata Bar */
+    .document-header-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 14px;
+      border-bottom: 1px solid var(--light-border);
+      margin-bottom: 38px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .doc-hdr-left {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--dark-text);
+    }
+
+    .doc-hdr-right {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* Article Blocks */
+    .doc-section {
+      margin-bottom: 34px;
+      scroll-margin-top: 110px;
+    }
+
+    .doc-label {
+      font-family: var(--mono);
+      font-size: 9.5px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .doc-heading {
+      font-family: var(--serif);
+      font-size: 32px;
+      line-height: 1.1;
+      font-weight: 600;
+      color: var(--dark-text);
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .doc-heading-bn {
+      font-family: var(--bn);
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--muted);
+      margin-top: -10px;
+      margin-bottom: 16px;
+    }
+
+    .doc-divider {
+      height: 1px;
+      background: var(--light-border);
+      border: none;
+      margin: 32px 0;
+    }
+
+    /* Preamble Callout */
+    .preamble-quote-card {
+      background: #ECE8DE;
+      border-left: 3.5px solid var(--burgundy);
+      padding: 24px 28px;
+      margin: 18px 0 24px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .preamble-quote-card p {
+      font-family: var(--serif);
+      font-size: 15.5px;
+      line-height: 1.75;
+      font-style: italic;
+      color: #263835;
+      margin-bottom: 12px;
+    }
+
+    .preamble-quote-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Standard Document Prose & Clauses */
+    .doc-clause-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .clause-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-size: 14.5px;
+      line-height: 1.68;
+      color: #2B3836;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .clause-num {
+      flex-shrink: 0;
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--burgundy);
+      font-weight: 600;
+      min-width: 24px;
+    }
+
+    .clause-text {
+      flex: 1;
+      min-width: 0;
+      word-break: break-word;
+      overflow-wrap: break-word;
+    }
+
+    .clause-text strong {
+      color: var(--dark-text);
+      font-weight: 600;
+    }
+
+    /* Sub-sections within articles */
+    .doc-subheading {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--dark-text);
+      margin: 18px 0 8px 0;
+      word-break: break-word;
+    }
+
+    /* Executive Committee Grid List */
+    .ec-position-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px 24px;
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px solid var(--light-border);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 14px 0;
+      box-sizing: border-box;
+      max-width: 100%;
+    }
+
+    .ec-pos-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13.5px;
+      padding: 4px 0;
+      border-bottom: 1px dashed rgba(216, 213, 204, 0.8);
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .ec-pos-item:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
+
+    .ec-pos-title {
+      color: var(--dark-text);
+      font-weight: 500;
+      word-break: break-word;
+    }
+
+    .ec-pos-qty {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--gold-dark);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    /* Dual-Column Article Layout for shorter articles */
+    .articles-dual-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 36px;
+      align-items: start;
+    }
+
+    .dual-col-article {
+      scroll-margin-top: 110px;
+      min-width: 0;
+    }
+
+    .dual-col-article .doc-heading {
+      font-size: 26px;
+      margin-bottom: 14px;
+    }
+
+    .dual-col-article .clause-row {
+      font-size: 14px;
+      line-height: 1.62;
+      margin-bottom: 10px;
+    }
+
+    /* Adoption Panel */
+    .adoption-panel {
+      background: #ECE7DC;
+      border: 1px solid var(--light-border);
+      border-radius: 4px;
+      padding: 34px 40px 38px;
+      margin-top: 48px;
+      text-align: center;
+      box-sizing: border-box;
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .adoption-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .adoption-line {
+      width: 44px;
+      height: 1.5px;
+      background: var(--burgundy);
+    }
+
+    .adoption-eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      font-weight: 600;
+    }
+
+    .adoption-statement {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      color: #2F3D3A;
+      margin-bottom: 36px;
+      line-height: 1.6;
+    }
+
+    .adoption-date-pill {
+      font-family: var(--mono);
+      font-weight: 600;
+      color: var(--dark-text);
+      padding: 2px 8px;
+      border-bottom: 1px solid var(--dark-text);
+      display: inline-block;
+    }
+
+    .adoption-signatures {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 580px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .sig-line {
+      width: 100%;
+      height: 1px;
+      background: #9A958A;
+      margin-bottom: 12px;
+    }
+
+    .sig-name {
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 13.5px;
+      color: var(--dark-text);
+      margin-bottom: 2px;
+    }
+
+    .sig-role {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* Mobile Contents Accordion Toggle */
+    .mobile-contents-toggle {
+      display: none;
+      width: 100%;
+      background: #ECE8DE;
+      border: 1px solid var(--light-border);
+      padding: 14px 18px;
+      border-radius: 4px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--dark-text);
+      cursor: pointer;
+      text-align: left;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .mobile-contents-toggle span:last-child {
+      transition: transform 200ms ease;
+    }
+
+    .mobile-contents-toggle.open span:last-child {
+      transform: rotate(180deg);
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .document-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+        padding: 0 16px;
+      }
+
+      .contents-sidebar {
+        position: static;
+        padding-right: 0;
+      }
+
+      .mobile-contents-toggle {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      .sidebar-nav-wrap {
+        display: none;
+      }
+
+      .sidebar-nav-wrap.open {
+        display: block;
+        background: #ECE8DE;
+        padding: 16px;
+        border: 1px solid var(--light-border);
+        border-radius: 4px;
+        margin-bottom: 24px;
+        box-sizing: border-box;
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      .constitution-document {
+        padding: 28px 18px 40px;
+      }
+
+      .articles-dual-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+      }
+
+      .adoption-signatures {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+      }
+
+      .ec-position-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: clamp(30px, 8.5vw, 42px);
+      }
+      .hero-desc {
+        font-size: 13.5px;
+        line-height: 1.6;
+      }
+      .hero-eyebrow-text {
+        font-size: 9px;
+        letter-spacing: 0.16em;
+      }
+      .constitution-hero {
+        min-height: auto;
+        padding: 40px 0 34px;
+      }
+      .constitution-hero-container {
+        padding: 0 16px !important;
+      }
+      .constitution-document {
+        padding: 20px 14px 32px;
+      }
+      .doc-heading {
+        font-size: 24px;
+      }
+      .doc-heading-bn {
+        font-size: 16px;
+      }
+      .preamble-quote-card {
+        padding: 16px 14px;
+        margin: 14px 0 18px 0;
+      }
+      .preamble-quote-card p {
+        font-size: 14px;
+        line-height: 1.65;
+      }
+      .clause-row {
+        gap: 8px;
+        font-size: 13.5px;
+      }
+      .clause-num {
+        font-size: 12px;
+        min-width: 20px;
+      }
+      .adoption-panel {
+        padding: 22px 14px 26px;
+        margin-top: 30px;
+      }
+      .adoption-statement {
+        font-size: 13.5px;
+        margin-bottom: 24px;
+      }
+      .document-header-bar {
+        margin-bottom: 24px;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .document-container {
+        padding: 0 10px;
+      }
+      .constitution-document {
+        padding: 18px 10px 26px;
+      }
+      .preamble-quote-card {
+        padding: 14px 10px;
+        border-left-width: 3px;
+      }
+      .ec-position-grid {
+        padding: 10px 10px;
+      }
+      .ec-pos-item {
+        font-size: 12.5px;
+      }
+      .adoption-statement {
+        font-size: 13px;
+      }
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      .site-header,
+      .contents-sidebar,
+      .btn-download-print,
+      .mobile-contents-toggle,
+      .site-footer,
+      .filmstrip-border {
+        display: none !important;
+      }
+
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+
+      .constitution-hero {
+        background: none !important;
+        color: #000000 !important;
+        min-height: auto;
+        padding: 20px 0;
+        border-bottom: 2px solid #000000;
+      }
+
+      .hero-title, .hero-title span {
+        color: #000000 !important;
+      }
+
+      .hero-desc {
+        color: #333333 !important;
+      }
+
+      .document-container {
+        display: block !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
+
+      .constitution-document {
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        background: transparent !important;
+      }
+
+      .doc-divider {
+        border-top: 1px solid #000000 !important;
+      }
+    }
+  </style>
+  <meta property="og:title" content="BFIAA Constitution — Official Governing Document"/>
+  <meta property="og:description" content="The full official constitution of the Bangladesh Film Institute Alumni Association (BFIAA) — all 15 Articles covering governance, membership, committees, and biennial assembly."/>
   <meta property="og:url" content="https://bfiaa.bfibd.org/constitution.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/bfiaa-logo.png"/>
+  <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="BFIAA Constitution — Official Governing Document"/>
+  <meta name="twitter:description" content="The full official constitution of the Bangladesh Film Institute Alumni Association (BFIAA) — all 15 Articles covering governance, membership, committees, and biennial assembly."/>
+  <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/bfiaa-logo.png"/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GovernmentDocument",
+  "name": "BFIAA Constitution — Official Governing Document",
+  "url": "https://bfiaa.bfibd.org/constitution.html",
+  "publisher": {
+    "@type": "Organization",
+    "name": "BFIAA",
+    "url": "https://bfiaa.bfibd.org"
+  }
+}
+  </script>
 </head>
 <body>
 
-<div class="site-wrapper">
-
-<!-- Nav -->
-<!-- Navigation -->
-<nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
-    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
-  </a>
-
-  <ul class="nav-links" role="list">
-    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
-  </ul>
-
-  <div class="nav-actions">
-    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" class="nav-bfi-logo" style="height: 16px; width: auto; background: #ffffff; padding: 2px 4px; border-radius: 3px;"/> BFI Home</a>
-    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
-  </div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu" role="menu">
-  <a href="https://bfiaa.bfibd.org/" role="menuitem">Home</a>
-  <a href="https://bfiaa.bfibd.org/#about" role="menuitem">About BFIAA</a>
-  <a href="https://bfiaa.bfibd.org/#conference-2021" role="menuitem">Conference 2021</a>
-  <a href="https://bfiaa.bfibd.org/#conference-2019" role="menuitem">Conference 2019</a>
-  <a href="https://bfiaa.bfibd.org/#committee" role="menuitem">Committee</a>
-  <a href="https://bfiaa.bfibd.org/#events" role="menuitem">Events</a>
-  <a href="https://bfiaa.bfibd.org/#magazine" role="menuitem">Uralchitra</a>
-  <a href="https://bfiaa.bfibd.org/#picnic" role="menuitem">Picnic</a>
-  <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" role="menuitem" target="_blank" rel="noopener">Join Us</a>
-  <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
-  <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
-</div>
-
-<div class="nav-spacer"></div>
-
-<!-- Filmstrip -->
-<div class="filmstrip-ticker" aria-hidden="true">
-  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
-  <div class="filmstrip-ticker-inner">
-    <span class="ticker-content">▶ BFIAA CONSTITUTION — OFFICIAL GOVERNING DOCUMENT · BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
-    <span class="ticker-content" aria-hidden="true">▶ BFIAA CONSTITUTION — OFFICIAL GOVERNING DOCUMENT · BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org &nbsp;&nbsp;&nbsp;</span>
-  </div>
-  <div class="sprocket-strip"><div class="sprocket-hole"></div><div class="sprocket-hole"></div></div>
-</div>
-
-<!-- Constitution Header -->
-<section style="background:var(--dark-2);padding:60px 24px 40px;text-align:center;border-bottom:1px solid var(--border);">
-  <div class="container">
-    <div class="section-label" style="justify-content:center;margin-bottom:12px;">Official Document</div>
-    <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,3rem);">
-      BFIAA <span>Constitution</span>
-    </h1>
-    <p style="font-family:var(--font-serif);font-style:italic;color:var(--text-muted);font-size:1.05rem;max-width:600px;margin:16px auto 0;line-height:1.8;">
-      The governing document of the Bangladesh Film Institute Alumni Association,
-      establishing its objectives, structure, membership, and rules of operation.
-    </p>
-    <div class="divider" style="margin:20px auto;"></div>
-    <div style="display:inline-flex;gap:20px;flex-wrap:wrap;justify-content:center;">
-      <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--gold);">BFIAA · Dhaka, Bangladesh</span>
-      <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--text-dim);">|</span>
-      <span style="font-family:var(--font-mono);font-size:10px;letter-spacing:2px;color:var(--text-dim);">Est. 2009</span>
-    </div>
-  </div>
-</section>
-
-<!-- Constitution Body -->
-<div class="constitution-body">
-
-  <h2>Preamble</h2>
-  <p>
-    We, the alumni of the Bangladesh Film Institute (BFI), established in 2005 by the
-    distinguished documentary filmmaker Tanvir Mokammel, hereby form the
-    <strong style="color:var(--gold);">Bangladesh Film Institute Alumni Association (BFIAA)</strong>
-    to serve as the official body representing the interests, welfare, and creative aspirations
-    of all graduates of the Bangladesh Film Institute.
-  </p>
-  <p>
-    Recognising that the Bangladesh Film Institute has, over more than two decades, produced
-    a community of over a thousand filmmakers, film lovers, and cinema educators who share a
-    common intellectual and creative heritage, we establish this Association to keep that
-    community alive, connected, and purposeful.
-  </p>
-
-  <h2>Article 1 — Name & Identity</h2>
-  <p>
-    1.1 The name of this organisation shall be the
-    <strong>Bangladesh Film Institute Alumni Association</strong>, abbreviated as
-    <strong>BFIAA</strong>.
-  </p>
-  <p>
-    1.2 The Association shall be registered as a voluntary, non-political, non-commercial
-    cultural and educational organisation under the laws of Bangladesh.
-  </p>
-  <p>
-    1.3 The official web presence of the Association shall be at
-    <strong>bfiaa.bfibd.org</strong>, a subdomain of the Bangladesh Film Institute's
-    official website at bfibd.org.
-  </p>
-  <p>
-    1.4 The official publication of the Association is <strong><em>Uralchitra</em></strong>
-    (উড়ালচিত্র), a magazine on film culture.
-  </p>
-
-  <h2>Article 2 — Objectives</h2>
-  <p>The objectives of BFIAA shall be:</p>
-  <ol>
-    <li>
-      To maintain a register of all graduates of the Bangladesh Film Institute and
-      facilitate communication and networking among alumni.
-    </li>
-    <li>
-      To promote and strengthen film culture, cinema appreciation, and the art of filmmaking
-      across Bangladesh.
-    </li>
-    <li>
-      To cooperate with and support the Bangladesh Film Institute in its educational mission,
-      courses, workshops, and cultural programmes.
-    </li>
-    <li>
-      To publish <em>Uralchitra</em> and other materials related to film culture, criticism,
-      and the creative work of alumni.
-    </li>
-    <li>
-      To organise screenings, festivals, Cine Club Adda gatherings, masterclasses, and other
-      events for the benefit of alumni and the wider film community.
-    </li>
-    <li>
-      To honour and celebrate the work of distinguished alumni and their contributions
-      to Bangladeshi and world cinema.
-    </li>
-    <li>
-      To establish connections with film institutes, film clubs, and cultural organisations
-      nationally and internationally.
-    </li>
-    <li>
-      To provide mutual support, guidance, and a professional network for alumni working
-      in film, media, and related fields.
-    </li>
-    <li>
-      To preserve and archive the institutional memory of the Bangladesh Film Institute
-      and its graduates.
-    </li>
-  </ol>
-
-  <h2>Article 3 — Membership</h2>
-
-  <h3>3.1 Categories of Membership</h3>
-  <p>Membership of BFIAA shall be open to the following categories:</p>
-  <ol>
-    <li>
-      <strong>General Members:</strong> All graduates of any course offered by the
-      Bangladesh Film Institute (Film Appreciation Course, Online Filmmaking Course,
-      or any other programme) are eligible to become General Members.
-    </li>
-    <li>
-      <strong>Life Members:</strong> General Members who make a one-time contribution
-      as determined by the Executive Committee may be elected as Life Members.
-      Life Members have all rights of General Members in perpetuity.
-    </li>
-    <li>
-      <strong>Associate Members:</strong> Individuals who support the cause of film culture
-      but who are not BFI graduates may, at the discretion of the Executive Committee,
-      be admitted as Associate Members. Associate Members may not hold office or vote
-      in General Body elections.
-    </li>
-    <li>
-      <strong>Patron / Advisor:</strong> Distinguished individuals who have made outstanding
-      contributions to Bangladeshi cinema may be invited to serve as Patrons or Advisors
-      of the Association. The Founder of BFI, Tanvir Mokammel, shall serve as
-      Patron/Advisor by default.
-    </li>
-  </ol>
-
-  <h3>3.2 Membership Rights</h3>
-  <p>
-    General and Life Members shall have the right to vote at General Body meetings,
-    to stand for election to the Executive Committee, to attend all events and
-    programmes of the Association, and to receive copies of <em>Uralchitra</em>.
-  </p>
-
-  <h3>3.3 Membership Dues</h3>
-  <p>
-    Annual membership dues and Life Membership contributions shall be determined by the
-    Executive Committee and approved by the General Body. Dues shall be kept at a level
-    accessible to all alumni regardless of their professional circumstances.
-  </p>
-
-  <h2>Article 4 — Executive Committee</h2>
-
-  <h3>4.1 Composition</h3>
-  <p>The Executive Committee shall consist of the following elected positions:</p>
-  <ul>
-    <li>President (1)</li>
-    <li>Vice-President (1)</li>
-    <li>General Secretary (1)</li>
-    <li>Joint Secretary (1)</li>
-    <li>Treasurer (1)</li>
-    <li>Organising Secretary (1)</li>
-    <li>Publicity Secretary (1)</li>
-    <li>Cultural Secretary (1)</li>
-    <li>Executive Members (as determined by the General Body, minimum 3)</li>
-  </ul>
-
-  <h3>4.2 Term of Office</h3>
-  <p>
-    The Executive Committee shall serve for a term of two (2) years from the date of
-    election. No person shall hold the same office for more than two consecutive terms.
-  </p>
-
-  <h3>4.3 Election</h3>
-  <p>
-    The Executive Committee shall be elected by the General Body at the Biennial General
-    Meeting by simple majority vote. All General and Life Members in good standing are
-    eligible to vote and stand for election.
-  </p>
-
-  <h3>4.4 Responsibilities</h3>
-  <p>
-    The Executive Committee shall be responsible for the day-to-day management and
-    activities of the Association, implementing the decisions of the General Body,
-    managing the Association's funds, and reporting to the General Body at each
-    biennial meeting.
-  </p>
-
-  <h2>Article 5 — Meetings</h2>
-
-  <h3>5.1 Biennial General Meeting</h3>
-  <p>
-    The Association shall hold a Biennial General Meeting (BGM) at least once every
-    two years. The BGM shall receive reports from the Executive Committee, approve
-    accounts, elect a new Executive Committee, and discuss policy and direction.
-  </p>
-
-  <h3>5.2 Executive Committee Meetings</h3>
-  <p>
-    The Executive Committee shall meet at least once every two months. A quorum shall
-    consist of a simple majority of Committee members.
-  </p>
-
-  <h3>5.3 Special General Meetings</h3>
-  <p>
-    A Special General Meeting may be called by the President, or on the written request
-    of at least one-third of the General Members, with 14 days' notice.
-  </p>
-
-  <h2>Article 6 — Finance</h2>
-  <p>
-    6.1 All income and expenditure of the Association shall be recorded and an annual
-    statement of accounts shall be prepared and presented to the General Body.
-  </p>
-  <p>
-    6.2 The Association shall maintain a bank account in the name of BFIAA, requiring
-    the joint signature of the President (or General Secretary) and the Treasurer for
-    any withdrawal.
-  </p>
-  <p>
-    6.3 No expenditure above a threshold set by the Executive Committee may be made
-    without prior approval of the Committee.
-  </p>
-
-  <h2>Article 7 — Publications</h2>
-  <p>
-    7.1 The official magazine of BFIAA is <em>Uralchitra</em> (উড়ালচিত্র).
-    The magazine shall be published at least once per year.
-  </p>
-  <p>
-    7.2 The Editor of <em>Uralchitra</em> shall be appointed by the Executive Committee.
-    The magazine may accept content from all members and invited contributors.
-  </p>
-  <p>
-    7.3 The Association may publish other materials, newsletters, digital content and
-    archival documents as approved by the Executive Committee.
-  </p>
-
-  <h2>Article 8 — Amendments</h2>
-  <p>
-    This Constitution may be amended by a two-thirds majority vote of members present
-    at a Biennial General Meeting or Special General Meeting, provided that the proposed
-    amendment has been circulated to all members at least 21 days before the meeting.
-  </p>
-
-  <h2>Article 9 — Dissolution</h2>
-  <p>
-    In the event of dissolution of the Association, all assets remaining after settlement
-    of liabilities shall be transferred to the Bangladesh Film Institute or to a
-    charitable organisation with similar objectives, as decided by a two-thirds majority
-    of members at a General Meeting called for this purpose.
-  </p>
-
-  <h2>Article 10 — Patron & Advisor</h2>
-  <p>
-    Tanvir Mokammel, the Founder of the Bangladesh Film Institute and one of Bangladesh's
-    most distinguished documentary filmmakers, shall serve as the Patron and Advisor of
-    the Bangladesh Film Institute Alumni Association. The Association affirms its deep
-    gratitude to him for establishing BFI and for his ongoing commitment to cinema
-    education in Bangladesh.
-  </p>
-
-  <h2>Article 11 - Development Protocol</h2>
-  <p>
-    11.1 The association decrees that one must work smartly. Always check what you have done before deploying.
-  </p>
-
-  <hr style="border:none;border-top:1px solid var(--border);margin:40px 0;"/>
-
-  <div style="background:var(--dark-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px;text-align:center;margin-bottom:40px;">
-    <div style="font-family:var(--font-mono);font-size:10px;letter-spacing:3px;color:var(--gold);margin-bottom:12px;">ADOPTED BY THE GENERAL BODY</div>
-    <div style="font-family:var(--font-title);font-size:1.2rem;font-weight:700;color:var(--text);margin-bottom:6px;">Bangladesh Film Institute Alumni Association</div>
-    <div style="font-family:var(--font-mono);font-size:11px;letter-spacing:2px;color:var(--text-muted);">BFIAA · bfiaa.bfibd.org · Dhaka, Bangladesh</div>
-  </div>
-
-  <div style="text-align:center;margin-bottom:60px;">
-    <a href="index.html" class="btn-secondary" style="display:inline-flex;margin-right:12px;">← Back to Home</a>
-    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex;">Join BFIAA →</a>
-  </div>
-
-</div>
-
-<!-- Footer (minimal) -->
-<!-- Standard Footer -->
-<footer class="site-footer" role="contentinfo">
-  <div class="footer-inner">
-    <div class="footer-top">
-
-      <div class="footer-brand">
-                <div class="footer-logo">
-          <a href="https://bfiaa.bfibd.org/" style="display: inline-block; text-decoration: none;" aria-label="BFIAA Home">
-            <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" style="height: 48px; width: auto;" onerror="this.style.display='none'"/>
-          </a>
-        </div>
-        <p class="footer-brand-desc">
-          The official alumni association of the Bangladesh Film Institute —
-          connecting 1000+ graduates across 86+ batches in a shared love of cinema.
-        </p>
-        <div class="footer-social">
-          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">🎬</a>
-          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
-          <a href="#" class="social-btn" title="YouTube">▶</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Documents</h4>
-        <ul>
-          <li><a href="constitution.html">Constitution</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
-          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>BFI Network</h4>
-        <ul>
-          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
-          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
-          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
-          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copy">
-        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
-      </p>
-      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
-        A SUBDOMAIN OF BFIBD.ORG →
+  <!-- ═══════ EXACT HOMEPAGE SITE HEADER ═══════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
+        <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" onerror="this.style.display='none'"/>
       </a>
+
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#founder">Founder</a>
+        <a href="index.html#committee">Committee</a>
+        <a href="index.html#conferences">Conferences</a>
+        <a href="index.html#alumni">Alumni</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#retrospective">30 Years</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#picnic">Picnic</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://bfibd.org" target="_blank" rel="noopener" class="btn-bfi-home">
+          <img src="images/bfi-logo.png" alt="BFI" style="height: 14px; width: auto;"/>
+          BFI Main Site
+        </a>
+        <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-member">Become a Member</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
-  </div>
-</footer>
-</div> <!-- End of site-wrapper -->
+  </header>
 
+  <!-- Mobile Nav Drawer -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About BFIAA</a>
+    <a href="index.html#founder">Founder &amp; Patron</a>
+    <a href="index.html#committee">Executive Committee</a>
+    <a href="index.html#conferences">Conferences</a>
+    <a href="index.html#alumni">Featured Alumni</a>
+    <a href="index.html#events">Events &amp; Screenings</a>
+    <a href="index.html#retrospective">30 Years Retrospective</a>
+    <a href="index.html#publications">Uralchitra Publications</a>
+    <a href="index.html#picnic">Annual Picnic</a>
+    <a href="constitution.html" class="active">Constitution</a>
+    <a href="index.html#contact">Contact &amp; Join</a>
+    <div class="mobile-cta-group">
+      <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site ↗</a>
+    </div>
+  </nav>
 
-<script>
-  // Mobile Hamburger Toggle
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
-      const spans = hamburger.querySelectorAll('span');
-      if (isOpen) {
-        spans[0].style.transform = 'translateY(8px) rotate(45deg)';
-        spans[1].style.opacity   = '0';
-        spans[2].style.transform = 'translateY(-8px) rotate(-45deg)';
-      } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity   = '1';
-        spans[2].style.transform = 'none';
+  <!-- ═══════ CINEMATIC HERO SECTION ═══════ -->
+  <section class="constitution-hero" aria-label="Constitution Header">
+    <div class="container constitution-hero-container">
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-line"></span>
+          <span class="hero-eyebrow-text">OFFICIAL DOCUMENT</span>
+        </div>
+        <h1 class="hero-title">
+          BFIAA
+          <span>Constitution</span>
+        </h1>
+        <p class="hero-desc">
+          The governing document that establishes the association's objectives, structure, membership and operating rules.
+        </p>
+        <div class="hero-meta">
+          <span>BFIAA</span>
+          <span class="sep">&middot;</span>
+          <span>Dhaka, Bangladesh</span>
+          <span class="sep">|</span>
+          <span>Est. 2009</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ MAIN DOCUMENT READING AREA ═══════ -->
+  <main class="document-page-wrap" id="documentContent">
+    <div class="document-container">
+
+      <!-- ─── Sticky Sidebar / Table of Contents ─── -->
+      <aside class="contents-sidebar">
+        
+        <!-- Mobile Toggle Button -->
+        <button class="mobile-contents-toggle" id="mobileContentsBtn" aria-expanded="false">
+          <span>TABLE OF CONTENTS</span>
+          <span>▼</span>
+        </button>
+
+        <div class="sidebar-nav-wrap" id="sidebarNavWrap">
+          <div class="sidebar-header-label">CONTENTS</div>
+          <ul class="sidebar-nav-list" role="list">
+            <li>
+              <a href="#preamble" class="sidebar-nav-item preamble-link active" data-target="preamble">
+                <span class="art-num" style="width:auto; margin-right:8px; font-weight:600;">Preamble</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-1" class="sidebar-nav-item" data-target="article-1">
+                <span class="art-num">Article 1</span>
+                <span class="art-title">Name &amp; Identity</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-2" class="sidebar-nav-item" data-target="article-2">
+                <span class="art-num">Article 2</span>
+                <span class="art-title">Objectives</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-3" class="sidebar-nav-item" data-target="article-3">
+                <span class="art-num">Article 3</span>
+                <span class="art-title">Membership</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-4" class="sidebar-nav-item" data-target="article-4">
+                <span class="art-num">Article 4</span>
+                <span class="art-title">Executive Committee</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-5" class="sidebar-nav-item" data-target="article-5">
+                <span class="art-num">Article 5</span>
+                <span class="art-title">Meetings</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-6" class="sidebar-nav-item" data-target="article-6">
+                <span class="art-num">Article 6</span>
+                <span class="art-title">Finance</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-7" class="sidebar-nav-item" data-target="article-7">
+                <span class="art-num">Article 7</span>
+                <span class="art-title">Publications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-8" class="sidebar-nav-item" data-target="article-8">
+                <span class="art-num">Article 8</span>
+                <span class="art-title">Amendments</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-9" class="sidebar-nav-item" data-target="article-9">
+                <span class="art-num">Article 9</span>
+                <span class="art-title">Dissolution</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-10" class="sidebar-nav-item" data-target="article-10">
+                <span class="art-num">Article 10</span>
+                <span class="art-title">Patron &amp; Advisor</span>
+              </a>
+            </li>
+            <li>
+              <a href="#article-11" class="sidebar-nav-item" data-target="article-11">
+                <span class="art-num">Article 11</span>
+                <span class="art-title">General Provisions</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Download / Print Button -->
+          <button class="btn-download-print" onclick="window.print()" title="Print or Save Constitution as PDF">
+            <span>⬇</span>
+            <span>Download / Print</span>
+          </button>
+
+          <!-- Sidebar Quote -->
+          <div class="sidebar-quote-box">
+            <p class="sidebar-quote-text">
+              Together we carry<br>
+              forward the spirit of<br>
+              Bangladesh's film culture.
+            </p>
+            <div class="sidebar-quote-line"></div>
+          </div>
+
+          <!-- Subtle Filmstrip Watermark -->
+          <div class="sidebar-filmstrip-watermark" aria-hidden="true">
+            <svg viewBox="0 0 160 80" fill="currentColor">
+              <rect x="0" y="0" width="160" height="80" fill="#10201E"/>
+              <rect x="6" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="30" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="54" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="78" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="102" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="126" y="8" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              
+              <rect x="6" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="30" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="54" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="78" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="102" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+              <rect x="126" y="60" width="16" height="12" rx="2" fill="#F3F0E7"/>
+
+              <rect x="12" y="24" width="64" height="32" rx="1" fill="#F3F0E7" opacity="0.3"/>
+              <rect x="84" y="24" width="64" height="32" rx="1" fill="#F3F0E7" opacity="0.3"/>
+            </svg>
+          </div>
+
+        </div>
+      </aside>
+
+      <!-- ─── Right Document Reader ─── -->
+      <article class="constitution-document">
+
+        <!-- Document Top Bar -->
+        <div class="document-header-bar">
+          <div class="doc-hdr-left">BFIAA CONSTITUTION</div>
+          <div class="doc-hdr-right">Page 1 of 1</div>
+        </div>
+
+        <!-- ─── PREAMBLE ─── -->
+        <section class="doc-section" id="preamble">
+          <span class="doc-label">PREAMBLE</span>
+          <h2 class="doc-heading">Preamble</h2>
+          <div class="doc-heading-bn">প্রস্তাবনা</div>
+
+          <div class="preamble-quote-card">
+            <p>
+              "We, the alumni of the Bangladesh Film Institute, inspired by the ideals of cinema, culture and creative freedom, hereby establish the Bangladesh Film Institute Alumni Association (BFIAA) to foster a vibrant community, promote film culture and contribute to the development of the national and global film landscape."
+            </p>
+            <p style="font-style: normal; font-size: 14px; color: #4A5855;">
+              Recognizing that the Bangladesh Film Institute (BFI), founded in 2005 by acclaimed filmmaker and author Tanvir Mokammel, has over more than two decades produced a dedicated fraternity of over one thousand filmmakers, cinematographers, editors, film lovers, and cinema educators across 86+ batches who share a common artistic commitment, we establish this constitution to maintain an active, democratic, and purposeful institutional fellowship.
+            </p>
+          </div>
+        </section>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLE 1 ─── -->
+        <section class="doc-section" id="article-1">
+          <span id="art-1" class="anchor-alias"></span>
+          <span class="doc-label">ARTICLE 1</span>
+          <h2 class="doc-heading">Name &amp; Identity</h2>
+          <div class="doc-heading-bn">ধারা ১: নাম ও পরিচিতি</div>
+
+          <div class="doc-clause-list">
+            <div class="clause-row">
+              <span class="clause-num">1.1</span>
+              <div class="clause-text">
+                The name of this organization shall be the <strong>Bangladesh Film Institute Alumni Association</strong>, officially abbreviated as <strong>BFIAA</strong>. In Bengali, it shall be known as <strong>বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশন</strong>.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">1.2</span>
+              <div class="clause-text">
+                It shall be a non-profit, non-governmental, non-political, and independent cultural and educational organization operating under the relevant legal framework of Bangladesh.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">1.3</span>
+              <div class="clause-text">
+                The official publication of the association is <strong><em>Uralchitra</em> (উড়ালচিত্র)</strong>, a registered periodical on film culture, criticism, and screen aesthetics.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">1.4</span>
+              <div class="clause-text">
+                The official web presence of the Association shall be at <strong>bfiaa.bfibd.org</strong>, established as a dedicated subdomain of the Bangladesh Film Institute's central portal at <strong>bfibd.org</strong>.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLE 2 ─── -->
+        <section class="doc-section" id="article-2">
+          <span id="art-2" class="anchor-alias"></span>
+          <span class="doc-label">ARTICLE 2</span>
+          <h2 class="doc-heading">Objectives</h2>
+          <div class="doc-heading-bn">ধারা ২: লক্ষ্য ও উদ্দেশ্য</div>
+
+          <div class="doc-clause-list">
+            <div class="clause-row">
+              <span class="clause-num">2.1</span>
+              <div class="clause-text">
+                To build a strong and active alumni community of the Bangladesh Film Institute, maintaining an updated institutional register of all graduates.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">2.2</span>
+              <div class="clause-text">
+                To promote film culture, education, cinema appreciation, and historical film research across Bangladesh.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">2.3</span>
+              <div class="clause-text">
+                To organize events, film screenings, Cine Club Adda gatherings, workshops, masterclasses, and collaborative artistic initiatives.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">2.4</span>
+              <div class="clause-text">
+                To support emerging filmmakers, cinematographers, screenwriters, and creative practitioners through mentorship and showcase opportunities.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">2.5</span>
+              <div class="clause-text">
+                To publish <em>Uralchitra</em> and archival materials chronicling alumni filmography and the living heritage of cinema.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">2.6</span>
+              <div class="clause-text">
+                To cultivate meaningful institutional linkages with national and international film schools, cinematheques, and film societies worldwide.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLE 3 ─── -->
+        <section class="doc-section" id="article-3">
+          <span id="art-3" class="anchor-alias"></span>
+          <span class="doc-label">ARTICLE 3</span>
+          <h2 class="doc-heading">Membership</h2>
+          <div class="doc-heading-bn">ধারা ৩: সদস্যপদ ও প্রকারভেদ</div>
+
+          <div class="doc-clause-list">
+            <div class="clause-row">
+              <span class="clause-num">3.1</span>
+              <div class="clause-text">
+                <strong>Categories:</strong> Membership of the Association shall be structured across four distinct classes:
+                <ul style="list-style: disc; margin: 8px 0 8px 24px; color: #4A5855;">
+                  <li><strong>General Members:</strong> All graduates who have successfully completed any certified course offered by BFI (Film Appreciation Course, Online Filmmaking Course, or specialized certificate tracks).</li>
+                  <li><strong>Life Members:</strong> General Members who contribute a designated one-time endowment fund established by the Executive Committee, granting perpetual membership rights.</li>
+                  <li><strong>Associate Members:</strong> Film enthusiasts and cinema patrons invited by the Executive Committee who wish to support the association's mission (non-voting).</li>
+                  <li><strong>Patron / Advisor:</strong> Eminent national and international filmmakers, intellectuals, and educators invited by the General Body.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">3.2</span>
+              <div class="clause-text">
+                <strong>Rights &amp; Privileges:</strong> General and Life Members shall have the democratic right to participate in all association activities, vote in biennial elections, stand for election to executive office, and receive official publications and festival passes.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">3.3</span>
+              <div class="clause-text">
+                <strong>Membership Dues:</strong> Annual membership dues and life subscriptions shall be determined by the Executive Committee and ratified by the General Body, maintaining financial accessibility for all alumni.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLE 4 ─── -->
+        <section class="doc-section" id="article-4">
+          <span id="art-4" class="anchor-alias"></span>
+          <span class="doc-label">ARTICLE 4</span>
+          <h2 class="doc-heading">Executive Committee</h2>
+          <div class="doc-heading-bn">ধারা ৪: কার্যনির্বাহী কমিটি ও নির্বাচন</div>
+
+          <div class="doc-clause-list">
+            <div class="clause-row">
+              <span class="clause-num">4.1</span>
+              <div class="clause-text">
+                The association shall be governed by an elected <strong>Executive Committee (EC)</strong> comprising officers and council members:
+              </div>
+            </div>
+
+            <!-- Position List in Clean Editorial Format -->
+            <div class="ec-position-grid">
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">President</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Vice-President</span>
+                <span class="ec-pos-qty">2</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">General Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Joint Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Treasurer</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Organizing Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Publicity Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Publication Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">International Secretary</span>
+                <span class="ec-pos-qty">1</span>
+              </div>
+              <div class="ec-pos-item">
+                <span class="ec-pos-title">Executive Members</span>
+                <span class="ec-pos-qty">10</span>
+              </div>
+            </div>
+
+            <div class="clause-row">
+              <span class="clause-num">4.2</span>
+              <div class="clause-text">
+                The term of the Executive Committee shall be <strong>two (2) years</strong> from the date of official assembly election. No individual may hold the same officer role for more than two consecutive terms.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">4.3</span>
+              <div class="clause-text">
+                Elections shall be held in accordance with the electoral rules of the association at the Biennial General Meeting by secret ballot or open democratic consensus.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">4.4</span>
+              <div class="clause-text">
+                The EC shall be responsible for the overall management, fiduciary oversight, project administration, and implementation of the association's objectives and activities.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLES 5 & 6 (Dual Column on Desktop) ─── -->
+        <div class="articles-dual-grid">
+          
+          <!-- Article 5 -->
+          <section class="dual-col-article" id="article-5">
+            <span id="art-5" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 5</span>
+            <h2 class="doc-heading">Meetings</h2>
+            <div class="doc-heading-bn">ধারা ৫: সভা ও সম্মেলন</div>
+
+            <div class="clause-row">
+              <span class="clause-num">5.1</span>
+              <div class="clause-text">
+                An <strong>Annual or Biennial General Meeting (AGM/BGM)</strong> shall be held every two years to review secretarial reports, approve financial audits, and conduct general elections.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">5.2</span>
+              <div class="clause-text">
+                Special or extraordinary general meetings may be called by the EC or upon written requisition by at least one-third (1/3) of valid registered members.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">5.3</span>
+              <div class="clause-text">
+                The Executive Committee shall convene regular bimonthly business meetings to coordinate programs and review operations.
+              </div>
+            </div>
+          </section>
+
+          <!-- Article 6 -->
+          <section class="dual-col-article" id="article-6">
+            <span id="art-6" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 6</span>
+            <h2 class="doc-heading">Finance</h2>
+            <div class="doc-heading-bn">ধারা ৬: অর্থ ও তহবিল</div>
+
+            <div class="clause-row">
+              <span class="clause-num">6.1</span>
+              <div class="clause-text">
+                The association shall be financed through membership dues, publication sales, donations, institutional grants, and legitimate cultural sponsorships.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">6.2</span>
+              <div class="clause-text">
+                The association shall maintain a bank account in a recognized scheduled bank in Dhaka, operated under the joint signatures of the President (or General Secretary) and Treasurer.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">6.3</span>
+              <div class="clause-text">
+                The financial activities and statement of accounts shall be audited annually and made transparently available to the General Body.
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLES 7 & 8 (Dual Column on Desktop) ─── -->
+        <div class="articles-dual-grid">
+          
+          <!-- Article 7 -->
+          <section class="dual-col-article" id="article-7">
+            <span id="art-7" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 7</span>
+            <h2 class="doc-heading">Publications</h2>
+            <div class="doc-heading-bn">ধারা ৭: প্রকাশনা</div>
+
+            <div class="clause-row">
+              <span class="clause-num">7.1</span>
+              <div class="clause-text">
+                The association shall publish <strong><em>Uralchitra</em></strong> as its official film culture publication at least once per year, maintaining bilingual scholarly standards.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">7.2</span>
+              <div class="clause-text">
+                The Editor and editorial board of <em>Uralchitra</em> shall be appointed by the EC to oversee intellectual rigor and literary quality.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">7.3</span>
+              <div class="clause-text">
+                Other publications, digital catalogs, and research monographs may be produced as needed to fulfill institutional objectives.
+              </div>
+            </div>
+          </section>
+
+          <!-- Article 8 -->
+          <section class="dual-col-article" id="article-8">
+            <span id="art-8" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 8</span>
+            <h2 class="doc-heading">Amendments</h2>
+            <div class="doc-heading-bn">ধারা ৮: গঠনতন্ত্র সংশোধন</div>
+
+            <div class="clause-row">
+              <span class="clause-num">8.1</span>
+              <div class="clause-text">
+                This constitution may be amended by a <strong>two-thirds (2/3) majority vote</strong> of valid voting members present at a convened General Assembly.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">8.2</span>
+              <div class="clause-text">
+                Proposed amendments must be circulated in writing to all registered members at least 15 to 21 days in advance of the scheduled assembly.
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLES 9 & 10 (Dual Column on Desktop) ─── -->
+        <div class="articles-dual-grid">
+          
+          <!-- Article 9 -->
+          <section class="dual-col-article" id="article-9">
+            <span id="art-9" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 9</span>
+            <h2 class="doc-heading">Dissolution</h2>
+            <div class="doc-heading-bn">ধারা ৯: অবলুপ্তি</div>
+
+            <div class="clause-row">
+              <span class="clause-num">9.1</span>
+              <div class="clause-text">
+                The association may be dissolved only by a two-thirds (2/3) majority vote of all registered members at an extraordinary General Body meeting called for this purpose.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">9.2</span>
+              <div class="clause-text">
+                Remaining assets after settlement of liabilities shall be transferred to the Bangladesh Film Institute or a non-profit cultural body with compatible objectives.
+              </div>
+            </div>
+          </section>
+
+          <!-- Article 10 -->
+          <section class="dual-col-article" id="article-10">
+            <span id="art-10" class="anchor-alias"></span>
+            <span class="doc-label">ARTICLE 10</span>
+            <h2 class="doc-heading">Patron &amp; Advisor</h2>
+            <div class="doc-heading-bn">ধারা ১০: প্রধান পৃষ্ঠপোষক ও উপদেষ্টা</div>
+
+            <div class="clause-row">
+              <span class="clause-num">10.1</span>
+              <div class="clause-text">
+                The association shall have a Patron and an Advisory Council who provide ongoing moral guidance, creative direction, and institutional counsel.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">10.2</span>
+              <div class="clause-text">
+                The Founder of BFI, renowned filmmaker <strong>Tanvir Mokammel</strong>, shall serve as the permanent Chief Patron and Advisor of the association.
+              </div>
+            </div>
+          </section>
+
+        </div>
+
+        <hr class="doc-divider"/>
+
+        <!-- ─── ARTICLE 11 ─── -->
+        <section class="doc-section" id="article-11">
+          <span id="art-11" class="anchor-alias"></span>
+          <span class="doc-label">ARTICLE 11</span>
+          <h2 class="doc-heading">General Provisions</h2>
+          <div class="doc-heading-bn">ধারা ১১: সাধারণ বিধানাবলী</div>
+
+          <div class="doc-clause-list">
+            <div class="clause-row">
+              <span class="clause-num">11.1</span>
+              <div class="clause-text">
+                The Executive Committee shall be empowered to frame subsidiary procedural rules, codes of conduct, and administrative guidelines for the smooth functioning of the association.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">11.2</span>
+              <div class="clause-text">
+                All matters not explicitly covered in this constitution shall be decided by the Executive Committee, subject to ratification by the General Body.
+              </div>
+            </div>
+            <div class="clause-row">
+              <span class="clause-num">11.3</span>
+              <div class="clause-text">
+                <strong>Development Protocol:</strong> The association decrees that one must work smartly. Always thoroughly verify and test your work before deploying.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ─── ADOPTION SECTION ─── -->
+        <div class="adoption-panel">
+          <div class="adoption-header">
+            <span class="adoption-line"></span>
+            <span class="adoption-eyebrow">ADOPTED BY THE GENERAL BODY</span>
+            <span class="adoption-line"></span>
+          </div>
+
+          <p class="adoption-statement">
+            This constitution was formally adopted by the General Body of BFIAA on <span class="adoption-date-pill">12 March 2009</span>.
+          </p>
+
+          <div class="adoption-signatures">
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-name">Tanvir Mokammel</div>
+              <div class="sig-role">Patron &amp; Advisor</div>
+            </div>
+            <div>
+              <div class="sig-line"></div>
+              <div class="sig-name">Executive Committee</div>
+              <div class="sig-role">Bangladesh Film Institute Alumni Association</div>
+            </div>
+          </div>
+
+          <div style="margin-top: 32px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase;">
+            BFIAA &middot; bfiaa.bfibd.org &middot; Dhaka, Bangladesh
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+  </main>
+
+  <!-- ═══════ EXACT HOMEPAGE SITE FOOTER ═══════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="filmstrip-border left" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="filmstrip-border right" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="container footer-top">
+      <div class="footer-cols">
+        <!-- Brand -->
+        <div>
+          <div class="footer-brand">
+            <a href="index.html#home" class="footer-brand-link" aria-label="BFIAA Home" style="display: inline-block; text-decoration: none;">
+              <img src="images/bfiaa-logo.png" alt="BFIAA Logo" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.style.display='none'"/>
+            </a>
+          </div>
+          <p class="footer-brand-desc">
+            The official alumni body of Bangladesh Film Institute, connecting over 1,000 graduates across 86+ batches in a shared commitment to cinema culture.
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About BFIAA</a></li>
+            <li><a href="index.html#founder">Tanvir Mokammel</a></li>
+            <li><a href="index.html#committee">Executive Committee</a></li>
+            <li><a href="index.html#conferences">Conferences</a></li>
+            <li><a href="index.html#alumni">Featured Alumni</a></li>
+            <li><a href="index.html#events">Events &amp; Screenings</a></li>
+            <li><a href="index.html#retrospective">30 Years Retrospective</a></li>
+            <li><a href="index.html#publications">Uralchitra Journal</a></li>
+            <li><a href="index.html#picnic">Annual Picnic</a></li>
+          </ul>
+        </div>
+
+        <!-- Documents & Records -->
+        <div>
+          <div class="footer-col-title">Documents</div>
+          <ul class="footer-links-list">
+            <li><a href="constitution.html">Official Constitution</a></li>
+            <li><a href="conference-2021.html">Conference 2021 Record</a></li>
+            <li><a href="conference-2019.html">Conference 2019 Record</a></li>
+            <li><a href="uralchitra-special.html">Uralchitra Special Edition</a></li>
+            <li><a href="30-years-event.html">30 Years Retrospective Event</a></li>
+            <li><a href="alumni/portfolio-template.html">Alumni Member Template</a></li>
+            <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Membership Form</a></li>
+          </ul>
+        </div>
+
+        <!-- BFI Network -->
+        <div>
+          <div class="footer-col-title">BFI Network</div>
+          <ul class="footer-links-list">
+            <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+            <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+            <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+            <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel Site</a></li>
+            <li><a href="https://www.facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener">BFIAA Facebook Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.</div>
+        <div>Dedicated to Alternative &amp; Independent Cinema in Bangladesh.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ─── Interactive Script ─── -->
+  <script>
+    // Mobile Hamburger
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (hamburger && mobileNav) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+      mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Mobile Contents Dropdown Toggle
+    const mobileContentsBtn = document.getElementById('mobileContentsBtn');
+    const sidebarNavWrap = document.getElementById('sidebarNavWrap');
+    if (mobileContentsBtn && sidebarNavWrap) {
+      mobileContentsBtn.addEventListener('click', () => {
+        const isOpen = sidebarNavWrap.classList.toggle('open');
+        mobileContentsBtn.classList.toggle('open', isOpen);
+        mobileContentsBtn.setAttribute('aria-expanded', isOpen);
+      });
+    }
+
+    // ScrollSpy for Active Sidebar Item
+    const navItems = document.querySelectorAll('.sidebar-nav-item');
+    const sections = Array.from(navItems).map(item => {
+      const id = item.getAttribute('data-target');
+      return document.getElementById(id);
+    }).filter(Boolean);
+
+    function updateActiveNav() {
+      const scrollPos = window.scrollY + 160;
+      let currentSectionId = sections[0] ? sections[0].id : '';
+
+      for (let i = 0; i < sections.length; i++) {
+        const sec = sections[i];
+        if (sec.offsetTop <= scrollPos) {
+          currentSectionId = sec.id;
+        } else {
+          break;
+        }
       }
-    });
-    mobileMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', false);
-        const spans = hamburger.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity   = '1';
-        spans[2].style.transform = 'none';
+
+      navItems.forEach(item => {
+        if (item.getAttribute('data-target') === currentSectionId) {
+          item.classList.add('active');
+        } else {
+          item.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', updateActiveNav, { passive: true });
+    updateActiveNav();
+
+    // Smooth Scroll with close on mobile
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = item.getAttribute('data-target');
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          const headerOffset = 85;
+          const elementPosition = targetEl.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            left: 0,
+            behavior: 'smooth'
+          });
+          history.pushState(null, null, '#' + targetId);
+          if (window.innerWidth <= 960 && sidebarNavWrap) {
+            sidebarNavWrap.classList.remove('open');
+            if (mobileContentsBtn) mobileContentsBtn.classList.remove('open');
+          }
+        }
       });
     });
-  }
-</script>
 
+    // Support deep-linking for both #art-X and #article-X
+    function scrollToHashTarget() {
+      const hash = window.location.hash;
+      if (!hash) return;
+      let targetId = hash.substring(1);
+      if (targetId.startsWith('art-')) {
+        targetId = 'article-' + targetId.replace('art-', '');
+      }
+      const targetEl = document.getElementById(targetId) || document.getElementById(hash.substring(1));
+      if (targetEl) {
+        setTimeout(() => {
+          const headerOffset = 85;
+          const elementPosition = targetEl.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            left: 0,
+            behavior: 'smooth'
+          });
+        }, 120);
+      }
+    }
+
+    window.addEventListener('load', scrollToHashTarget);
+    window.addEventListener('hashchange', scrollToHashTarget);
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      scrollToHashTarget();
+    }
+  </script>
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+  <script src="js/scroll-top.js"></script>
 </body>
 </html>

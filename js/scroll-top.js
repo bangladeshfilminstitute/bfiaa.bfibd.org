@@ -1,4 +1,4 @@
-﻿/**
+/**
  * BFIAA — Unified Scroll to Top Component
  * Automatically provides an accessible, smooth-scrolling button on all pages.
  */
