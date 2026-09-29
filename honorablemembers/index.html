@@ -28,6 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
+  <link rel="preload" as="image" href="../images/honorable-hero-bg.webp" fetchpriority="high"/>
   <link rel="stylesheet" href="../css/editorial.css?v=4.0">
 
   <style>
@@ -186,11 +187,56 @@
 
     /* ── HERO BANNER ────────────────────────────────────────────────────── */
     .dir-hero {
-      background: linear-gradient(180deg, var(--deep-green) 0%, var(--dark-green) 100%);
-      color: var(--cream);
-      padding: 70px 0 60px;
-      border-bottom: 1px solid var(--border-dark);
       position: relative;
+      background: #06100D;
+      color: var(--cream);
+      padding: 75px 0 65px;
+      border-bottom: 1px solid var(--border-dark);
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .dir-hero-bg-layer {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .dir-hero-photo {
+      position: absolute;
+      inset: 0;
+      background-image: url('../images/honorable-hero-bg.webp'), url('../images/honorable-hero-bg.jpg');
+      background-size: cover;
+      background-position: right 35%;
+      background-repeat: no-repeat;
+      opacity: 0.52;
+      filter: brightness(0.85) contrast(1.15) saturate(0.95);
+    }
+    .dir-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg,
+        rgba(7, 23, 21, 0.98) 0%,
+        rgba(7, 23, 21, 0.92) 46%,
+        rgba(7, 23, 21, 0.45) 76%,
+        rgba(7, 23, 21, 0.70) 100%
+      ),
+      linear-gradient(
+        180deg,
+        rgba(7, 23, 21, 0.75) 0%,
+        transparent 35%,
+        rgba(7, 23, 21, 0.95) 100%
+      );
+    }
+    .dir-hero-grain {
+      position: absolute;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
+      opacity: 0.5;
+    }
+    .dir-hero .container {
+      position: relative;
+      z-index: 1;
     }
     .container {
       max-width: 1240px;
@@ -693,6 +739,15 @@
       .controls-bar { top: 70px; }
     }
     @media (max-width: 768px) {
+      .dir-hero { padding: 50px 0 45px; }
+      .dir-hero-photo { background-position: right 25%; opacity: 0.36; }
+      .dir-hero-overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(7, 23, 21, 0.88) 0%,
+          rgba(7, 23, 21, 0.97) 100%
+        );
+      }
       .footer-grid { grid-template-columns: 1fr; gap: 26px; }
       .featured-grid { grid-template-columns: 1fr; }
       .cta-banner { padding: 32px 24px; }
@@ -751,6 +806,11 @@
 
   <!-- ── HERO SECTION ───────────────────────────────────────────────────── -->
   <section class="dir-hero">
+    <div class="dir-hero-bg-layer" aria-hidden="true">
+      <div class="dir-hero-photo"></div>
+      <div class="dir-hero-overlay"></div>
+      <div class="dir-hero-grain"></div>
+    </div>
     <div class="container">
       <div class="dir-breadcrumb">
         <a href="../index.html">Home</a>
