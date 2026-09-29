@@ -403,7 +403,6 @@
       background: rgba(11, 33, 31, 0.95);
       border-color: var(--gold);
       color: #fff;
-      transform: translateY(-2px);
       box-shadow: 0 4px 16px rgba(0,0,0,0.4);
     }
     .hero-tag-pulse {
@@ -1047,89 +1046,178 @@
     }
     .alumni-card:hover .card-link { gap: 9px; }
 
-    /* ── EVENTS SECTION ── */
+    /* ── EVENTS SECTION (MODERN EDITORIAL ARCHITECTURE) ── */
     .events-section {
-      background: var(--dark-green);
-      color: var(--cream);
-      padding: 90px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
+      background: var(--cream);
+      color: var(--dark-text);
+      padding: 96px 0 106px;
+      border-bottom: 1px solid var(--border-light);
+      position: relative;
+    }
+    .events-header-wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 44px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(216, 213, 204, 0.6);
+    }
+    .events-tagline-cluster {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .events-tagline-pill {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      background: #EAE6DB;
+      border: 1px solid var(--border-light);
+      padding: 6px 12px;
+      border-radius: 4px;
     }
     .events-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-top: 40px;
+      gap: 28px;
+    }
+    @media (max-width: 1080px) {
+      .events-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+      }
+    }
+    @media (max-width: 640px) {
+      .events-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
     }
     .event-card {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid var(--border-dark);
-      border-radius: 4px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform 250ms ease, background 200ms ease;
+      box-shadow: 0 4px 18px rgba(7, 23, 21, 0.04);
+      transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
     }
     .event-card:hover {
-      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-      background: rgba(255,255,255,0.06);
+      border-color: var(--gold);
+      box-shadow: 0 8px 28px rgba(7, 23, 21, 0.08);
+      background-color: #FCFBF7;
     }
     .event-thumb {
-      aspect-ratio: 16/10;
+      aspect-ratio: 4/3;
       overflow: hidden;
       position: relative;
-      background: var(--deep-green);
+      background: #081412;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .event-thumb img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center top;
+      display: block;
+      transition: opacity 250ms ease;
+    }
+    .event-card:hover .event-thumb img {
+      opacity: 0.94;
     }
     .event-type-badge {
       position: absolute;
       top: 12px;
       left: 12px;
-      background: var(--burgundy);
-      color: #fff;
-      font-size: 8px;
+      font-family: var(--mono);
+      font-size: 9.5px;
       font-weight: 600;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      padding: 4px 8px;
-      border-radius: 2px;
+      padding: 5px 11px;
+      border-radius: 3px;
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+      z-index: 2;
     }
+    .badge-screening { background: var(--burgundy); }
+    .badge-webinar { background: #0B3530; color: var(--gold); border: 1px solid rgba(183,164,119,0.3); }
+    .badge-director { background: #683718; }
+    .badge-official { background: #1B3A2D; }
+    .badge-youtube { background: #C4302B; }
+
     .event-body {
-      padding: 20px;
+      padding: 24px 22px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
     }
     .event-date {
-      font-size: 10px;
-      letter-spacing: 0.1em;
-      color: var(--gold);
-      margin-bottom: 8px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      color: var(--burgundy);
+      margin-bottom: 10px;
       font-family: var(--mono);
+      text-transform: uppercase;
     }
     .event-title {
       font-family: var(--serif);
-      font-size: 19px;
-      color: var(--cream);
+      font-size: 21px;
+      font-weight: 600;
+      color: var(--dark-text);
       line-height: 1.25;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
     .event-title-bn {
       font-family: var(--bn);
       font-size: 15px;
-      color: rgba(243,240,231,0.85);
-      margin-bottom: 10px;
+      font-weight: 600;
+      color: var(--gold-dark);
+      margin-bottom: 12px;
       display: block;
+      line-height: 1.4;
     }
     .event-desc {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1.65;
-      color: rgba(243,240,231,0.55);
-      margin-bottom: 16px;
+      color: #4A5553;
+      margin-bottom: 22px;
       flex-grow: 1;
+    }
+    .event-card-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 14px;
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      border: 1px solid var(--border-light);
+      background: #FAF9F5;
+      color: var(--dark-text);
+      text-decoration: none;
+      transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease;
+    }
+    .event-card-btn:hover {
+      background: var(--dark-green);
+      color: var(--cream);
+      border-color: var(--dark-green);
     }
 
     /* ── 30 YEARS RETROSPECTIVE ── */
@@ -3923,12 +4011,14 @@
   ══════════════════════════════════════════════════ -->
   <section class="events-section" id="events" aria-label="Events and Screenings">
     <div class="container">
-      <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px;">
+      <div class="events-header-wrap">
         <div>
-          <div class="section-label light">Activities</div>
-          <h2 class="section-title-large" style="color: var(--cream);">Events &amp; Screenings</h2>
+          <div class="section-label">Activities · কার্যক্রম</div>
+          <h2 class="section-title-large">Events &amp; Screenings</h2>
         </div>
-        <span style="font-family: var(--mono); font-size: 11px; color: var(--gold);">FILM · DIALOGUE · COMMUNITY</span>
+        <div class="events-tagline-cluster">
+          <span class="events-tagline-pill">FILM · DIALOGUE · COMMUNITY</span>
+        </div>
       </div>
 
       <div class="events-grid">
@@ -3936,14 +4026,14 @@
         <article class="event-card">
           <div class="event-thumb">
             <img src="images/songsoptok-flyer.jpg" alt="Cine Club Adda: Songsoptok" loading="lazy"/>
-            <span class="event-type-badge">Screening</span>
+            <span class="event-type-badge badge-screening">🎬 Screening</span>
           </div>
           <div class="event-body">
             <div class="event-date">📅 29 DEC 2022 · 9:00 PM</div>
             <h3 class="event-title">Cine Club Adda: Songsoptok</h3>
             <span class="event-title-bn">সংশপ্তক- বীরশ্রেষ্ঠ মতিউর রহমানের কাহিনী</span>
             <p class="event-desc">Special virtual screening of the documentary directed by BFI alumnus Sajjad Khan, bringing together alumni worldwide with host Mamun Sobhani.</p>
-            <a href="event-songsoptok.html" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Event Details &rarr;</a>
+            <a href="event-songsoptok.html" class="event-card-btn"><span>Event Details &amp; Discussion</span><span>&rarr;</span></a>
           </div>
         </article>
 
@@ -3951,14 +4041,14 @@
         <article class="event-card">
           <div class="event-thumb">
             <img src="images/pounopunik-flyer.jpg" alt="Cine Club Adda: Pounopunik" loading="lazy"/>
-            <span class="event-type-badge">Screening</span>
+            <span class="event-type-badge badge-screening">🎬 Screening</span>
           </div>
           <div class="event-body">
             <div class="event-date">📅 09 AUG 2022 · 9:00 PM</div>
             <h3 class="event-title">Cine Club Adda: Pounopunik</h3>
             <span class="event-title-bn">পৌণঃপুণিক</span>
             <p class="event-desc">Virtual screening and discussion of the acclaimed film directed by BFI alumnus Khandaker Sumon, moderated by Mamun Sobhani.</p>
-            <a href="event-pounopunik.html" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Event Details &rarr;</a>
+            <a href="event-pounopunik.html" class="event-card-btn"><span>Event Details &amp; Discussion</span><span>&rarr;</span></a>
           </div>
         </article>
 
@@ -3966,14 +4056,14 @@
         <article class="event-card">
           <div class="event-thumb">
             <img src="images/cinema-kotha-flyer.png" alt="Cinema Kotha: Zahir Raihan" loading="lazy"/>
-            <span class="event-type-badge">Webinar</span>
+            <span class="event-type-badge badge-webinar">🎙️ Webinar</span>
           </div>
           <div class="event-body">
             <div class="event-date">📅 04 MAR 2022 · 7:00 PM</div>
             <h3 class="event-title">Cinema Kotha: Zahir Raihan</h3>
             <span class="event-title-bn">রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান</span>
             <p class="event-desc">Inaugural webinar honoring legendary filmmaker Zahir Raihan. Keynote speaker Tanvir Mokammel, moderated by Sagir Mostafa.</p>
-            <a href="event-cinema-kotha.html" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Event Details &rarr;</a>
+            <a href="event-cinema-kotha.html" class="event-card-btn"><span>Webinar Details &amp; Records</span><span>&rarr;</span></a>
           </div>
         </article>
 
@@ -3981,14 +4071,14 @@
         <article class="event-card">
           <div class="event-thumb">
             <img src="images/man-film-flyer.png" alt="Cine Club Adda: Man" loading="lazy"/>
-            <span class="event-type-badge">Meet Director</span>
+            <span class="event-type-badge badge-director">🎥 Meet Director</span>
           </div>
           <div class="event-body">
             <div class="event-date">📅 12 FEB 2022 · 9:00 PM</div>
             <h3 class="event-title">Cine Club Adda: Man</h3>
             <span class="event-title-bn">ম্যান (Man)</span>
             <p class="event-desc">Special screening and interactive director session with former BFIAA President Imtiaz Pavel, hosted by Aparajita Sangita.</p>
-            <a href="event-man.html" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Event Details &rarr;</a>
+            <a href="event-man.html" class="event-card-btn"><span>Event Details &amp; Session</span><span>&rarr;</span></a>
           </div>
         </article>
 
@@ -3996,14 +4086,14 @@
         <article class="event-card">
           <div class="event-thumb">
             <img src="images/ec-meeting-1.jpg" alt="6th EC 1st Meeting" loading="lazy"/>
-            <span class="event-type-badge">Official</span>
+            <span class="event-type-badge badge-official">🏛️ Official Meeting</span>
           </div>
           <div class="event-body">
             <div class="event-date">📅 07 JAN 2022</div>
             <h3 class="event-title">6th Executive Committee Meeting</h3>
             <span class="event-title-bn">ষষ্ঠ কার্যনির্বাহী কমিটির প্রথম সভা</span>
             <p class="event-desc">Inaugural meeting of the 6th EC held at BFI premises with President Shahina Hafiz Daisy, Tanvir Mokammel, and 16 executive members.</p>
-            <a href="event-ec-meeting.html" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Event Details &rarr;</a>
+            <a href="event-ec-meeting.html" class="event-card-btn"><span>Meeting Records &amp; Agenda</span><span>&rarr;</span></a>
           </div>
         </article>
 
@@ -4011,14 +4101,14 @@
         <article class="event-card">
           <div class="event-thumb" style="position: relative;">
             <img src="https://img.youtube.com/vi/GeiOwicK9Ac/maxresdefault.jpg" alt="Masterclass by Tanvir Mokammel on Mrinal Sen" loading="lazy"/>
-            <span class="event-type-badge" style="background: #c4302b;">YouTube</span>
+            <span class="event-type-badge badge-youtube">▶ Masterclass</span>
           </div>
           <div class="event-body">
-            <div class="event-date">▶ WATCH ONLINE</div>
+            <div class="event-date">▶ ARCHIVAL MASTERCLASS</div>
             <h3 class="event-title">Masterclass on Mrinal Sen</h3>
             <span class="event-title-bn">মৃণাল সেনের চলচ্চিত্র নিয়ে তানভীর মোকাম্মেল</span>
             <p class="event-desc">An in-depth exploration of Mrinal Sen's cinematic universe, rebellious philosophy, and radical storytelling by founder Tanvir Mokammel.</p>
-            <a href="https://youtu.be/GeiOwicK9Ac" target="_blank" rel="noopener" class="btn-conf" style="color: var(--gold); border-bottom-color: var(--gold);">Watch Masterclass &rarr;</a>
+            <a href="https://youtu.be/GeiOwicK9Ac" target="_blank" rel="noopener" class="event-card-btn"><span>Watch Masterclass Online</span><span>↗</span></a>
           </div>
         </article>
       </div>

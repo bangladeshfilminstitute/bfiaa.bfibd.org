@@ -3,256 +3,489 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cinema Kotha: Zahir Raihan Webinar — BFIAA 2022</title>
-  <meta name="description" content="Inaugural BFIAA live webinar "Cinema Kotha" — Zahir Raihan as a Political Filmmaker, with keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
+  <title>Live Webinar: Cinema Kotha (Episode 01) — Zahir Raihan | BFIAA 2022</title>
+  <meta name="description" content="BFIAA inaugural live webinar Cinema Kotha on 'Zahir Raihan as a Political Filmmaker'. Keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
   <link rel="canonical" href="https://bfiaa.bfibd.org/event-cinema-kotha.html"/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#1B3A2D"/>
-  <meta property="og:title" content="Cinema Kotha: Zahir Raihan Webinar — BFIAA 2022"/>
-  <meta property="og:description" content="Inaugural BFIAA live webinar "Cinema Kotha" — Zahir Raihan as a Political Filmmaker, with keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
+  <meta name="theme-color" content="#071715"/>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Live Webinar: Cinema Kotha (Episode 01) — Zahir Raihan | BFIAA 2022"/>
+  <meta property="og:description" content="BFIAA inaugural live webinar Cinema Kotha on 'Zahir Raihan as a Political Filmmaker'. Keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
   <meta property="og:url" content="https://bfiaa.bfibd.org/event-cinema-kotha.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/cinema-kotha-flyer.png"/>
+  <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Live Webinar: Cinema Kotha (Episode 01) — Zahir Raihan | BFIAA 2022"/>
+  <meta name="twitter:description" content="BFIAA inaugural live webinar Cinema Kotha on 'Zahir Raihan as a Political Filmmaker'. Keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
+  <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/cinema-kotha-flyer.png"/>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Hind+Siliguri:wght@400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/editorial.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Editorial Design System Stylesheet -->
+  <link rel="stylesheet" href="css/editorial.css?v=4.0">
+
   <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Event","name":"Cinema Kotha — Live Webinar on Zahir Raihan","startDate":"2022-03-04T19:00","url":"https://bfiaa.bfibd.org/event-cinema-kotha.html","organizer":{"@type":"Organization","name":"BFIAA","url":"https://bfiaa.bfibd.org"},"location":{"@type":"VirtualLocation","url":"https://www.facebook.com/BFIAlumniAssociation"}}
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Live Webinar: Cinema Kotha — রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান",
+    "startDate": "2022-03-04T19:00:00+06:00",
+    "url": "https://bfiaa.bfibd.org/event-cinema-kotha.html",
+    "organizer": {
+      "@type": "Organization",
+      "name": "BFIAA",
+      "url": "https://bfiaa.bfibd.org"
+    },
+    "location": {
+      "@type": "VirtualLocation",
+      "url": "https://www.facebook.com/BFIAlumniAssociation"
+    },
+    "description": "Inaugural live webinar on Zahir Raihan as a Political Filmmaker featuring Tanvir Mokammel, Sagir Mostafa, and Redwan Hossain Riyad."
+  }
   </script>
 
   <style>
+    /* ═══════════════════════════════════════════════════
+       BFIAA EVENT EDITORIAL ARCHITECTURE
+       Consistent with conference-2021 & institutional standards
+       Strict adherence: Zero movement/transform on hover
+       ═══════════════════════════════════════════════════ */
+
+    :root {
+      --event-card-bg: #FAF9F5;
+      --event-card-border: #D8D5CC;
+      --event-card-hover: #B7A477;
+    }
+
+    /* ─── Hero Section ─── */
+    .event-hero-section {
+      background-color: var(--deep-green);
+      background-image: 
+        linear-gradient(180deg, rgba(7, 23, 21, 0.95) 0%, rgba(7, 23, 21, 0.98) 100%),
+        radial-gradient(ellipse at 80% 20%, rgba(183, 164, 119, 0.12) 0%, transparent 60%);
+      color: var(--cream);
+      padding: 44px 0 54px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .event-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
     .event-breadcrumb {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       gap: 8px;
       font-family: var(--mono);
       font-size: 11px;
-      letter-spacing: 1.5px;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--ink-faded);
-      margin-bottom: 32px;
-      padding-top: 24px;
+      color: rgba(243, 240, 231, 0.6);
+      margin-bottom: 24px;
     }
-    .event-breadcrumb a { color: var(--gold); text-decoration: none; transition: color 0.2s; }
-    .event-breadcrumb a:hover { color: var(--cream); }
-    .event-breadcrumb .sep { color: var(--ink-faded); }
-
-    .editorial-badge {
-      display: inline-block;
-      font-family: var(--mono);
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border: 1px solid var(--gold);
+    .event-breadcrumb a {
       color: var(--gold);
-      border-radius: 2px;
-      margin-bottom: 20px;
-    }
-    .editorial-title {
-      font-family: var(--serif);
-      font-size: clamp(2rem, 4vw, 3.2rem);
-      color: var(--cream);
-      line-height: 1.2;
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
-    .editorial-bengali-title {
-      font-family: 'Hind Siliguri', 'Kalpurush', sans-serif;
-      font-size: clamp(1.3rem, 2.5vw, 2rem);
-      color: var(--gold);
-      font-weight: 600;
-      line-height: 1.45;
-      margin-bottom: 32px;
-      display: block;
-    }
-    .editorial-meta-table {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      overflow: hidden;
-      margin-bottom: 40px;
-    }
-    .meta-item {
-      background: var(--surface);
-      padding: 16px 20px;
-    }
-    .meta-item label {
-      display: block;
-      font-family: var(--mono);
-      font-size: 9px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--ink-faded);
-      margin-bottom: 6px;
-    }
-    .meta-item span {
-      font-family: var(--sans);
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--cream);
-      line-height: 1.4;
-    }
-    .meta-item span small {
-      display: block;
-      font-size: 12px;
-      color: var(--gold);
-      font-weight: 400;
-      margin-top: 2px;
-    }
-
-    .editorial-grid {
-      display: grid;
-      grid-template-columns: 340px 1fr;
-      gap: 48px;
-      align-items: start;
-      margin-bottom: 60px;
-    }
-    .editorial-sticky-side {
-      position: sticky;
-      top: 100px;
-    }
-    .photo-stage-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-    }
-    .photo-stage-card img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-    .stage-actions {
-      display: flex;
-      gap: 10px;
-      padding: 14px;
-      background: rgba(0,0,0,0.3);
-      border-top: 1px solid var(--border);
-    }
-    .btn-stage {
-      flex: 1;
-      text-align: center;
-      padding: 10px 12px;
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      text-transform: uppercase;
       text-decoration: none;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      color: var(--cream);
-      background: transparent;
-      transition: all 0.2s;
+      transition: color 150ms ease;
     }
-    .btn-stage:hover { background: var(--border); }
-    .btn-stage.gold-btn { border-color: var(--gold); color: var(--gold); }
-    .btn-stage.gold-btn:hover { background: rgba(212,175,55,0.1); }
+    .event-breadcrumb a:hover {
+      color: #FFFFFF;
+    }
+    .event-breadcrumb .sep {
+      color: rgba(255, 255, 255, 0.3);
+    }
 
-    .editorial-prose h3 {
-      font-family: var(--serif);
-      font-size: 1.15rem;
-      color: var(--gold);
-      letter-spacing: 0.5px;
-      margin: 28px 0 12px;
+    .event-badges-row {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 10px;
+      margin-bottom: 18px;
     }
-    .editorial-prose p {
-      font-size: 1rem;
-      line-height: 1.85;
-      color: var(--ink-light);
-      margin-bottom: 16px;
-    }
-    .bengali-quote-card {
-      background: rgba(61,42,10,0.3);
-      border-left: 3px solid var(--gold);
-      padding: 24px 28px;
-      border-radius: 0 6px 6px 0;
-      margin-bottom: 28px;
-      font-family: 'Hind Siliguri', 'Kalpurush', sans-serif;
-      font-size: 1rem;
-      line-height: 1.95;
-      color: var(--cream);
-    }
-    .bengali-quote-card h4 {
-      font-family: var(--serif);
-      font-size: 1rem;
-      color: var(--gold);
-      font-weight: 700;
-      letter-spacing: 0.5px;
-      margin-bottom: 10px;
+
+    .event-badge-cat {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--burgundy);
+      color: #FFFFFF;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
     }
-    .bengali-quote-card p {
-      font-family: 'Hind Siliguri', 'Kalpurush', sans-serif;
-      color: var(--cream);
-      font-size: 1rem;
-      line-height: 1.95;
-      margin: 0;
+
+    .event-badge-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 3px;
     }
-    .event-action-row {
+
+    .event-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(30px, 4.2vw, 50px);
+      font-weight: 500;
+      color: #FAF8F2;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .event-hero-bn-title {
+      font-family: var(--bn);
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1.35;
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .event-hero-pills {
       display: flex;
-      gap: 16px;
       flex-wrap: wrap;
-      margin-top: 36px;
-      padding-top: 28px;
-      border-top: 1px solid var(--border);
+      gap: 12px;
+      padding-top: 6px;
     }
-    .btn-editorial {
+
+    .event-pill {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 12px 24px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-size: 12.5px;
+      color: rgba(243, 240, 231, 0.9);
+    }
+    .event-pill strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ─── Page Body on Cream ─── */
+    .event-page-body {
+      background: var(--cream);
+      padding: 50px 0 80px;
+    }
+
+    .event-body-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ─── Metadata Cards Grid ─── */
+    .event-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-bottom: 40px;
+    }
+
+    .event-meta-card {
+      background: var(--event-card-bg);
+      border: 1px solid var(--event-card-border);
+      border-radius: 4px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+    .event-meta-card:hover {
+      border-color: var(--event-card-hover);
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.08);
+    }
+
+    .event-meta-card-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
       font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .event-meta-card-value {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.4;
+    }
+
+    .event-meta-card-note {
       font-size: 12px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ─── Main Content Showcase Grid ─── */
+    .event-showcase-grid {
+      display: grid;
+      grid-template-columns: 440px 1fr;
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 980px) {
+      .event-showcase-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─── Left Visual Flyer Stage ─── */
+    .flyer-showcase-card {
+      background: var(--event-card-bg);
+      border: 1px solid var(--event-card-border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(7, 23, 21, 0.06);
+    }
+
+    .flyer-frame {
+      position: relative;
+      background: #0B211F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .flyer-frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .flyer-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      background: #F3F0E7;
+      border-top: 1px solid var(--event-card-border);
+    }
+
+    .flyer-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 9px 12px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+    }
+    .flyer-btn-outline {
+      background: #FFFFFF;
+      border: 1px solid var(--event-card-border);
+      color: var(--dark-text);
+    }
+    .flyer-btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--burgundy);
+    }
+    .flyer-btn-gold {
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--gold);
+    }
+    .flyer-btn-gold:hover {
+      background: #0D2D2A;
+      color: #FFFFFF;
+    }
+
+    /* ─── Right Content Column ─── */
+    .event-content-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .bengali-announcement-card {
+      background: #FFFFFF;
+      border: 1px solid var(--event-card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.04);
+    }
+
+    .bengali-announcement-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 12px;
+    }
+
+    .bengali-announcement-text {
+      font-family: var(--bn);
+      font-size: 16px;
+      line-height: 1.95;
+      color: var(--dark-text);
+      margin: 0;
+    }
+
+    .bengali-announcement-timing {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 14px;
+      padding: 6px 12px;
+      background: rgba(183, 164, 119, 0.12);
+      border: 1px solid rgba(183, 164, 119, 0.35);
+      border-radius: 3px;
+      font-family: var(--bn);
+      font-size: 14px;
+      font-weight: 600;
+      color: #634E17;
+    }
+
+    .editorial-prose-card {
+      background: var(--event-card-bg);
+      border: 1px solid var(--event-card-border);
+      border-radius: 4px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+    }
+
+    .editorial-prose-card h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--dark-text);
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--event-card-border);
+    }
+
+    .editorial-prose-card p {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.85;
+      color: #384A44;
+      margin-bottom: 16px;
+    }
+    .editorial-prose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ─── Inter-Event Navigation Strip ─── */
+    .event-nav-strip {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 16px;
+      align-items: center;
+      margin-top: 40px;
+      padding-top: 32px;
+      border-top: 1px solid var(--event-card-border);
+    }
+
+    @media (max-width: 720px) {
+      .event-nav-strip {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .event-nav-link {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 14px 18px;
+      background: var(--event-card-bg);
+      border: 1px solid var(--event-card-border);
+      border-radius: 4px;
+      transition: border-color 150ms ease, box-shadow 150ms ease;
+    }
+    .event-nav-link:hover {
+      border-color: var(--gold);
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.06);
+    }
+    .event-nav-dir {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .event-nav-title {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.3;
+    }
+
+    .event-hub-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 20px;
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--cream);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       text-decoration: none;
       border-radius: 4px;
-      transition: all 0.2s;
+      transition: background-color 150ms ease, border-color 150ms ease;
     }
-    .btn-editorial.primary {
-      background: var(--green);
-      color: var(--cream);
-      border: 1px solid var(--green);
-    }
-    .btn-editorial.primary:hover { opacity: 0.88; }
-    .btn-editorial.secondary {
-      background: transparent;
-      border: 1px solid var(--border);
-      color: var(--cream);
-    }
-    .btn-editorial.secondary:hover { border-color: var(--cream); }
-    .btn-editorial.gold {
-      background: transparent;
-      border: 1px solid var(--gold);
-      color: var(--gold);
-    }
-    .btn-editorial.gold:hover { background: rgba(212,175,55,0.1); }
-
-    @media (max-width: 860px) {
-      .editorial-grid { grid-template-columns: 1fr; }
-      .editorial-sticky-side { position: static; }
-      .photo-stage-card { max-width: 420px; margin: 0 auto; }
+    .event-hub-btn:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: #FFFFFF;
     }
   </style>
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Cinema Kotha: Zahir Raihan Webinar — BFIAA 2022"/>
-  <meta name="twitter:description" content="Inaugural BFIAA live webinar "Cinema Kotha" — Zahir Raihan as a Political Filmmaker, with keynote by Tanvir Mokammel, moderated by Sagir Mostafa. 4 March 2022."/>
-  <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/cinema-kotha-flyer.png"/>
 </head>
 <body>
 
+  <!-- ─── Site Header ─── -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
@@ -286,6 +519,7 @@
     </div>
   </header>
 
+  <!-- ─── Mobile Navigation Drawer ─── -->
   <nav class="mobile-nav" id="mobileNav">
     <a href="index.html#home">Home</a>
     <a href="index.html#about">About BFIAA</a>
@@ -301,101 +535,161 @@
     <a href="index.html#contact">Contact &amp; Join</a>
     <div class="mobile-cta-group">
       <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
-      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site →</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site &rarr;</a>
     </div>
   </nav>
 
-  <main class="editorial-page-hero">
-    <div class="container">
+  <!-- ─── Cinematic Hero ─── -->
+  <section class="event-hero-section">
+    <div class="container event-hero-inner">
 
       <nav class="event-breadcrumb" aria-label="Breadcrumb">
         <a href="index.html#home">Home</a>
         <span class="sep">/</span>
-        <a href="index.html#events">Events</a>
+        <a href="index.html#events">Events &amp; Screenings</a>
         <span class="sep">/</span>
         <span>Cinema Kotha: Zahir Raihan</span>
       </nav>
 
-      <div class="editorial-badge">🎙️ INAUGURAL LIVE WEBINAR · CINEMA KOTHA · SERIES 01</div>
-      <h1 class="editorial-title">Live Webinar: Cinema Kotha (Episode 01)</h1>
-      <h2 class="editorial-bengali-title">"রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান"</h2>
-
-      <div class="editorial-meta-table">
-        <div class="meta-item">
-          <label>Date &amp; Time</label>
-          <span>04 March 2022<small>Friday @ 7:00 PM</small></span>
-        </div>
-        <div class="meta-item">
-          <label>Keynote Speaker</label>
-          <span>Tanvir Mokammel<small>Ekushey Padak Filmmaker &amp; Chief Advisor, BFIAA</small></span>
-        </div>
-        <div class="meta-item">
-          <label>Moderator</label>
-          <span>Sagir Mostafa<small>Advisor, BFIAA</small></span>
-        </div>
-        <div class="meta-item">
-          <label>Essay Presentation</label>
-          <span>Redwan Hossain Riyad<small>Selected Author &amp; Member, BFIAA</small></span>
-        </div>
-        <div class="meta-item">
-          <label>Platform</label>
-          <span>Facebook Live<small>Official BFIAA Page</small></span>
-        </div>
-        <div class="meta-item">
-          <label>Series</label>
-          <span>Cinema Kotha<small>সিনেমা কথা · Edition 01</small></span>
-        </div>
+      <div class="event-badges-row">
+        <span class="event-badge-cat">🎙️ Live Webinar Series</span>
+        <span class="event-badge-outline">Cinema Kotha · Episode 01</span>
+        <span class="event-badge-outline">📅 04 March 2022</span>
       </div>
 
-      <div class="editorial-grid">
-        <aside class="editorial-sticky-side">
-          <div class="photo-stage-card">
-            <div class="main-photo-frame">
-              <img src="images/cinema-kotha-flyer.png" alt="Cinema Kotha: Zahir Raihan — Live Webinar Flyer" loading="lazy"/>
-            </div>
-            <div class="stage-actions">
-              <a href="images/cinema-kotha-flyer.png" target="_blank" class="btn-stage gold-btn">🔍 View Full Flyer</a>
-              <a href="images/cinema-kotha-flyer.png" download="BFIAA-Cinema-Kotha-Webinar.png" class="btn-stage">⬇ Download</a>
-            </div>
-          </div>
-        </aside>
+      <h1 class="event-hero-title">Live Webinar: Cinema Kotha (Episode 01)</h1>
+      <span class="event-hero-bn-title">"রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান"</span>
 
-        <div class="editorial-prose">
-          <div class="bengali-quote-card">
-            <h4>মূল বিজ্ঞপ্তি (Official Announcement)</h4>
-            <p>
-              আনন্দের সাথে জানাচ্ছি যে, আগামী ৪ মার্চ ২০২২ (শুক্রবার) তারিখে সন্ধ্যা ৭.০০ টায় বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন (বিএফআইএএ) তাদের প্রথম লাইভ ওয়েবিনার "সিনেমা কথা" আয়োজন করতে যাচ্ছে। বাংলাদেশের প্রখ্যাত চলচ্চিত্রকার জহির রায়হানকে স্মরণ করে এবারের ওয়েবিনারের বিষয় নির্ধারণ করা হয়েছে "রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান"। উক্ত ওয়েবিনারে মূল আলোচক হিসেবে উপস্থিত থাকবেন বিএফআইএএ-য়ের প্রধান উপদেষ্টা একুশে পদকপ্রাপ্ত চলচ্চিত্রনির্মাতা শ্রদ্ধেয় তানভীর মোকাম্মেল। অনুষ্ঠানটি সঞ্চালনা করবেন বিএফআইএএ-য়ের অন্যতম উপদেষ্টা জনাব সগীর মোস্তফা এবং বিএফআইএএ-য়ের সদস্যদের পাঠানো লেখার মধ্য থেকে নির্বাচিত লেখক হিসেবে রেদোয়ান হোসেন রিয়াদ তার প্রবন্ধ পাঠ করবেন। ওয়েবিনারটি বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন-য়ের ফেসবুক পেজ থেকে সরাসরি সম্প্রচার করা হবে।
-            </p>
-            <p style="margin-top:12px; font-weight:600; color: var(--gold); font-family: var(--mono); font-size: 13px; letter-spacing: 1px;">
-              অনুষ্ঠানের সময়ঃ সন্ধ্যা ৭.০০টা (৪ঠা মার্চ ২০২২)
-            </p>
-          </div>
-
-          <h3>Overview &amp; Theme</h3>
-          <p>
-            On Friday, March 4th, 2022, the Bangladesh Film Institute Alumni Association (BFIAA) launched its flagship educational live webinar series titled <strong>"Cinema Kotha" (সিনেমা কথা)</strong>.
-          </p>
-          <p>
-            Honoring the memory, ideology, and pathbreaking contributions of legendary Bangladeshi filmmaker and novelist <strong>Zahir Raihan</strong>, the theme of this premiere session was <strong>"রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান" (Zahir Raihan as a Political Filmmaker)</strong>.
-          </p>
-          <p>
-            The webinar featured esteemed Ekushey Padak-winning filmmaker and BFIAA Chief Advisor <strong>Tanvir Mokammel</strong> as the keynote speaker, who dissected the artistic courage, political consciousness, and documentary realism in Raihan's cinematic canon (including <em>Stop Genocide</em>, <em>Jibon Theke Neya</em>, and more). The session was moderated by BFIAA Advisor <strong>Sagir Mostafa</strong>, and included a thought-provoking research essay reading by selected alumni member <strong>Redwan Hossain Riyad</strong>.
-          </p>
-          <p>
-            The entire event was broadcast live on the official BFIAA Facebook page, welcoming alumni, film scholars, and cinephiles into a rich and engaging dialogue.
-          </p>
-
-          <div class="event-action-row">
-            <a href="index.html#home" class="btn-editorial gold">🏠 Home</a>
-            <a href="index.html#events" class="btn-editorial secondary">← All Events</a>
-            <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-editorial primary">Join BFIAA Today</a>
-          </div>
+      <div class="event-hero-pills">
+        <div class="event-pill">
+          <span>🕒 <strong>7:00 PM</strong> (Friday)</span>
+        </div>
+        <div class="event-pill">
+          <span>🎙️ Keynote: <strong>Tanvir Mokammel</strong></span>
+        </div>
+        <div class="event-pill">
+          <span>🏛️ Moderator: <strong>Sagir Mostafa</strong></span>
+        </div>
+        <div class="event-pill">
+          <span>✍️ Essay: <strong>Redwan Hossain Riyad</strong></span>
+        </div>
+        <div class="event-pill">
+          <span>📡 Platform: <strong>Facebook Live</strong></span>
         </div>
       </div>
 
     </div>
+  </section>
+
+  <!-- ─── Main Event Body ─── -->
+  <main class="event-page-body">
+    <div class="container event-body-inner">
+
+      <!-- Metadata Cards Grid -->
+      <div class="event-meta-grid">
+        <div class="event-meta-card">
+          <div class="event-meta-card-label">📅 Date &amp; Time</div>
+          <div class="event-meta-card-value">04 March 2022</div>
+          <div class="event-meta-card-note">Friday @ 7:00 PM BST</div>
+        </div>
+
+        <div class="event-meta-card">
+          <div class="event-meta-card-label">🎙️ Keynote Speaker</div>
+          <div class="event-meta-card-value">Tanvir Mokammel</div>
+          <div class="event-meta-card-note">Ekushey Padak Filmmaker &amp; Chief Advisor</div>
+        </div>
+
+        <div class="event-meta-card">
+          <div class="event-meta-card-label">🏛️ Session Moderator</div>
+          <div class="event-meta-card-value">Sagir Mostafa</div>
+          <div class="event-meta-card-note">Advisor, BFIAA</div>
+        </div>
+
+        <div class="event-meta-card">
+          <div class="event-meta-card-label">✍️ Essay Reading</div>
+          <div class="event-meta-card-value">Redwan Hossain Riyad</div>
+          <div class="event-meta-card-note">Selected Author &amp; Member, BFIAA</div>
+        </div>
+
+        <div class="event-meta-card">
+          <div class="event-meta-card-label">📡 Broadcast Medium</div>
+          <div class="event-meta-card-value">Facebook Live</div>
+          <div class="event-meta-card-note">Official BFIAA Facebook Page</div>
+        </div>
+      </div>
+
+      <!-- Main Showcase Grid (Flyer + Details) -->
+      <div class="event-showcase-grid">
+
+        <!-- Left Column: Archival Flyer -->
+        <aside class="flyer-showcase-card">
+          <div class="flyer-frame">
+            <img src="images/cinema-kotha-flyer.png" alt="Cinema Kotha: Zahir Raihan — Live Webinar Flyer" loading="lazy"/>
+          </div>
+          <div class="flyer-actions">
+            <a href="images/cinema-kotha-flyer.png" target="_blank" class="flyer-btn flyer-btn-gold">🔍 Full Flyer</a>
+            <a href="images/cinema-kotha-flyer.png" download="BFIAA-Cinema-Kotha-Webinar.png" class="flyer-btn flyer-btn-outline">⬇ Download</a>
+          </div>
+        </aside>
+
+        <!-- Right Column: Official Bengali Notice & Editorial Overview -->
+        <div class="event-content-col">
+
+          <!-- Verbatim Bengali Announcement Card -->
+          <article class="bengali-announcement-card">
+            <div class="bengali-announcement-header">
+              <span>📜 মূল বিজ্ঞপ্তি · Official Announcement</span>
+            </div>
+            <p class="bengali-announcement-text">
+              আনন্দের সাথে জানাচ্ছি যে, আগামী ৪ মার্চ ২০২২ (শুক্রবার) তারিখে সন্ধ্যা ৭.০০ টায় বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন (বিএফআইএএ) তাদের প্রথম লাইভ ওয়েবিনার "সিনেমা কথা" আয়োজন করতে যাচ্ছে। বাংলাদেশের প্রখ্যাত চলচ্চিত্রকার জহির রায়হানকে স্মরণ করে এবারের ওয়েবিনারের বিষয় নির্ধারণ করা হয়েছে "রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান"। উক্ত ওয়েবিনারে মূল আলোচক হিসেবে উপস্থিত থাকবেন বিএফআইএএ-য়ের প্রধান উপদেষ্টা একুশে পদকপ্রাপ্ত চলচ্চিত্রনির্মাতা শ্রদ্ধেয় তানভীর মোকাম্মেল। অনুষ্ঠানটি সঞ্চালনা করবেন বিএফআইএএ-য়ের অন্যতম উপদেষ্টা জনাব সগীর মোস্তফা এবং বিএফআইএএ-য়ের সদস্যদের পাঠানো লেখার মধ্য থেকে নির্বাচিত লেখক হিসেবে রেদোয়ান হোসেন রিয়াদ তার প্রবন্ধ পাঠ করবেন। ওয়েবিনারটি বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন-য়ের ফেসবুক পেজ থেকে সরাসরি সম্প্রচার করা হবে।
+            </p>
+            <div class="bengali-announcement-timing">
+              <span>⏰ অনুষ্ঠানের সময়ঃ সন্ধ্যা ৭.০০টা (৪ঠা মার্চ ২০২২)</span>
+            </div>
+          </article>
+
+          <!-- Narrative Chronicle & Context -->
+          <article class="editorial-prose-card">
+            <h3>Overview &amp; Thematic Focus</h3>
+            <p>
+              On Friday, March 4th, 2022, the Bangladesh Film Institute Alumni Association (BFIAA) launched its flagship educational live webinar series titled <strong>"Cinema Kotha" (সিনেমা কথা)</strong>.
+            </p>
+            <p>
+              Honoring the memory, ideology, and pathbreaking contributions of legendary Bangladeshi filmmaker and novelist <strong>Zahir Raihan</strong>, the theme of this premiere session was <strong>"রাজনৈতিক চলচ্চিত্রকার হিসেবে জহির রায়হান" (Zahir Raihan as a Political Filmmaker)</strong>.
+            </p>
+            <p>
+              The webinar featured esteemed Ekushey Padak-winning filmmaker and BFIAA Chief Advisor <strong>Tanvir Mokammel</strong> as the keynote speaker, who dissected the artistic courage, political consciousness, and documentary realism in Raihan's cinematic canon (including <em>Stop Genocide</em>, <em>Jibon Theke Neya</em>, and more). The session was moderated by BFIAA Advisor <strong>Sagir Mostafa</strong>, and included a thought-provoking research essay reading by selected alumni member <strong>Redwan Hossain Riyad</strong>.
+            </p>
+            <p>
+              The entire event was broadcast live on the official BFIAA Facebook page, welcoming alumni, film scholars, and cinephiles into a rich and engaging dialogue.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+      <!-- Inter-Event Navigation Strip -->
+      <nav class="event-nav-strip" aria-label="Event Navigation">
+        <a href="event-man.html" class="event-nav-link" style="text-align: left;">
+          <span class="event-nav-dir">&larr; Previous Screening</span>
+          <span class="event-nav-title">Cine Club Adda: Man (ম্যান)</span>
+        </a>
+
+        <a href="index.html#events" class="event-hub-btn">
+          <span>&uarr; All Events &amp; Screenings</span>
+        </a>
+
+        <a href="event-pounopunik.html" class="event-nav-link" style="text-align: right;">
+          <span class="event-nav-dir">Next Screening &rarr;</span>
+          <span class="event-nav-title">Cine Club Adda: Pounopunik</span>
+        </a>
+      </nav>
+
+    </div>
   </main>
 
+  <!-- ─── Site Footer ─── -->
   <footer class="site-footer" role="contentinfo">
     <div class="filmstrip-border left" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span></span>
