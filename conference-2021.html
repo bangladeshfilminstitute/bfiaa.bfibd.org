@@ -3,701 +3,1627 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BFIAA Biennial Conference 2021 — 6th Biennial Assembly & Committee 2021-2023 | BFIAA</title>
-  <meta name="description" content="Official record of the BFIAA 6th Biennial Conference held on 17 December 2021 at Sanskriti Bikash Kendra, Paribagh, Dhaka, establishing the 2021-2023 Executive Committee."/>
+  <title>BFIAA Biennial Conference 2021 — 6th Biennial Assembly & Committee 2021–2023 | BFIAA</title>
+  <meta name="description" content="Official record of the BFIAA 6th Biennial Conference held on 17 December 2021 at Sanskriti Bikash Kendra, Paribagh, Dhaka, establishing the 2021–2023 Executive Committee."/>
   <link rel="canonical" href="https://bfiaa.bfibd.org/conference-2021.html"/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#8B0000"/>
+  <meta name="theme-color" content="#071715"/>
 
-  <meta property="og:title" content="BFIAA Biennial Conference 2021 — Official 6th Assembly"/>
-  <meta property="og:description" content="Formation of the 2021-2023 Executive Committee at Sanskriti Bikash Kendra, Paribagh."/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="BFIAA Biennial Conference 2021 — Official 6th Assembly Record"/>
+  <meta property="og:description" content="Official record and photo archive of the BFIAA 6th Biennial Conference held at Sanskriti Bikash Kendra, establishing the 2021–2023 Executive Committee."/>
   <meta property="og:url" content="https://bfiaa.bfibd.org/conference-2021.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/gallery/conference-banner.jpg"/>
+  <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="BFIAA Biennial Conference 2021 — Official 6th Assembly Record"/>
+  <meta name="twitter:description" content="Official record of the BFIAA 6th Biennial Conference and the 2021–2023 Executive Committee."/>
+  <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/gallery/conference-banner.jpg"/>
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=JetBrains+Mono:wght@400;500;600&family=Hind+Siliguri:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=3.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Editorial Design System Stylesheet -->
+  <link rel="stylesheet" href="css/editorial.css?v=4.0">
 
   <style>
-    .conference-page-hero {
-      background: linear-gradient(180deg, rgba(20,0,0,0.7) 0%, var(--dark) 100%);
-      padding: 40px 0 60px;
+    /* ═══════════════════════════════════════════════════
+       CONFERENCE 2021 — MODERN EDITORIAL ARCHITECTURE
+       Institutional styling aligned with site design system
+       Strict compliance: Zero movement/transform on hover
+       ═══════════════════════════════════════════════════ */
+
+    :root {
+      --conf-card-bg: #FAF9F5;
+      --conf-card-border: #D8D5CC;
+      --conf-dark-bg: #071715;
+      --conf-dark-surface: #0B211F;
+      --conf-dark-border: rgba(255, 255, 255, 0.12);
     }
-    .event-breadcrumb {
+
+    /* ─── Hero Section ─── */
+    .conf-hero-section {
+      position: relative;
+      background-color: var(--deep-green);
+      background-image: 
+        linear-gradient(180deg, rgba(7, 23, 21, 0.94) 0%, rgba(7, 23, 21, 0.98) 100%),
+        url('images/gallery/conference-banner.jpg');
+      background-size: cover;
+      background-position: center 20%;
+      color: var(--cream);
+      padding: 54px 0 64px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .conf-hero-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .conf-hero-badges {
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
       gap: 10px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      letter-spacing: 1.5px;
-      color: var(--text-dim);
-      margin-bottom: 30px;
-      text-transform: uppercase;
+      margin-bottom: 20px;
     }
-    .event-breadcrumb a {
-      color: var(--gold);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    .event-breadcrumb a:hover { color: #fff; }
-    .conf-grid {
-      display: grid;
-      grid-template-columns: 480px 1fr;
-      gap: 50px;
-      align-items: start;
-    }
-    .conf-photo-wrapper {
-      position: sticky;
-      top: 90px;
-      background: var(--dark-card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.6);
-    }
-    .main-photo-frame {
-      width: 100%;
-      height: 330px;
-      background: #000;
-      overflow: hidden;
-    }
-    .main-photo-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: opacity 0.3s ease;
-    }
-    .gallery-thumbnails {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      padding: 12px;
-      background: var(--dark-2);
-      border-top: 1px solid var(--border);
-    }
-    .thumb-item {
-      aspect-ratio: 16/9;
-      border-radius: 4px;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      cursor: pointer;
-      opacity: 0.75;
-      transition: all 0.2s ease;
-    }
-    .thumb-item:hover, .thumb-item.active {
-      opacity: 1;
-      border-color: var(--gold);
-      box-shadow: 0 0 10px rgba(200, 169, 81, 0.3);
-    }
-    .thumb-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .event-poster-actions {
-      padding: 14px 16px;
-      background: var(--dark-2);
-      border-top: 1px solid var(--border);
-      display: flex;
-      gap: 10px;
-    }
-    .event-meta-badge {
+
+    .conf-badge-primary {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      font-family: var(--font-mono);
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 4px;
-      background: var(--crimson);
-      color: #fff;
-      margin-bottom: 16px;
-    }
-    .event-main-title {
-      font-family: var(--font-title);
-      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
-      color: #fff;
-      line-height: 1.25;
-      margin-bottom: 8px;
-    }
-    .event-bengali-title {
-      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
-      font-size: clamp(1.4rem, 2.5vw, 2.2rem);
-      color: var(--gold);
-      font-weight: 700;
-      display: block;
-      margin-bottom: 25px;
-      line-height: 1.35;
-    }
-    .event-meta-table {
-      background: var(--dark-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 24px;
-      margin-bottom: 35px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 20px;
-    }
-    .meta-col label {
-      display: block;
-      font-family: var(--font-mono);
+      background: var(--burgundy);
+      color: #FFFFFF;
+      font-family: var(--mono);
       font-size: 10px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--text-dim);
-      margin-bottom: 5px;
-    }
-    .meta-col span {
-      font-family: var(--font-body);
-      font-size: 14px;
       font-weight: 600;
-      color: var(--text);
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border-radius: 3px;
     }
-    .committee-box {
-      background: var(--dark-2);
-      border: 1px solid var(--border);
-      border-radius: var(--radius-md);
-      padding: 24px 28px;
+
+    .conf-badge-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
+    }
+
+    .conf-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 4.5vw, 62px);
+      font-weight: 500;
+      color: #FAF8F2;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+      margin-bottom: 14px;
+    }
+
+    .conf-hero-bn-title {
+      font-family: var(--bn);
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1.35;
+      margin-bottom: 22px;
+      display: block;
+    }
+
+    .conf-hero-quote {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(243, 240, 231, 0.85);
+      border-left: 3px solid var(--gold);
+      padding: 8px 0 8px 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+      max-width: 860px;
+    }
+
+    .conf-hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 10px;
+    }
+
+    .conf-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 8px 14px;
+      border-radius: 4px;
+      font-size: 12.5px;
+      color: rgba(243, 240, 231, 0.9);
+    }
+
+    .conf-pill-icon {
+      color: var(--gold);
+      font-size: 14px;
+    }
+
+    .conf-pill strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ─── Page Section Wrappers ─── */
+    .conf-page-body {
+      background: var(--cream);
+      padding: 60px 0 80px;
+    }
+
+    .conf-section-block {
+      margin-bottom: 64px;
+    }
+
+    .conf-section-block:last-child {
+      margin-bottom: 0;
+    }
+
+    .conf-section-header {
+      margin-bottom: 28px;
+    }
+
+    .conf-section-title {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3vw, 34px);
+      color: var(--dark-text);
+      font-weight: 600;
+      line-height: 1.15;
+      margin-top: 6px;
+    }
+
+    .conf-section-subtitle {
+      font-family: var(--bn);
+      font-size: 17px;
+      color: var(--burgundy);
+      margin-top: 4px;
+      font-weight: 500;
+    }
+
+    /* ─── Metadata Cards Grid ─── */
+    .conf-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
       margin-bottom: 30px;
     }
-    .committee-box h4 {
-      font-family: var(--font-title);
-      font-size: 1.25rem;
-      color: var(--gold);
-      letter-spacing: 1px;
-      margin-bottom: 15px;
+
+    .conf-meta-card {
+      background: var(--conf-card-bg);
+      border: 1px solid var(--conf-card-border);
+      border-radius: 4px;
+      padding: 20px 22px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+
+    .conf-meta-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.08);
+    }
+
+    .conf-meta-card-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .conf-meta-card-value {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.45;
+    }
+
+    .conf-meta-card-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ─── Highlights Row ─── */
+    .conf-highlights-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    .conf-highlight-box {
+      background: #EAE6DB;
+      border: 1px solid var(--conf-card-border);
+      border-radius: 4px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .conf-highlight-num {
+      font-family: var(--serif);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--burgundy);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+
+    .conf-highlight-text {
+      font-size: 13px;
+      color: var(--dark-text);
+      line-height: 1.5;
+    }
+
+    .conf-highlight-text strong {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 2px;
+      color: var(--dark-text);
+    }
+
+    /* ─── Photo Showcase Stage ─── */
+    .conf-gallery-container {
+      background: var(--conf-dark-bg);
+      border: 1px solid var(--conf-dark-border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(7, 23, 21, 0.15);
+    }
+
+    .conf-stage-header {
+      background: var(--conf-dark-surface);
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--conf-dark-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .conf-stage-header-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      color: var(--cream);
       display: flex;
       align-items: center;
       gap: 10px;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      padding-bottom: 10px;
     }
-    .role-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 12px;
+
+    .conf-stage-counter {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 0.1em;
     }
-    .role-item {
-      background: var(--dark-card);
-      border: 1px solid var(--border);
-      padding: 10px 14px;
-      border-radius: 4px;
+
+    .conf-main-display {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      background: #040908;
       display: flex;
-      flex-direction: column;
-      gap: 2px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
     }
-    .role-label {
-      font-family: var(--font-mono);
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-    .role-name {
-      font-family: 'Hind Siliguri', var(--font-body), sans-serif;
-      font-size: 14px;
-      font-weight: 600;
-      color: #fff;
-    }
-    .bengali-announcement-card {
-      background: rgba(139, 0, 0, 0.08);
-      border-left: 4px solid var(--gold);
-      border-top: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      padding: 32px 36px;
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-      margin-top: 25px;
-      font-family: 'Hind Siliguri', 'Kalpurush', 'SolaimanLipi', sans-serif;
-      font-size: 1.05rem;
-      line-height: 1.9;
-      color: #f0f0f0;
-    }
-    .bengali-announcement-card h4 {
-      font-size: 1.2rem;
-      color: var(--gold);
-      margin-bottom: 10px;
-      font-weight: 700;
-    }
+
     @media (max-width: 900px) {
-      .conf-grid {
+      .conf-main-display {
+        height: 340px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .conf-main-display {
+        height: 240px;
+      }
+    }
+
+    .conf-main-display img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      transition: opacity 250ms ease;
+    }
+
+    .conf-stage-caption-bar {
+      background: rgba(7, 23, 21, 0.95);
+      padding: 14px 24px;
+      border-top: 1px solid var(--conf-dark-border);
+      border-bottom: 1px solid var(--conf-dark-border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .conf-photo-caption {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      color: rgba(243, 240, 231, 0.9);
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .conf-photo-actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .conf-stage-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: var(--cream);
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 200ms ease, border-color 200ms ease, color 200ms ease;
+    }
+
+    .conf-stage-btn:hover {
+      background: rgba(255, 255, 255, 0.14);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .conf-stage-btn.primary {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: #FFFFFF;
+    }
+
+    .conf-stage-btn.primary:hover {
+      background: var(--burgundy-dark);
+      border-color: var(--burgundy-dark);
+    }
+
+    .conf-thumbnail-grid {
+      display: grid;
+      grid-template-columns: repeat(9, 1fr);
+      gap: 8px;
+      padding: 14px;
+      background: var(--conf-dark-surface);
+      overflow-x: auto;
+    }
+
+    @media (max-width: 1024px) {
+      .conf-thumbnail-grid {
+        grid-template-columns: repeat(5, minmax(110px, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .conf-thumbnail-grid {
+        grid-template-columns: repeat(3, minmax(90px, 1fr));
+      }
+    }
+
+    .conf-thumb-item {
+      aspect-ratio: 16/10;
+      border-radius: 3px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      opacity: 0.65;
+      background: #000;
+      transition: opacity 200ms ease, border-color 200ms ease;
+    }
+
+    .conf-thumb-item:hover {
+      opacity: 0.95;
+      border-color: rgba(183, 164, 119, 0.6);
+    }
+
+    .conf-thumb-item.active {
+      opacity: 1;
+      border-color: var(--gold);
+      box-shadow: 0 0 10px rgba(183, 164, 119, 0.4);
+    }
+
+    .conf-thumb-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ─── Narrative & Archival Resolution Grid ─── */
+    .conf-reading-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    @media (max-width: 960px) {
+      .conf-reading-grid {
         grid-template-columns: 1fr;
       }
-      .conf-photo-wrapper {
-        position: static;
-        max-width: 100%;
-        margin: 0 auto 30px;
+    }
+
+    .conf-prose-card {
+      background: var(--conf-card-bg);
+      border: 1px solid var(--conf-card-border);
+      border-radius: 4px;
+      padding: 36px 40px;
+      box-shadow: 0 2px 12px rgba(7, 23, 21, 0.03);
+    }
+
+    .conf-prose-card p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #2D3A38;
+      margin-bottom: 20px;
+    }
+
+    .conf-prose-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .conf-prose-card strong {
+      color: var(--dark-text);
+      font-weight: 600;
+    }
+
+    .conf-archival-card {
+      background: #FDFCF9;
+      border: 1px solid var(--conf-card-border);
+      border-left: 5px solid var(--burgundy);
+      border-radius: 0 4px 4px 0;
+      padding: 36px 36px 36px 32px;
+      box-shadow: 0 4px 20px rgba(7, 23, 21, 0.04);
+      position: relative;
+    }
+
+    .conf-archival-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #E6E2D8;
+    }
+
+    .conf-archival-icon {
+      font-size: 24px;
+    }
+
+    .conf-archival-title {
+      font-family: var(--bn);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--burgundy);
+      line-height: 1.2;
+    }
+
+    .conf-archival-meta {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 3px;
+    }
+
+    .conf-archival-body {
+      font-family: var(--bn);
+      font-size: 15.5px;
+      line-height: 1.95;
+      color: #1F2E2C;
+    }
+
+    .conf-archival-body p {
+      margin-bottom: 16px;
+    }
+
+    .conf-archival-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ─── 21-Member Executive Committee Showcase ─── */
+    .conf-roster-section {
+      background: var(--conf-card-bg);
+      border: 1px solid var(--conf-card-border);
+      border-radius: 6px;
+      padding: 40px 44px;
+      box-shadow: 0 4px 24px rgba(7, 23, 21, 0.03);
+    }
+
+    @media (max-width: 640px) {
+      .conf-roster-section {
+        padding: 26px 20px;
       }
-      .main-photo-frame {
-        height: auto;
-        aspect-ratio: 16/10;
-      }
+    }
+
+    .roster-tier-title {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--dark-text);
+      font-weight: 600;
+      margin: 32px 0 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--conf-card-border);
+    }
+
+    .roster-tier-title:first-child {
+      margin-top: 0;
+    }
+
+    .roster-tier-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: #ECE7DC;
+      color: var(--dark-text);
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-weight: 600;
+    }
+
+    .conf-roster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .conf-member-card {
+      background: #FFFFFF;
+      border: 1px solid #E2DFD6;
+      border-radius: 4px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      transition: border-color 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+    }
+
+    .conf-member-card:hover {
+      border-color: var(--gold);
+      box-shadow: 0 3px 12px rgba(7, 23, 21, 0.06);
+      background-color: #FCFBF7;
+    }
+
+    .conf-member-card.featured-president {
+      background: linear-gradient(180deg, #FBF9F2 0%, #FFFFFF 100%);
+      border: 1.5px solid var(--gold);
+      box-shadow: 0 4px 18px rgba(183, 164, 119, 0.15);
+      grid-column: 1 / -1;
+      padding: 22px 26px;
+    }
+
+    .conf-member-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .conf-role-badge {
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+    }
+
+    .conf-member-num {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--muted);
+      background: #F3F0E7;
+      padding: 2px 6px;
+      border-radius: 2px;
+    }
+
+    .conf-member-name-bn {
+      font-family: var(--bn);
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--dark-text);
+      line-height: 1.3;
+    }
+
+    .conf-member-name-en {
+      font-family: var(--sans);
+      font-size: 12.5px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .featured-president .conf-member-name-bn {
+      font-size: 22px;
+      color: var(--deep-green);
+    }
+
+    .featured-president .conf-member-name-en {
+      font-size: 14px;
+      color: var(--dark-text);
+      font-weight: 600;
+    }
+
+    /* ─── Inter-Conference Navigation Cards ─── */
+    .conf-nav-panel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 18px;
+      margin-top: 40px;
+    }
+
+    .conf-nav-card {
+      background: var(--conf-card-bg);
+      border: 1px solid var(--conf-card-border);
+      border-radius: 4px;
+      padding: 24px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 200ms ease, box-shadow 200ms ease, background 200ms ease;
+    }
+
+    .conf-nav-card:hover {
+      border-color: var(--gold);
+      background: #FFFFFF;
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.06);
+    }
+
+    .conf-nav-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .conf-nav-title {
+      font-family: var(--serif);
+      font-size: 19px;
+      color: var(--dark-text);
+      font-weight: 600;
+      line-height: 1.25;
+    }
+
+    .conf-nav-desc {
+      font-size: 12.5px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    /* ─── Lightbox Modal ─── */
+    .conf-lightbox {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(4, 13, 12, 0.96);
+      z-index: 1000;
+      padding: 30px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .conf-lightbox.open {
+      display: flex;
+    }
+
+    .conf-lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: #FFFFFF;
+      font-size: 24px;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 200ms ease;
+    }
+
+    .conf-lightbox-close:hover {
+      background: var(--burgundy);
+    }
+
+    .conf-lightbox-img {
+      max-width: 90vw;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 3px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .conf-lightbox-caption {
+      margin-top: 18px;
+      font-family: var(--sans);
+      font-size: 14px;
+      color: var(--cream);
+      text-align: center;
+      max-width: 800px;
     }
   </style>
 
+  <!-- Structured Data: Schema.org Event -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Event",
-  "name": "BFIAA Conference 2021",
-  "url": "https://bfiaa.bfibd.org/conference-2021.html",
-  "organizer": {
-    "@type": "Organization",
-    "name": "BFIAA",
-    "url": "https://bfiaa.bfibd.org"
-  },
-  "location": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "BD",
-      "addressLocality": "Dhaka"
-    }
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "BFIAA 6th Biennial Conference 2021",
+    "alternateName": "বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন",
+    "startDate": "2021-12-17T15:00:00+06:00",
+    "endDate": "2021-12-17T20:00:00+06:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Sanskriti Bikash Kendra",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Paribagh",
+        "addressLocality": "Dhaka",
+        "addressRegion": "Dhaka",
+        "addressCountry": "BD"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "Bangladesh Film Institute Alumni Association (BFIAA)",
+      "url": "https://bfiaa.bfibd.org"
+    },
+    "description": "The 6th Biennial Assembly of BFIAA held on 17 December 2021, honoring faculty, graduating online course filmmakers, screening 9 student films, and electing the 2021–2023 Executive Committee."
   }
-}
   </script>
 </head>
 <body>
 
-<div class="site-wrapper">
-
-<!-- Navigation -->
-<!-- Navigation -->
-<nav class="site-nav" role="navigation" aria-label="Main navigation">
-  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration: none;" aria-label="Homepage">
-    <img src="images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
-  </a>
-
-  <ul class="nav-links" role="list">
-    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
-    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
-  </ul>
-
-  <div class="nav-actions">
-    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 8px;"><img src="images/bfi-logo.png" alt="BFI Logo" class="nav-bfi-logo" style="height: 16px; width: auto; background: #ffffff; padding: 2px 4px; border-radius: 3px;"/> BFI Home</a>
-    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
-  </div>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
-
-<!-- Mobile Menu -->
-<div class="mobile-menu" id="mobileMenu" role="menu">
-  <a href="https://bfiaa.bfibd.org/" role="menuitem">Home</a>
-  <a href="https://bfiaa.bfibd.org/#about" role="menuitem">About BFIAA</a>
-  <a href="https://bfiaa.bfibd.org/#conference-2021" role="menuitem">Conference 2021</a>
-  <a href="https://bfiaa.bfibd.org/#conference-2019" role="menuitem">Conference 2019</a>
-  <a href="https://bfiaa.bfibd.org/#committee" role="menuitem">Committee</a>
-  <a href="https://bfiaa.bfibd.org/#events" role="menuitem">Events</a>
-  <a href="https://bfiaa.bfibd.org/#magazine" role="menuitem">Uralchitra</a>
-  <a href="https://bfiaa.bfibd.org/#picnic" role="menuitem">Picnic</a>
-  <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" role="menuitem" target="_blank" rel="noopener">Join Us</a>
-  <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
-  <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
-</div>
-
-<div class="nav-spacer"></div>
-
-<!-- Filmstrip Marquee -->
-<div class="filmstrip-ticker" aria-hidden="true">
-  <div class="sprocket-strip">
-    <div class="sprocket-hole"></div><div class="sprocket-hole"></div><div class="sprocket-hole"></div>
-  </div>
-  <div class="filmstrip-ticker-inner">
-    <span class="ticker-content">
-      ▶ BFIAA 6TH BIENNIAL CONFERENCE — 17 DECEMBER 2021
-      <span class="ticker-dot">•</span>
-      SANSKRITI BIKASH KENDRA, DHAKA
-      <span class="ticker-dot">•</span>
-      EXECUTIVE COMMITTEE 2021–2023
-      <span class="ticker-dot">•</span>
-      CHIEF GUEST: TANVIR MOKAMMEL
-      <span class="ticker-dot">•</span>
-      BFIAA.BFIBD.ORG
-    </span>
-    <span class="ticker-content" aria-hidden="true">
-      ▶ BFIAA 6TH BIENNIAL CONFERENCE — 17 DECEMBER 2021
-      <span class="ticker-dot">•</span>
-      SANSKRITI BIKASH KENDRA, DHAKA
-      <span class="ticker-dot">•</span>
-      EXECUTIVE COMMITTEE 2021–2023
-      <span class="ticker-dot">•</span>
-      CHIEF GUEST: TANVIR MOKAMMEL
-      <span class="ticker-dot">•</span>
-      BFIAA.BFIBD.ORG
-    </span>
-  </div>
-</div>
-
-<!-- Main Section -->
-<main class="conference-page-hero">
-  <div class="container">
-
-    <div class="event-breadcrumb">
-      <a href="https://bfiaa.bfibd.org/">Home</a>
-      <span>/</span>
-      <a href="https://bfiaa.bfibd.org/#conference-2021">Conferences</a>
-      <span>/</span>
-      <span>Biennial Conference 2021</span>
-    </div>
-
-    <div class="conf-grid">
-
-      <!-- Left Column: Photo Stage & Thumbnails -->
-      <div class="conf-photo-wrapper">
-        <div class="main-photo-frame">
-          <img id="activePhoto" src="images/gallery/conference-banner.jpg" alt="BFIAA 6th Biennial Conference 2021 Assembly" />
-        </div>
-        
-        <div class="gallery-thumbnails">
-          <div class="thumb-item active" onclick="switchPhoto('images/gallery/conference-banner.jpg', this)">
-            <img src="images/gallery/conference-banner.jpg" alt="Conference Banner Assembly" />
-          </div>
-          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7655.jpg', this)">
-            <img src="images/gallery/dsc7655.jpg" alt="Conference Assembly Stage" />
-          </div>
-          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7660.jpg', this)">
-            <img src="images/gallery/dsc7660.jpg" alt="Faculty & Alumni Gathering" />
-          </div>
-          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7665.jpg', this)">
-            <img src="images/gallery/dsc7665.jpg" alt="Cultural Evening & Speeches" />
-          </div>
-          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7670.jpg', this)">
-            <img src="images/gallery/dsc7670.jpg" alt="BFIAA Members Group" />
-          </div>
-          <div class="thumb-item" onclick="switchPhoto('images/gallery/dsc7675.jpg', this)">
-            <img src="images/gallery/dsc7675.jpg" alt="Film Screening & Honors" />
-          </div>
-        </div>
-
-        <div class="event-poster-actions">
-          <a id="viewFullBtn" href="images/gallery/conference-banner.jpg" target="_blank" class="btn-primary" style="flex:1; justify-content:center; text-align:center;">
-            🔍 Full Photo
-          </a>
-          <a id="downloadBtn" href="images/gallery/conference-banner.jpg" download class="btn-secondary" style="flex:1; justify-content:center; text-align:center;">
-            ⬇ Download
-          </a>
-        </div>
-      </div>
-
-      <!-- Right Column: Details & Committee Roster -->
-      <div class="conf-details-wrapper">
-
-        <div class="event-meta-badge">
-          🏛️ 6th Biennial Assembly • 2021–2023
-        </div>
-
-        <h1 class="event-main-title">BFIAA Biennial Conference 2021</h1>
-        <span class="event-bengali-title">বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের দ্বি-বার্ষিক সম্মেলন</span>
-
-        <!-- Metadata Table -->
-        <div class="event-meta-table">
-          <div class="meta-col">
-            <label>Date & Time</label>
-            <span>17 December 2021 (Friday) Afternoon</span>
-          </div>
-          <div class="meta-col">
-            <label>Venue</label>
-            <span>Sanskriti Bikash Kendra, Paribagh, Dhaka</span>
-          </div>
-          <div class="meta-col">
-            <label>Chief Guest</label>
-            <span>Tanvir Mokammel (Director, BFI)</span>
-          </div>
-          <div class="meta-col">
-            <label>President</label>
-            <span>Dr. Mohammad Jahangir Hossain (Outgoing President)</span>
-          </div>
-          <div class="meta-col">
-            <label>Special Guests / Faculty</label>
-            <span>Syed Shabab Ali Arzu, Rakibul Hasan, Sagir Mostafa, Rana Masud</span>
-          </div>
-          <div class="meta-col">
-            <label>Elected Term</label>
-            <span>2021–2023 Executive Committee</span>
-          </div>
-        </div>
-
-        <!-- Narrative Highlights -->
-        <div class="about-text" style="margin-bottom: 30px;">
-          <p class="about-highlight" style="margin-bottom: 20px;">
-            "বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে অনুষ্ঠিত হলো বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন।"
-          </p>
-          <p>
-            On Friday afternoon, December 17, 2021, the 6th Biennial Conference of the Bangladesh Film Institute Alumni Association (BFIAA) was held at Sanskriti Bikash Kendra in Paribagh, Dhaka. The assembly brought together pioneering graduates, faculty mentors, and aspiring independent filmmakers.
-          </p>
-          <p>
-            The conference was presided over by outgoing president <strong>Dr. Mohammad Jahangir Hossain</strong>, with BFI Director and acclaimed filmmaker <strong>Tanvir Mokammel</strong> as the Chief Guest. Renowned BFI faculty members <strong>Syed Shabab Ali Arzu</strong>, <strong>Rakibul Hasan</strong>, <strong>Sagir Mostafa</strong>, and <strong>Rana Masud</strong> attended as Special Guests.
-          </p>
-          <p>
-            During the event, honorary crests were presented to BFI teachers in recognition of their dedication to cinema education, and certificates were awarded to graduates of the Online Filmmaking Course. The ceremony concluded with a special screening of <strong>9 short films</strong> created by the course students.
-          </p>
-        </div>
-
-        <!-- 21-Member Executive Committee -->
-        <div class="committee-box">
-          <h4>
-            <span>👥</span> কার্যনির্বাহী কমিটি (২০২১–২০২৩) · 21-Member Executive Committee
-          </h4>
-          <div class="role-grid">
-            <div class="role-item">
-              <span class="role-label">০১. সভাপতি</span>
-              <span class="role-name">শাহীনা হাফিজ ডেইজি</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০২. সহ-সভাপতি</span>
-              <span class="role-name">আশরাফুল আযম খান</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৩. সাধারণ সম্পাদক</span>
-              <span class="role-name">সন্দীপ কুমার মিস্ত্রী</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৪. সহ-সাধারণ সম্পাদক</span>
-              <span class="role-name">কাজী মুসফিকুস সালেহীন</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৫. কোষাধ্যক্ষ</span>
-              <span class="role-name">সোহেল আহম্মেদ সিদ্দিকী</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৬. সাংগঠনিক সম্পাদক</span>
-              <span class="role-name">অপরাজিতা সংগীতা</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৭. দপ্তর সম্পাদক</span>
-              <span class="role-name">কাওসার আহম্মেদ আবির</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৮. আন্তর্জাতিক সম্পাদক</span>
-              <span class="role-name">নাসরুল্লাহ মনসুর রাসু</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">০৯. পাঠাগার সম্পাদক</span>
-              <span class="role-name">সাদিয়া রহমান জেমিম</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১০. সেমিনার সম্পাদক</span>
-              <span class="role-name">নাঈমুল ইসলাম</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১১. প্রচার সম্পাদক</span>
-              <span class="role-name">মামুন সোবহানি</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১২. প্রকাশনা সম্পাদক</span>
-              <span class="role-name">ড. নাজিয়া মাহমুদ</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৩. নির্বাহী সদস্য ০১</span>
-              <span class="role-name">ড. মোহাম্মদ জাহাঙ্গীর হোসেন</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৪. নির্বাহী সদস্য ০২</span>
-              <span class="role-name">সাজ্জাদ খান</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৫. নির্বাহী সদস্য ০৩</span>
-              <span class="role-name">সানু মানিক</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৬. নির্বাহী সদস্য ০৪</span>
-              <span class="role-name">হাসানুজ্জামান খান</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৭. নির্বাহী সদস্য ০৫</span>
-              <span class="role-name">আহসান উদ্দীন ভূঁইয়া</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৮. নির্বাহী সদস্য ০৬</span>
-              <span class="role-name">জান্নাতুল মাওয়া নোভা</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">১৯. নির্বাহী সদস্য ০৭</span>
-              <span class="role-name">রাজেশ্বর দাশ গুপ্ত</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">২০. নির্বাহী সদস্য ০৮</span>
-              <span class="role-name">জানে আলম</span>
-            </div>
-            <div class="role-item">
-              <span class="role-label">২১. নির্বাহী সদস্য ০৯</span>
-              <span class="role-name">জন ক্রিস্টোফার কস্টা</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Archival Bengali Document Card -->
-        <div class="bengali-announcement-card">
-          <h4>📜 সম্মেলনের মূল বিবরণী</h4>
-          <p>
-            <strong>বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের দ্বি-বার্ষিক সম্মেলন: বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয়</strong>
-          </p>
-          <p>
-            ১৭ই ডিসেম্বর (শুক্রবার) বিকেলে পরীবাগস্থ সংস্কৃতি বিকাশ কেন্দ্রে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন অনুষ্ঠিত হয়। সম্মেলনে প্রধান অতিথি ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের পরিচালক বিশিষ্ট চলচ্চিত্রনির্মাতা তানভীর মোকাম্মেল। অনুষ্ঠানের সভাপতিত্ব করেন বিদায়ী কমিটির সভাপতি ড. মোহাম্মদ জাহাঙ্গীর হোসেন এবং বিশেষ অতিথি হিসেবে উপস্থিত ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের শিক্ষক সৈয়দ সাবাব আলী আরজু, রাকিবুল হাসান, সগীর মোস্তফা এবং রানা মাসুদ।
-          </p>
-          <p>
-            সম্মেলনে শিক্ষকদের পাশাপাশি বাংলাদেশের বিকল্পধারার সিনেমার নানা দিক নিয়ে বক্তব্য রাখেন এসোসিয়েশনের প্রধান উপদেষ্টা জনাব তানভীর মোকাম্মেল। অনুষ্ঠানের এক পর্যায়ে এসোসিয়েশনের পক্ষ থেকে বিএফআই-য়ের শিক্ষকদের প্রদান করা হয় সম্মাননা স্মারক এবং অনলাইন ফিল্ম মেকিং কোর্সের শিক্ষার্থীদের মাঝে সনদপত্র বিতরণ করা হয়। অনুষ্ঠানের শেষ পর্বে কোর্সের শিক্ষার্থীদের নির্মিত ৯টি স্বল্পদৈর্ঘ্য চলচ্চিত্র প্রদর্শিত হয়।
-          </p>
-          <p>
-            সম্মেলনে বিকল্পধারার চলচ্চিত্রকে সামনে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ২০২১-২০২৩ মেয়াদের জন্যে ২১ সদস্যবিশিষ্ট কার্যনির্বাহী কমিটি গঠিত হয়।
-          </p>
-        </div>
-
-        <div style="margin-top: 35px; display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="https://bfiaa.bfibd.org/#conference-2021" class="btn-primary">
-            ← Back to Homepage
-          </a>
-          <a href="conference-2019.html" class="btn-secondary">
-            View Biennial Conference 2019 →
-          </a>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-</main>
-
-<!-- Standard Footer -->
-<!-- Standard Footer -->
-<footer class="site-footer" role="contentinfo">
-  <div class="footer-inner">
-    <div class="footer-top">
-
-      <div class="footer-brand">
-                <div class="footer-logo">
-          <a href="https://bfiaa.bfibd.org/" style="display: inline-block; text-decoration: none;" aria-label="BFIAA Home">
-            <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" style="height: 48px; width: auto;" onerror="this.style.display='none'"/>
-          </a>
-        </div>
-        <p class="footer-brand-desc">
-          The official alumni association of the Bangladesh Film Institute —
-          connecting 1000+ graduates across 86+ batches in a shared love of cinema.
-        </p>
-        <div class="footer-social">
-          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">🎬</a>
-          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
-          <a href="#" class="social-btn" title="YouTube">▶</a>
-        </div>
-      </div>
-
-      <div class="footer-col">
-        <h4>Navigate</h4>
-        <ul>
-          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>Documents</h4>
-        <ul>
-          <li><a href="constitution.html">Constitution</a></li>
-          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
-          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col">
-        <h4>BFI Network</h4>
-        <ul>
-          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
-          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
-          <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
-          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-      <p class="footer-copy">
-        © 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION · bfiaa.bfibd.org
-      </p>
-      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">
-        A SUBDOMAIN OF BFIBD.ORG →
+  <!-- ═══════ SITE HEADER ═══════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
+        <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" onerror="this.style.display='none'"/>
       </a>
+
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#founder">Founder</a>
+        <a href="index.html#committee">Committee</a>
+        <a href="index.html#conferences" class="active">Conferences</a>
+        <a href="index.html#alumni">Alumni</a>
+        <a href="index.html#events">Events</a>
+        <a href="index.html#retrospective">30 Years</a>
+        <a href="index.html#publications">Publications</a>
+        <a href="index.html#picnic">Picnic</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://bfibd.org" target="_blank" rel="noopener" class="btn-bfi-home">
+          <img src="images/bfi-logo.png" alt="BFI" style="height: 14px; width: auto;"/>
+          BFI Main Site
+        </a>
+        <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-member">Become a Member</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════ MOBILE NAV DRAWER ═══════ -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile Navigation">
+    <a href="index.html#home">Home</a>
+    <a href="index.html#about">About BFIAA</a>
+    <a href="index.html#founder">Founder &amp; Patron</a>
+    <a href="index.html#committee">Executive Committee</a>
+    <a href="index.html#conferences" class="active">Conferences &amp; Assemblies</a>
+    <a href="index.html#alumni">Featured Alumni</a>
+    <a href="index.html#events">Events &amp; Screenings</a>
+    <a href="index.html#retrospective">30 Years Retrospective</a>
+    <a href="index.html#publications">Uralchitra Publications</a>
+    <a href="index.html#picnic">Annual Picnic</a>
+    <a href="constitution.html">Constitution</a>
+    <a href="index.html#contact">Contact &amp; Join</a>
+    <div class="mobile-cta-group">
+      <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site ↗</a>
+    </div>
+  </nav>
+
+  <!-- ═══════ CINEMATIC HERO SECTION ═══════ -->
+  <section class="conf-hero-section" aria-label="Conference 2021 Hero Banner">
+    <div class="container conf-hero-inner">
+
+      <!-- Breadcrumbs -->
+      <nav class="event-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html#home">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#conferences">Conferences</a>
+        <span class="sep">/</span>
+        <span>Biennial Conference 2021</span>
+      </nav>
+
+      <!-- Badges -->
+      <div class="conf-hero-badges">
+        <span class="conf-badge-primary">🏛️ Official Assembly Record</span>
+        <span class="conf-badge-outline">6th Biennial Convention</span>
+        <span class="conf-badge-outline">Council 2021–2023</span>
+      </div>
+
+      <!-- Main Titles -->
+      <h1 class="conf-hero-title">BFIAA Biennial Conference 2021</h1>
+      <span class="conf-hero-bn-title">বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন</span>
+
+      <!-- Key Quote -->
+      <div class="conf-hero-quote">
+        &ldquo;বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে অনুষ্ঠিত হলো বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন।&rdquo;
+      </div>
+
+      <!-- Key Facts Strip -->
+      <div class="conf-hero-pills">
+        <div class="conf-pill">
+          <span class="conf-pill-icon">📅</span>
+          <span><strong>17 December 2021</strong> (Friday)</span>
+        </div>
+        <div class="conf-pill">
+          <span class="conf-pill-icon">📍</span>
+          <span><strong>Sanskriti Bikash Kendra</strong>, Paribagh, Dhaka</span>
+        </div>
+        <div class="conf-pill">
+          <span class="conf-pill-icon">🎬</span>
+          <span>Chief Guest: <strong>Tanvir Mokammel</strong></span>
+        </div>
+        <div class="conf-pill">
+          <span class="conf-pill-icon">👥</span>
+          <span>Elected: <strong>21-Member Executive Committee</strong></span>
+        </div>
+        <div class="conf-pill">
+          <span class="conf-pill-icon">🎞️</span>
+          <span><strong>9 Student Short Films</strong> Screened</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════ MAIN CONTENT BODY ═══════ -->
+  <main class="conf-page-body">
+    <div class="container">
+
+      <!-- ─── SECTION 1: EXECUTIVE METADATA & MILESTONES ─── -->
+      <section class="conf-section-block" aria-label="Executive Overview & Metadata">
+        
+        <div class="conf-section-header">
+          <div class="section-label">Official Overview · আনুষ্ঠানিক বিবরণ</div>
+          <h2 class="conf-section-title">Assembly Protocol &amp; Executive Metadata</h2>
+          <div class="conf-section-subtitle">সম্মেলন অধিবেশনের বিবরণ ও তথ্যাবলী</div>
+        </div>
+
+        <!-- Metadata Cards Grid -->
+        <div class="conf-meta-grid">
+          
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>📅</span> Date &amp; Time
+            </div>
+            <div class="conf-meta-card-value">17 December 2021 (Friday)</div>
+            <div class="conf-meta-card-note">Conducted during the afternoon session with full council quorum</div>
+          </div>
+
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>🏛️</span> Assembly Venue
+            </div>
+            <div class="conf-meta-card-value">Sanskriti Bikash Kendra</div>
+            <div class="conf-meta-card-note">Paribagh, Dhaka, Bangladesh</div>
+          </div>
+
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>👤</span> Chief Guest &amp; Advisor
+            </div>
+            <div class="conf-meta-card-value">Tanvir Mokammel</div>
+            <div class="conf-meta-card-note">Eminent Filmmaker &amp; Director, Bangladesh Film Institute</div>
+          </div>
+
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>🎓</span> Presiding Officer
+            </div>
+            <div class="conf-meta-card-value">Dr. Mohammad Jahangir Hossain</div>
+            <div class="conf-meta-card-note">Outgoing President, BFIAA Executive Committee (2019–2021)</div>
+          </div>
+
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>🌟</span> Special Faculty Guests
+            </div>
+            <div class="conf-meta-card-value">Syed Shabab Ali Arzu, Rakibul Hasan, Sagir Mostafa, Rana Masud</div>
+            <div class="conf-meta-card-note">Distinguished faculty mentors of Bangladesh Film Institute</div>
+          </div>
+
+          <div class="conf-meta-card">
+            <div class="conf-meta-card-label">
+              <span>📜</span> Governing Mandate
+            </div>
+            <div class="conf-meta-card-value">2021–2023 Executive Committee</div>
+            <div class="conf-meta-card-note">21-member elected executive leadership body</div>
+          </div>
+
+        </div>
+
+        <!-- 4 Key Milestones Row -->
+        <div class="conf-highlights-row">
+          <div class="conf-highlight-box">
+            <div class="conf-highlight-num">01</div>
+            <div class="conf-highlight-text">
+              <strong>Leadership Election</strong>
+              Formation of the 21-member Executive Committee with Shahina Hafiz Daisy as President and Sandip Kumar Mistry as General Secretary.
+            </div>
+          </div>
+
+          <div class="conf-highlight-box">
+            <div class="conf-highlight-num">02</div>
+            <div class="conf-highlight-text">
+              <strong>Faculty Honors</strong>
+              Presentation of honorary crests to BFI teachers in grateful acknowledgment of their mentorship and contribution to cinema education.
+            </div>
+          </div>
+
+          <div class="conf-highlight-box">
+            <div class="conf-highlight-num">03</div>
+            <div class="conf-highlight-text">
+              <strong>Course Graduation</strong>
+              Formal awarding of graduation certificates to emerging directors from the BFI Online Filmmaking Course.
+            </div>
+          </div>
+
+          <div class="conf-highlight-box">
+            <div class="conf-highlight-num">04</div>
+            <div class="conf-highlight-text">
+              <strong>Student Screenings</strong>
+              Special theatrical screening of 9 short fiction and documentary films written, shot, and edited by course participants.
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ─── SECTION 2: INTERACTIVE PHOTO ARCHIVE ─── -->
+      <section class="conf-section-block" aria-label="Conference Photographic Archive">
+
+        <div class="conf-section-header">
+          <div class="section-label">Photographic Archive · আলোকচিত্র সংগ্রহ</div>
+          <h2 class="conf-section-title">Visual Record of the 6th Biennial Assembly</h2>
+          <div class="conf-section-subtitle">সম্মেলনের ঐতিহাসিক মুহূর্তসমূহ</div>
+        </div>
+
+        <!-- Interactive Gallery Showcase -->
+        <div class="conf-gallery-container">
+          
+          <div class="conf-stage-header">
+            <div class="conf-stage-header-title">
+              <span>📷</span>
+              <span>Assembly Photographic Record</span>
+            </div>
+            <div class="conf-stage-counter" id="photoCounter">
+              Photo 1 of 9
+            </div>
+          </div>
+
+          <div class="conf-main-display">
+            <img id="activePhoto" src="images/gallery/conference-banner.jpg" alt="BFIAA 6th Biennial Conference Assembly at Sanskriti Bikash Kendra"/>
+          </div>
+
+          <div class="conf-stage-caption-bar">
+            <div class="conf-photo-caption" id="photoCaption">
+              Official Conference Assembly Stage &amp; Dignitaries on Dais at Sanskriti Bikash Kendra, Dhaka.
+            </div>
+            <div class="conf-photo-actions">
+              <button class="conf-stage-btn primary" id="openLightboxBtn" onclick="openLightbox()">
+                🔍 Inspect Full Photo
+              </button>
+              <a class="conf-stage-btn" id="downloadPhotoBtn" href="images/gallery/conference-banner.jpg" download>
+                ⬇ Download High-Res
+              </a>
+            </div>
+          </div>
+
+          <!-- All 9 Archival Photographs Thumbnails -->
+          <div class="conf-thumbnail-grid">
+            
+            <div class="conf-thumb-item active" onclick="switchPhoto('images/gallery/conference-banner.jpg', 'Official Conference Assembly Stage & Dignitaries on Dais at Sanskriti Bikash Kendra, Dhaka.', 1, this)">
+              <img src="images/gallery/conference-banner.jpg" alt="Official Conference Assembly Stage"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7655.jpg', 'Opening ceremonies and welcome address to the alumni body.', 2, this)">
+              <img src="images/gallery/dsc7655.jpg" alt="Opening Assembly & Welcome"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7660.jpg', 'Faculty mentors, esteemed guests, and executive council members.', 3, this)">
+              <img src="images/gallery/dsc7660.jpg" alt="Faculty Mentors and Dignitaries"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7665.jpg', 'Keynote address by Chief Guest and BFI Director Tanvir Mokammel on the future of alternative cinema.', 4, this)">
+              <img src="images/gallery/dsc7665.jpg" alt="Keynote Address by Tanvir Mokammel"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7670.jpg', 'Alumni council assembly and deliberations on constitutional initiatives.', 5, this)">
+              <img src="images/gallery/dsc7670.jpg" alt="Alumni Council Assembly"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7675.jpg', 'Bestowal of honorary crests to BFI faculty in recognition of dedicated service.', 6, this)">
+              <img src="images/gallery/dsc7675.jpg" alt="Faculty Honors Presentation"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7680.jpg', 'Course graduates receiving their formal diplomas and filmmaking credentials.', 7, this)">
+              <img src="images/gallery/dsc7680.jpg" alt="Certificate Award Ceremony"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7685.jpg', 'Audience gathering during the theatrical screening of 9 student short films.', 8, this)">
+              <img src="images/gallery/dsc7685.jpg" alt="Film Screening Session"/>
+            </div>
+
+            <div class="conf-thumb-item" onclick="switchPhoto('images/gallery/dsc7690.jpg', 'Commemorative group portrait of the newly elected 2021–2023 Executive Committee.', 9, this)">
+              <img src="images/gallery/dsc7690.jpg" alt="2021–2023 Executive Committee Commemoration"/>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ─── SECTION 3: NARRATIVE CHRONICLE & ARCHIVAL RESOLUTION ─── -->
+      <section class="conf-section-block" aria-label="Chronicle & Archival Resolution">
+        
+        <div class="conf-reading-grid">
+          
+          <!-- Left: Detailed Narrative Chronicle -->
+          <div class="conf-prose-card">
+            <div class="section-label">Historical Chronicle · ঐতিহাসিক ইতিবৃত্ত</div>
+            <h3 style="font-family: var(--serif); font-size: 26px; color: var(--dark-text); margin-bottom: 20px;">
+              A Collective Commitment to Independent Cinema
+            </h3>
+            
+            <p>
+              On the afternoon of Friday, December 17, 2021, the 6th Biennial Conference of the <strong>Bangladesh Film Institute Alumni Association (BFIAA)</strong> was solemnly convened at the auditorium of Sanskriti Bikash Kendra in Paribagh, Dhaka. The assembly brought together alumni spanning multiple decades, esteemed faculty mentors, and recent course graduates in a shared dedication to independent and meaningful cinema.
+            </p>
+
+            <p>
+              The conference was presided over by outgoing president <strong>Dr. Mohammad Jahangir Hossain</strong>, with BFI Director and acclaimed filmmaker <strong>Tanvir Mokammel</strong> gracing the occasion as Chief Guest. Renowned BFI faculty members <strong>Syed Shabab Ali Arzu</strong>, <strong>Rakibul Hasan</strong>, <strong>Sagir Mostafa</strong>, and <strong>Rana Masud</strong> were in attendance as Special Guests.
+            </p>
+
+            <p>
+              In his keynote address, Tanvir Mokammel emphasized the vital historical role played by alternative cinema in Bangladesh, urging graduates to pursue filmmaking not merely as an industry trade, but as a moral responsibility and an artistic testimony to human truth. He praised the alumni association for sustaining an unbroken brotherhood of filmmakers across the nation.
+            </p>
+
+            <p>
+              In an emotional tribute to artistic mentorship, honorary crests were presented on behalf of BFIAA to BFI teachers in grateful acknowledgment of their tireless service. The ceremony also celebrated the future of cinema by awarding graduation certificates to students of the Online Filmmaking Course, culminating in the showcase screening of <strong>9 original short films</strong> crafted during their studies.
+            </p>
+          </div>
+
+          <!-- Right: Archival Bengali Resolution Document -->
+          <div class="conf-archival-card">
+            <div class="conf-archival-header">
+              <span class="conf-archival-icon">📜</span>
+              <div>
+                <div class="conf-archival-title">সম্মেলনের মূল বিবরণী</div>
+                <div class="conf-archival-meta">OFFICIAL BENGALI ARCHIVAL RECORD</div>
+              </div>
+            </div>
+
+            <div class="conf-archival-body">
+              <p>
+                <strong>বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের দ্বি-বার্ষিক সম্মেলন: বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয়</strong>
+              </p>
+              <p>
+                ১৭ই ডিসেম্বর (শুক্রবার) বিকেলে পরীবাগস্থ সংস্কৃতি বিকাশ কেন্দ্রে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন অনুষ্ঠিত হয়। সম্মেলনে প্রধান অতিথি ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের পরিচালক বিশিষ্ট চলচ্চিত্রনির্মাতা তানভীর মোকাম্মেল। অনুষ্ঠানের সভাপতিত্ব করেন বিদায়ী কমিটির সভাপতি ড. মোহাম্মদ জাহাঙ্গীর হোসেন এবং বিশেষ অতিথি হিসেবে উপস্থিত ছিলেন বাংলাদেশ ফিল্ম ইনস্টিটিউটের শিক্ষক সৈয়দ সাবাব আলী আরজু, রাকিবুল হাসান, সগীর মোস্তফা এবং রানা মাসুদ।
+              </p>
+              <p>
+                সম্মেলনে শিক্ষকদের পাশাপাশি বাংলাদেশের বিকল্পধারার সিনেমার নানা দিক নিয়ে বক্তব্য রাখেন এসোসিয়েশনের প্রধান উপদেষ্টা জনাব তানভীর মোকাম্মেল। অনুষ্ঠানের এক পর্যায়ে এসোসিয়েশনের পক্ষ থেকে বিএফআই-য়ের শিক্ষকদের প্রদান করা হয় সম্মাননা স্মারক এবং অনলাইন ফিল্ম মেকিং কোর্সের শিক্ষার্থীদের মাঝে সনদপত্র বিতরণ করা হয়। অনুষ্ঠানের শেষ পর্বে কোর্সের শিক্ষার্থীদের নির্মিত ৯টি স্বল্পদৈর্ঘ্য চলচ্চিত্র প্রদর্শিত হয়।
+              </p>
+              <p>
+                সম্মেলনে বিকল্পধারার চলচ্চিত্রকে সামনে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ২০২১-২০২৩ মেয়াদের জন্যে ২১ সদস্যবিশিষ্ট কার্যনির্বাহী কমিটি গঠিত হয়।
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ─── SECTION 4: 21-MEMBER EXECUTIVE COMMITTEE ROSTER ─── -->
+      <section class="conf-section-block" aria-label="Executive Committee 2021-2023 Roster">
+
+        <div class="conf-section-header">
+          <div class="section-label">Official Governance · কার্যনির্বাহী পরিষদ</div>
+          <h2 class="conf-section-title">Executive Committee (2021–2023)</h2>
+          <div class="conf-section-subtitle">সম্মেলনে গঠিত ২১ সদস্যবিশিষ্ট কার্যনির্বাহী কমিটি</div>
+        </div>
+
+        <div class="conf-roster-section">
+
+          <!-- Tier 1: Officer Leadership (১২ জন পদাধিকারী সদস্য) -->
+          <div class="roster-tier-title">
+            <span>Officer Executive Board</span>
+            <span class="roster-tier-badge">১২ জন পদাধিকারী কর্মকর্তা</span>
+          </div>
+
+          <div class="conf-roster-grid">
+            
+            <!-- 01. President (Featured) -->
+            <div class="conf-member-card featured-president">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০১. সভাপতি · PRESIDENT</span>
+                <span class="conf-member-num">EC-01</span>
+              </div>
+              <div class="conf-member-name-bn">শাহীনা হাফিজ ডেইজি</div>
+              <div class="conf-member-name-en">Shahina Hafiz Daisy</div>
+            </div>
+
+            <!-- 02. Vice President -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০২. সহ-সভাপতি</span>
+                <span class="conf-member-num">EC-02</span>
+              </div>
+              <div class="conf-member-name-bn">আশরাফুল আযম খান</div>
+              <div class="conf-member-name-en">Ashraful Azam Khan</div>
+            </div>
+
+            <!-- 03. General Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৩. সাধারণ সম্পাদক</span>
+                <span class="conf-member-num">EC-03</span>
+              </div>
+              <div class="conf-member-name-bn">সন্দীপ কুমার মিস্ত্রী</div>
+              <div class="conf-member-name-en">Sandip Kumar Mistry</div>
+            </div>
+
+            <!-- 04. Joint General Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৪. সহ-সাধারণ সম্পাদক</span>
+                <span class="conf-member-num">EC-04</span>
+              </div>
+              <div class="conf-member-name-bn">কাজী মুসফিকুস সালেহীন</div>
+              <div class="conf-member-name-en">Kazi Musfiq-us-Saleheen</div>
+            </div>
+
+            <!-- 05. Treasurer -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৫. কোষাধ্যক্ষ</span>
+                <span class="conf-member-num">EC-05</span>
+              </div>
+              <div class="conf-member-name-bn">সোহেল আহম্মেদ সিদ্দিকী</div>
+              <div class="conf-member-name-en">Sohel Ahmed Siddiqui</div>
+            </div>
+
+            <!-- 06. Organizing Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৬. সাংগঠনিক সম্পাদক</span>
+                <span class="conf-member-num">EC-06</span>
+              </div>
+              <div class="conf-member-name-bn">অপরাজিতা সংগীতা</div>
+              <div class="conf-member-name-en">Aparajita Sangita</div>
+            </div>
+
+            <!-- 07. Office Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৭. দপ্তর সম্পাদক</span>
+                <span class="conf-member-num">EC-07</span>
+              </div>
+              <div class="conf-member-name-bn">কাওসার আহম্মেদ আবির</div>
+              <div class="conf-member-name-en">Kawsar Ahmed Abir</div>
+            </div>
+
+            <!-- 08. International Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৮. আন্তর্জাতিক সম্পাদক</span>
+                <span class="conf-member-num">EC-08</span>
+              </div>
+              <div class="conf-member-name-bn">নাসরুল্লাহ মনসুর রাসু</div>
+              <div class="conf-member-name-en">Nasrullah Mansur Rasu</div>
+            </div>
+
+            <!-- 09. Library Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">০৯. পাঠাগার সম্পাদক</span>
+                <span class="conf-member-num">EC-09</span>
+              </div>
+              <div class="conf-member-name-bn">সাদিয়া রহমান জেমিম</div>
+              <div class="conf-member-name-en">Sadia Rahman Jemim</div>
+            </div>
+
+            <!-- 10. Seminar Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১০. সেমিনার সম্পাদক</span>
+                <span class="conf-member-num">EC-10</span>
+              </div>
+              <div class="conf-member-name-bn">নাঈমুল ইসলাম</div>
+              <div class="conf-member-name-en">Nayeemul Islam</div>
+            </div>
+
+            <!-- 11. Publicity Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১১. প্রচার সম্পাদক</span>
+                <span class="conf-member-num">EC-11</span>
+              </div>
+              <div class="conf-member-name-bn">মামুন সোবহানি</div>
+              <div class="conf-member-name-en">Mamun Sobhani</div>
+            </div>
+
+            <!-- 12. Publication Secretary -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১২. প্রকাশনা সম্পাদক</span>
+                <span class="conf-member-num">EC-12</span>
+              </div>
+              <div class="conf-member-name-bn">ড. নাজিয়া মাহমুদ</div>
+              <div class="conf-member-name-en">Dr. Nazia Mahmud</div>
+            </div>
+
+          </div>
+
+          <!-- Tier 2: Executive Council Members (৯ জন নির্বাহী সদস্য) -->
+          <div class="roster-tier-title">
+            <span>Executive Council Members</span>
+            <span class="roster-tier-badge">০৯ জন নির্বাহী সদস্য</span>
+          </div>
+
+          <div class="conf-roster-grid">
+            
+            <!-- 13. Executive Member 01 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৩. নির্বাহী সদস্য ০১</span>
+                <span class="conf-member-num">EC-13</span>
+              </div>
+              <div class="conf-member-name-bn">ড. মোহাম্মদ জাহাঙ্গীর হোসেন</div>
+              <div class="conf-member-name-en">Dr. Mohammad Jahangir Hossain</div>
+            </div>
+
+            <!-- 14. Executive Member 02 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৪. নির্বাহী সদস্য ০২</span>
+                <span class="conf-member-num">EC-14</span>
+              </div>
+              <div class="conf-member-name-bn">সাজ্জাদ খান</div>
+              <div class="conf-member-name-en">Sajjad Khan</div>
+            </div>
+
+            <!-- 15. Executive Member 03 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৫. নির্বাহী সদস্য ০৩</span>
+                <span class="conf-member-num">EC-15</span>
+              </div>
+              <div class="conf-member-name-bn">সানু মানিক</div>
+              <div class="conf-member-name-en">Sanu Manik</div>
+            </div>
+
+            <!-- 16. Executive Member 04 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৬. নির্বাহী সদস্য ০৪</span>
+                <span class="conf-member-num">EC-16</span>
+              </div>
+              <div class="conf-member-name-bn">হাসানুজ্জামান খান</div>
+              <div class="conf-member-name-en">Hasanuzzaman Khan</div>
+            </div>
+
+            <!-- 17. Executive Member 05 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৭. নির্বাহী সদস্য ০৫</span>
+                <span class="conf-member-num">EC-17</span>
+              </div>
+              <div class="conf-member-name-bn">আহসান উদ্দীন ভূঁইয়া</div>
+              <div class="conf-member-name-en">Ahsan Uddin Bhuiyan</div>
+            </div>
+
+            <!-- 18. Executive Member 06 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৮. নির্বাহী সদস্য ০৬</span>
+                <span class="conf-member-num">EC-18</span>
+              </div>
+              <div class="conf-member-name-bn">জান্নাতুল মাওয়া নোভা</div>
+              <div class="conf-member-name-en">Jannatul Mawa Nova</div>
+            </div>
+
+            <!-- 19. Executive Member 07 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">১৯. নির্বাহী সদস্য ০৭</span>
+                <span class="conf-member-num">EC-19</span>
+              </div>
+              <div class="conf-member-name-bn">রাজেশ্বর দাশ গুপ্ত</div>
+              <div class="conf-member-name-en">Rajeshwar Das Gupta</div>
+            </div>
+
+            <!-- 20. Executive Member 08 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">২০. নির্বাহী সদস্য ০৮</span>
+                <span class="conf-member-num">EC-20</span>
+              </div>
+              <div class="conf-member-name-bn">জানে আলম</div>
+              <div class="conf-member-name-en">Jane Alam</div>
+            </div>
+
+            <!-- 21. Executive Member 09 -->
+            <div class="conf-member-card">
+              <div class="conf-member-top">
+                <span class="conf-role-badge">২১. নির্বাহী সদস্য ০৯</span>
+                <span class="conf-member-num">EC-21</span>
+              </div>
+              <div class="conf-member-name-bn">জন ক্রিস্টোফার কস্টা</div>
+              <div class="conf-member-name-en">John Christopher Costa</div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ─── SECTION 5: INTER-CONFERENCE ARCHIVE NAVIGATION ─── -->
+      <section class="conf-section-block" aria-label="Archive Navigation">
+        
+        <div class="conf-nav-panel">
+          
+          <a href="conference-2019.html" class="conf-nav-card">
+            <span class="conf-nav-label">← Previous Assembly</span>
+            <div class="conf-nav-title">Biennial Conference 2019</div>
+            <div class="conf-nav-desc">Public Library Seminar Hall, Shahbagh · Formation of 2019–2021 Advisory &amp; Executive Councils.</div>
+          </a>
+
+          <a href="index.html#conferences" class="conf-nav-card">
+            <span class="conf-nav-label">↑ Main Archive</span>
+            <div class="conf-nav-title">All Assemblies &amp; Conferences</div>
+            <div class="conf-nav-desc">Explore the chronological assembly history of the Bangladesh Film Institute Alumni Association.</div>
+          </a>
+
+          <a href="constitution.html" class="conf-nav-card">
+            <span class="conf-nav-label">📜 Governing Document</span>
+            <div class="conf-nav-title">BFIAA Official Constitution</div>
+            <div class="conf-nav-desc">All 15 governing articles detailing biennial assembly rules, membership rights, and election charters.</div>
+          </a>
+
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ═══════ LIGHTBOX MODAL ═══════ -->
+  <div class="conf-lightbox" id="confLightbox" role="dialog" aria-modal="true" aria-label="Archival Photo Lightbox">
+    <button class="conf-lightbox-close" onclick="closeLightbox()" aria-label="Close Lightbox">&times;</button>
+    <img class="conf-lightbox-img" id="lightboxImg" src="images/gallery/conference-banner.jpg" alt="Conference Photograph Inspection"/>
+    <div class="conf-lightbox-caption" id="lightboxCaption">
+      Official Conference Assembly Stage &amp; Dignitaries on Dais at Sanskriti Bikash Kendra, Dhaka.
     </div>
   </div>
-</footer>
 
-<script>
-  function switchPhoto(src, el) {
-    const mainImg = document.getElementById('activePhoto');
-    const fullBtn = document.getElementById('viewFullBtn');
-    const dlBtn = document.getElementById('downloadBtn');
-    
-    mainImg.style.opacity = '0.3';
-    setTimeout(() => {
-      mainImg.src = src;
-      mainImg.style.opacity = '1';
-    }, 150);
+  <!-- ═══════ STANDARDIZED SITE FOOTER ═══════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="filmstrip-border left" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="filmstrip-border right" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
 
-    fullBtn.href = src;
-    dlBtn.href = src;
+    <div class="container footer-top">
+      <div class="footer-cols">
+        <!-- Brand -->
+        <div>
+          <div class="footer-brand">
+            <a href="index.html#home" class="footer-brand-link" aria-label="BFIAA Home" style="display: inline-block; text-decoration: none;">
+              <img src="images/bfiaa-logo.png" alt="BFIAA Logo" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.style.display='none'"/>
+            </a>
+          </div>
+          <p class="footer-brand-desc">
+            The official alumni body of Bangladesh Film Institute, connecting over 1,000 graduates across 86+ batches in a shared commitment to cinema culture.
+          </p>
+        </div>
 
-    document.querySelectorAll('.thumb-item').forEach(t => t.classList.remove('active'));
-    el.classList.add('active');
-  }
-</script>
+        <!-- Navigation -->
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About BFIAA</a></li>
+            <li><a href="index.html#founder">Tanvir Mokammel</a></li>
+            <li><a href="index.html#committee">Executive Committee</a></li>
+            <li><a href="index.html#conferences">Conferences</a></li>
+            <li><a href="index.html#alumni">Featured Alumni</a></li>
+            <li><a href="index.html#events">Events &amp; Screenings</a></li>
+            <li><a href="index.html#retrospective">30 Years Retrospective</a></li>
+            <li><a href="index.html#publications">Uralchitra Journal</a></li>
+            <li><a href="index.html#picnic">Annual Picnic</a></li>
+          </ul>
+        </div>
 
-</div>
+        <!-- Documents & Records -->
+        <div>
+          <div class="footer-col-title">Documents</div>
+          <ul class="footer-links-list">
+            <li><a href="constitution.html">Official Constitution</a></li>
+            <li><a href="conference-2021.html">Conference 2021 Record</a></li>
+            <li><a href="conference-2019.html">Conference 2019 Record</a></li>
+            <li><a href="uralchitra-special.html">Uralchitra Special Edition</a></li>
+            <li><a href="30-years-event.html">30 Years Retrospective Event</a></li>
+            <li><a href="alumni/portfolio-template.html">Alumni Member Template</a></li>
+            <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Membership Form</a></li>
+          </ul>
+        </div>
 
-<script>
-  // Mobile Hamburger Toggle
-  const hamburger = document.getElementById('hamburger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  if (hamburger && mobileMenu) {
-    hamburger.addEventListener('click', () => {
-      const isOpen = mobileMenu.classList.toggle('open');
-      hamburger.setAttribute('aria-expanded', isOpen);
-      const spans = hamburger.querySelectorAll('span');
-      if (isOpen) {
-        spans[0].style.transform = 'translateY(8px) rotate(45deg)';
-        spans[1].style.opacity   = '0';
-        spans[2].style.transform = 'translateY(-8px) rotate(-45deg)';
-      } else {
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity   = '1';
-        spans[2].style.transform = 'none';
+        <!-- BFI Network -->
+        <div>
+          <div class="footer-col-title">BFI Network</div>
+          <ul class="footer-links-list">
+            <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+            <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+            <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+            <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel Site</a></li>
+            <li><a href="https://www.facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener">BFIAA Facebook Page</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.</div>
+        <div>Dedicated to Alternative &amp; Independent Cinema in Bangladesh.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════ SCRIPTS ═══════ -->
+  <script>
+    // Photo Showcase Controller
+    function switchPhoto(src, caption, index, el) {
+      const activeImg = document.getElementById('activePhoto');
+      const captionEl = document.getElementById('photoCaption');
+      const counterEl = document.getElementById('photoCounter');
+      const downloadBtn = document.getElementById('downloadPhotoBtn');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+
+      if (!activeImg) return;
+
+      activeImg.style.opacity = '0.2';
+      setTimeout(() => {
+        activeImg.src = src;
+        activeImg.style.opacity = '1';
+      }, 150);
+
+      if (captionEl) captionEl.textContent = caption;
+      if (counterEl) counterEl.textContent = 'Photo ' + index + ' of 9';
+      if (downloadBtn) downloadBtn.href = src;
+      if (lightboxImg) lightboxImg.src = src;
+      if (lightboxCaption) lightboxCaption.textContent = caption;
+
+      document.querySelectorAll('.conf-thumb-item').forEach(t => t.classList.remove('active'));
+      if (el) el.classList.add('active');
+    }
+
+    // Lightbox Modal Controls
+    function openLightbox() {
+      const lightbox = document.getElementById('confLightbox');
+      if (lightbox) {
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
       }
+    }
+
+    function closeLightbox() {
+      const lightbox = document.getElementById('confLightbox');
+      if (lightbox) {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+    }
+
+    // Close lightbox on Escape key or backdrop click
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
     });
-    mobileMenu.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        mobileMenu.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', false);
-        const spans = hamburger.querySelectorAll('span');
-        spans[0].style.transform = 'none';
-        spans[1].style.opacity   = '1';
-        spans[2].style.transform = 'none';
+
+    const lightboxModal = document.getElementById('confLightbox');
+    if (lightboxModal) {
+      lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) closeLightbox();
       });
-    });
-  }
-</script>
+    }
+
+    // Mobile Hamburger Navigation
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (hamburger && mobileNav) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+      mobileNav.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          mobileNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+  </script>
+
+  <!-- Scroll to Top Script -->
+  <script src="js/scroll-top.js"></script>
 
 </body>
 </html>
