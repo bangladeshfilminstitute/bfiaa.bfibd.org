@@ -706,19 +706,35 @@
       }
       
       @media (max-width: 768px) {
-        .hero-section { min-height: 85svh; align-items: flex-end; }
-        .hero-content { padding: 18svh 20px 40px; }
+        .hero-section {
+          min-height: auto;
+          align-items: center;
+          padding: 24px 0 36px;
+        }
+        .hero-content {
+          padding: 10px 20px 20px;
+        }
         .hero-title { font-size: 2.5rem; }
+        .hero-title-bn { font-size: 1.3rem; margin-bottom: 20px; }
+        .hero-roles { gap: 8px; margin-bottom: 20px; }
+        .role-pill { font-size: 0.7rem; padding: 5px 12px; }
+        .hero-location { margin-bottom: 25px; }
+        .hero-actions { flex-direction: column; gap: 12px; }
+        .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 12px 20px; }
+        .hero-stats {
+          gap: 20px;
+          margin-top: 25px;
+        }
         .hero-bg img {
-          object-position: center 25%;
+          object-position: center 20%;
         }
         .hero-overlay {
           background:
             linear-gradient(to bottom,
-              rgba(11,15,14,0.40) 0%,
-              rgba(11,15,14,0.18) 30%,
-              rgba(11,15,14,0.78) 65%,
-              rgba(11,15,14,0.96) 100%
+              rgba(11,15,14,0.72) 0%,
+              rgba(11,15,14,0.60) 35%,
+              rgba(11,15,14,0.85) 70%,
+              rgba(11,15,14,0.98) 100%
             );
         }
         .about-portrait-float {
