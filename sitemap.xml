@@ -1,78 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bfiaa.bfibd.org/films.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://bfiaa.bfibd.org/alumni</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Homepage -->
   <url>
     <loc>https://bfiaa.bfibd.org/</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <!-- Alumni Directory -->
   <url>
-    <loc>https://bfiaa.bfibd.org/constitution.html</loc>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Honorable Alumni Profiles -->
+  <url>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/syed-oasiuddin-ahmed</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bfiaa.bfibd.org/images/oasi-og-thumbnail.jpg</image:loc>
+      <image:title>Syed Oasiuddin Ahmed — Documentary Filmmaker, BFIAA Alumni</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/conference-2019.html</loc>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/sohel-ahmmad-siddiquee</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bfiaa.bfibd.org/images/sohel-og-thumbnail.jpg</image:loc>
+      <image:title>Sohel Ahmmad Siddiquee — Filmmaker, BFIAA Alumni</image:title>
+    </image:image>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/conference-2021.html</loc>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/sandip-kumar-mistry</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bfiaa.bfibd.org/images/sandip-og-thumbnail.jpg</image:loc>
+      <image:title>Sandip Kumar Mistry — Documentary Filmmaker, Researcher &amp; Musician, BFIAA Alumni</image:title>
+    </image:image>
   </url>
+  <!-- Films Page -->
   <url>
-    <loc>https://bfiaa.bfibd.org/30-years-event.html</loc>
+    <loc>https://bfiaa.bfibd.org/films</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Constitution -->
+  <url>
+    <loc>https://bfiaa.bfibd.org/constitution</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
+  <!-- Events & Conferences -->
   <url>
-    <loc>https://bfiaa.bfibd.org/uralchitra-special.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://bfiaa.bfibd.org/event-cinema-kotha.html</loc>
+    <loc>https://bfiaa.bfibd.org/conference-2019</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/event-ec-meeting.html</loc>
+    <loc>https://bfiaa.bfibd.org/conference-2021</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/event-man.html</loc>
+    <loc>https://bfiaa.bfibd.org/30-years-event</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/event-pounopunik.html</loc>
+    <loc>https://bfiaa.bfibd.org/uralchitra-special</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/event-songsoptok.html</loc>
+    <loc>https://bfiaa.bfibd.org/event-cinema-kotha</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/alumni/syed-oasiuddin-ahmed.html</loc>
+    <loc>https://bfiaa.bfibd.org/event-ec-meeting</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://bfiaa.bfibd.org/alumni/sohel-ahmmad-siddiquee.html</loc>
+    <loc>https://bfiaa.bfibd.org/event-man</loc>
+    <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bfiaa.bfibd.org/event-pounopunik</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://bfiaa.bfibd.org/event-songsoptok</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

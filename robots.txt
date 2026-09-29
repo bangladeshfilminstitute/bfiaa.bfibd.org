@@ -1,4 +1,31 @@
 User-agent: *
 Allow: /
+Disallow: /index_backup.html
+Disallow: /index_10ff621.html
+Disallow: /*.js$
+Disallow: /scratch_*
 
+# AI Search Crawlers — allow indexing for knowledge/research content
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap
 Sitemap: https://bfiaa.bfibd.org/sitemap.xml
