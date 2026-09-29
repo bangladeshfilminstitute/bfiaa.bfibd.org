@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Member Name — Filmmaker | BFIAA</title>
+    <link rel="canonical" href="https://bfiaa.bfibd.org/alumni/member-name" />
+    <meta name="description" content="Film profile of Member Name — filmmaker, documentary director and screenwriter. BFIAA Alumni member."/>
+    
+    <!-- Open Graph (Facebook, LinkedIn, iMessage) -->
+    <meta property="og:title" content="Member Name — Filmmaker | BFIAA" />
+    <meta property="og:description" content="Film profile of Member Name — filmmaker, documentary director and screenwriter. BFIAA Alumni member." />
+    <meta property="og:image" content="https://bfiaa-bfibd.pages.dev/images/placeholder-thumbnail.jpg" />
+    <meta property="og:url" content="https://bfiaa-bfibd.pages.dev/alumni/member-name" />
+    <meta property="og:type" content="profile" />
+    
+    <!-- Twitter Cards (Twitter/X, Discord) -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Member Name — Filmmaker | BFIAA" />
+    <meta name="twitter:description" content="Primary Role, Secondary Role, Additional Role & Additional Role" />
+    <meta name="twitter:image" content="https://bfiaa-bfibd.pages.dev/images/placeholder-thumbnail.jpg" />
+    
+    <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
+  <meta name="theme-color" content="#0b0f0e"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="../css/style.css?v=4.0">
+  
+  <style>
+    /* Local Page Variables */
+    :root {
+      --alumni-bg: #0b0f0e;
+      --alumni-bg-soft: #121715;
+      --alumni-cream: #eee7d8;
+      --alumni-muted: #aaa89f;
+      --alumni-line: rgba(238,231,216,0.15);
+      --alumni-accent: #c9b48a;
+    }
+
+    body {
+      background-color: var(--alumni-bg);
+      color: var(--alumni-cream);
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    /* Utility Overrides for this page to isolate from global css */
+    .alumni-page-wrapper section { padding: 0; background: transparent; }
+    
+    /* Typography */
+    .font-serif { font-family: 'Cinzel', serif; }
+    .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .font-mono { font-family: 'JetBrains Mono', monospace; }
+    .font-bn { font-family: 'Hind Siliguri', sans-serif; }
+    
+    .text-cream { color: var(--alumni-cream); }
+    .text-muted { color: var(--alumni-muted); }
+    .text-accent { color: var(--alumni-accent); }
+    
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      margin-bottom: 80px;
+    }
+    
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+    
+    .hero-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 55%;
+      filter: contrast(1.1) brightness(0.8) grayscale(15%);
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(11, 15, 14, 0.95) 0%, rgba(11, 15, 14, 0.6) 55%, transparent 100%),
+                  linear-gradient(to top, var(--alumni-bg) 0%, rgba(11, 15, 14, 0.3) 25%, transparent 60%);
+      z-index: 2;
+    }
+    
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 100px 5% 40px;
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-portrait-float {
+      display: block;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 30px auto;
+      border-radius: 4px;
+      border: 1px solid var(--alumni-line);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+        width: 100%;
+        margin: 0 0 30px 0;
+      }
+    }
+    
+    .hero-eyebrow {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background-color: var(--alumni-accent);
+    }
+    
+    .hero-title {
+      font-size: clamp(3rem, 6vw, 5rem);
+      line-height: 1.1;
+      font-weight: 500;
+      margin: 0 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .hero-title-bn {
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 500;
+      margin: 0 0 25px;
+      opacity: 0.9;
+    }
+    
+    .hero-roles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+    
+    .role-pill {
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 1px solid var(--alumni-line);
+      padding: 6px 14px;
+      border-radius: 40px;
+      backdrop-filter: blur(4px);
+    }
+    
+    .hero-location {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0.8;
+      margin-bottom: 35px;
+    }
+    
+    .hero-actions {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: var(--alumni-cream);
+      color: var(--alumni-bg);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid var(--alumni-cream);
+    }
+    .btn-primary:hover {
+      background: transparent;
+      color: var(--alumni-cream);
+    }
+    
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      background: transparent;
+      color: var(--alumni-cream);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      border: 1px solid var(--alumni-line);
+    }
+    .btn-secondary:hover {
+      border-color: var(--alumni-cream);
+    }
+    
+    .hero-stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      border-left: 1px solid var(--alumni-line);
+      padding-left: 40px;
+    }
+    
+    .stat-item .stat-num {
+      font-size: 2.5rem;
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+    .stat-item .stat-lbl {
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    /* Layout Shared */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 5%;
+    }
+    
+    .section-header {
+      margin-bottom: 50px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 20px;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    
+    /* About & Education */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      margin-bottom: 100px;
+    }
+    
+    .about-bio {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      font-weight: 300;
+    }
+    .about-bio p { margin-bottom: 1.5rem; }
+    
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .tl-item {
+      display: grid;
+      grid-template-columns: 80px 1fr;
+      gap: 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 25px;
+    }
+    .tl-item:last-child {
+      border-bottom: none;
+    }
+    .tl-year {
+      font-size: 0.85rem;
+      padding-top: 5px;
+    }
+    .tl-content {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      font-weight: 400;
+    }
+    .tl-content .tl-org {
+      font-size: 0.8rem;
+      margin-top: 4px;
+      display: block;
+    }
+    
+    /* Filmography */
+    .films-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 260px);
+      justify-content: center;
+      gap: 60px;
+      margin-bottom: 100px;
+    }
+    
+    .film-card {
+      display: flex;
+      flex-direction: column;
+      group: hover;
+    }
+    
+    .film-image-wrap {
+      width: 100%;
+      aspect-ratio: 2/3;
+      overflow: hidden;
+      margin-bottom: 20px;
+      position: relative;
+      background: var(--alumni-bg-soft);
+      border: 1px solid var(--alumni-line);
+    }
+    
+    .film-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1);
+    }
+    
+    .film-card:hover .film-image-wrap img {
+      transform: scale(1.05);
+    }
+    
+    .film-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(11, 15, 14, 0.3);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .film-card:hover .film-overlay {
+      opacity: 1;
+    }
+    
+    .film-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      border-bottom: 1px solid var(--alumni-line);
+      padding-bottom: 8px;
+    }
+    
+    .film-title-bn {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin: 0 0 2px;
+      line-height: 1.2;
+    }
+    
+    .film-title-en {
+      font-size: 1rem;
+      margin: 0 0 15px;
+      letter-spacing: 0.5px;
+    }
+    
+    .film-desc {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    
+    .film-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--alumni-cream);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .film-cta:hover { color: var(--alumni-accent); }
+    .film-cta.disabled { color: var(--alumni-muted); pointer-events: none; }
+    
+    /* Assistant Credits */
+    .credits-section {
+      margin-bottom: 100px;
+    }
+    .credits-group {
+      margin-bottom: 60px;
+    }
+    .credits-group-title {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      color: var(--alumni-accent);
+      text-align: center;
+    }
+    
+    .cinematic-table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      border: 1px solid var(--alumni-line);
+      border-radius: 4px;
+      background: var(--alumni-bg-soft);
+    }
+    .cinematic-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 800px;
+    }
+    .cinematic-table th {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--alumni-muted);
+      padding: 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      background: rgba(0,0,0,0.2);
+    }
+    .cinematic-table td {
+      padding: 25px 20px;
+      border-bottom: 1px solid var(--alumni-line);
+      vertical-align: middle;
+      color: var(--alumni-cream);
+    }
+    .cinematic-table tr:last-child td {
+      border-bottom: none;
+    }
+    .cinematic-table tr:hover td {
+      background: rgba(255,255,255,0.03);
+    }
+    
+    .ct-title-bn {
+      font-family: var(--font-bn, sans-serif);
+      font-size: 1.3rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    .ct-title-en {
+      font-size: 0.9rem;
+      color: var(--alumni-muted);
+    }
+    
+    .ct-pill {
+      font-family: var(--font-mono, monospace);
+      font-size: 0.65rem;
+      padding: 4px 10px;
+      border: 1px solid var(--alumni-accent);
+      color: var(--alumni-accent);
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .ct-meta {
+      font-family: var(--font-sans, sans-serif);
+      font-size: 0.95rem;
+    }
+    
+    .ct-year {
+      font-family: var(--font-mono, monospace);
+      font-size: 1.1rem;
+      color: var(--alumni-accent);
+    }
+    
+    /* Contact */
+    .contact-section {
+      background: var(--alumni-bg-soft);
+      padding: 80px 0;
+      border-top: 1px solid var(--alumni-line);
+      text-align: center;
+    }
+    .contact-title {
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto 60px;
+    }
+    .contact-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+      border: 1px solid var(--alumni-line);
+      background: var(--alumni-bg);
+    }
+    .contact-item-lbl {
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      color: var(--alumni-muted);
+    }
+    .contact-item-val {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+    .contact-item a {
+      color: var(--alumni-accent);
+      text-decoration: none;
+      transition: opacity 0.3s;
+    }
+    .contact-item a:hover { opacity: 0.8; }
+    
+    /* Scroll to Top Button */
+    .scroll-top-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 45px;
+      height: 45px;
+      background: var(--alumni-bg-soft);
+      border: 1px solid var(--alumni-accent);
+      color: var(--alumni-accent);
+      border-radius: 50%;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      z-index: 999;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    }
+    .scroll-top-btn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .scroll-top-btn:hover {
+      background: var(--alumni-accent);
+      color: var(--alumni-bg);
+    }
+    
+    /* ===========================
+       RESPONSIVE BREAKPOINTS
+       =========================== */
+
+    /* Large Tablet / Small Desktop (max 1200px) */
+    @media (max-width: 1200px) {
+      .hero-title { font-size: 5rem; }
+    }
+
+    /* Tablet Landscape (max 1024px) */
+    @media (max-width: 1024px) {
+      .container { padding: 0 30px; }
+      
+      /* Hero */
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 120px 30px 50px;
+      }
+      .hero-title { font-size: 4.5rem; }
+      .hero-stats {
+        border-left: none;
+        border-top: 1px solid var(--alumni-line);
+        padding-left: 0;
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .stat-item { flex: 1 1 120px; }
+
+      /* Films grid */
+      .films-grid { grid-template-columns: repeat(2, 260px); justify-content: center; gap: 30px; }
+
+      /* About */
+      .about-portrait-float { width: 220px; margin: 0 25px 15px 0; }
+    }
+
+    /* Tablet Portrait (max 768px) */
+    @media (max-width: 768px) {
+      .container { padding: 0 20px; }
+
+      /* Hero */
+      .hero-section { 
+        min-height: 100svh; 
+        align-items: flex-end; /* Push content to the bottom */
+      }
+      .hero-bg {
+        height: 65svh; /* Slightly shorter */
+        bottom: auto;
+      }
+      .hero-bg img { 
+        object-position: center center; 
+        transform: scale(1.45) translateY(-16%); /* Scale more to safely shift even further UP */
+        transform-origin: center center;
+      }
+      .hero-overlay {
+        /* Clear at the top where the face is, fading to solid at the bottom where the text is */
+        background: linear-gradient(to bottom, 
+          rgba(11,15,14,0.1) 0%, 
+          rgba(11,15,14,0.6) 25%, 
+          rgba(11,15,14,0.98) 65%,
+          var(--alumni-bg) 100%
+        );
+      }
+      .hero-content { 
+        padding: 24svh 20px 40px; /* Push text even further up */
+        width: 100%;
+      }
+      .hero-title { font-size: 3rem; line-height: 1.1; }
+      .hero-title-bn { font-size: 1.2rem; margin-bottom: 25px; }
+      .hero-roles { flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+      .role-pill { font-size: 0.65rem; padding: 5px 12px; }
+      .hero-location { margin-bottom: 30px; }
+      .hero-actions { flex-direction: column; gap: 10px; margin-top: 20px; }
+      .btn-primary, .btn-secondary { width: 100%; text-align: center; padding: 14px 20px; }
+      .hero-stats { gap: 15px; margin-top: 30px; }
+      .stat-num { font-size: 2rem; }
+
+      /* About / Bio */
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-portrait-float {
+        float: none;
+        width: calc(100% - 40px);
+        max-width: 360px;
+        display: block;
+        margin: 0 auto 25px;
+        border-radius: 6px;
+      }
+      .about-bio p { 
+        margin-bottom: 20px; 
+        line-height: 1.8; 
+        padding: 0 15px; 
+        font-size: 1.05rem; 
+      }
+
+      /* Filmography */
+      .films-grid { grid-template-columns: repeat(2, 1fr); column-gap: 20px; row-gap: 60px; }
+      .film-title { font-size: 1.1rem; }
+      .film-title-en { font-size: 0.75rem; }
+
+      /* Cinematic Table — stacked mobile cards */
+      .cinematic-table-wrap { border: none; background: transparent; }
+      .cinematic-table { min-width: unset; }
+      .cinematic-table thead { display: none; }
+      .cinematic-table tbody tr {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: 20px 15px;
+        border: 1px solid var(--alumni-line);
+        border-radius: 4px;
+        margin-bottom: 12px;
+        background: var(--alumni-bg-soft);
+      }
+      .cinematic-table td { padding: 0; border: none; display: block; width: 100%; }
+      .cinematic-table td:nth-child(1) { padding-right: 60px; margin-bottom: 12px; }
+      .cinematic-table td:nth-child(2) { margin-bottom: 8px; }
+      
+      .cinematic-table td:nth-child(3) { display: inline-block; width: auto; }
+      .cinematic-table td:nth-child(3)::after { content: ' · '; color: var(--alumni-muted); padding: 0 5px; }
+      .cinematic-table td:nth-child(4) { display: inline-block; width: auto; }
+      
+      .cinematic-table td:nth-child(5) { 
+        position: absolute; 
+        top: 20px; 
+        right: 15px; 
+        width: auto; 
+      }
+      .cinematic-table tr:hover td { background: transparent; }
+
+      /* Contact */
+      .contact-grid { grid-template-columns: 1fr; gap: 15px; }
+      .contact-section { padding: 60px 0; }
+
+      /* Scroll button */
+      .scroll-top-btn { bottom: 20px; right: 15px; width: 40px; height: 40px; }
+    }
+
+    /* Mobile (max 480px) */
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }
+      .hero-title { font-size: 2.4rem; }
+      .hero-title-bn { font-size: 1rem; }
+      .hero-eyebrow { font-size: 0.65rem; }
+      .section-title { font-size: 2rem; }
+
+        /* Films — 1 column centered, but with constrained poster size so it's not massive */
+        .films-grid { grid-template-columns: 1fr; row-gap: 60px; max-width: 100%; }
+        .film-card { text-align: center; align-items: center; }
+        .film-image-wrap { width: 240px; margin-left: auto; margin-right: auto; margin-bottom: 25px; }
+        .film-meta-bar { justify-content: center; gap: 15px; margin-bottom: 15px; font-size: 0.7rem; }
+        .film-title { font-size: 1.2rem; }
+        .film-title-en { font-size: 0.8rem; }
+        .film-desc { font-size: 0.85rem; padding: 0 15px; text-align: center; }
+        
+        .about-bio p { padding: 0 10px; font-size: 0.95rem; }
+
+      /* Education timeline */
+      .edu-item { padding-left: 20px; }
+
+      /* Credits */
+      .credits-group-title { font-size: 0.7rem; letter-spacing: 1px; }
+      .ct-title-bn { font-size: 1.1rem; }
+      .ct-title-en { font-size: 0.8rem; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Member Name",
+  "jobTitle": "Filmmaker, Documentary Director",
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Bangladesh Film Institute"
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Bangladesh Film Institute Alumni Association"
+  },
+  "url": "https://bfiaa.bfibd.org/alumni/member-name.html",
+  "image": "https://bfiaa-bfibd.pages.dev/Alumni%20members%20indivisual%20pages/Syed%20Oasi%20Uddin%20Ahmed.jpg"
+}
+  </script>
+</head>
+<body>
+<div class="site-wrapper">
+
+<!-- EXACLTY REUSED HEADER -->
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <a href="https://bfiaa.bfibd.org/" class="nav-logo" style="text-decoration:none;" aria-label="Homepage">
+    <img src="../images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+  </a>
+  <ul class="nav-links" role="list">
+    <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#about">About</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2021">Conference 2021</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#conference-2019">Conference 2019</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#committee">Committee</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#picnic">Picnic</a></li>
+    <li><a href="https://bfiaa.bfibd.org/#contact">Contact</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="https://bfibd.org" class="nav-btn" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;">
+      <img src="../images/bfi-logo.png" alt="BFI" class="nav-bfi-logo" style="height:16px;width:auto;background:#fff;padding:2px 4px;border-radius:3px;"/> BFI Home
+    </a>
+    <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="nav-btn gold">Join Us &rarr;</a>
+  </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu" role="menu">
+  <a href="https://bfiaa.bfibd.org/" role="menuitem">Home</a>
+  <a href="https://bfiaa.bfibd.org/#about" role="menuitem">About BFIAA</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2021" role="menuitem">Conference 2021</a>
+  <a href="https://bfiaa.bfibd.org/#conference-2019" role="menuitem">Conference 2019</a>
+  <a href="https://bfiaa.bfibd.org/#committee" role="menuitem">Committee</a>
+  <a href="https://bfiaa.bfibd.org/#events" role="menuitem">Events</a>
+  <a href="https://bfiaa.bfibd.org/#magazine" role="menuitem">Uralchitra</a>
+  <a href="https://bfiaa.bfibd.org/#picnic" role="menuitem">Picnic</a>
+  <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" role="menuitem" target="_blank" rel="noopener">Join Us</a>
+  <a href="https://bfiaa.bfibd.org/#contact" role="menuitem">Contact</a>
+  <a href="https://bfibd.org" role="menuitem" target="_blank" rel="noopener">← BFI Main Site</a>
+</div>
+<!-- END HEADER -->
+
+<div class="nav-spacer" style="height:70px;"></div>
+
+<div class="alumni-page-wrapper">
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="hero-bg">
+      <img src="../images/placeholder-hero.jpg" alt="Member Name Background" />
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-main">
+        <div class="hero-eyebrow font-mono text-accent">Alumni Profile</div>
+        <h1 class="hero-title font-serif">Syed Oasiuddin<br/>Ahmed</h1>
+        <div class="hero-title-bn font-bn text-accent">সদস্যের নাম</div>
+        
+        <div class="hero-roles font-mono text-muted">
+          <div class="role-pill">Primary Role</div>
+          <div class="role-pill">Secondary Role</div>
+          <div class="role-pill">Additional Role</div>
+          <div class="role-pill">Additional Role</div>
+        </div>
+        
+        <div class="hero-location font-sans text-muted">
+          <span>Khulna &rarr; Dhaka, Bangladesh</span>
+        </div>
+        
+        <div class="hero-actions font-mono">
+          <a href="#filmography" class="btn-primary">Watch Films</a>
+          <a href="#credits" class="btn-secondary">View Credits</a>
+        </div>
+      </div>
+      
+      <div class="hero-stats font-serif">
+        <div class="stat-item">
+          <div class="stat-num text-cream">5</div>
+          <div class="stat-lbl font-mono text-muted">Films Directed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">8</div>
+          <div class="stat-lbl font-mono text-muted">Films Assisted</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">13+</div>
+          <div class="stat-lbl font-mono text-muted">Years Active</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num text-cream">2012</div>
+          <div class="stat-lbl font-mono text-muted">Debut</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="section-header">
+          <h2 class="section-title font-serif">About The Filmmaker</h2>
+        </div>
+        <div class="about-bio font-sans text-muted">
+          <img src="../Alumni members indivisual pages/Member Name.jpg" class="about-portrait-float" alt="Member Name Portrait"/>
+          <p>A brief introduction about the filmmaker, their background, and their core artistic philosophy. This is a great place to highlight what drives their work and what they are known for.</p>
+          <p>Additional biographical details, awards, or thematic focus of their filmography.</p>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="section-header">
+          <h2 class="section-title font-serif">Education & Training</h2>
+        </div>
+        <div class="timeline font-sans text-muted">
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2006</div>
+            <div class="tl-content"><span class="text-cream">B.A. (Pass)</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">YYYY</div>
+            <div class="tl-content"><span class="text-cream">Film Appreciation Course</span><span class="tl-org">Bangladesh Film Institute, Dhaka</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2010</div>
+            <div class="tl-content"><span class="text-cream">Film Language Course</span><span class="tl-org">Director: Dr. John D. Hood</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Aspects of Cinema: In Search of Reality</span><span class="tl-org">Pune Film Institute, India</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Language of Cinema</span><span class="tl-org">Jadavpur University, India</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2011</div>
+            <div class="tl-content"><span class="text-cream">Documentary Filmmaking Workshop</span><span class="tl-org">Andreas Grafenstein, Germany</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2012</div>
+            <div class="tl-content"><span class="text-cream">Screenplay / TV / Cinematography / Documentary Workshops</span><span class="tl-org">Various Institutions</span></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-year font-mono text-accent">2013</div>
+            <div class="tl-content"><span class="text-cream">Sound Design Workshop</span><span class="tl-org">Organized by BFDC</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FILMOGRAPHY -->
+  <section class="container" id="filmography">
+    <div class="section-header">
+      <h2 class="section-title font-serif">Films As Director</h2>
+    </div>
+    
+    <div class="films-grid">
+      <!-- Madhukar -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-madhukar.webp" alt="Madhukar Poster"/>
+          <div class="film-overlay">
+            <a href="#" target="_blank" rel="noopener" class="btn-primary" style="padding:10px 20px; font-size:0.7rem;">Play Film</a>
+          </div>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2015</span>
+          <span>10 MIN</span>
+          <span>HDTV</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">ছবির নাম ১</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title One</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <a href="#" target="_blank" rel="noopener" class="film-cta font-mono">
+          <span style="font-size:1.2em;">&#9654;</span> Watch Film
+        </a>
+      </div>
+
+      <!-- Phera -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="https://img.youtube.com/vi/cTTfVWE_uxk/hqdefault.jpg" alt="Phera Poster"/>
+          <div class="film-overlay">
+            <a href="#" target="_blank" rel="noopener" class="btn-primary" style="padding:10px 20px; font-size:0.7rem;">Play Film</a>
+          </div>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2020</span>
+          <span>31 MIN</span>
+          <span>2K Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">ছবির নাম ২</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title Two</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <a href="#" target="_blank" rel="noopener" class="film-cta font-mono">
+          <span style="font-size:1.2em;">&#9654;</span> Watch Film
+        </a>
+      </div>
+      
+      <!-- Film Title Three -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-kumar-kahon.webp" alt="Film Title Three Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2012</span>
+          <span>40 MIN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">ছবির নাম ৩</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title Three</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- Film Title Four -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-water-hyacinth.webp" alt="Film Title Four Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2013</span>
+          <span>25 MIN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">কচুরিপানা</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title Four</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- Mande -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/syed-mande.webp" alt="Mande Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2015</span>
+          <span>UNKNOWN</span>
+          <span>Digital</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">ছবির নাম ৫</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title Five</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <span class="film-cta disabled font-mono">Archive</span>
+      </div>
+
+      <!-- Film Title Six -->
+      <div class="film-card">
+        <div class="film-image-wrap">
+          <img src="../images/placeholder-poster.jpg" alt="Film Title Six Poster"/>
+        </div>
+        <div class="film-meta-bar font-mono text-muted">
+          <span>2025</span>
+          <span>23 MIN</span>
+          <span>HDTV</span>
+        </div>
+        <h3 class="film-title-bn font-bn text-cream">তৃতীয় পক্ষ</h3>
+        <h4 class="film-title-en font-serif text-accent">Film Title Six</h4>
+        <p class="film-desc font-sans text-muted">A brief description of the film, its genre, and its thematic focus.</p>
+        <span class="film-cta disabled font-mono">Not Publicly Available</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSISTANT CREDITS -->
+  <section class="container credits-section" id="credits">
+    <div class="section-header">
+      <h2 class="section-title font-serif">Selected Credits</h2>
+      <p class="font-mono text-accent" style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; margin-top:10px;">Films as Additional Role</p>
+    </div>
+    
+    <div class="credits-group">
+      <div class="credits-group-title font-mono">&mdash; Feature Films &mdash;</div>
+      <div class="cinematic-table-wrap">
+        <table class="cinematic-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Title</th>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Format</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="ct-title-bn">লালসালু</div>
+                <div class="ct-title-en">A Tree Without Roots &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">110 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2001</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">লালন</div>
+                <div class="ct-title-en">Lalon &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">140 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2004</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">রাবেয়া</div>
+                <div class="ct-title-en">The Sister &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">105 min</td>
+              <td class="ct-meta">35mm &middot; Colour</td>
+              <td class="ct-year">2007</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">জীবনঢুলি</div>
+                <div class="ct-title-en">The Drummer &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">90 min</td>
+              <td class="ct-meta">2K &middot; Colour</td>
+              <td class="ct-year">2014</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">রূপসা নদীর বাঁকে</div>
+                <div class="ct-title-en">Quiet Flows the River Rupsa &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill">Feature</span></td>
+              <td class="ct-meta">137 min</td>
+              <td class="ct-meta">2K &middot; Colour</td>
+              <td class="ct-year">2020</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="credits-group">
+      <div class="credits-group-title font-mono">&mdash; Documentaries &mdash;</div>
+      <div class="cinematic-table-wrap">
+        <table class="cinematic-table">
+          <thead>
+            <tr>
+              <th style="width: 40%;">Title</th>
+              <th>Type</th>
+              <th>Duration</th>
+              <th>Format</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="ct-title-bn">জাপানি বধূ</div>
+                <div class="ct-title-en">'The Japanese Wife' &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">67 min</td>
+              <td class="ct-meta">Digital</td>
+              <td class="ct-year">2012</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">সীমান্তরেখা</div>
+                <div class="ct-title-en">The Borderline &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">124 min</td>
+              <td class="ct-meta">Digital</td>
+              <td class="ct-year">2019</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-title-bn">মতুয়ামঙ্গল</div>
+                <div class="ct-title-en">The Saga of the Motuas &middot; by Tanvir Mokammel</div>
+              </td>
+              <td><span class="ct-pill" style="border-color:var(--alumni-muted); color:var(--alumni-cream);">Documentary</span></td>
+              <td class="ct-meta">100 min</td>
+              <td class="ct-meta">HDTV</td>
+              <td class="ct-year">2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="contact-title font-serif text-cream">Get In Touch</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Email</div>
+          <div class="contact-item-val font-sans"><a href="mailto:tito.oasi@gmail.com">tito.oasi@gmail.com</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Social</div>
+          <div class="contact-item-val font-sans"><a href="#" target="_blank" rel="noopener">Facebook</a></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Based In</div>
+          <div class="contact-item-val font-sans text-cream">Dhanmondi, Dhaka</div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-lbl font-mono">Hometown</div>
+          <div class="contact-item-val font-sans text-cream">City, Country</div>
+        </div>
+      </div>
+      
+      <a href="https://bfiaa.bfibd.org/" class="btn-secondary font-mono">Back to Alumni Directory</a>
+    </div>
+  </section>
+
+</div>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"></polyline>
+  </svg>
+</button>
+
+<!-- EXACTLY REUSED FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <a href="https://bfiaa.bfibd.org/" style="display:inline-block;text-decoration:none;" aria-label="BFIAA Home">
+            <img src="../images/bfiaa-logo.png" alt="BFIAA" style="height:48px;width:auto;" onerror="this.style.display='none'"/>
+          </a>
+        </div>
+        <p class="footer-brand-desc">The official alumni association of the Bangladesh Film Institute &mdash; connecting 1000+ graduates across 86+ batches in a shared love of cinema.</p>
+        <div class="footer-social">
+          <a href="https://bfibd.org" class="social-btn" title="BFI Main Site" target="_blank" rel="noopener">&#127916;</a>
+          <a href="https://www.facebook.com/BFIAlumniAssociation" class="social-btn" title="Facebook" target="_blank" rel="noopener">f</a>
+          <a href="#" class="social-btn" title="YouTube">&#9654;</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="https://bfiaa.bfibd.org/">Home</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#about">About BFIAA</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#events">Events</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#magazine">Uralchitra</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Documents</h4>
+        <ul>
+          <li><a href="../constitution.html">Constitution</a></li>
+          <li><a href="https://bfiaa.bfibd.org/#membership">Membership Info</a></li>
+          <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Apply to Join</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>BFI Network</h4>
+        <ul>
+          <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+          <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+          <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2026 BANGLADESH FILM INSTITUTE ALUMNI ASSOCIATION &middot; bfiaa.bfibd.org</p>
+      <a href="https://bfibd.org" class="footer-parent-link" target="_blank" rel="noopener">A SUBDOMAIN OF BFIBD.ORG &rarr;</a>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+
+<script src="../js/main.js"></script>
+<script src="../js/scroll-top.js"></script>
+</body>
+</html>

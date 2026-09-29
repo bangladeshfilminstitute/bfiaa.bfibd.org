@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Honorable Alumni Directory — BFIAA | Bangladesh Film Institute</title>
+  <meta name="description" content="Official directory of honorable alumni, filmmakers, artists, and leaders of the Bangladesh Film Institute Alumni Association (BFIAA). Explore member portfolios and creative works."/>
+  <link rel="canonical" href="https://bfiaa.bfibd.org/honorablemembers"/>
+  <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
+  <link rel="manifest" href="../manifest.json"/>
+  <meta name="theme-color" content="#0B211F"/>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Our Honorable Alumni Directory — BFIAA"/>
+  <meta property="og:description" content="Discover the filmmakers, artists, and leaders shaped by the Bangladesh Film Institute across 86+ batches."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://bfiaa.bfibd.org/honorablemembers"/>
+  <meta property="og:image" content="https://bfiaa.bfibd.org/images/bfiaa-2021.jpg"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Our Honorable Alumni Directory — BFIAA"/>
+  <meta name="twitter:description" content="Official directory of honorable alumni and filmmakers from Bangladesh Film Institute."/>
+  <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/bfiaa-2021.jpg"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/editorial.css?v=4.0">
+
+  <style>
+    :root {
+      --cream: #F3F0E7;
+      --warm-white: #FAF9F5;
+      --deep-green: #071715;
+      --dark-green: #0B211F;
+      --forest-green: #143834;
+      --black: #080D0C;
+      --charcoal: #18201F;
+      --dark-text: #10201E;
+      --muted: #6B7572;
+      --border-light: #DCD8CD;
+      --border-dark: rgba(255, 255, 255, 0.14);
+      --burgundy: #9E3030;
+      --gold: #C2AB72;
+      --gold-light: #DFCE9F;
+      --serif: 'Cormorant Garamond', Georgia, serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --bengali: 'Hind Siliguri', sans-serif;
+      --mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--cream);
+      color: var(--dark-text);
+      font-family: var(--sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ─────────────────────────────────────────────────────────── */
+    .site-header {
+      background: rgba(7, 23, 21, 0.97);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-dark);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-inner {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      text-decoration: none;
+    }
+    .header-brand img {
+      height: 38px;
+      width: auto;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+    .header-nav a {
+      color: rgba(243, 240, 231, 0.8);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: color 200ms ease;
+    }
+    .header-nav a:hover,
+    .header-nav a.active {
+      color: var(--gold);
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .btn-bfi {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: var(--mono);
+      color: var(--cream);
+      border: 1px solid var(--border-dark);
+      padding: 7px 14px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+    .btn-bfi:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--gold);
+    }
+    .btn-member {
+      background: var(--burgundy);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: background 200ms ease;
+    }
+    .btn-member:hover { background: #b83838; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--cream);
+      transition: transform 200ms ease;
+    }
+
+    .mobile-nav {
+      display: none;
+      background: var(--deep-green);
+      border-bottom: 1px solid var(--border-dark);
+      padding: 20px 24px;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      color: var(--cream);
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    /* ── HERO BANNER ────────────────────────────────────────────────────── */
+    .dir-hero {
+      background: linear-gradient(180deg, var(--deep-green) 0%, var(--dark-green) 100%);
+      color: var(--cream);
+      padding: 70px 0 60px;
+      border-bottom: 1px solid var(--border-dark);
+      position: relative;
+    }
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .dir-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--gold);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+    .dir-breadcrumb a {
+      color: var(--cream);
+      opacity: 0.7;
+      text-decoration: none;
+      transition: opacity 200ms ease;
+    }
+    .dir-breadcrumb a:hover { opacity: 1; }
+    .dir-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 4.5vw, 54px);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--cream);
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .dir-title-bn {
+      font-family: var(--bengali);
+      font-size: clamp(16px, 2vw, 22px);
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 18px;
+      display: block;
+    }
+    .dir-desc {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(243, 240, 231, 0.8);
+      max-width: 780px;
+      margin-bottom: 28px;
+    }
+    .dir-stats-badge {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+      font-family: var(--mono);
+      font-size: 11px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-dark);
+      padding: 10px 18px;
+      border-radius: 4px;
+      color: var(--gold);
+    }
+    .dir-stats-badge span { color: var(--cream); font-weight: 600; }
+
+    /* ── SEARCH & FILTER CONTROLS ───────────────────────────────────────── */
+    .controls-bar {
+      background: #EAE6DB;
+      border-bottom: 1px solid var(--border-light);
+      position: sticky;
+      top: 70px;
+      z-index: 900;
+      padding: 16px 0;
+    }
+    .controls-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .search-box {
+      position: relative;
+      flex: 1 1 300px;
+      max-width: 440px;
+    }
+    .search-box svg {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+    .search-input {
+      width: 100%;
+      padding: 11px 16px 11px 40px;
+      font-size: 13.5px;
+      font-family: var(--sans);
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      color: var(--dark-text);
+      outline: none;
+      transition: border-color 200ms ease;
+    }
+    .search-input:focus {
+      border-color: var(--dark-green);
+    }
+    .filter-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .filter-tab {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--charcoal);
+      cursor: pointer;
+      transition: all 200ms ease;
+      white-space: nowrap;
+    }
+    .filter-tab:hover {
+      background: var(--dark-green);
+      color: var(--cream);
+      border-color: var(--dark-green);
+    }
+    .filter-tab.active {
+      background: var(--dark-green);
+      color: var(--cream);
+      border-color: var(--dark-green);
+    }
+
+    /* ── SECTION HEADINGS ───────────────────────────────────────────────── */
+    .section-wrap {
+      padding: 60px 0 80px;
+    }
+    .section-eyebrow {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--burgundy);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+      font-weight: 600;
+    }
+    .section-header-title {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3vw, 36px);
+      color: var(--dark-text);
+      margin-bottom: 30px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    /* ── FEATURED PROFILE CARDS (Top Tier) ──────────────────────────────── */
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 28px;
+      margin-bottom: 60px;
+    }
+    .featured-card {
+      background: var(--warm-white);
+      border: 1px solid var(--border-light);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(7, 23, 21, 0.04);
+      transition: transform 250ms ease, box-shadow 250ms ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .featured-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(7, 23, 21, 0.09);
+    }
+    .featured-badge {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: var(--dark-green);
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 10px;
+      padding: 5px 12px;
+      border-radius: 3px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      z-index: 2;
+    }
+    .featured-img-wrap {
+      position: relative;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      background: var(--charcoal);
+    }
+    .featured-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      transition: transform 350ms ease;
+    }
+    .featured-card:hover .featured-img-wrap img {
+      transform: scale(1.04);
+    }
+    .featured-body {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .featured-role {
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 6px;
+      font-family: var(--mono);
+    }
+    .featured-name {
+      font-family: var(--serif);
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+    .featured-desc {
+      font-size: 14px;
+      line-height: 1.65;
+      color: var(--muted);
+      margin-bottom: 22px;
+      flex: 1;
+    }
+    .featured-film-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .film-tag {
+      background: rgba(11, 33, 31, 0.06);
+      border: 1px solid rgba(11, 33, 31, 0.12);
+      font-size: 11.5px;
+      font-style: italic;
+      color: var(--dark-green);
+      padding: 3px 10px;
+      border-radius: 3px;
+    }
+    .btn-profile {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: var(--dark-green);
+      color: var(--cream);
+      font-size: 13px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: all 200ms ease;
+    }
+    .btn-profile:hover {
+      background: var(--forest-green);
+      color: #fff;
+    }
+
+    /* ── ROSTER GRID (All Alumni & Leaders) ──────────────────────────────── */
+    .roster-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .roster-card {
+      background: #fff;
+      border: 1px solid var(--border-light);
+      border-radius: 4px;
+      padding: 20px;
+      transition: all 200ms ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .roster-card:hover {
+      border-color: var(--dark-green);
+      box-shadow: 0 8px 24px rgba(7, 23, 21, 0.06);
+      transform: translateY(-2px);
+    }
+    .roster-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .roster-avatar {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--border-light);
+      background: var(--dark-green);
+      color: var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .roster-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .roster-name {
+      font-family: var(--serif);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.25;
+      margin-bottom: 3px;
+    }
+    .roster-role {
+      font-size: 11px;
+      font-family: var(--mono);
+      color: var(--burgundy);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+    .roster-term {
+      font-size: 10px;
+      font-family: var(--mono);
+      color: var(--muted);
+    }
+    .roster-desc {
+      font-size: 13px;
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 14px;
+      flex: 1;
+    }
+    .roster-link {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--dark-green);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      transition: color 200ms ease;
+    }
+    .roster-link:hover { color: var(--burgundy); }
+
+    /* ── CTA BANNER: ARE YOU A BFI GRADUATE? ────────────────────────────── */
+    .cta-banner {
+      background: linear-gradient(135deg, var(--deep-green) 0%, var(--dark-green) 100%);
+      color: var(--cream);
+      border-radius: 8px;
+      padding: 48px;
+      margin: 70px 0 20px;
+      border: 1px solid var(--border-dark);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .cta-text h3 {
+      font-family: var(--serif);
+      font-size: 30px;
+      font-weight: 600;
+      color: var(--cream);
+      margin-bottom: 10px;
+    }
+    .cta-text p {
+      font-size: 14.5px;
+      color: rgba(243, 240, 231, 0.85);
+      max-width: 600px;
+      line-height: 1.65;
+    }
+    .cta-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .btn-cta-submit {
+      background: var(--gold);
+      color: var(--deep-green);
+      font-size: 13.5px;
+      font-weight: 700;
+      padding: 13px 26px;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 200ms ease;
+    }
+    .btn-cta-submit:hover { background: var(--gold-light); }
+
+    /* ── EMPTY SEARCH STATE ─────────────────────────────────────────────── */
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+    }
+    .empty-state h4 {
+      font-family: var(--serif);
+      font-size: 22px;
+      color: var(--dark-text);
+      margin-bottom: 8px;
+    }
+
+    /* ── FOOTER ─────────────────────────────────────────────────────────── */
+    .site-footer {
+      background: var(--deep-green);
+      color: var(--cream);
+      padding: 60px 0 30px;
+      border-top: 1px solid var(--border-dark);
+      margin-top: 40px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+      margin-bottom: 50px;
+    }
+    .footer-brand-desc {
+      font-size: 13px;
+      color: rgba(243, 240, 231, 0.65);
+      line-height: 1.7;
+      margin: 14px 0 20px;
+      max-width: 320px;
+    }
+    .footer-social {
+      display: flex;
+      gap: 12px;
+    }
+    .social-link {
+      width: 36px;
+      height: 36px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--cream);
+      text-decoration: none;
+      transition: all 200ms ease;
+    }
+    .social-link:hover {
+      background: var(--dark-green);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+    .footer-col-title {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 18px;
+      font-weight: 600;
+    }
+    .footer-links-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer-links-list a {
+      color: rgba(243, 240, 231, 0.7);
+      text-decoration: none;
+      font-size: 13px;
+      transition: color 200ms ease;
+    }
+    .footer-links-list a:hover { color: var(--cream); }
+    .footer-bottom {
+      border-top: 1px solid var(--border-dark);
+      padding-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 14px;
+      font-size: 12px;
+      color: rgba(243, 240, 231, 0.5);
+    }
+
+    /* ── RESPONSIVE ─────────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .header-nav { display: none; }
+      .hamburger { display: flex; }
+      .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
+      .controls-bar { top: 70px; }
+    }
+    @media (max-width: 768px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 26px; }
+      .featured-grid { grid-template-columns: 1fr; }
+      .cta-banner { padding: 32px 24px; }
+      .cta-actions { width: 100%; }
+      .btn-cta-submit { width: 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── SITE HEADER ─────────────────────────────────────────────────────── -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index.html" class="header-brand" aria-label="BFIAA Home">
+        <img src="../images/bfiaa-logo.png" alt="BFIAA Logo" onerror="this.style.display='none'"/>
+      </a>
+      <nav class="header-nav" role="navigation" aria-label="Main navigation">
+        <a href="../index.html#home">Home</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#founder">Founder</a>
+        <a href="../index.html#committee">Committee</a>
+        <a href="../index.html#conferences">Conferences</a>
+        <a href="index.html" class="active">Alumni Directory</a>
+        <a href="../films.html">Films</a>
+        <a href="../index.html#events">Events</a>
+        <a href="../constitution.html">Constitution</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a href="https://bfibd.org" target="_blank" rel="noopener" class="btn-bfi">
+          <img src="../images/bfi-logo.png" alt="BFI" style="height:14px;width:auto;"/>
+          BFI Main Site
+        </a>
+        <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-member">
+          Become a Member
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Menu -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="../index.html#home">Home</a>
+    <a href="../index.html#about">About BFIAA</a>
+    <a href="../index.html#founder">Founder &amp; Patron</a>
+    <a href="../index.html#committee">Executive Committee</a>
+    <a href="index.html">Honorable Alumni Directory</a>
+    <a href="../films.html">Alumni Films Showcase</a>
+    <a href="../index.html#events">Events &amp; Screenings</a>
+    <a href="../constitution.html">Constitution</a>
+    <a href="../index.html#contact">Contact &amp; Join</a>
+  </nav>
+
+  <!-- ── HERO SECTION ───────────────────────────────────────────────────── -->
+  <section class="dir-hero">
+    <div class="container">
+      <div class="dir-breadcrumb">
+        <a href="../index.html">Home</a>
+        <span>&rsaquo;</span>
+        <span>Honorable Alumni Directory</span>
+      </div>
+      <h1 class="dir-title">Our Honorable Alumni Directory</h1>
+      <span class="dir-title-bn">সম্মানিত অ্যালামনাই সদস্য ও চলচ্চিত্র নির্মাতা</span>
+      <p class="dir-desc">
+        Celebrating over 1,000 graduates across 86+ batches of the Bangladesh Film Institute. Discover comprehensive portfolio profiles, committee leadership, and independent filmmakers shaping contemporary cinema across Bangladesh and internationally.
+      </p>
+      <div class="dir-stats-badge">
+        <div><span>1,000+</span> GRADUATES</div>
+        <div>&bull;</div>
+        <div><span>86+</span> BFI BATCHES</div>
+        <div>&bull;</div>
+        <div><span>EST. 2005 / 2009</span></div>
+        <div>&bull;</div>
+        <div><span>21-MEMBER</span> EXECUTIVE COUNCIL</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SEARCH & FILTER CONTROLS ───────────────────────────────────────── -->
+  <div class="controls-bar" role="search" aria-label="Filter and Search Alumni">
+    <div class="container controls-inner">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="text" id="alumniSearch" class="search-input" placeholder="Search by name, role, film, or department..." aria-label="Search alumni"/>
+      </div>
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Alumni</button>
+        <button class="filter-tab" data-filter="featured" role="tab" aria-selected="false">Featured Profiles</button>
+        <button class="filter-tab" data-filter="committee" role="tab" aria-selected="false">Executive Council</button>
+        <button class="filter-tab" data-filter="directors" role="tab" aria-selected="false">Film Directors</button>
+        <button class="filter-tab" data-filter="advisors" role="tab" aria-selected="false">Advisory Council</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MAIN CONTENT DIRECTORY ─────────────────────────────────────────── -->
+  <main class="container section-wrap">
+
+    <!-- 1. FEATURED PROFILES (Full Portfolio Pages) -->
+    <div id="featuredSection">
+      <span class="section-eyebrow">DEDICATED PORTFOLIO SHOWCASE</span>
+      <h2 class="section-header-title">Featured Alumni Filmmakers</h2>
+      
+      <div class="featured-grid">
+
+        <!-- Syed Oasiuddin Ahmed -->
+        <article class="featured-card" data-category="featured directors" data-search="syed oasiuddin ahmed filmmaker screenwriter third owner madhukar mande phera swapnasanket">
+          <div class="featured-img-wrap">
+            <span class="featured-badge">Featured Portfolio</span>
+            <img src="../images/syed-og-thumbnail.jpg" alt="Syed Oasiuddin Ahmed" loading="lazy" style="object-position: center 8%;"/>
+          </div>
+          <div class="featured-body">
+            <div class="featured-role">Filmmaker &amp; Screenwriter</div>
+            <h3 class="featured-name">Syed Oasiuddin Ahmed</h3>
+            <p class="featured-desc">
+              Director and screenwriter of acclaimed social documentaries and short fiction films. Known for deep sociological observation, human dignity, and authentic cultural narratives.
+            </p>
+            <div class="featured-film-tags">
+              <span class="film-tag">Third Owner</span>
+              <span class="film-tag">Madhukar</span>
+              <span class="film-tag">Mande</span>
+              <span class="film-tag">Phera</span>
+              <span class="film-tag">Swapnasanket</span>
+            </div>
+            <a href="syed-oasiuddin-ahmed.html" class="btn-profile">
+              View Full Portfolio Profile &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Sohel Ahmmad Siddiquee -->
+        <article class="featured-card" data-category="featured committee directors" data-search="sohel ahmmad siddiquee film director screenwriter finance secretary rupban kanya je alo chironjib native anterbaspa sabitri">
+          <div class="featured-img-wrap">
+            <span class="featured-badge">Featured Portfolio</span>
+            <img src="../images/sohel-og-thumbnail.jpg" alt="Sohel Ahmmad Siddiquee" loading="lazy" style="object-position: center 20%;"/>
+          </div>
+          <div class="featured-body">
+            <div class="featured-role">Film Director &amp; Finance Secretary</div>
+            <h3 class="featured-name">Sohel Ahmmad Siddiquee</h3>
+            <p class="featured-desc">
+              Director, screenwriter, and producer. Finance Secretary of BFIAA. Known for sensitive biographical docudramas, cultural exploration, and narrative fiction.
+            </p>
+            <div class="featured-film-tags">
+              <span class="film-tag">Rupban Kanya</span>
+              <span class="film-tag">Je Alo Chironjib</span>
+              <span class="film-tag">Native</span>
+              <span class="film-tag">Anterbaspa</span>
+              <span class="film-tag">সাবিত্রী (Sabitri)</span>
+            </div>
+            <a href="sohel-ahmmad-siddiquee.html" class="btn-profile">
+              View Full Portfolio Profile &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- 2. COMPLETE ALUMNI & COMMITTEE ROSTER -->
+    <div id="rosterSection">
+      <span class="section-eyebrow">COUNCIL LEADERSHIP &amp; GRADUATES</span>
+      <h2 class="section-header-title">Executive Council &amp; Notable Members</h2>
+
+      <div class="roster-grid" id="rosterGrid">
+
+        <!-- Shahina Hafiz Daisy -->
+        <article class="roster-card" data-category="committee directors" data-search="shahina hafiz daisy president director independent filmmaker women in cinema">
+          <div class="roster-top">
+            <img src="../images/shahina-avatar.jpg" alt="Shahina Hafiz Daisy" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Shahina Hafiz Daisy</h3>
+              <div class="roster-role">President</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Independent filmmaker, director, and organizer championing gender equality and women filmmakers in Bangladeshi cinema.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Sandip Kumar Mistry -->
+        <article class="roster-card" data-category="committee" data-search="sandip kumar mistry general secretary film editor documentaries">
+          <div class="roster-top">
+            <img src="../images/sandip-avatar.jpg" alt="Sandip Kumar Mistry" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Sandip Kumar Mistry</h3>
+              <div class="roster-role">General Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Experienced film editor and administrator, shaping narrative flow and rhythm across numerous independent documentaries.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Kazi Mushfiqus Saleheen -->
+        <article class="roster-card" data-category="committee" data-search="kazi mushfiqus saleheen joint secretary visual arts media">
+          <div class="roster-top">
+            <img src="../images/kazi-avatar.png" alt="Kazi Mushfiqus Saleheen" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Kazi Mushfiqus Saleheen</h3>
+              <div class="roster-role">Joint Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Media professional and coordinator driving institutional partnerships, workshops, and student networking across batches.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Aparajita Sangita -->
+        <article class="roster-card" data-category="committee directors" data-search="aparajita sangita organizing secretary filmmaker human rights activist">
+          <div class="roster-top">
+            <img src="../images/aparajita-avatar.jpg" alt="Aparajita Sangita" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Aparajita Sangita</h3>
+              <div class="roster-role">Organizing Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Filmmaker and social activist, using cinematic storytelling to address human rights, women's liberation, and social justice.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Md. Kawsar Ahmed Abir -->
+        <article class="roster-card" data-category="committee" data-search="md kawsar ahmed abir office secretary media production">
+          <div class="roster-top">
+            <img src="../images/kawsar-avatar.png" alt="Md. Kawsar Ahmed Abir" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Md. Kawsar Ahmed Abir</h3>
+              <div class="roster-role">Office Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Managing member communications, archival documentation, and secretarial operations for the alumni community.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Mamun Sobhani -->
+        <article class="roster-card" data-category="committee" data-search="mamun sobhani publicity secretary cine club adda host media">
+          <div class="roster-top">
+            <img src="../images/mamun-avatar.jpg" alt="Mamun Sobhani" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Mamun Sobhani</h3>
+              <div class="roster-role">Publicity Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Producer, publicity lead, and regular host of Cine Club Adda virtual film screenings bringing alumni worldwide together.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Dr. Nazia Mahmood -->
+        <article class="roster-card" data-category="committee" data-search="dr nazia mahmood publication secretary uralchitra researcher">
+          <div class="roster-top">
+            <img src="../images/nazia-avatar.jpg" alt="Dr. Nazia Mahmood" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Dr. Nazia Mahmood</h3>
+              <div class="roster-role">Publication Secretary</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Film scholar and researcher guiding editorial direction for Uralchitra publications and special retrospective volumes.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Dr. Mohammad Jahangir Hossain -->
+        <article class="roster-card" data-category="committee advisors" data-search="dr mohammad jahangir hossain past president advisory council executive member">
+          <div class="roster-top">
+            <img src="../images/jahangir-avatar.jpg" alt="Dr. Mohammad Jahangir Hossain" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Dr. M. Jahangir Hossain</h3>
+              <div class="roster-role">Past President &amp; EC Member</div>
+              <div class="roster-term">2019–2021 President &bull; 2022–23 EC</div>
+            </div>
+          </div>
+          <p class="roster-desc">Elected President of the 5th Biennial Assembly and prominent cinema academic leading structural development of BFIAA.</p>
+          <a href="../conference-2019.html" class="roster-link">Conference 2019 Record &rarr;</a>
+        </article>
+
+        <!-- Sajjad Khan -->
+        <article class="roster-card" data-category="committee directors" data-search="sajjad khan executive member director songsoptok documentary">
+          <div class="roster-top">
+            <img src="../images/sajjad-avatar.jpg" alt="Sajjad Khan" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Sajjad Khan</h3>
+              <div class="roster-role">Director &amp; EC Member</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Documentary filmmaker, director of the historical documentary <em>Songsoptok</em> (on Bir Shreshtho Matiur Rahman).</p>
+          <a href="../event-songsoptok.html" class="roster-link">Songsoptok Screening &rarr;</a>
+        </article>
+
+        <!-- Shanu Manik -->
+        <article class="roster-card" data-category="committee" data-search="shanu manik executive member film community">
+          <div class="roster-top">
+            <img src="../images/shanu-avatar.jpg" alt="Shanu Manik" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Shanu Manik</h3>
+              <div class="roster-role">Executive Member 03</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Dedicated member actively contributing to BFIAA's Cine Club screenings, festivals, and biennial gatherings.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Hasanuzzaman Khan -->
+        <article class="roster-card" data-category="committee" data-search="hasanuzzaman khan executive member">
+          <div class="roster-top">
+            <img src="../images/hasanuzzaman-avatar.jpg" alt="Hasanuzzaman Khan" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Hasanuzzaman Khan</h3>
+              <div class="roster-role">Executive Member 04</div>
+              <div class="roster-term">2022–2023 Executive Council</div>
+            </div>
+          </div>
+          <p class="roster-desc">Longstanding film activist supporting organization logistics, annual reunions, and member welfare.</p>
+          <a href="../index.html#committee" class="roster-link">Council Record &rarr;</a>
+        </article>
+
+        <!-- Tanvir Mokammel -->
+        <article class="roster-card" data-category="advisors" data-search="tanvir mokammel director bfi founder patron ekushey padak">
+          <div class="roster-top">
+            <img src="../images/tanvir-mokammel.jpg" alt="Tanvir Mokammel" class="roster-avatar" loading="lazy"/>
+            <div class="roster-info">
+              <h3 class="roster-name">Tanvir Mokammel</h3>
+              <div class="roster-role">Director BFI &amp; Chief Patron</div>
+              <div class="roster-term">Founder &bull; Ekushey Padak Awardee</div>
+            </div>
+          </div>
+          <p class="roster-desc">Guiding force behind the Bangladesh Film Institute. Acclaimed auteur with 8 fiction films, 17 documentaries, and 10 National Film Awards.</p>
+          <a href="../index.html#founder" class="roster-link">Founder Profile &rarr;</a>
+        </article>
+
+      </div>
+
+      <!-- Empty state when search returns nothing -->
+      <div id="emptySearch" class="empty-state">
+        <h4>No Alumni Found</h4>
+        <p>No alumni match your current search criteria. Try a different keyword or clear the search.</p>
+      </div>
+    </div>
+
+    <!-- 3. ARE YOU A BFI GRADUATE? CTA BANNER -->
+    <section class="cta-banner">
+      <div class="cta-text">
+        <h3>Are You a BFI Graduate?</h3>
+        <p>
+          Join over 1,000 alumni across 86+ batches. Submit your filmography, awards, and biographical profile to be featured in the official BFIAA directory and portfolio index.
+        </p>
+      </div>
+      <div class="cta-actions">
+        <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-cta-submit">
+          Submit Your Alumni Profile ↗
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── SITE FOOTER ─────────────────────────────────────────────────────── -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" style="display:inline-block;text-decoration:none;">
+            <img src="../images/bfiaa-logo.png" alt="BFIAA Logo" style="height:42px;width:auto;display:block;margin-bottom:12px;"/>
+          </a>
+          <p class="footer-brand-desc">
+            The official alumni body of Bangladesh Film Institute, connecting over 1,000 graduates across 86+ batches in a shared commitment to cinema culture.
+          </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener" class="social-link" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://bfibd.org" target="_blank" rel="noopener" class="social-link" title="BFI Main Site">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Navigation</div>
+          <ul class="footer-links-list">
+            <li><a href="../index.html#home">Home</a></li>
+            <li><a href="../index.html#about">About BFIAA</a></li>
+            <li><a href="../index.html#founder">Tanvir Mokammel</a></li>
+            <li><a href="../index.html#committee">Executive Committee</a></li>
+            <li><a href="index.html">Honorable Alumni Directory</a></li>
+            <li><a href="../films.html">Films Showcase</a></li>
+            <li><a href="../index.html#events">Events &amp; Screenings</a></li>
+            <li><a href="../index.html#picnic">Annual Picnic</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Documents</div>
+          <ul class="footer-links-list">
+            <li><a href="../constitution.html">Official Constitution</a></li>
+            <li><a href="../conference-2021.html">Conference 2021 Record</a></li>
+            <li><a href="../conference-2019.html">Conference 2019 Record</a></li>
+            <li><a href="../uralchitra-special.html">Uralchitra Special Edition</a></li>
+            <li><a href="../30-years-event.html">30 Years Retrospective Event</a></li>
+            <li><a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener">Membership Application</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">BFI Network</div>
+          <ul class="footer-links-list">
+            <li><a href="https://bfibd.org" target="_blank" rel="noopener">bfibd.org (Main Site)</a></li>
+            <li><a href="https://archive.bfibd.org" target="_blank" rel="noopener">BFI Photo Archive</a></li>
+            <li><a href="https://bfibd.org/our-courses/" target="_blank" rel="noopener">BFI Courses</a></li>
+            <li><a href="https://tanvirmokammel.info" target="_blank" rel="noopener">Tanvir Mokammel Site</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Bangladesh Film Institute Alumni Association (BFIAA). All rights reserved.</div>
+        <div>Dedicated to Alternative &amp; Independent Cinema in Bangladesh.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── JAVASCRIPT: FILTER & SEARCH ────────────────────────────────────── -->
+  <script>
+    // Hamburger toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (hamburger && mobileNav) {
+      hamburger.addEventListener('click', () => {
+        const isOpen = mobileNav.classList.toggle('open');
+        hamburger.setAttribute('aria-expanded', isOpen);
+      });
+      mobileNav.querySelectorAll('a').forEach(l => {
+        l.addEventListener('click', () => {
+          mobileNav.classList.remove('open');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Filter tabs & search functionality
+    const searchInput = document.getElementById('alumniSearch');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const featuredCards = document.querySelectorAll('.featured-card');
+    const rosterCards = document.querySelectorAll('.roster-card');
+    const emptyState = document.getElementById('emptySearch');
+    const featuredSection = document.getElementById('featuredSection');
+    const rosterSection = document.getElementById('rosterSection');
+
+    let currentFilter = 'all';
+    let currentSearch = '';
+
+    function applyFilterAndSearch() {
+      let visibleCount = 0;
+      let featuredVisible = 0;
+      let rosterVisible = 0;
+
+      // Filter featured cards
+      featuredCards.forEach(card => {
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+        const matchesCat = currentFilter === 'all' || categories.includes(currentFilter);
+        const matchesSearch = !currentSearch || searchData.includes(currentSearch);
+
+        if (matchesCat && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+          featuredVisible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Filter roster cards
+      rosterCards.forEach(card => {
+        const categories = (card.getAttribute('data-category') || '').split(' ');
+        const searchData = (card.getAttribute('data-search') || '').toLowerCase();
+        const matchesCat = currentFilter === 'all' || categories.includes(currentFilter);
+        const matchesSearch = !currentSearch || searchData.includes(currentSearch);
+
+        if (matchesCat && matchesSearch) {
+          card.style.display = 'flex';
+          visibleCount++;
+          rosterVisible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Hide section headings if no children visible in that section
+      if (featuredSection) featuredSection.style.display = featuredVisible > 0 ? 'block' : 'none';
+      if (rosterSection) rosterSection.style.display = rosterVisible > 0 ? 'block' : 'none';
+
+      // Empty state
+      if (emptyState) emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+    }
+
+    // Tab click handlers
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        currentFilter = tab.getAttribute('data-filter') || 'all';
+        applyFilterAndSearch();
+      });
+    });
+
+    // Search input handler
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        currentSearch = e.target.value.trim().toLowerCase();
+        applyFilterAndSearch();
+      });
+    }
+  </script>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+  <script src="../js/scroll-top.js"></script>
+</body>
+</html>
