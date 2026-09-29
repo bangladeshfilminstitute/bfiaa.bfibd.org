@@ -7,43 +7,723 @@
   <meta name="description" content="The Uralchitra Special Edition on Tanvir Mokammel — official magazine of BFIAA featuring retrospective essays, film credits, tributes, and the cinematic legacy of Bangladesh's foremost documentary filmmaker."/>
   <link rel="canonical" href="https://bfiaa.bfibd.org/uralchitra-special.html"/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
-  <meta name="theme-color" content="#1B3A2D"/>
-  <link rel="stylesheet" href="css/editorial.css"/>
+  <meta name="theme-color" content="#071715"/>
+
+  <!-- Open Graph / Social Sharing -->
   <meta property="og:title" content="Uralchitra Special Edition — Tanvir Mokammel | BFIAA"/>
   <meta property="og:description" content="The Uralchitra Special Edition on Tanvir Mokammel — official magazine of BFIAA featuring retrospective essays, film credits, tributes, and the cinematic legacy of Bangladesh's foremost documentary filmmaker."/>
   <meta property="og:url" content="https://bfiaa.bfibd.org/uralchitra-special.html"/>
   <meta property="og:type" content="article"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg"/>
   <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
+
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Uralchitra Special Edition — Tanvir Mokammel | BFIAA"/>
   <meta name="twitter:description" content="The Uralchitra Special Edition on Tanvir Mokammel — official magazine of BFIAA featuring retrospective essays, film credits, tributes, and the cinematic legacy of Bangladesh's foremost documentary filmmaker."/>
   <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg"/>
 
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Core Editorial Design System Stylesheet -->
+  <link rel="stylesheet" href="css/editorial.css?v=4.0">
+
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Book",
-  "name": "Uralchitra Special Edition on Tanvir Mokammel",
-  "url": "https://bfiaa.bfibd.org/uralchitra-special.html",
-  "publisher": {
-    "@type": "Organization",
-    "name": "BFIAA",
-    "url": "https://bfiaa.bfibd.org"
-  },
-  "editor": {
-    "@type": "Person",
-    "name": "Sandip Kumar Mistri"
-  },
-  "inLanguage": [
-    "bn",
-    "en"
-  ]
-}
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Uralchitra Special Edition on Tanvir Mokammel",
+    "url": "https://bfiaa.bfibd.org/uralchitra-special.html",
+    "publisher": {
+      "@type": "Organization",
+      "name": "BFIAA",
+      "url": "https://bfiaa.bfibd.org"
+    },
+    "editor": {
+      "@type": "Person",
+      "name": "Sandip Kumar Mistri"
+    },
+    "inLanguage": ["bn", "en"],
+    "description": "Special retrospective commemorative volume dedicated to 30 years of documentary filmmaking by Tanvir Mokammel, published by Bangladesh Film Institute Alumni Association."
+  }
   </script>
+
+  <style>
+    /* ═══════════════════════════════════════════════════
+       BFIAA URALCHITRA EDITORIAL ARCHITECTURE
+       Unified with conference-2021 & editorial frameworks
+       Strict adherence: Zero movement/transform on hover
+       ═══════════════════════════════════════════════════ */
+
+    :root {
+      --pub-card-bg: #FAF9F5;
+      --pub-card-border: #D8D5CC;
+      --pub-card-hover: #B7A477;
+    }
+
+    /* ─── Hero Section ─── */
+    .pub-hero-section {
+      background-color: var(--deep-green);
+      background-image: 
+        linear-gradient(180deg, rgba(7, 23, 21, 0.94) 0%, rgba(7, 23, 21, 0.98) 100%),
+        radial-gradient(ellipse at 80% 20%, rgba(183, 164, 119, 0.14) 0%, transparent 60%);
+      color: var(--cream);
+      padding: 46px 0 56px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .pub-hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .pub-breadcrumb {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(243, 240, 231, 0.6);
+      margin-bottom: 22px;
+    }
+    .pub-breadcrumb a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 150ms ease;
+    }
+    .pub-breadcrumb a:hover {
+      color: #FFFFFF;
+    }
+    .pub-breadcrumb .sep {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .pub-badges-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .pub-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--burgundy);
+      color: #FFFFFF;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
+    }
+
+    .pub-badge-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: var(--gold);
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 3px;
+    }
+
+    .pub-hero-title {
+      font-family: var(--serif);
+      font-size: clamp(34px, 4.8vw, 56px);
+      font-weight: 500;
+      color: #FAF8F2;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 12px;
+    }
+
+    .pub-hero-bn-title {
+      font-family: var(--bn);
+      font-size: clamp(20px, 2.8vw, 30px);
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1.35;
+      margin-bottom: 24px;
+      display: block;
+    }
+
+    .pub-hero-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding-top: 6px;
+    }
+
+    .pub-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      padding: 7px 14px;
+      border-radius: 4px;
+      font-size: 12.5px;
+      color: rgba(243, 240, 231, 0.9);
+    }
+    .pub-pill strong {
+      color: #FFFFFF;
+      font-weight: 600;
+    }
+
+    /* ─── Page Body on Cream ─── */
+    .pub-page-body {
+      background: var(--cream);
+      padding: 50px 0 80px;
+    }
+
+    .pub-body-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    /* ─── Masthead Metadata Cards Grid ─── */
+    .pub-meta-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-bottom: 46px;
+    }
+
+    .pub-meta-card {
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+      padding: 18px 20px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+      transition: border-color 200ms ease, box-shadow 200ms ease;
+    }
+    .pub-meta-card:hover {
+      border-color: var(--pub-card-hover);
+      box-shadow: 0 4px 16px rgba(7, 23, 21, 0.08);
+    }
+
+    .pub-meta-card-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .pub-meta-card-value {
+      font-family: var(--sans);
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.4;
+    }
+
+    .pub-meta-card-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    /* ─── Showcase Dual-Column Grid ─── */
+    .pub-showcase-grid {
+      display: grid;
+      grid-template-columns: 440px 1fr;
+      gap: 36px;
+      align-items: start;
+      margin-bottom: 50px;
+    }
+
+    @media (max-width: 980px) {
+      .pub-showcase-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ─── Left Visual Cover Stage ─── */
+    .pub-cover-card {
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(7, 23, 21, 0.06);
+    }
+
+    .pub-cover-frame {
+      position: relative;
+      background: #0B211F;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .pub-cover-frame img {
+      width: 100%;
+      height: auto;
+      max-height: 520px;
+      object-fit: contain;
+      display: block;
+      border-radius: 4px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    .pub-cover-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 14px 16px;
+      background: #F3F0E7;
+      border-top: 1px solid var(--pub-card-border);
+    }
+
+    .pub-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 9px 12px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease;
+    }
+    .pub-action-btn.gold {
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--gold);
+    }
+    .pub-action-btn.gold:hover {
+      background: #0D2D2A;
+      color: #FFFFFF;
+    }
+    .pub-action-btn.outline {
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      color: var(--dark-text);
+    }
+    .pub-action-btn.outline:hover {
+      border-color: var(--gold);
+      color: var(--burgundy);
+    }
+
+    /* ─── Archive Volumes Shelf Widget ─── */
+    .archive-shelf-card {
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-radius: 6px;
+      padding: 20px 22px;
+      margin-top: 24px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+    }
+
+    .archive-shelf-title {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--burgundy);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .archive-shelf-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .archive-volume-item {
+      text-decoration: none;
+      text-align: center;
+      display: block;
+    }
+
+    .archive-volume-thumb {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 4px;
+      border: 1px solid var(--pub-card-border);
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.08);
+      transition: border-color 150ms ease;
+    }
+    .archive-volume-item:hover .archive-volume-thumb {
+      border-color: var(--gold);
+    }
+
+    .archive-volume-label {
+      display: block;
+      font-family: var(--mono);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: var(--dark-text);
+      margin-top: 6px;
+    }
+
+    /* ─── Right Column: Narrative & Mission ─── */
+    .pub-narrative-col {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .commemoration-badge-wrap {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-radius: 6px;
+      padding: 16px 20px;
+      box-shadow: 0 2px 8px rgba(7, 23, 21, 0.03);
+    }
+
+    .commemoration-badge-wrap img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+
+    .commemoration-badge-text {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      line-height: 1.45;
+      color: var(--dark-text);
+    }
+    .commemoration-badge-text strong {
+      color: var(--burgundy);
+      display: block;
+      font-size: 14px;
+    }
+
+    .bengali-quote-card {
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-left: 4px solid var(--gold);
+      border-radius: 4px;
+      padding: 24px 28px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.04);
+    }
+
+    .bengali-quote-card h4 {
+      font-family: var(--serif);
+      font-size: 20px;
+      color: var(--burgundy);
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin: 0 0 10px;
+    }
+
+    .bengali-quote-card p {
+      font-family: var(--bn);
+      font-size: 16px;
+      line-height: 1.95;
+      color: var(--dark-text);
+      margin: 0;
+    }
+
+    .editorial-prose-card {
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+      padding: 28px 30px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+    }
+
+    .editorial-prose-card h3 {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--dark-text);
+      margin: 0 0 14px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--pub-card-border);
+    }
+
+    .editorial-prose-card p {
+      font-family: var(--sans);
+      font-size: 15px;
+      line-height: 1.85;
+      color: #384A44;
+      margin-bottom: 16px;
+    }
+
+    .thematic-focus-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0;
+    }
+
+    .thematic-focus-item {
+      padding: 12px 16px;
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+      margin-bottom: 10px;
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      color: #384A44;
+    }
+    .thematic-focus-item:last-child {
+      margin-bottom: 0;
+    }
+    .thematic-focus-item strong {
+      color: var(--dark-text);
+      display: block;
+      margin-bottom: 2px;
+      font-family: var(--serif);
+      font-size: 16px;
+    }
+
+    /* ─── Complete Table of Contents (সূচিপত্র) ─── */
+    .contents-section-block {
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-radius: 6px;
+      padding: 34px 36px;
+      box-shadow: 0 2px 14px rgba(7, 23, 21, 0.04);
+      margin-bottom: 40px;
+    }
+
+    .contents-header {
+      text-align: center;
+      margin-bottom: 32px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--pub-card-border);
+    }
+
+    .contents-title-bn {
+      font-family: var(--bn);
+      color: var(--dark-text);
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .contents-sub-lbl {
+      color: var(--muted);
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    .contents-category {
+      margin-bottom: 30px;
+    }
+    .contents-category:last-child {
+      margin-bottom: 0;
+    }
+
+    .contents-cat-title {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--burgundy);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1.5px solid rgba(183, 164, 119, 0.4);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contents-entry-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 10px 14px;
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+      margin-bottom: 8px;
+      font-family: var(--bn);
+      font-size: 15px;
+      color: var(--dark-text);
+      transition: border-color 150ms ease;
+    }
+    .contents-entry-row:hover {
+      border-color: var(--gold);
+    }
+
+    .contents-author-tag {
+      font-family: var(--sans);
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #6B4E17;
+      white-space: nowrap;
+      background: rgba(183, 164, 119, 0.14);
+      padding: 3px 10px;
+      border-radius: 3px;
+      border: 1px solid rgba(183, 164, 119, 0.35);
+    }
+
+    .tributes-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 16px 18px;
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+    }
+
+    .tribute-author-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-radius: 3px;
+      font-family: var(--bn);
+      font-size: 14.5px;
+      color: var(--dark-text);
+      transition: border-color 150ms ease;
+    }
+    .tribute-author-pill:hover {
+      border-color: var(--gold);
+    }
+
+    /* ─── Archive Acquisition & Contact Box ─── */
+    .acquisition-card {
+      background: #FFFFFF;
+      border: 1px solid var(--pub-card-border);
+      border-left: 4px solid var(--burgundy);
+      border-radius: 4px;
+      padding: 24px 28px;
+      margin-bottom: 44px;
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.03);
+    }
+
+    .acquisition-title {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--burgundy);
+      margin: 0 0 10px;
+    }
+
+    .acquisition-text {
+      font-family: var(--bn);
+      font-size: 14.5px;
+      line-height: 1.85;
+      color: #384A44;
+      margin: 0;
+    }
+    .acquisition-text a {
+      color: var(--burgundy);
+      text-decoration: underline;
+      font-family: var(--mono);
+      font-size: 13px;
+    }
+
+    /* ─── Navigation Strip ─── */
+    .pub-nav-strip {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 16px;
+      align-items: center;
+      padding-top: 32px;
+      border-top: 1px solid var(--pub-card-border);
+    }
+
+    @media (max-width: 720px) {
+      .pub-nav-strip {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .pub-nav-link {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      padding: 14px 18px;
+      background: var(--pub-card-bg);
+      border: 1px solid var(--pub-card-border);
+      border-radius: 4px;
+      transition: border-color 150ms ease, box-shadow 150ms ease;
+    }
+    .pub-nav-link:hover {
+      border-color: var(--gold);
+      box-shadow: 0 2px 10px rgba(7, 23, 21, 0.06);
+    }
+    .pub-nav-dir {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .pub-nav-title {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--dark-text);
+      line-height: 1.3;
+    }
+
+    .pub-hub-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 12px 20px;
+      background: var(--deep-green);
+      border: 1px solid var(--deep-green);
+      color: var(--cream);
+      font-family: var(--mono);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 150ms ease, border-color 150ms ease;
+    }
+    .pub-hub-btn:hover {
+      background: var(--burgundy);
+      border-color: var(--burgundy);
+      color: #FFFFFF;
+    }
+  </style>
 </head>
 <body>
-  
+
+  <!-- ─── Site Header ─── -->
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
@@ -57,9 +737,9 @@
         <a href="index.html#committee">Committee</a>
         <a href="index.html#conferences">Conferences</a>
         <a href="index.html#alumni">Alumni</a>
-        <a href="index.html#events" class="active">Events</a>
+        <a href="index.html#events">Events</a>
         <a href="index.html#retrospective">30 Years</a>
-        <a href="index.html#publications">Publications</a>
+        <a href="index.html#publications" class="active">Publications</a>
         <a href="index.html#picnic">Picnic</a>
         <a href="index.html#contact">Contact</a>
       </nav>
@@ -77,6 +757,7 @@
     </div>
   </header>
 
+  <!-- ─── Mobile Navigation Drawer ─── -->
   <nav class="mobile-nav" id="mobileNav">
     <a href="index.html#home">Home</a>
     <a href="index.html#about">About BFIAA</a>
@@ -92,222 +773,323 @@
     <a href="index.html#contact">Contact &amp; Join</a>
     <div class="mobile-cta-group">
       <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="mobile-cta-member">Become a Member</a>
-      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site ↗</a>
+      <a href="https://bfibd.org" target="_blank" rel="noopener" class="mobile-cta-bfi">Visit BFI Main Site &rarr;</a>
     </div>
   </nav>
 
-  <main class="editorial-page-hero">
-    <div class="container">
-      
-  <nav class="event-breadcrumb" aria-label="Breadcrumb">
-    <a href="index.html#home">Home</a>
-    <span class="sep">/</span>
-    <a href="index.html#publications">Publications</a>
-    <span class="sep">/</span>
-    <span>Uralchitra Special Edition</span>
-  </nav>
+  <!-- ─── Cinematic Hero ─── -->
+  <section class="pub-hero-section">
+    <div class="container pub-hero-inner">
 
-  <div class="editorial-badge">📖 OFFICIAL JOURNAL &middot; SPECIAL EDITION 2023</div>
-  <h1 class="editorial-title">উড়ালচিত্র &middot; Uralchitra</h1>
-  <h2 class="editorial-bengali-title">বিশেষ সংখ্যা: তানভীর মোকাম্মেলের প্রামাণ্যচিত্রের ৩০ বছর</h2>
+      <nav class="pub-breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html#home">Home</a>
+        <span class="sep">/</span>
+        <a href="index.html#publications">Publications</a>
+        <span class="sep">/</span>
+        <span>Uralchitra Special Edition</span>
+      </nav>
 
-  <div class="editorial-meta-table">
-    <div class="meta-col">
-      <label>Publication Title</label>
-      <span>উড়ালচিত্র · Uralchitra (Special Issue)</span>
-    </div>
-    <div class="meta-col">
-      <label>Release Date</label>
-      <span>মার্চ ২০২৩ (March 2023)</span>
-    </div>
-    <div class="meta-col">
-      <label>Theme &amp; Focus</label>
-      <span>30 Years in Documentary Films of Tanvir Mokammel</span>
-    </div>
-    <div class="meta-col">
-      <label>Editor</label>
-      <span>সন্দীপ কুমার মিস্ত্রী (Sandip Kumar Mistri)</span>
-    </div>
-    <div class="meta-col">
-      <label>Editorial Board</label>
-      <span>শাহিনা হাফিজ ডেইজি, সাজ্জাদ খান, মো: সোহেল আহম্মেদ সিদ্দিকী, অপরাজিতা সংগীতা</span>
-    </div>
-    <div class="meta-col">
-      <label>Cover &amp; Graphics</label>
-      <span>উত্তম গুহ (Cover) · মো: কাওসার আহম্মেদ আবীর (Graphics)</span>
-    </div>
-    <div class="meta-col">
-      <label>Print &amp; Price</label>
-      <span>নীলক্ষেত, ঢাকা · ১০০ টাকা (100 BDT)</span>
-    </div>
-    <div class="meta-col">
-      <label>Publisher</label>
-      <span>বাংলাদেশ ফিল্ম ইন্সটিটিউট এলামনাই এসোসিয়েশন (BFIAA)</span>
-    </div>
-  </div>
-
-  <div class="editorial-grid">
-    <aside class="editorial-sticky-side">
-      <div class="photo-stage-card">
-        <div class="main-photo-frame">
-          <img src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" alt="Uralchitra Special Edition Cover"/>
-        </div>
-        <div class="stage-actions">
-          <a href="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" target="_blank" class="btn-stage gold-btn">🔍 View High-Res Cover</a>
-          <a href="index.html#publications" class="btn-stage">← All 4 Volumes</a>
-        </div>
+      <div class="pub-badges-row">
+        <span class="pub-badge-pill">📖 Official Journal</span>
+        <span class="pub-badge-outline">Special Retrospective Edition</span>
+        <span class="pub-badge-outline">📅 March 2023 · ঢাকা</span>
       </div>
-      <div class="stats-summary-row">
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">4</div>
-          <div class="stat-summary-lbl">Issue Number</div>
+
+      <h1 class="pub-hero-title">উড়ালচিত্র &middot; Uralchitra</h1>
+      <span class="pub-hero-bn-title">বিশেষ সংখ্যা: তানভীর মোকাম্মেলের প্রামাণ্যচিত্রের ৩০ বছর</span>
+
+      <div class="pub-hero-pills">
+        <div class="pub-pill">
+          <span>📚 Issue: <strong>Vol. 4 (Special Issue)</strong></span>
         </div>
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">200+</div>
-          <div class="stat-summary-lbl">Pages Printed</div>
+        <div class="pub-pill">
+          <span>✍️ Editor: <strong>সন্দীপ কুমার মিস্ত্রী</strong></span>
         </div>
-        <div class="stat-summary-box">
-          <div class="stat-summary-num">2</div>
-          <div class="stat-summary-lbl">Languages</div>
+        <div class="pub-pill">
+          <span>🎨 Cover: <strong>উত্তম গুহ</strong></span>
+        </div>
+        <div class="pub-pill">
+          <span>📄 Length: <strong>200+ Pages (Bilingual)</strong></span>
+        </div>
+        <div class="pub-pill">
+          <span>🏷️ Price: <strong>১০০ টাকা (100 BDT)</strong></span>
         </div>
       </div>
 
-      <!-- Other Publications Sidebar Widget -->
-      <div style="background: var(--dark-green); border: 1px solid var(--border-dark); border-radius: 8px; padding: 20px; margin-top: 24px;">
-        <h4 style="color: var(--gold); font-family: var(--serif); font-size: 16px; margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.1em;">All Uralchitra Editions</h4>
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-          <a href="index.html#publications" style="text-decoration: none; text-align: center;">
-            <img src="images/uralchitra/Uralchitra number 1.png" alt="Uralchitra Vol 1" style="width: 100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"/>
-            <span style="display: block; font-family: var(--mono); font-size: 10px; color: var(--cream); margin-top: 6px;">VOL 1</span>
-          </a>
-          <a href="index.html#publications" style="text-decoration: none; text-align: center;">
-            <img src="images/uralchitra/Uralchitro number 2.jpg" alt="Uralchitra Vol 2" style="width: 100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"/>
-            <span style="display: block; font-family: var(--mono); font-size: 10px; color: var(--cream); margin-top: 6px;">VOL 2</span>
-          </a>
-          <a href="index.html#publications" style="text-decoration: none; text-align: center;">
-            <img src="images/uralchitra/Uralchitra number 3.jpg" alt="Uralchitra Vol 3" style="width: 100%; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);"/>
-            <span style="display: block; font-family: var(--mono); font-size: 10px; color: var(--cream); margin-top: 6px;">VOL 3</span>
-          </a>
+    </div>
+  </section>
+
+  <!-- ─── Main Event Body ─── -->
+  <main class="pub-page-body">
+    <div class="container pub-body-inner">
+
+      <!-- Masthead Metadata Cards Grid -->
+      <div class="pub-meta-grid">
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">📖 Publication Title</div>
+          <div class="pub-meta-card-value">উড়ালচিত্র · Uralchitra</div>
+          <div class="pub-meta-card-note">Special Volume 04 (দ্বিভাষিক)</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">📅 Release Date</div>
+          <div class="pub-meta-card-value">মার্চ ২০২৩ (March 2023)</div>
+          <div class="pub-meta-card-note">Unveiled at 30-Years Festival</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">🎯 Theme &amp; Focus</div>
+          <div class="pub-meta-card-value">30 Years in Documentaries</div>
+          <div class="pub-meta-card-note">Tanvir Mokammel Retrospective</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">✍️ Chief Editor</div>
+          <div class="pub-meta-card-value">সন্দীপ কুমার মিস্ত্রী</div>
+          <div class="pub-meta-card-note">Sandip Kumar Mistri</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">👥 Editorial Board</div>
+          <div class="pub-meta-card-value">সম্পাদনা পরিষদ</div>
+          <div class="pub-meta-card-note">শাহীনা হাফিজ ডেইজি, সাজ্জাদ খান, মো: সোহেল আহম্মেদ সিদ্দিকী, অপরাজিতা সংগীতা</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">🎨 Cover &amp; Graphics</div>
+          <div class="pub-meta-card-value">উত্তম গুহ &amp; কাওসার আবীর</div>
+          <div class="pub-meta-card-note">Uttam Guha (Cover) · Kawsar Abir (Graphics)</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">🖨️ Print &amp; Distribution</div>
+          <div class="pub-meta-card-value">নীলক্ষেত, ঢাকা</div>
+          <div class="pub-meta-card-note">মূল্য: ১০০ টাকা (100 BDT)</div>
+        </div>
+
+        <div class="pub-meta-card">
+          <div class="pub-meta-card-label">🏛️ Publisher</div>
+          <div class="pub-meta-card-value">BFIAA</div>
+          <div class="pub-meta-card-note">বাংলাদেশ ফিল্ম ইন্সটিটিউট এলামনাই এসোসিয়েশন</div>
         </div>
       </div>
-    </aside>
 
-    <div class="editorial-prose">
-      <div style="margin-bottom: 24px;">
-        <img src="images/30-years-logo.png" alt="30 Years of Documentary Filmmaking Logo" style="width: 100%; max-width: 280px; display: block; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));"/>
+      <!-- Main Showcase Grid (Cover Stage + Narrative) -->
+      <div class="pub-showcase-grid">
+
+        <!-- Left Column: Visual Cover Stage & Archival Shelf -->
+        <aside>
+          <div class="pub-cover-card">
+            <div class="pub-cover-frame">
+              <img src="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" alt="Uralchitra Special Edition on Tanvir Mokammel Cover" loading="lazy"/>
+            </div>
+            <div class="pub-cover-actions">
+              <a href="images/uralchitra/Uralchitra Special Edition on Tanvir Mokammel.jpg" target="_blank" class="pub-action-btn gold">🔍 Full Cover</a>
+              <a href="index.html#publications" class="pub-action-btn outline">← All 4 Volumes</a>
+            </div>
+          </div>
+
+          <!-- Other Uralchitra Editions Widget -->
+          <div class="archive-shelf-card">
+            <div class="archive-shelf-title">
+              <span>📚 Other Uralchitra Editions</span>
+            </div>
+            <div class="archive-shelf-grid">
+              <a href="index.html#publications" class="archive-volume-item">
+                <img src="images/uralchitra/Uralchitra number 1.png" alt="Uralchitra Vol 1" class="archive-volume-thumb" loading="lazy"/>
+                <span class="archive-volume-label">VOL 1</span>
+              </a>
+              <a href="index.html#publications" class="archive-volume-item">
+                <img src="images/uralchitra/Uralchitro number 2.jpg" alt="Uralchitra Vol 2" class="archive-volume-thumb" loading="lazy"/>
+                <span class="archive-volume-label">VOL 2</span>
+              </a>
+              <a href="index.html#publications" class="archive-volume-item">
+                <img src="images/uralchitra/Uralchitra number 3.jpg" alt="Uralchitra Vol 3" class="archive-volume-thumb" loading="lazy"/>
+                <span class="archive-volume-label">VOL 3</span>
+              </a>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Right Column: Commemorative Overview & Thematic Pillars -->
+        <div class="pub-narrative-col">
+
+          <!-- 30 Years Milestone Branding Banner -->
+          <div class="commemoration-badge-wrap">
+            <img src="images/30-years-logo.png" alt="30 Years of Documentary Filmmaking" loading="lazy"/>
+            <div class="commemoration-badge-text">
+              <strong>Official Retrospective Publication</strong>
+              Commemorating 30 years (1993–2023) of non-fiction cinema by Tanvir Mokammel.
+            </div>
+          </div>
+
+          <!-- Verbatim Bengali Dedication Card -->
+          <article class="bengali-quote-card">
+            <h4>চলচ্চিত্র সাহিত্যের অমূল্য দলিল</h4>
+            <p>
+              "উড়ালচিত্র বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের মুখপত্র। ২০২৩ সালের ফেব্রুয়ারিতে প্রকাশিত এই বিশেষ সংখ্যাটি বরেণ্য প্রামাণ্যচিত্রকার তানভীর মোকাম্মেলের সুদীর্ঘ ত্রিশ বছরের চলচ্চিত্র সাধনা, দর্শন ও সৃষ্টিকর্মের এক সুবিন্যস্ত দলিল।"
+            </p>
+          </article>
+
+          <!-- Intellectual Forum Narrative -->
+          <article class="editorial-prose-card">
+            <h3>Intellectual Mission &amp; Literary Forum</h3>
+            <p>
+              <em>Uralchitra</em> (literally, "the flying image") serves as the primary intellectual and literary forum of the Bangladesh Film Institute Alumni Association (BFIAA). Dedicated to cultivating critical film discourse in Bangladesh, each edition brings together rigorous scholarly essays, in-depth film analyses, craft memoirs, and interviews with masters of world and South Asian cinema.
+            </p>
+            <p>
+              This landmark volume features in-depth critical writings by prominent Bangladeshi film scholars, critics, and international commentators on Tanvir Mokammel's oeuvre, covering:
+            </p>
+
+            <ul class="thematic-focus-list">
+              <li class="thematic-focus-item">
+                <strong>▶ The Ethics of Documenting 1971</strong>
+                Analysis of oral history methodologies, civilian memory, and ethical interviewing in the documentary <em>1971</em>.
+              </li>
+              <li class="thematic-focus-item">
+                <strong>▶ Riverine Geographies and Displacement</strong>
+                Cinematic representations of climate vulnerability, riverbank erosion, and resilience in <em>A Tale of the Jamuna River</em>.
+              </li>
+              <li class="thematic-focus-item">
+                <strong>▶ Partition Trauma and Enduring Memory</strong>
+                Critical reception of <em>Seemantorekha (The Borderline)</em> within South Asian historical and border-studies cinema.
+              </li>
+              <li class="thematic-focus-item">
+                <strong>▶ Indigenous Voices in Cinema</strong>
+                The socio-political stakes and ecological disruption explored in <em>Teardrops of Karnaphuli</em>.
+              </li>
+            </ul>
+
+            <p style="margin-bottom: 0;">
+              Copies of <em>Uralchitra</em> are preserved in the BFI Library archive and are accessible to students, researchers, film society members, and cultural historians.
+            </p>
+          </article>
+
+        </div>
+
       </div>
-      <div class="bengali-quote-card">
-        <h4>চলচ্চিত্র সাহিত্যের অমূল্য দলিল</h4>
-        <p>
-          "উড়ালচিত্র বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের মুখপত্র। ২০২৩ সালের ফেব্রুয়ারিতে প্রকাশিত এই বিশেষ সংখ্যাটি বরেণ্য প্রামাণ্যচিত্রকার তানভীর মোকাম্মেলের সুদীর্ঘ ত্রিশ বছরের চলচ্চিত্র সাধনা, দর্শন ও সৃষ্টিকর্মের এক সুবিন্যস্ত দলিল।"
-        </p>
-      </div>
 
-      <p>
-        <em>Uralchitra</em> (literally, "the flying image") serves as the primary intellectual and literary forum of the BFIAA. Dedicated to cultivating critical film discourse in Bangladesh, each edition brings together rigorous scholarly essays, in-depth film analyses, craft memoirs, and interviews with masters of world and South Asian cinema.
-      </p>
+      <!-- Section: Complete Table of Contents (সূচিপত্র) -->
+      <section class="contents-section-block">
+        <div class="contents-header">
+          <h2 class="contents-title-bn">সূচিপত্র</h2>
+          <p class="contents-sub-lbl">Complete Table of Contents &middot; Uralchitra Special Edition</p>
+        </div>
 
-      <h3 style="font-family: var(--serif); color: var(--gold); font-size: 24px; margin: 30px 0 16px;">Contents and Contributions</h3>
-      <p>
-        This landmark volume features in-depth critical writings by prominent Bangladeshi film scholars, critics, and international commentators on Tanvir Mokammel's oeuvre, covering:
-      </p>
-      <ul style="list-style: none; padding-left: 0; margin-bottom: 24px;">
-        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-dark);"><strong>▶ The Ethics of Documenting 1971:</strong> Analysis of oral history methodologies in the documentary <em>1971</em>.</li>
-        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-dark);"><strong>▶ Riverine Geographies and Displacement:</strong> Cinematic representations of climate and humanity in <em>A Tale of the Jamuna River</em>.</li>
-        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-dark);"><strong>▶ Partition Trauma and Memory:</strong> Critical reception of <em>Seemantorekha (The Borderline)</em> in South Asian historical cinema.</li>
-        <li style="padding: 10px 0; border-bottom: 1px solid var(--border-dark);"><strong>▶ Indigenous Voices in Cinema:</strong> The socio-political stakes of <em>Teardrops of Karnaphuli</em>.</li>
-      </ul>
-
-      <p>
-        Copies of <em>Uralchitra</em> are preserved in the BFI Library archive and are accessible to students, researchers, and film society members.
-      </p>
-
-      <!-- Complete Table of Contents (সূচিপত্র) -->
-      <div style="margin-top: 36px; padding: 28px; background: rgba(255,255,255,0.03); border: 1px solid var(--border-dark); border-radius: 8px;">
-        <h3 style="font-family: var(--serif); color: var(--gold); font-size: 26px; margin-bottom: 24px; border-bottom: 1px solid var(--border-dark); padding-bottom: 12px;">
-          সূচিপত্র (Contents)
-        </h3>
-
-        <div style="margin-bottom: 24px;">
-          <h4 style="font-family: var(--serif); color: var(--cream); font-size: 18px; margin-bottom: 12px; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 4px;">
-            প্রামাণ্যচিত্র পরিচিতি
-          </h4>
-          <div style="display: flex; justify-content: space-between; padding: 6px 0; color: rgba(243,240,231,0.8); font-size: 14px;">
+        <!-- Section 1: Film Introductions -->
+        <div class="contents-category">
+          <h3 class="contents-cat-title">🎬 প্রামাণ্যচিত্র পরিচিতি</h3>
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেলের জীবনবৃত্তান্ত</span>
+            <span class="contents-author-tag">জীবন ও কর্ম</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 6px 0; color: rgba(243,240,231,0.8); font-size: 14px;">
+          <div class="contents-entry-row">
             <span>সার-সংক্ষেপ ও কলাকুশলীগণ</span>
+            <span class="contents-author-tag">চলচ্চিত্র পরিচিতি</span>
           </div>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="font-family: var(--serif); color: var(--cream); font-size: 18px; margin-bottom: 12px; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 4px;">
-            সাক্ষাৎকার
-          </h4>
-          <div style="display: flex; justify-content: space-between; padding: 6px 0; color: rgba(243,240,231,0.8); font-size: 14px;">
-            <span>প্রামাণ্যচিত্র হতে হবে একশ ভাগ বস্তুনিষ্ঠ ও সৎ</span>
-            <em style="color: var(--gold); font-style: normal;">— তানভীর মোকাম্মেল</em>
+        <!-- Section 2: Exclusive Interview -->
+        <div class="contents-category">
+          <h3 class="contents-cat-title">🎙️ বিশেষ সাক্ষাৎকার</h3>
+          <div class="contents-entry-row">
+            <span>“প্রামাণ্যচিত্র হতে হবে একশ ভাগ বস্তুনিষ্ঠ ও সৎ”</span>
+            <span class="contents-author-tag">— তানভীর মোকাম্মেল</span>
           </div>
         </div>
 
-        <div style="margin-bottom: 24px;">
-          <h4 style="font-family: var(--serif); color: var(--cream); font-size: 18px; margin-bottom: 12px; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 4px;">
-            প্রবন্ধ
-          </h4>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+        <!-- Section 3: Scholarly Essays -->
+        <div class="contents-category">
+          <h3 class="contents-cat-title">✍️ গবেষণা প্রবন্ধসমূহ</h3>
+          
+          <div class="contents-entry-row">
             <span>Some Reflections on Tanvir Mokammel’s Documentary Films</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— John W. Hood</em>
+            <span class="contents-author-tag">— John W. Hood</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে দেশভাগ: একটি সমকালীন রাজনৈতিক দার্শনিক পর্যালোচনা</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— মোহাম্মদ উল্লাহ</em>
+            <span class="contents-author-tag">— মোহাম্মদ উল্লাহ</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেল: মুক্তিযুদ্ধের নির্ভরযোগ্য প্রামাণ্যকার</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— জাহাঙ্গীর মোহাম্মদ</em>
+            <span class="contents-author-tag">— জাহাঙ্গীর মোহাম্মদ</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>বিশ্বপ্রকৃতি, প্রকৃতিনির্ভর প্রামাণ্যচিত্র ও তানভীর মোকাম্মেলের কাব্যময় চিত্ররূপ</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— সন্দীপ কুমার মিস্ত্রী</em>
+            <span class="contents-author-tag">— সন্দীপ কুমার মিস্ত্রী</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে নারী</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— শাহিনা হাফিজ ডেইজি</em>
+            <span class="contents-author-tag">— শাহীনা হাফিজ ডেইজি</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,0.06); color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্রে লালন ও বাউলতত্ত্ব</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— ড. নাজিয়া মাহমুদ</em>
+            <span class="contents-author-tag">— ড. নাজিয়া মাহমুদ</span>
           </div>
-          <div style="display: flex; justify-content: space-between; padding: 8px 0; color: rgba(243,240,231,0.85); font-size: 14px; gap: 16px;">
+
+          <div class="contents-entry-row">
             <span>তানভীর মোকাম্মেলের প্রামাণ্যচিত্র নির্মাণ আঙ্গিকে কিনো-আই ধারার প্রভাব</span>
-            <em style="color: var(--gold); font-style: normal; white-space: nowrap;">— কাজী মুশফিকুস সালেহীন</em>
+            <span class="contents-author-tag">— কাজী মুশফিকুস সালেহীন</span>
           </div>
         </div>
 
-        <div>
-          <h4 style="font-family: var(--serif); color: var(--cream); font-size: 18px; margin-bottom: 12px; border-bottom: 1px dotted rgba(255,255,255,0.2); padding-bottom: 4px;">
-            মতামত ও স্মৃতিচারণ
-          </h4>
-          <p style="font-size: 14px; line-height: 1.8; color: rgba(243,240,231,0.8);">
-            অনুপম হায়াৎ &middot; মানজারে হাসীন মুরাদ &middot; মোরশেদুল ইসলাম &middot; মেঘনা গুহঠাকুরতা &middot; উত্তম গুহ &middot; সৈয়দ শাবাব আলী আরজু &middot; চিত্রলেখা গুহ &middot; নিখিল কৃষ্ণ মজুমদার &middot; রাকিবুল হাসান &middot; সগীর মোস্তফা &middot; রানা মাসুদ &middot; অপরাজিতা সংগীতা
-          </p>
+        <!-- Section 4: Reminiscences and Tributes -->
+        <div class="contents-category">
+          <h3 class="contents-cat-title">💬 মতামত ও স্মৃতিচারণ</h3>
+          <div class="tributes-cloud">
+            <span class="tribute-author-pill">অনুপম হায়াৎ</span>
+            <span class="tribute-author-pill">মানজারে হাসীন মুরাদ</span>
+            <span class="tribute-author-pill">মোরশেদুল ইসলাম</span>
+            <span class="tribute-author-pill">মেঘনা গুহঠাকুরতা</span>
+            <span class="tribute-author-pill">উত্তম গুহ</span>
+            <span class="tribute-author-pill">সৈয়দ শাবাব আলী আরজু</span>
+            <span class="tribute-author-pill">চিত্রলেখা গুহ</span>
+            <span class="tribute-author-pill">নিখিল কৃষ্ণ মজুমদার</span>
+            <span class="tribute-author-pill">রাকিবুল হাসান</span>
+            <span class="tribute-author-pill">সগীর মোস্তফা</span>
+            <span class="tribute-author-pill">রানা মাসুদ</span>
+            <span class="tribute-author-pill">অপরাজিতা সংগীতা</span>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <!-- Publisher and Contact -->
-      <div style="margin-top: 32px; padding: 20px; background: rgba(0,0,0,0.2); border-left: 3px solid var(--gold); border-radius: 4px; font-size: 13px; color: rgba(243,240,231,0.75); line-height: 1.7;">
-        <strong style="color: var(--cream); font-size: 14px;">যোগাযোগ ও প্রাপ্তিস্থান:</strong><br/>
-        বাংলাদেশ ফিল্ম ইন্সটিটিউট (BFI)<br/>
-        বাড়ি-৩৯/এ, ফ্ল্যাট-বি৩, রোড-৪/এ, ধানমন্ডি, ঢাকা-১২০৯<br/>
-        ফোন: +88 01735-901328, +88 01303-616741<br/>
-        ইমেইল: <a href="mailto:bfi.alumni.association@gmail.com" style="color: var(--gold);">bfi.alumni.association@gmail.com</a>
-      </div>
-    </div>
-  </div>
+      <!-- Section: Archive Acquisition & Physical Availability -->
+      <section class="acquisition-card">
+        <h3 class="acquisition-title">যোগাযোগ ও প্রাপ্তিস্থান (Archive Acquisition &amp; Copies)</h3>
+        <p class="acquisition-text">
+          <strong>বাংলাদেশ ফিল্ম ইন্সটিটিউট (BFI)</strong><br/>
+          বাড়ি-৩৯/এ, ফ্ল্যাট-বি৩, রোড-৪/এ, ধানমন্ডি, ঢাকা-১২০৯<br/>
+          ফোন: +88 01735-901328, +88 01303-616741<br/>
+          ইমেইল: <a href="mailto:bfi.alumni.association@gmail.com">bfi.alumni.association@gmail.com</a>
+        </p>
+      </section>
+
+      <!-- Inter-Page Navigation Strip -->
+      <nav class="pub-nav-strip" aria-label="Publication Navigation">
+        <a href="30-years-event.html" class="pub-nav-link" style="text-align: left;">
+          <span class="pub-nav-dir">&larr; Retrospective Event</span>
+          <span class="pub-nav-title">30 Years of Documentary Filmmaking</span>
+        </a>
+
+        <a href="index.html#publications" class="pub-hub-btn">
+          <span>&uarr; All BFIAA Publications</span>
+        </a>
+
+        <a href="conference-2021.html" class="pub-nav-link" style="text-align: right;">
+          <span class="pub-nav-dir">Biennial Assembly &rarr;</span>
+          <span class="pub-nav-title">Conference 2021 Record</span>
+        </a>
+      </nav>
 
     </div>
   </main>
-  
+
+  <!-- ─── Site Footer ─── -->
   <footer class="site-footer" role="contentinfo">
     <div class="filmstrip-border left" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span></span>
@@ -329,6 +1111,14 @@
           <p class="footer-brand-desc">
             The official alumni body of Bangladesh Film Institute, connecting over 1,000 graduates across 86+ batches in a shared commitment to cinema culture.
           </p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/BFIAlumniAssociation" target="_blank" rel="noopener" class="social-link" title="Facebook">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://bfibd.org" target="_blank" rel="noopener" class="social-link" title="BFI Main Site">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </a>
+          </div>
         </div>
 
         <div>
