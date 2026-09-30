@@ -3193,13 +3193,13 @@
   /* ── YOUTUBE RED PLAY BADGE ─────────────────────────────────────────────── */
   .afs-yt-badge {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
-    width: 36px;
-    height: 26px;
+    bottom: 12px;
+    right: 12px;
+    width: 44px;
+    height: 32px;
     background: #FF0000;
     border-radius: 6px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -3208,6 +3208,9 @@
     transition: background 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
     flex-shrink: 0;
+  }
+  .afs-card.afs-center .afs-yt-badge {
+    display: flex;
   }
   .afs-yt-badge:hover {
     background: #cc0000;
@@ -3364,7 +3367,7 @@
       const card = document.createElement('a');
       card.href = href;
       card.className = 'afs-card';
-      card.setAttribute('aria-label', film.titleEn + " by " + film.alumnusName);
+      card.setAttribute('aria-label', (film.titleBn ? film.titleBn + ' — ' : '') + film.titleEn + ' by ' + film.alumnusName);
       card.dataset.index = index;
 
       // ── Image wrapper ──
