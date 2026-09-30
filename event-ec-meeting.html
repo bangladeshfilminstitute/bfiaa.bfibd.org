@@ -71,12 +71,17 @@
 
     /* ─── Hero Section ─── */
     .event-hero-section {
+      position: relative;
       background-color: var(--deep-green);
       background-image: 
-        linear-gradient(180deg, rgba(7, 23, 21, 0.95) 0%, rgba(7, 23, 21, 0.98) 100%),
-        radial-gradient(ellipse at 80% 20%, rgba(183, 164, 119, 0.12) 0%, transparent 60%);
+        linear-gradient(180deg, rgba(7, 23, 21, 0.82) 0%, rgba(7, 23, 21, 0.90) 50%, rgba(7, 23, 21, 0.97) 100%),
+        radial-gradient(ellipse at 85% 25%, rgba(183, 164, 119, 0.16) 0%, transparent 60%),
+        url('images/events/ec-meeting-hero-bg.jpg');
+      background-size: cover;
+      background-position: center 35%;
+      background-repeat: no-repeat;
       color: var(--cream);
-      padding: 44px 0 54px;
+      padding: 56px 0 64px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
