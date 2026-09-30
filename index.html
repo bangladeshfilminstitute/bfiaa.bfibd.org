@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BFIAA — Bangladesh Film Institute Alumni Association</title>
   <meta name="description" content="Official alumni association of Bangladesh Film Institute (BFI), uniting 1000+ graduates across 86+ batches in a shared commitment to independent cinema culture since 1993."/>
-  <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
+  <link rel="icon" type="image/png" sizes="48x48" href="images/favicon.png"/>
   <link rel="manifest" href="manifest.json"/>
   <meta name="theme-color" content="#1B3A2D"/>
   <meta name="keywords" content="BFIAA, Bangladesh Film Institute Alumni, BFI Alumni, bfiaa.bfibd.org, film alumni Bangladesh, Uralchitra, Tanvir Mokammel"/>
@@ -2644,7 +2644,7 @@
   <section class="alumni-film-showcase" id="alumni-films" aria-label="Alumni Film Showcase">
 
     <div class="afs-bg-layer" aria-hidden="true">
-      <div class="afs-bg-photo"></div>
+      <img src="images/alumni-films-bg.webp" alt="" class="afs-bg-photo" loading="lazy" decoding="async" width="1376" height="768"/>
       <div class="afs-bg-overlay"></div>
       <div class="afs-grain"></div>
       <div class="afs-vignette"></div>
@@ -2747,13 +2747,15 @@
   .afs-bg-photo {
     position: absolute;
     inset: 0;
-    background-image: url('images/alumni-films-bg.webp');
-    background-size: cover;
-    background-position: center 25%;
-    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
     opacity: 0.38;
     filter: brightness(0.70) contrast(1.18) saturate(0.85);
     transform: scale(1.02);
+    pointer-events: none;
+    display: block;
   }
   .afs-bg-overlay {
     position: absolute;
@@ -3236,7 +3238,7 @@
         year: "2015",
         duration: "10 min",
         format: "HDTV",
-        poster: "images/syed-madhukar.webp",
+        poster: "images/posters/syed-madhukar.webp",
         watchUrl: "https://youtu.be/VZ3CPW9hlb4",
         alumnusName: "Syed Oasiuddin Ahmed",
         alumnusSlug: "syed-oasiuddin-ahmed",
@@ -3260,7 +3262,7 @@
         year: "2012",
         duration: "40 min",
         format: "Digital",
-        poster: "images/syed-kumar-kahon.webp",
+        poster: "images/posters/syed-kumar-kahon.webp",
         watchUrl: null,
         alumnusName: "Syed Oasiuddin Ahmed",
         alumnusSlug: "syed-oasiuddin-ahmed",
@@ -3272,7 +3274,7 @@
         year: "2015",
         duration: "—",
         format: "Digital",
-        poster: "images/syed-mande.webp",
+        poster: "images/posters/syed-mande.webp",
         watchUrl: null,
         alumnusName: "Syed Oasiuddin Ahmed",
         alumnusSlug: "syed-oasiuddin-ahmed",
@@ -3284,7 +3286,7 @@
         year: "2025",
         duration: "23 min",
         format: "HDTV",
-        poster: "images/syed-third-owner-poster.jpg",
+        poster: "images/posters/syed-third-owner.webp",
         watchUrl: null,
         alumnusName: "Syed Oasiuddin Ahmed",
         alumnusSlug: "syed-oasiuddin-ahmed",
@@ -3296,7 +3298,7 @@
         year: "2023",
         duration: "Docu",
         format: "Digital",
-        poster: "images/rupban-kanya.jpg",
+        poster: "images/posters/rupban-kanya.webp",
         watchUrl: null,
         alumnusName: "Sohel Ahmmad Siddiquee",
         alumnusSlug: "sohel-ahmmad-siddiquee",
@@ -3308,7 +3310,7 @@
         year: "2026",
         duration: "85 min",
         format: "Docu",
-        poster: "images/sandip-zohra.jpg",
+        poster: "images/posters/sandip-zohra.webp",
         watchUrl: "https://www.youtube.com/watch?v=sLkPS_myMeA",
         alumnusName: "Sandip Kumar Mistry",
         alumnusSlug: "sandip-kumar-mistry",
@@ -3320,7 +3322,7 @@
         year: "2023",
         duration: "72 min",
         format: "Docu",
-        poster: "images/sandip-jyotirmoy.jpg",
+        poster: "images/posters/sandip-jyotirmoy.webp",
         watchUrl: "https://www.youtube.com/watch?v=_trfrdkndVw",
         alumnusName: "Sandip Kumar Mistry",
         alumnusSlug: "sandip-kumar-mistry",
@@ -3332,7 +3334,7 @@
         year: "2024",
         duration: "75 min",
         format: "Docu",
-        poster: "images/sandip-basanti.jpg",
+        poster: "images/posters/sandip-basanti.webp",
         watchUrl: null,
         alumnusName: "Sandip Kumar Mistry",
         alumnusSlug: "sandip-kumar-mistry",
@@ -3687,7 +3689,7 @@
           <!-- Sandip Kumar Mistry -->
           <article class="alumni-card">
             <div class="alumni-card-img">
-              <img src="images/sandip-og-thumbnail.jpg" alt="Sandip Kumar Mistry" loading="lazy" style="object-position: center top;"/>
+              <img src="images/sandip-thumb.webp" alt="Sandip Kumar Mistry" loading="lazy" decoding="async" width="400" height="240" style="object-position: center top;"/>
             </div>
             <div class="alumni-card-body">
               <div class="alumni-role">Researcher, Filmmaker &amp; Ex-Gen. Secretary</div>
@@ -3700,7 +3702,7 @@
           <!-- Sohel Ahmmad Siddiquee -->
           <article class="alumni-card">
             <div class="alumni-card-img">
-              <img src="images/sohel-og-thumbnail.jpg" alt="Sohel Ahmmad Siddiquee" loading="lazy" style="object-position: center 20%;"/>
+              <img src="images/sohel-thumb.webp" alt="Sohel Ahmmad Siddiquee" loading="lazy" decoding="async" width="400" height="240" style="object-position: center 20%;"/>
             </div>
             <div class="alumni-card-body">
               <div class="alumni-role">Film Director &amp; Finance Secretary</div>
@@ -3713,7 +3715,7 @@
           <!-- Syed Oasiuddin Ahmed -->
           <article class="alumni-card">
             <div class="alumni-card-img">
-              <img src="images/syed-og-thumbnail.jpg" alt="Syed Oasiuddin Ahmed" loading="lazy" style="object-position: center 8%;"/>
+              <img src="images/syed-thumb.webp" alt="Syed Oasiuddin Ahmed" loading="lazy" decoding="async" width="400" height="240" style="object-position: center 8%;"/>
             </div>
             <div class="alumni-card-body">
               <div class="alumni-role">Filmmaker &amp; Screenwriter</div>
@@ -3726,7 +3728,7 @@
           <!-- Kazi Mushfiqus Saleheen -->
           <article class="alumni-card">
             <div class="alumni-card-img">
-              <img src="images/kazi-saleheen-og-thumbnail.jpg" alt="Kazi Mushfiqus Saleheen" loading="lazy" style="object-position: center 12%;"/>
+              <img src="images/kazi-saleheen-thumb.webp" alt="Kazi Mushfiqus Saleheen" loading="lazy" decoding="async" width="400" height="240" style="object-position: center 12%;"/>
             </div>
             <div class="alumni-card-body">
               <div class="alumni-role">Filmmaker &amp; Ex-Joint Secretary</div>
@@ -4769,7 +4771,7 @@
         <div>
           <div class="footer-brand">
             <a href="index.html#home" class="footer-brand-link" aria-label="BFIAA Home" style="display: inline-block; text-decoration: none;">
-              <img src="images/bfiaa-logo.png" alt="BFIAA Logo" loading="lazy" decoding="async" width="180" height="42" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.style.display='none'"/>
+              <img src="images/bfiaa-logo-header.webp" alt="BFIAA Logo" loading="lazy" decoding="async" width="180" height="42" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.src='images/bfiaa-logo.png'"/>
             </a>
           </div>
           <p class="footer-brand-desc">
