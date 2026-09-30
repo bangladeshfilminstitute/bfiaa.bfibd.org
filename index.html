@@ -2537,7 +2537,7 @@
     <div class="hero-bg" aria-hidden="true">
       <picture>
         <source media="(max-width: 768px)" srcset="images/bfiaa-2021-mobile.webp" type="image/webp">
-        <img src="images/bfiaa-2021.webp" alt="" fetchpriority="high" decoding="async" class="hero-bg-img" width="1024" height="470">
+        <img src="images/bfiaa-2021.webp" alt="" fetchpriority="high" decoding="sync" class="hero-bg-img" width="1024" height="470">
       </picture>
     </div>
     <div class="hero-inner">
@@ -3455,8 +3455,7 @@
       return card;
     }
 
-    // Init cards
-    FEATURED.forEach((film, i) => track.appendChild(buildCard(film, i)));
+    // Init cards (deferred to initAFS on DOMContentLoaded)
 
     // ── PAGINATION DOTS ──────────────────────────────────────────────────────
     function buildPagination() {
@@ -3654,11 +3653,18 @@
       }
     });
 
-    // ── INIT ─────────────────────────────────────────────────────────────────
-    buildPagination();
-    updateCards();
-    // Delay first scroll to after layout
-    requestAnimationFrame(() => requestAnimationFrame(scrollTrack));
+    // ── INIT (deferred to DOMContentLoaded so HTML parsing is never blocked) ─
+    function initAFS() {
+      FEATURED.forEach((film, i) => track.appendChild(buildCard(film, i)));
+      buildPagination();
+      updateCards();
+      requestAnimationFrame(scrollTrack);
+    }
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAFS);
+    } else {
+      initAFS();
+    }
   })();
   </script>
 
@@ -5042,11 +5048,18 @@
       }
     }
 
-    // Auto-init picnic view on load
+    // Auto-init picnic view on load (deferred to idle so it never competes with initial paint)
+    function initPicnicLazy() {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(renderPicnicView);
+      } else {
+        setTimeout(renderPicnicView, 120);
+      }
+    }
     if (document.readyState === 'loading') {
-      document.addEventListener('DOMContentLoaded', renderPicnicView);
+      document.addEventListener('DOMContentLoaded', initPicnicLazy);
     } else {
-      renderPicnicView();
+      initPicnicLazy();
     }
 
     // Connect 30 Years Retrospective Stage to Lightbox
