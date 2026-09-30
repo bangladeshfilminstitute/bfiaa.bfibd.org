@@ -45,10 +45,15 @@
   }
   </script>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Non-Render-Blocking) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Hind+Siliguri:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  </noscript>
+  <link rel="preload" as="image" href="images/bfiaa-2021-mobile.webp" type="image/webp" media="(max-width: 768px)" fetchpriority="high"/>
+  <link rel="preload" as="image" href="images/bfiaa-2021.webp" type="image/webp" media="(min-width: 769px)" fetchpriority="high"/>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -61,17 +66,17 @@
       --black: #080D0C;
       --charcoal: #18201F;
       --dark-text: #10201E;
-      --muted: #737A76;
+      --muted: #525B57;
       --border-light: #D8D5CC;
       --border-dark: rgba(255, 255, 255, 0.14);
       --burgundy: #9E3030;
       --burgundy-dark: #7C2424;
       --gold: #B7A477;
-      --gold-dark: #8F7D52;
-      --serif: 'Cormorant Garamond', Georgia, serif;
-      --sans: 'Inter', system-ui, -apple-system, sans-serif;
-      --bn: 'Hind Siliguri', sans-serif;
-      --mono: 'JetBrains Mono', monospace;
+      --gold-dark: #665223;
+      --serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      --bn: 'Hind Siliguri', 'SolaimanLipi', sans-serif;
+      --mono: 'JetBrains Mono', Consolas, Monaco, monospace;
       --container: 1180px;
     }
 
@@ -348,7 +353,7 @@
       position: absolute;
       inset: 0;
       z-index: 0;
-      background-image: url('images/bfiaa-2021.jpg');
+      background-image: url('images/bfiaa-2021.webp');
       background-size: cover;
       background-position: center 25%;
       filter: saturate(0.95) brightness(0.90);
@@ -877,7 +882,7 @@
     }
     .member-term {
       font-size: 8px;
-      color: rgba(243,240,231,0.35);
+      color: var(--gold);
       font-family: var(--mono);
     }
 
@@ -1280,6 +1285,7 @@
       border-radius: 4px;
       max-width: 450px;
     }
+    .retro-caption h3,
     .retro-caption h4 {
       font-family: var(--serif);
       font-size: 20px;
@@ -1752,7 +1758,7 @@
     .t-desc {
       font-size: 12px;
       line-height: 1.6;
-      color: var(--muted);
+      color: #525B57;
     }
 
     /* ── MEMBERSHIP & CONTACT ── */
@@ -1796,7 +1802,7 @@
       font-size: 9px;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(243,240,231,0.4);
+      color: var(--gold);
       margin-bottom: 3px;
     }
     .contact-text span,
@@ -1813,6 +1819,7 @@
       padding: 36px;
       text-align: center;
     }
+    .membership-box h3,
     .membership-box h4 {
       font-family: var(--serif);
       font-size: 24px;
@@ -1916,7 +1923,7 @@
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(243,240,231,0.4);
+      color: var(--gold);
       margin-bottom: 14px;
     }
     .footer-links-list {
@@ -1933,7 +1940,7 @@
     .footer-links-list a {
       font-size: 13.5px;
       line-height: 1.4;
-      color: rgba(243,240,231,0.6);
+      color: rgba(243,240,231,0.7);
       display: inline-block;
       padding: 2px 0;
       transition: color 200ms ease, letter-spacing 150ms ease;
@@ -1952,7 +1959,7 @@
       flex-wrap: wrap;
       gap: 16px;
       font-size: 12px;
-      color: rgba(243,240,231,0.4);
+      color: rgba(243,240,231,0.75);
     }
 
     /* ── EDITORIAL LIGHTBOX MODAL STYLES ── */
@@ -2249,6 +2256,7 @@
         width: 100%;
       }
       .hero-bg {
+        background-image: url('images/bfiaa-2021-mobile.webp');
         background-size: 100% auto;
         background-position: center top;
         background-repeat: no-repeat;
@@ -2297,7 +2305,7 @@
         font-size: 10.5px;
         letter-spacing: 0.16em;
         margin-bottom: 10px;
-        color: rgba(243,240,231,0.45);
+        color: var(--gold);
       }
       .footer-links-list {
         gap: 8px;
@@ -2448,7 +2456,7 @@
   <header class="site-header" role="banner">
     <div class="header-inner">
       <a href="index.html#home" class="header-brand" aria-label="BFIAA Home">
-        <img src="images/bfiaa-logo.png" alt="BFIAA — Bangladesh Film Institute Alumni Association" onerror="this.style.display='none'"/>
+        <img src="images/bfiaa-logo.webp" alt="BFIAA — Bangladesh Film Institute Alumni Association" width="80" height="40" onerror="this.onerror=null;this.src='images/bfiaa-logo.png'"/>
       </a>
 
       <nav class="header-nav" role="navigation" aria-label="Main navigation">
@@ -2467,7 +2475,7 @@
 
       <div class="header-actions">
         <a href="https://bfibd.org" target="_blank" rel="noopener" class="btn-bfi-home">
-          <img src="images/bfi-logo.png" alt="BFI" style="height: 14px; width: auto;"/>
+          <img src="images/bfi-logo.png" alt="BFI" width="14" height="14" style="height: 14px; width: auto;"/>
           BFI Main Site
         </a>
         <a href="https://forms.gle/J8exDqQ7kwm7sjgz8" target="_blank" rel="noopener" class="btn-member">Become a Member</a>
@@ -2501,6 +2509,7 @@
   <!-- ══════════════════════════════════════════════════
        HERO
   ══════════════════════════════════════════════════ -->
+  <main id="main">
   <section class="hero" id="home" aria-label="Hero">
     <div class="hero-bg" aria-hidden="true"></div>
     <div class="hero-inner">
@@ -2668,7 +2677,7 @@
 
       <!-- See All Films -->
       <div class="afs-footer-row">
-        <a href="films.html" class="afs-see-all-btn" target="_blank" rel="noopener" aria-label="See all alumni films">
+        <a href="films.html" class="afs-see-all-btn" target="_blank" rel="noopener">
           See Alumni Films
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -3017,28 +3026,40 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 10px;
     margin-top: 36px;
   }
   .afs-dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
-    background: rgba(241,234,220,0.2);
+    position: relative;
+    width: 28px;
+    height: 28px;
+    background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     outline: none;
   }
-  .afs-dot.afs-active {
+  .afs-dot::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(241,234,220,0.3);
+    transition: width 0.3s ease, border-radius 0.3s ease, background 0.3s ease;
+  }
+  .afs-dot.afs-active::after {
     width: 28px;
     border-radius: 4px;
     background: var(--afs-accent);
   }
-  .afs-dot:hover:not(.afs-active) {
-    background: rgba(241,234,220,0.45);
+  .afs-dot:hover:not(.afs-active)::after {
+    background: rgba(241,234,220,0.6);
   }
-  .afs-dot:focus-visible { box-shadow: 0 0 0 2px var(--afs-accent); }
+  .afs-dot:focus-visible::after { box-shadow: 0 0 0 2px var(--afs-accent); }
 
   /* ── SEE ALL ── */
   .afs-footer-row {
@@ -3325,7 +3346,7 @@
       img.src = film.poster;
       img.alt = film.titleEn + " — Film Poster";
       img.className = 'afs-poster';
-      img.loading = index <= 2 ? 'eager' : 'lazy';
+      img.loading = 'lazy';
       img.decoding = 'async';
 
       // Format badge (top-left)
@@ -3789,7 +3810,7 @@
       <!-- Advisors -->
       <div class="advisors-grid">
         <div class="advisor-card">
-          <img src="images/tanvir-avatar.jpg" alt="Tanvir Mokammel" class="advisor-avatar"/>
+          <img src="images/tanvir-avatar.jpg" alt="Tanvir Mokammel" class="advisor-avatar" loading="lazy" decoding="async" width="68" height="68"/>
           <div>
             <div class="advisor-role">Chief Advisor</div>
             <h3 class="advisor-name">Tanvir Mokammel</h3>
@@ -3797,7 +3818,7 @@
           </div>
         </div>
         <div class="advisor-card">
-          <img src="images/sagir-avatar.jpg" alt="Sagir Mostafa" class="advisor-avatar"/>
+          <img src="images/sagir-avatar.jpg" alt="Sagir Mostafa" class="advisor-avatar" loading="lazy" decoding="async" width="68" height="68"/>
           <div>
             <div class="advisor-role">Advisor</div>
             <h3 class="advisor-name">Sagir Mostafa</h3>
@@ -3809,7 +3830,7 @@
       <!-- Committee Members Grid -->
       <div class="committee-grid">
         <div class="member-card">
-          <img src="images/shahina-avatar.jpg" alt="Shahina Hafiz Daisy" class="member-avatar"/>
+          <img src="images/shahina-avatar.jpg" alt="Shahina Hafiz Daisy" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Shahina Hafiz Daisy</div>
             <div class="member-role">President</div>
@@ -3825,7 +3846,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/sandip-avatar.jpg" alt="Sandip Kumar Mistry" class="member-avatar"/>
+          <img src="images/sandip-avatar.jpg" alt="Sandip Kumar Mistry" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Sandip Kumar Mistry</div>
             <div class="member-role">General Secretary</div>
@@ -3833,7 +3854,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/kazi-saleheen-avatar.jpg" alt="Kazi Mushfiqus Saleheen" class="member-avatar"/>
+          <img src="images/kazi-saleheen-avatar.jpg" alt="Kazi Mushfiqus Saleheen" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Kazi Mushfiqus Saleheen</div>
             <div class="member-role">Joint Secretary</div>
@@ -3842,7 +3863,7 @@
         </div>
 
         <div class="member-card">
-          <img src="images/sohel-avatar.jpg" alt="Sohel Ahmmad Siddiquee" class="member-avatar"/>
+          <img src="images/sohel-avatar.jpg" alt="Sohel Ahmmad Siddiquee" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Sohel Ahmmad Siddiquee</div>
             <div class="member-role">Finance Secretary</div>
@@ -3850,7 +3871,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/aparajita-avatar.jpg" alt="Aparajita Sangita" class="member-avatar"/>
+          <img src="images/aparajita-avatar.jpg" alt="Aparajita Sangita" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Aparajita Sangita</div>
             <div class="member-role">Organizing Secretary</div>
@@ -3858,7 +3879,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/kawsar-avatar.png" alt="Md. Kawsar Ahmed Abir" class="member-avatar"/>
+          <img src="images/kawsar-avatar.png" alt="Md. Kawsar Ahmed Abir" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Md. Kawsar Ahmed Abir</div>
             <div class="member-role">Office Secretary</div>
@@ -3891,7 +3912,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/mamun-avatar.jpg" alt="Mamun Sobhani" class="member-avatar"/>
+          <img src="images/mamun-avatar.jpg" alt="Mamun Sobhani" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Mamun Sobhani</div>
             <div class="member-role">Publicity Secretary</div>
@@ -3899,7 +3920,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/nazia-avatar.jpg" alt="Dr. Nazia Mahmood" class="member-avatar"/>
+          <img src="images/nazia-avatar.jpg" alt="Dr. Nazia Mahmood" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Dr. Nazia Mahmood</div>
             <div class="member-role">Publication Secretary</div>
@@ -3908,7 +3929,7 @@
         </div>
 
         <div class="member-card">
-          <img src="images/jahangir-avatar.jpg" alt="Dr. Mohammad Jahangir Hossain" class="member-avatar"/>
+          <img src="images/jahangir-avatar.jpg" alt="Dr. Mohammad Jahangir Hossain" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Dr. M. Jahangir Hossain</div>
             <div class="member-role">Executive Member 01</div>
@@ -3916,7 +3937,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/sajjad-avatar.jpg" alt="Sajjad Khan" class="member-avatar"/>
+          <img src="images/sajjad-avatar.jpg" alt="Sajjad Khan" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Sajjad Khan</div>
             <div class="member-role">Executive Member 02</div>
@@ -3924,7 +3945,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/shanu-avatar.jpg" alt="Shanu Manik" class="member-avatar"/>
+          <img src="images/shanu-avatar.jpg" alt="Shanu Manik" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Shanu Manik</div>
             <div class="member-role">Executive Member 03</div>
@@ -3932,7 +3953,7 @@
           </div>
         </div>
         <div class="member-card">
-          <img src="images/hasanuzzaman-avatar.jpg" alt="Hasanuzzaman Khan" class="member-avatar"/>
+          <img src="images/hasanuzzaman-avatar.jpg" alt="Hasanuzzaman Khan" class="member-avatar" loading="lazy" decoding="async" width="48" height="48"/>
           <div>
             <div class="member-name">Hasanuzzaman Khan</div>
             <div class="member-role">Executive Member 04</div>
@@ -3941,9 +3962,9 @@
         </div>
       </div>
       <div style="text-align: center; margin-top: 36px;">
-        <p style="font-family: var(--mono); font-size: 11px; color: rgba(243,240,231,0.4); letter-spacing: 0.1em;">
+        <p style="font-family: var(--mono); font-size: 11px; color: rgba(243,240,231,0.75); letter-spacing: 0.1em;">
           Full 21-member committee recorded in the official gazette &nbsp;·&nbsp;
-          <a href="constitution.html" style="color: var(--gold);">View Constitution &rarr;</a>
+          <a href="constitution.html" style="color: var(--gold); text-decoration: underline;">View Constitution &rarr;</a>
         </p>
       </div>
     </div>
@@ -3968,8 +3989,8 @@
               <span>📍 Sanskriti Bikash Kendra, Paribagh</span>
               <span style="color: var(--burgundy);">📅 17 December 2021</span>
             </div>
-            <h4 class="conf-title-bn">বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন</h4>
             <h3 class="conf-title-en">6th Biennial Conference (2021–2023)</h3>
+            <div class="conf-title-bn">বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বি-বার্ষিক সম্মেলন</div>
             <p class="conf-desc" style="font-style: italic; color: var(--gold-dark); margin-bottom: 8px;">
               "বিকল্পধারার চলচ্চিত্রকে এগিয়ে নেওয়ার দৃঢ় প্রত্যয় নিয়ে অনুষ্ঠিত হলো বাংলাদেশ ফিল্ম ইনস্টিটিউট অ্যালামনাই এসোসিয়েশনের ৬ষ্ঠ দ্বিবার্ষিক সম্মেলন..."
             </p>
@@ -3990,8 +4011,8 @@
               <span>📍 Public Library Seminar Hall, Shahbag, Dhaka</span>
               <span style="color: var(--burgundy);">📅 28 June 2019</span>
             </div>
-            <h4 class="conf-title-bn">বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন সম্মেলন ২০১৯</h4>
             <h3 class="conf-title-en">Historic Biennial Conference (2019–2021)</h3>
+            <div class="conf-title-bn">বাংলাদেশ ফিল্ম ইনস্টিটিউট এলামনাই এসোসিয়েশন সম্মেলন ২০১৯</div>
             <p class="conf-desc" style="font-style: italic; color: var(--gold-dark); margin-bottom: 8px;">
               "A landmark gathering uniting pioneering graduates, filmmakers, and faculty to forge the 2019–2021 Advisory &amp; Executive Councils."
             </p>
@@ -4123,7 +4144,7 @@
     <div class="container">
       <div class="retro-header">
         <div class="section-label light" style="justify-content: center;">Historic Milestone</div>
-        <img src="images/30-years-logo.png" alt="30 Years of Documentary Filmmaking" class="retro-logo"/>
+        <img src="images/30-years-logo.png" alt="30 Years of Documentary Filmmaking" class="retro-logo" loading="lazy" decoding="async" width="220" height="110"/>
         <h2 class="section-title-large" style="color: var(--cream);">
           30 Years of Documentary Filmmaking by Tanvir Mokammel
         </h2>
@@ -4156,15 +4177,15 @@
           <span id="retroCounter" style="font-family: var(--mono);">1 / 10</span>
         </div>
         <div class="retro-img-stage">
-          <img id="retroActiveImg" src="images/30-years/photo-2.jpg" alt="Festival Photo"/>
+          <img id="retroActiveImg" src="images/30-years/photo-2.jpg" alt="Festival Photo" loading="lazy" decoding="async" width="900" height="500"/>
           <div class="retro-caption">
-            <h4 id="retroCaptionTitle">Uralchitra Special Edition</h4>
+            <h3 id="retroCaptionTitle">Uralchitra Special Edition</h3>
             <p id="retroCaptionSub">Grand Magazine Launch Event at Jatiya Chitrashala</p>
           </div>
         </div>
         <div class="retro-slider-bottom">
           <button class="retro-ctrl-btn" id="retroPrevBtn" aria-label="Previous photo">&larr;</button>
-          <span style="font-size: 12px; color: rgba(243,240,231,0.4);">Use arrows to browse festival photos</span>
+          <span style="font-size: 12px; color: rgba(243,240,231,0.75);">Use arrows to browse festival photos</span>
           <button class="retro-ctrl-btn" id="retroNextBtn" aria-label="Next photo">&rarr;</button>
         </div>
       </div>
@@ -4671,7 +4692,7 @@
         <!-- Membership Application Card -->
         <div>
           <div class="membership-box" id="membership">
-            <h4>Become a Member</h4>
+            <h3>Become a Member</h3>
             <p>
               Are you a graduate of any BFI batch? Join the official association to participate in Cine Club screenings, festivals, publishing initiatives, and democratic elections.
             </p>
@@ -4682,7 +4703,7 @@
               📋 Complete Membership Registration &rarr;
             </a>
             <div style="margin-top: 16px;">
-              <a href="constitution.html" style="font-size: 11px; color: rgba(243,240,231,0.5); text-decoration: underline;">
+              <a href="constitution.html" style="font-size: 11px; color: rgba(243,240,231,0.85); text-decoration: underline;">
                 Read the Official Association Constitution
               </a>
             </div>
@@ -4691,6 +4712,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <!-- ══════════════════════════════════════════════════
        FOOTER
@@ -4713,7 +4735,7 @@
         <div>
           <div class="footer-brand">
             <a href="index.html#home" class="footer-brand-link" aria-label="BFIAA Home" style="display: inline-block; text-decoration: none;">
-              <img src="images/bfiaa-logo.png" alt="BFIAA Logo" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.style.display='none'"/>
+              <img src="images/bfiaa-logo.png" alt="BFIAA Logo" loading="lazy" decoding="async" width="180" height="42" style="height: 42px; width: auto; margin-bottom: 16px; display: block;" onerror="this.style.display='none'"/>
             </a>
           </div>
           <p class="footer-brand-desc">
@@ -5023,13 +5045,13 @@
       }
     }, { passive: true });
   </script>
-  <script src="js/editorial-lightbox.js"></script>
+  <script src="js/editorial-lightbox.js" defer></script>
   <!-- Scroll to Top Button -->
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
       <polyline points="18 15 12 9 6 15"></polyline>
     </svg>
   </button>
-  <script src="js/scroll-top.js"></script>
+  <script src="js/scroll-top.js" defer></script>
 </body>
 </html>
