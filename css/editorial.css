@@ -1043,8 +1043,8 @@ a {
 .lb-nav-arrow:hover {
   background: var(--gold);
   border-color: var(--gold);
-  color: #000;
-  transform: scale(1.08);
+  color: #071715;
+  box-shadow: 0 0 16px rgba(183, 164, 119, 0.45);
 }
 .lb-canvas {
   flex: 1;
@@ -1072,7 +1072,8 @@ a {
 .lb-img-container.grabbing {
   cursor: grabbing;
 }
-.lb-active-img {
+.lb-active-img,
+#lbActiveImg {
   max-width: 100%;
   max-height: calc(100vh - 200px);
   object-fit: contain;
@@ -1125,7 +1126,6 @@ a {
   opacity: 1;
   border-color: var(--gold);
   box-shadow: 0 0 14px rgba(183, 164, 119, 0.55);
-  transform: scale(1.06);
 }
 .lb-thumb img {
   width: 100%;
