@@ -2686,7 +2686,7 @@
 
         <!-- Track -->
         <div class="afs-track-outer">
-          <div class="afs-track" id="afsTrack" role="list">
+          <div class="afs-track" id="afsTrack">
             <!-- Cards injected by JS -->
           </div>
         </div>
@@ -3364,7 +3364,6 @@
       const card = document.createElement('a');
       card.href = href;
       card.className = 'afs-card';
-      card.setAttribute('role', 'listitem');
       card.setAttribute('aria-label', film.titleEn + " by " + film.alumnusName);
       card.dataset.index = index;
 

@@ -1,0 +1,21 @@
+# Bangladesh Film Institute Alumni Association (BFIAA)
+
+> Official platform, alumni directory, and cinematic archive of the Bangladesh Film Institute Alumni Association, documenting independent cinema, filmmaking workshops, research publications, and alumni achievements since 1995.
+
+## About BFIAA
+The Bangladesh Film Institute Alumni Association (BFIAA) unites alumni and graduates of the Bangladesh Film Institute (BFI), founded by filmmaker and educator Tanvir Mokammel. BFIAA fosters independent cinema in Bangladesh, provides continuing education and workshops for filmmakers, maintains an exhaustive catalog of alumni works, and publishes film journals and research texts.
+
+## Key Sections & Links
+- [Home Page](https://bfiaa.bfibd.org/): Overview of BFIAA, featured alumni film showcase, and core statistics.
+- [Alumni Directory](https://bfiaa.bfibd.org/members.html): Directory of honorable members, filmmakers, cinematographers, and editors.
+- [Alumni Films](https://bfiaa.bfibd.org/films.html): Complete catalog of films produced, directed, or shot by BFI alumni.
+- [Publications](https://bfiaa.bfibd.org/publications.html): Journals, research papers, and books published by BFIAA.
+- [Workshops & Events](https://bfiaa.bfibd.org/workshops.html): Filmmaking masterclasses, retrospectives, and annual conferences.
+- [30 Years Celebration](https://bfiaa.bfibd.org/30-years-event.html): Special celebration marking three decades of cinema education.
+- [Uralchitra Special Issue](https://bfiaa.bfibd.org/uralchitra-special.html): Dedicated page for Uralchitra publications.
+
+## Contact & Location
+- Organization: Bangladesh Film Institute Alumni Association (BFIAA)
+- Website: https://bfiaa.bfibd.org/
+- Email: info@bfibd.org
+- Location: Dhaka, Bangladesh
