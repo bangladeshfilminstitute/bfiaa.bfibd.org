@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alumni Films � BFIAA | Bangladesh Film Institute</title>
+  <title>Alumni Films � BFIAA | Bangladesh Film Institute</title>
   <meta name="description" content="Complete archive of films directed by BFIAA members — documentaries, short films and features spanning decades of independent cinema in Bangladesh."/>
   <link rel="canonical" href="https://bfiaa.bfibd.org/films"/>
   <link rel="icon" type="image/png" href="images/bfiaa-logo.png"/>
@@ -14,8 +14,8 @@
   <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://bfiaa.bfibd.org/images/syed-og-thumbnail.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="Alumni Films � BFIAA | Bangladesh Film Institute"/>
-    <meta name="twitter:description" content="Film archive of BFIAA honorable alumni � documentary, fiction, and experimental films by BFI graduates from Bangladesh."/>
+    <meta name="twitter:title" content="Alumni Films � BFIAA | Bangladesh Film Institute"/>
+    <meta name="twitter:description" content="Film archive of BFIAA honorable alumni � documentary, fiction, and experimental films by BFI graduates from Bangladesh."/>
     <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/bfiaa-header.jpg"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -257,18 +257,21 @@
     /* ── FILM GRID ──────────────────────────────────── */
     .fa-film-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(235px, 268px));
-      gap: 32px 24px;
+      grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+      gap: 36px 26px;
+      margin-top: 36px;
     }
 
     /* ── FILM CARD ──────────────────────────────────── */
     .fa-film-card {
       display: flex;
       flex-direction: column;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      background: var(--fp-card);
-      border: 1px solid var(--fp-border);
+      background: linear-gradient(180deg, #101f18 0%, #08130e 100%);
+      border: 1px solid rgba(210, 173, 107, 0.16);
+      padding: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
       transition: border-color 0.35s var(--fp-ease),
                   box-shadow 0.35s var(--fp-ease);
       outline: none;
@@ -276,10 +279,10 @@
       position: relative;
     }
     .fa-film-card:hover {
-      transform: none; /* Card does not move on hover */
-      box-shadow: 0 16px 40px rgba(0,0,0,0.55),
-                  0 0 0 1px rgba(210,173,107,0.30);
-      border-color: rgba(210,173,107,0.30);
+      transform: none; /* Constitution Rule 4: No movement/zoom on hover */
+      border-color: rgba(210, 173, 107, 0.45);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.65),
+                  0 0 0 1px rgba(210, 173, 107, 0.28);
     }
     .fa-film-card:focus-visible {
       box-shadow: 0 0 0 3px var(--fp-accent);
@@ -290,8 +293,11 @@
       position: relative;
       overflow: hidden;
       flex-shrink: 0;
-      background: #0d1a14;
-      aspect-ratio: 2 / 3;
+      background: #050d0a;
+      border-radius: 8px;
+      aspect-ratio: 1 / 1.414; /* ISO standard cinema poster ratio */
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
     }
     .fa-poster-link {
       display: block;
@@ -304,34 +310,39 @@
     .fa-film-poster {
       width: 100%;
       height: 100%;
-      aspect-ratio: 2 / 3;
+      aspect-ratio: 1 / 1.414;
       object-fit: cover;
+      object-position: center top;
       display: block;
       transform: scale(1);
-      transition: opacity 0.5s ease, filter 0.5s ease;
+      transition: opacity 0.4s ease, filter 0.4s ease;
     }
     .fa-film-card:hover .fa-film-poster {
-      opacity: 0.82; filter: brightness(1.12) contrast(1.06);
+      opacity: 0.88;
+      filter: brightness(1.08) contrast(1.04);
     }
 
-    /* Format badge */
-    .fa-format-badge {
+    /* Format badge & Tags */
+    .fa-format-badge,
+    .fa-tag {
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 10px;
+      left: 10px;
       font-family: 'Space Mono', monospace;
       font-size: 8px;
       font-weight: 700;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      color: rgba(241,234,220,0.92);
-      background: rgba(0,0,0,0.6);
-      backdrop-filter: blur(6px);
-      -webkit-backdrop-filter: blur(6px);
+      color: rgba(241, 234, 220, 0.95);
+      background: rgba(6, 16, 13, 0.82);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
       padding: 4px 8px;
-      border-radius: 3px;
-      border: 1px solid rgba(255,255,255,0.14);
+      border-radius: 4px;
+      border: 1px solid rgba(210, 173, 107, 0.28);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
       pointer-events: none;
+      z-index: 3;
     }
 
     /* YouTube red badge */
@@ -340,20 +351,20 @@
       bottom: 10px;
       right: 10px;
       width: 38px;
-      height: 27px;
+      height: 26px;
       background: #FF0000;
       border-radius: 6px;
       display: flex;
       align-items: center;
       justify-content: center;
       text-decoration: none;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
       transition: background 0.2s ease, box-shadow 0.2s ease;
       z-index: 5;
     }
     .fa-yt-badge:hover {
       background: #cc0000;
-      box-shadow: 0 2px 12px rgba(204,0,0,0.5);
+      box-shadow: 0 2px 14px rgba(204, 0, 0, 0.6);
     }
     .fa-yt-badge:focus-visible {
       outline: none;
@@ -361,17 +372,18 @@
     }
 
     /* Info block */
-    .fa-film-info {
-      padding: 16px 18px 20px;
-      border-top: 1px solid rgba(210,173,107,0.14);
+    .fa-film-info,
+    .fa-film-body {
+      padding: 16px 4px 6px 4px;
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
       flex: 1;
     }
     .fa-film-meta {
       display: flex;
       flex-wrap: wrap;
+      align-items: center;
       gap: 6px;
       font-family: 'Space Mono', monospace;
       font-size: 8.5px;
@@ -379,12 +391,12 @@
       letter-spacing: 1.5px;
       text-transform: uppercase;
       color: var(--fp-muted);
-      margin-bottom: 6px;
+      margin-bottom: 2px;
     }
     .fa-film-meta span + span::before {
-      content: '|';
+      content: '•';
       margin-right: 6px;
-      opacity: 0.3;
+      color: rgba(210, 173, 107, 0.45);
     }
     .fa-title-link {
       color: inherit;
@@ -396,30 +408,31 @@
     }
     .fa-film-title-bn {
       font-family: 'Hind Siliguri', sans-serif;
-      font-size: 1.05rem;
+      font-size: 1.18rem;
       font-weight: 600;
       color: var(--fp-cream);
       margin: 0 0 2px;
-      line-height: 1.3;
+      line-height: 1.35;
     }
     .fa-film-title-en {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 0.8rem;
+      font-size: 0.86rem;
       font-style: italic;
       color: var(--fp-accent);
-      margin: 0 0 10px;
+      margin: 0 0 6px;
       line-height: 1.4;
     }
     .fa-film-subtitle {
-      opacity: 0.75;
+      opacity: 0.8;
+      font-style: normal;
     }
     .fa-film-desc {
-      font-size: 0.8rem;
-      color: var(--fp-muted);
-      line-height: 1.6;
+      font-size: 0.82rem;
+      color: #92a49c;
+      line-height: 1.65;
       margin: 0;
       display: -webkit-box;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 3;
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
@@ -868,14 +881,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Documentary</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">Documentary</div>
+            
+            <a class="fa-yt-badge" href="https://www.youtube.com/watch?v=sLkPS_myMeA" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Zohra on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2026</span>
-                <span>&bull;</span>
                 <span>85 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">জোহরা</a></h3>
@@ -895,14 +913,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Award Winner</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">Award Winner</div>
+            
+            <a class="fa-yt-badge" href="https://www.youtube.com/watch?v=_trfrdkndVw" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Jyotirmoy on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2023</span>
-                <span>&bull;</span>
                 <span>72 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">জ্যোতির্ময়</a></h3>
@@ -922,14 +945,12 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Nominated</span>
+              <div class="fa-format-badge">Nominated</div>
             </div>
-            <div class="fa-film-body">
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2024</span>
-                <span>&bull;</span>
                 <span>75 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">বাসন্তী</a></h3>
@@ -949,14 +970,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">1971 History</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">1971 History</div>
+            
+            <a class="fa-yt-badge" href="https://youtu.be/T2EmZxZBxTg" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Ekattorer Nou-Commando on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2023</span>
-                <span>&bull;</span>
                 <span>60 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">একাত্তরের নৌ-কমান্ডো</a></h3>
@@ -976,14 +1002,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Historical</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">Historical</div>
+            
+            <a class="fa-yt-badge" href="https://youtu.be/FGe49uSpeFo" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Mujibnagar Sarkar on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2022</span>
-                <span>&bull;</span>
                 <span>60 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">মুজিবনগর সরকার</a></h3>
@@ -1003,14 +1034,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Community</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">Community</div>
+            
+            <a class="fa-yt-badge" href="https://youtu.be/sn5Y9gE5uyg" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Apon Aloy on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2022</span>
-                <span>&bull;</span>
                 <span>48 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">আপন আলোয়</a></h3>
@@ -1030,14 +1066,19 @@
                      loading="lazy"
                      decoding="async"/>
               </a>
-              <span class="fa-tag">Folk / Ecology</span>
-            </div>
-            <div class="fa-film-body">
+              <div class="fa-format-badge">Folk / Ecology</div>
+            
+            <a class="fa-yt-badge" href="https://youtu.be/IyyWzaQtbi4" target="_blank" rel="noopener noreferrer"
+               aria-label="Watch Krishi Pratibesher Gan on YouTube" title="Watch on YouTube">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" aria-hidden="true">
+                <polygon points="6 4 20 12 6 20 6 4" fill="white"/>
+              </svg>
+            </a>
+          </div>
+            <div class="fa-film-info">
               <div class="fa-film-meta">
                 <span>2022</span>
-                <span>&bull;</span>
                 <span>30 min</span>
-                <span>&bull;</span>
                 <span>Digital</span>
               </div>
               <h3 class="fa-film-title-bn"><a href="honorablemembers/sandip-kumar-mistry.html#filmography" class="fa-title-link">কৃষি প্রতিবেশের গান</a></h3>
