@@ -703,6 +703,8 @@
         padding-right: 0;
         margin-bottom: 16px;
         border-bottom: 1px solid rgba(216, 213, 204, 0.7);
+        max-height: none !important;
+        overflow: visible !important;
       }
 
       .mobile-contents-toggle {
@@ -712,29 +714,86 @@
         margin-bottom: 0;
       }
 
+      .mobile-drawer-close {
+        display: none;
+      }
+
       .sidebar-nav-wrap {
         display: none;
       }
 
       .sidebar-nav-wrap.open {
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #ECE8DE;
-        padding: 16px 18px 24px;
+        display: flex !important;
+        flex-direction: column;
+        position: fixed !important;
+        top: 74px !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: calc(100vh - 74px) !important;
+        max-height: calc(100vh - 74px) !important;
+        background: var(--warm-white) !important;
+        z-index: 9999 !important;
+        padding: 20px 24px 36px !important;
+        overflow-y: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3) !important;
+        border: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+      }
+
+      .sidebar-nav-wrap.open .sidebar-header-label {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        color: var(--burgundy);
+        padding-bottom: 12px;
+        margin-bottom: 16px;
+        border-bottom: 1px solid var(--light-border);
+      }
+
+      .sidebar-nav-wrap.open .mobile-drawer-close {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
         border: 1px solid var(--light-border);
-        border-top: none;
-        border-radius: 0 0 6px 6px;
-        box-shadow: 0 16px 36px rgba(7, 23, 21, 0.25);
-        box-sizing: border-box;
-        width: 100%;
-        overflow-x: hidden;
-        max-height: 65vh;
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch;
-        z-index: 99;
+        background: #ECE8DE;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 14px;
+        color: var(--dark-text);
+        line-height: 1;
+        transition: background-color 150ms ease, color 150ms ease;
+      }
+
+      .sidebar-nav-wrap.open .mobile-drawer-close:hover {
+        background: var(--burgundy);
+        color: #fff;
+        border-color: var(--burgundy);
+      }
+
+      .sidebar-nav-wrap.open .sidebar-nav-list {
+        margin-bottom: 24px;
+        gap: 4px;
+      }
+
+      .sidebar-nav-wrap.open .sidebar-nav-item {
+        padding: 10px 12px;
+        font-size: 14px;
+        border-radius: 3px;
+      }
+
+      .sidebar-nav-wrap.open .sidebar-nav-item.active {
+        background: rgba(158, 48, 48, 0.08);
+        border-left: 3px solid var(--burgundy);
+        font-weight: 600;
       }
 
       .doc-section,
@@ -1011,7 +1070,10 @@
         </button>
 
         <div class="sidebar-nav-wrap" id="sidebarNavWrap">
-          <div class="sidebar-header-label">CONTENTS</div>
+          <div class="sidebar-header-label">
+            <span>CONTENTS</span>
+            <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Table of Contents">✕</button>
+          </div>
           <ul class="sidebar-nav-list" role="list">
             <li>
               <a href="#preamble" class="sidebar-nav-item preamble-link active" data-target="preamble">
@@ -1685,15 +1747,29 @@
       });
     }
 
-    // Mobile Contents Dropdown Toggle
+    // Mobile Contents Dropdown / Drawer
     const mobileContentsBtn = document.getElementById('mobileContentsBtn');
     const sidebarNavWrap = document.getElementById('sidebarNavWrap');
+    const mobileDrawerClose = document.getElementById('mobileDrawerClose');
+
+    function closeMobileDrawer() {
+      if (sidebarNavWrap) sidebarNavWrap.classList.remove('open');
+      if (mobileContentsBtn) {
+        mobileContentsBtn.classList.remove('open');
+        mobileContentsBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
     if (mobileContentsBtn && sidebarNavWrap) {
       mobileContentsBtn.addEventListener('click', () => {
         const isOpen = sidebarNavWrap.classList.toggle('open');
         mobileContentsBtn.classList.toggle('open', isOpen);
         mobileContentsBtn.setAttribute('aria-expanded', isOpen);
       });
+    }
+
+    if (mobileDrawerClose) {
+      mobileDrawerClose.addEventListener('click', closeMobileDrawer);
     }
 
     // ScrollSpy for Active Sidebar Item
@@ -1735,11 +1811,7 @@
         const targetId = item.getAttribute('data-target');
         const targetEl = document.getElementById(targetId);
         if (targetEl) {
-          // Close mobile dropdown first so coordinates reflect final resting layout
-          if (window.innerWidth <= 960 && sidebarNavWrap) {
-            sidebarNavWrap.classList.remove('open');
-            if (mobileContentsBtn) mobileContentsBtn.classList.remove('open');
-          }
+          closeMobileDrawer();
 
           const headerOffset = window.innerWidth <= 960 ? 145 : 85;
           const elementPosition = targetEl.getBoundingClientRect().top;
