@@ -685,11 +685,11 @@ a {
   display: inline-block;
   text-decoration: none;
   cursor: pointer;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 .footer-brand-link:hover {
-  opacity: 0.82;
-  transform: translateY(-1px);
+  opacity: 0.85;
+  transform: none;
 }
 .footer-brand-title {
   font-family: var(--serif);
@@ -727,14 +727,14 @@ a {
 .footer-links-list a {
   font-size: 13.5px;
   line-height: 1.4;
-  color: rgba(243, 240, 231, 0.6);
+  color: rgba(243, 240, 231, 0.65);
   display: inline-block;
   padding: 2px 0;
-  transition: color 200ms ease, transform 150ms ease;
+  transition: color 200ms ease;
 }
 .footer-links-list a:hover {
-  color: var(--cream);
-  transform: translateX(2px);
+  color: #E2CA8E;
+  transform: none;
 }
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1202,12 +1202,11 @@ a {
   background: var(--burgundy, #9E3030);
   border-color: var(--gold, #B7A477);
   color: #ffffff;
-  transform: translateY(-3px);
   box-shadow: 0 6px 22px rgba(158, 48, 48, 0.4);
 }
 
 .scroll-top-btn:active {
-  transform: translateY(-1px);
+  opacity: 0.9;
 }
 
 .scroll-top-btn:focus-visible {

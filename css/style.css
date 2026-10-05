@@ -1572,15 +1572,15 @@ img.president-avatar {
 .footer-links-list a {
   font-size: 13.5px;
   line-height: 1.4;
-  color: rgba(243,240,231,0.6);
+  color: rgba(243,240,231,0.65);
   display: inline-block;
   padding: 2px 0;
   text-decoration: none;
-  transition: color 200ms ease, letter-spacing 150ms ease;
+  transition: color 200ms ease;
 }
 .footer-links-list a:hover {
-  color: var(--cream);
-  letter-spacing: 0.2px;
+  color: #E2CA8E;
+  letter-spacing: normal;
   transform: none;
 }
 .footer-bottom {
@@ -2187,11 +2187,10 @@ img.president-avatar {
   background: var(--burgundy, var(--crimson, #9E3030));
   border-color: var(--gold, #B7A477);
   color: #ffffff;
-  transform: translateY(-3px);
   box-shadow: 0 6px 22px rgba(158, 48, 48, 0.4);
 }
 .scroll-top-btn:active {
-  transform: translateY(-1px);
+  opacity: 0.9;
 }
 .scroll-top-btn:focus-visible {
   outline: 2px solid var(--gold, #B7A477);
