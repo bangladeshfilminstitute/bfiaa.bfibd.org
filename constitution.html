@@ -718,22 +718,28 @@
 
       .sidebar-nav-wrap.open {
         display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
         background: #ECE8DE;
-        padding: 16px;
+        padding: 16px 18px 24px;
         border: 1px solid var(--light-border);
-        border-radius: 4px;
-        margin-top: 10px;
-        margin-bottom: 6px;
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+        box-shadow: 0 16px 36px rgba(7, 23, 21, 0.25);
         box-sizing: border-box;
         width: 100%;
         overflow-x: hidden;
-        max-height: 60vh;
+        max-height: 65vh;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 99;
       }
 
       .doc-section,
       .dual-col-article {
-        scroll-margin-top: 140px;
+        scroll-margin-top: 145px;
       }
 
       .constitution-document {
@@ -1729,7 +1735,13 @@
         const targetId = item.getAttribute('data-target');
         const targetEl = document.getElementById(targetId);
         if (targetEl) {
-          const headerOffset = window.innerWidth <= 960 ? 140 : 85;
+          // Close mobile dropdown first so coordinates reflect final resting layout
+          if (window.innerWidth <= 960 && sidebarNavWrap) {
+            sidebarNavWrap.classList.remove('open');
+            if (mobileContentsBtn) mobileContentsBtn.classList.remove('open');
+          }
+
+          const headerOffset = window.innerWidth <= 960 ? 145 : 85;
           const elementPosition = targetEl.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
           window.scrollTo({
@@ -1738,10 +1750,6 @@
             behavior: 'smooth'
           });
           history.pushState(null, null, '#' + targetId);
-          if (window.innerWidth <= 960 && sidebarNavWrap) {
-            sidebarNavWrap.classList.remove('open');
-            if (mobileContentsBtn) mobileContentsBtn.classList.remove('open');
-          }
         }
       });
     });
@@ -1757,7 +1765,7 @@
       const targetEl = document.getElementById(targetId) || document.getElementById(hash.substring(1));
       if (targetEl) {
         setTimeout(() => {
-          const headerOffset = window.innerWidth <= 960 ? 140 : 85;
+          const headerOffset = window.innerWidth <= 960 ? 145 : 85;
           const elementPosition = targetEl.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
           window.scrollTo({
