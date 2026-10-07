@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Sohel Ahmmad Siddiquee — Filmmaker | BFIAA Alumni</title>
     <link rel="canonical" href="https://bfiaa.bfibd.org/honorablemembers/sohel-ahmmad-siddiquee"/>
-    <meta name="description" content="Sohel Ahmmad Siddiquee — BFI graduate, film director &amp; screenwriter, BFIAA Finance Secretary. Director of Rupban Kanya, Je Alo Chironjib &amp; Native."/>
+    <meta name="description" content="Sohel Ahmmad Siddiquee — BFI graduate, film director &amp; screenwriter, BFIAA Finance Secretary. Director of Loving Home, Rupban Kanya, Je Alo Chironjib &amp; Native. Founder of Ilisha-Eye Films."/>
     
     <!-- Open Graph (Facebook, LinkedIn, WhatsApp, iMessage) -->
     <meta property="og:type" content="profile"/>
@@ -14,7 +14,7 @@
     <meta property="og:locale" content="en_US"/>
     <meta property="og:site_name" content="BFIAA — Bangladesh Film Institute Alumni Association"/>
     <meta property="og:title" content="Sohel Ahmmad Siddiquee — Filmmaker | BFIAA Alumni"/>
-    <meta property="og:description" content="Alumni profile of Sohel Ahmmad Siddiquee — BFI graduate, film director, screenwriter, and producer."/>
+    <meta property="og:description" content="Alumni profile of Sohel Ahmmad Siddiquee — BFI graduate, film director, screenwriter, and founder of Ilisha-Eye Films."/>
     <meta property="og:url" content="https://bfiaa.bfibd.org/honorablemembers/sohel-ahmmad-siddiquee"/>
     <meta property="og:image" content="https://bfiaa.bfibd.org/images/sohel-og-thumbnail.jpg"/>
     <meta property="og:image:url" content="https://bfiaa.bfibd.org/images/sohel-og-thumbnail.jpg"/>
@@ -31,7 +31,7 @@
     <!-- Twitter Cards (Twitter/X, Discord) -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:title" content="Sohel Ahmmad Siddiquee — Filmmaker | BFIAA Alumni"/>
-    <meta name="twitter:description" content="Film Director, Screenwriter, Producer & Assistant Director"/>
+    <meta name="twitter:description" content="Film Director, Screenwriter, Producer & Founder of Ilisha-Eye Films"/>
     <meta name="twitter:image" content="https://bfiaa.bfibd.org/images/sohel-og-thumbnail.jpg"/>
     
     <link rel="icon" type="image/png" href="../images/bfiaa-logo.png"/>
@@ -45,16 +45,18 @@
       "mainEntity": {
         "@type": "Person",
         "name": "Sohel Ahmmad Siddiquee",
-        "jobTitle": "Filmmaker, Film Director, Screenwriter",
+        "jobTitle": "Filmmaker, Film Director, Screenwriter, Producer",
         "image": "https://bfiaa.bfibd.org/images/sohel-og-thumbnail.jpg",
         "url": "https://bfiaa.bfibd.org/honorablemembers/sohel-ahmmad-siddiquee",
         "sameAs": [
           "https://www.facebook.com/sohel.ahmmad.siddiquee",
+          "https://www.facebook.com/ilishaeyefilms",
           "https://x.com/sohel_666",
           "https://www.linkedin.com/in/sohel-ahmmad-siddiquee/"
         ]
       }
     }
+    </script>
         <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -363,9 +365,10 @@
       /* Filmography */
       .films-grid {
         display: grid;
-        grid-template-columns: repeat(3, 260px);
+        grid-template-columns: repeat(3, 270px);
         justify-content: center;
-        gap: 60px;
+        column-gap: 50px;
+        row-gap: 70px;
         margin-bottom: 100px;
       }
       
@@ -455,6 +458,241 @@
       }
       .film-cta:hover { color: var(--alumni-accent); }
       .film-cta.disabled { color: var(--alumni-muted); pointer-events: none; }
+
+      /* Production House Feature Section */
+      .production-house-section {
+        margin-bottom: 100px;
+      }
+      .prod-house-card {
+        background: var(--alumni-bg-soft);
+        border: 1px solid var(--alumni-line);
+        border-radius: 6px;
+        padding: 44px;
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 44px;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .prod-house-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4px;
+        height: 100%;
+        background: linear-gradient(to bottom, var(--alumni-accent), rgba(201, 180, 138, 0.1));
+      }
+      .prod-logo-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .prod-logo-frame {
+        width: 220px;
+        height: 220px;
+        border-radius: 8px;
+        background: #ffffff;
+        padding: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        margin-bottom: 16px;
+      }
+      .prod-logo-frame img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .prod-badge {
+        font-family: var(--font-mono, monospace);
+        font-size: 0.68rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 6px 14px;
+        background: rgba(201, 180, 138, 0.12);
+        color: var(--alumni-accent);
+        border: 1px solid rgba(201, 180, 138, 0.35);
+        border-radius: 30px;
+        display: inline-block;
+      }
+      .prod-info-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+      }
+      .prod-eyebrow {
+        font-family: var(--font-mono, monospace);
+        font-size: 0.72rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--alumni-accent);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .prod-title {
+        font-family: 'Cinzel', serif;
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        color: var(--alumni-cream);
+        margin: 0;
+        line-height: 1.15;
+      }
+      .prod-title-bn {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 1.25rem;
+        color: var(--alumni-accent);
+        margin-top: 2px;
+      }
+      .prod-tagline {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+        font-size: 1.25rem;
+        font-style: italic;
+        color: var(--alumni-cream);
+        line-height: 1.5;
+        border-left: 2px solid var(--alumni-accent);
+        padding-left: 16px;
+        margin: 4px 0 6px;
+      }
+      .prod-desc {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: var(--alumni-muted);
+        margin: 0;
+      }
+      .prod-contact-strip {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+        gap: 12px;
+        margin-top: 10px;
+        padding-top: 18px;
+        border-top: 1px solid var(--alumni-line);
+      }
+      .prod-contact-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: rgba(0, 0, 0, 0.25);
+        padding: 12px 14px;
+        border-radius: 4px;
+        border: 1px solid var(--alumni-line);
+        text-decoration: none;
+        transition: border-color 0.25s ease, background-color 0.25s ease;
+      }
+      .prod-contact-item:hover {
+        border-color: var(--alumni-accent);
+        background: rgba(201, 180, 138, 0.06);
+      }
+      .prod-contact-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: rgba(201, 180, 138, 0.15);
+        color: var(--alumni-accent);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .prod-contact-detail {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+      }
+      .prod-contact-lbl {
+        font-family: var(--font-mono, monospace);
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: var(--alumni-muted);
+      }
+      .prod-contact-val {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 0.88rem;
+        color: var(--alumni-cream);
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition: color 0.2s ease;
+      }
+      .prod-contact-item:hover .prod-contact-val {
+        color: var(--alumni-accent);
+      }
+      .prod-cta-btns {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 12px;
+      }
+      .prod-btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 22px;
+        background: #1877F2;
+        color: #ffffff;
+        border: 1px solid #1877F2;
+        border-radius: 4px;
+        font-family: var(--font-mono, monospace);
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease;
+      }
+      .prod-btn-primary:hover {
+        background: #1464cc;
+        border-color: #1464cc;
+      }
+      .prod-btn-wa {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 22px;
+        background: #25D366;
+        color: #ffffff;
+        border: 1px solid #25D366;
+        border-radius: 4px;
+        font-family: var(--font-mono, monospace);
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.2s ease, border-color 0.2s ease;
+      }
+      .prod-btn-wa:hover {
+        background: #1da851;
+        border-color: #1da851;
+      }
+      .prod-btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 22px;
+        background: transparent;
+        color: var(--alumni-cream);
+        border: 1px solid var(--alumni-line);
+        border-radius: 4px;
+        font-family: var(--font-mono, monospace);
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: border-color 0.2s ease, color 0.2s ease;
+      }
+      .prod-btn-secondary:hover {
+        border-color: var(--alumni-accent);
+        color: var(--alumni-accent);
+      }
       
       /* Assistant & Production Credits */
       .credits-section {
@@ -646,8 +884,45 @@
           gap: 20px;
         }
         .stat-item { flex: 1 1 120px; }
-        .films-grid { grid-template-columns: repeat(2, 260px); justify-content: center; gap: 30px; }
+        .films-grid { grid-template-columns: repeat(2, 270px); justify-content: center; gap: 30px; }
+        .contact-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
         .about-portrait-float { width: 220px; margin: 0 25px 15px 0; }
+      }
+
+      @media (max-width: 900px) {
+        .prod-house-card {
+          grid-template-columns: 1fr;
+          padding: 32px 20px;
+          gap: 28px;
+          text-align: center;
+        }
+        .prod-house-card::before {
+          width: 100%;
+          height: 3px;
+          top: 0;
+          left: 0;
+          background: linear-gradient(to right, var(--alumni-accent), rgba(201, 180, 138, 0.1));
+        }
+        .prod-logo-box {
+          margin: 0 auto;
+        }
+        .prod-eyebrow {
+          justify-content: center;
+        }
+        .prod-tagline {
+          border-left: none;
+          border-top: 1px solid var(--alumni-accent);
+          border-bottom: 1px solid var(--alumni-accent);
+          padding: 10px 0;
+          margin: 10px 0;
+        }
+        .prod-contact-strip {
+          grid-template-columns: 1fr;
+          text-align: left;
+        }
+        .prod-cta-btns {
+          justify-content: center;
+        }
       }
 
       @media (max-width: 768px) {
@@ -1093,6 +1368,7 @@
       "image": "https://bfiaa-bfibd.pages.dev/images/sohel-og-thumbnail.jpg",
       "sameAs": [
         "https://www.facebook.com/sohel.ahmmad.siddiquee",
+        "https://www.facebook.com/ilishaeyefilms",
         "https://x.com/sohel_666",
         "https://www.linkedin.com/in/sohel-ahmmad-siddiquee/"
       ]
@@ -1171,6 +1447,7 @@
                 <div class="role-pill">Film Director</div>
                 <div class="role-pill">Screenwriter</div>
                 <div class="role-pill">Executive Producer</div>
+                <div class="role-pill">Founder &middot; Ilisha-Eye Films</div>
                 <div class="role-pill">Assistant Director</div>
                 <div class="role-pill">Finance Secretary (2022–2023)</div>
               </div>
@@ -1181,13 +1458,14 @@
               
               <div class="hero-actions font-mono">
                 <a href="#filmography" class="btn-primary">Films As Director</a>
+                <a href="#production-house" class="btn-secondary">Ilisha-Eye Films</a>
                 <a href="#credits" class="btn-secondary">View Credits</a>
               </div>
             </div>
             
             <div class="hero-stats font-serif">
               <div class="stat-item">
-                <div class="stat-num text-cream">4+</div>
+                <div class="stat-num text-cream">5+</div>
                 <div class="stat-lbl font-mono text-muted">Films Directed</div>
               </div>
               <div class="stat-item">
@@ -1218,6 +1496,7 @@
                 <p>With a passion for storytelling and a keen eye for cinematic detail, Sohel Ahmmad Siddiquee has established himself as a versatile and dynamic film director, screenwriter, and producer. After completing his post-graduation in Finance &amp; Banking from Dhaka, he embarked on a creative journey to pursue his true passion for storytelling through the medium of cinema.</p>
                 <p>Seeking to deepen his understanding of the craft, he enrolled in the prestigious Film Appreciation Course under the guidance of renowned auteur Tanvir Mokammel at the Bangladesh Film Institute (BFI). He later pursued a diploma course in Program Producing at the Bangladesh Cinema &amp; Television Institute (BCTI), acquiring foundational skills in creative production and technical management.</p>
                 <p>His filmmaking journey has been deeply influenced by Tanvir Mokammel, under whom he received his foundational film education and worked continuously for ten years. Mokammel's cinematic focus on the liberation of common people, partition, and marginalized communities has profoundly shaped his storytelling perspective. In addition, rich collaborations with eminent filmmakers such as Morshedul Islam, Goutam Ghose, and Raja Sen have further broadened his cinematic horizons.</p>
+                <p>He is also the founder of <strong>ILISHA-EYE FILMS</strong>, a licensed Bangladeshi film production company working with an ardent commitment to world cinema and auteur storytelling.</p>
                 <p>Within BFIAA, he has contributed actively to institutional stewardship, serving as Seminar Secretary in the 2019–2021 Executive Council and as Finance Secretary in the 2022–2023 Executive Committee.</p>
               </div>
             </div>
@@ -1249,6 +1528,10 @@
                 <div class="tl-item">
                   <div class="tl-year font-mono text-accent">10 Years</div>
                   <div class="tl-content"><span class="text-cream">Mentorship &amp; Set Direction</span><span class="tl-org">Collaborated on major feature &amp; documentary projects with Tanvir Mokammel</span></div>
+                </div>
+                <div class="tl-item">
+                  <div class="tl-year font-mono text-accent">Production</div>
+                  <div class="tl-content"><span class="text-cream">Founder &amp; Producer &middot; Ilisha-Eye Films</span><span class="tl-org">Licensed Film Production House of Bangladesh</span></div>
                 </div>
                 <div class="tl-item">
                   <div class="tl-year font-mono text-accent">2019–21</div>
@@ -1330,6 +1613,22 @@
           </div>
           
           <div class="films-grid">
+            <!-- Loving Home -->
+            <div class="film-card">
+              <div class="film-image-wrap">
+                <img src="../images/sohel-loving-home.jpg" loading="lazy" alt="Loving Home (স্নেহের আবাস) Documentary Poster"/>
+              </div>
+              <div class="film-meta-bar font-mono text-muted">
+                <span>DOCU</span>
+                <span>BTV</span>
+                <span>Digital</span>
+              </div>
+              <h3 class="film-title-bn font-bn text-cream">স্নেহের আবাস</h3>
+              <h4 class="film-title-en font-serif text-accent">Loving Home — SOS Children's Village</h4>
+              <p class="film-desc font-sans text-muted">চট্টগ্রামের এসওএস শিশুপল্লীর (SOS Children's Village Chattogram) সুবিধাবঞ্চিত ও পিতৃমাতৃহীন শিশুদের মানবিক আশ্রয়ের বাস্তব জীবনগাথা নিয়ে নির্মিত প্রামাণ্যচিত্র। চিত্রনাট্য ও পরিচালনা: মোঃ সোহেল আহমেদ সিদ্দিকী। প্রযোজনা: বাংলাদেশ টেলিভিশন (বিটিভি) চট্টগ্রাম কেন্দ্র।</p>
+              <span class="film-cta disabled font-mono">BTV Broadcast</span>
+            </div>
+
             <!-- Rupban Kanya -->
             <div class="film-card">
               <div class="film-image-wrap">
@@ -1392,6 +1691,98 @@
               <h4 class="film-title-en font-serif text-accent">Anterbaspa</h4>
               <p class="film-desc font-sans text-muted">Upcoming full-length fiction feature film as Screenwriter &amp; Director, examining psychological intricacies and intimate human relationships.</p>
               <span class="film-cta disabled font-mono">In Development</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRODUCTION HOUSE: ILISHA-EYE FILMS -->
+        <section class="container production-house-section" id="production-house">
+          <div class="section-header">
+            <h2 class="section-title font-serif">Production House</h2>
+            <p class="font-mono text-accent" style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; margin-top:10px;">Official Studio &middot; Licensed Independent Film Production</p>
+          </div>
+
+          <div class="prod-house-card">
+            <div class="prod-logo-box">
+              <div class="prod-logo-frame">
+                <img src="../images/ilisha-eye-films-logo.png" alt="Ilisha-Eye Films Official Logo" loading="lazy"/>
+              </div>
+              <span class="prod-badge">Govt. Licensed Studio</span>
+            </div>
+
+            <div class="prod-info-wrap">
+              <div class="prod-eyebrow font-mono">
+                <span>Film Production Company</span>
+                <span style="opacity:0.4;">&bull;</span>
+                <span>Movie / Television Studio</span>
+              </div>
+              <h3 class="prod-title font-serif">ILISHA-EYE FILMS</h3>
+              <div class="prod-title-bn font-bn">ইলিশা-আই ফিল্মস</div>
+
+              <blockquote class="prod-tagline font-serif">
+                &ldquo;ILISHA-EYE FILMS is a film production company of Bangladesh working with a strong commitment to world cinema.&rdquo;
+              </blockquote>
+
+              <p class="prod-desc font-sans">
+                Founded and led by filmmaker <strong>Md. Sohel Ahmmad Siddiquee</strong>, Ilisha-Eye Films is an officially licensed Bangladeshi film and television production studio committed to original storytelling, auteur-driven cinema, and socially conscious documentaries. The banner is actively developing narrative projects, including the forthcoming full-length feature film <em>Anterbaspa (অন্তর্বাষ্প)</em> adapted from Nilufar Begum's short story.
+              </p>
+
+              <div class="prod-contact-strip">
+                <a href="tel:+8801916001971" class="prod-contact-item">
+                  <div class="prod-contact-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div class="prod-contact-detail">
+                    <span class="prod-contact-lbl font-mono">Direct Phone / Hotline</span>
+                    <span class="prod-contact-val font-mono">01916-001971</span>
+                  </div>
+                </a>
+
+                <a href="mailto:ilishaeyefilms@gmail.com" class="prod-contact-item">
+                  <div class="prod-contact-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="prod-contact-detail">
+                    <span class="prod-contact-lbl font-mono">Official Studio Email</span>
+                    <span class="prod-contact-val">ilishaeyefilms@gmail.com</span>
+                  </div>
+                </a>
+
+                <a href="https://www.facebook.com/ilishaeyefilms" target="_blank" rel="noopener" class="prod-contact-item">
+                  <div class="prod-contact-icon">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                  </div>
+                  <div class="prod-contact-detail">
+                    <span class="prod-contact-lbl font-mono">Facebook Page</span>
+                    <span class="prod-contact-val">@ilishaeyefilms</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prod-cta-btns">
+                <a href="https://www.facebook.com/ilishaeyefilms" target="_blank" rel="noopener" class="prod-btn-primary">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  Visit Facebook Page &nearr;
+                </a>
+                <a href="https://wa.me/8801916001971" target="_blank" rel="noopener" class="prod-btn-wa">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="vertical-align:middle;">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                  WhatsApp Direct
+                </a>
+                <a href="mailto:ilishaeyefilms@gmail.com" class="prod-btn-secondary">
+                  Send Email &rarr;
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -1537,25 +1928,44 @@
         <!-- CONTACT -->
         <section class="contact-section" id="contact">
           <div class="container">
-            <h2 class="contact-title font-serif text-cream">Connect With Filmmaker</h2>
+            <h2 class="contact-title font-serif text-cream">Connect &amp; Inquiries</h2>
+            <p class="font-mono text-accent" style="font-size:0.75rem; letter-spacing:2px; text-transform:uppercase; margin-top:-25px; margin-bottom:40px;">Direct Filmmaker &amp; Production House Communications</p>
             
             <div class="contact-grid">
               <div class="contact-item">
-                <div class="contact-item-lbl font-mono">Facebook</div>
+                <div class="contact-item-lbl font-mono">Phone / WhatsApp</div>
                 <div class="contact-item-val font-sans">
-                  <a href="https://www.facebook.com/sohel.ahmmad.siddiquee" target="_blank" rel="noopener">sohel.ahmmad.siddiquee</a>
+                  <a href="tel:+8801916001971">01916-001971</a>
                 </div>
               </div>
               <div class="contact-item">
-                <div class="contact-item-lbl font-mono">X (Twitter)</div>
+                <div class="contact-item-lbl font-mono">Studio Email</div>
+                <div class="contact-item-val font-sans" style="font-size: clamp(0.85rem, 1.8vw, 1.05rem); word-break: break-all;">
+                  <a href="mailto:ilishaeyefilms@gmail.com">ilishaeyefilms@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-lbl font-mono">Production House FB</div>
                 <div class="contact-item-val font-sans">
-                  <a href="https://x.com/sohel_666" target="_blank" rel="noopener">@sohel_666</a>
+                  <a href="https://www.facebook.com/ilishaeyefilms" target="_blank" rel="noopener">Ilisha-Eye Films</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-lbl font-mono">Filmmaker Facebook</div>
+                <div class="contact-item-val font-sans">
+                  <a href="https://www.facebook.com/sohel.ahmmad.siddiquee" target="_blank" rel="noopener">sohel.ahmmad.siddiquee</a>
                 </div>
               </div>
               <div class="contact-item">
                 <div class="contact-item-lbl font-mono">LinkedIn</div>
                 <div class="contact-item-val font-sans">
                   <a href="https://www.linkedin.com/in/sohel-ahmmad-siddiquee/" target="_blank" rel="noopener">sohel-ahmmad-siddiquee</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item-lbl font-mono">X (Twitter)</div>
+                <div class="contact-item-val font-sans">
+                  <a href="https://x.com/sohel_666" target="_blank" rel="noopener">@sohel_666</a>
                 </div>
               </div>
             </div>
