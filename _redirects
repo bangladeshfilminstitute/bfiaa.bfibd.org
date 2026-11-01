@@ -4,6 +4,17 @@
 /honorable-members/*                             /honorablemembers/:splat                    301
 /honorablemembers/sohel-ahmed-siddiquee          /honorablemembers/sohel-ahmmad-siddiquee   301
 /honorablemembers/sohel-ahmed-siddiquee.html     /honorablemembers/sohel-ahmmad-siddiquee   301
+/honorablemembers/anando-kutum                   /honorablemembers/Annando-Kutum             301
+/honorablemembers/anando-kutum.html              /honorablemembers/Annando-Kutum             301
+/honorablemembers/annando-kutum                  /honorablemembers/Annando-Kutum             301
+/honorablemembers/annando-kutum.html             /honorablemembers/Annando-Kutum             301
+/honorablemembers/Annando-Kutum.html             /honorablemembers/Annando-Kutum             301
+/alumni/anando-kutum                             /honorablemembers/Annando-Kutum             301
+/alumni/anando-kutum.html                        /honorablemembers/Annando-Kutum             301
+/alumni/annando-kutum                            /honorablemembers/Annando-Kutum             301
+/alumni/annando-kutum.html                       /honorablemembers/Annando-Kutum             301
+/alumni/Annando-Kutum                            /honorablemembers/Annando-Kutum             301
+/alumni/Annando-Kutum.html                       /honorablemembers/Annando-Kutum             301
 /alumni                                          /404.html                                   302
 /alumni/                                         /404.html                                   302
 /alumni/*                                        /404.html                                   302

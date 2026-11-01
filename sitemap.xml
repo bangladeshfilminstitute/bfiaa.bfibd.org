@@ -56,6 +56,16 @@
       <image:title>Kazi Mushfiqus Saleheen — Filmmaker, Assistant Director &amp; BFIAA Alumni</image:title>
     </image:image>
   </url>
+  <url>
+    <loc>https://bfiaa.bfibd.org/honorablemembers/Annando-Kutum</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://bfiaa.bfibd.org/images/anando-og-thumbnail.jpg</image:loc>
+      <image:title>Annando Kutum — Film Director, Producer &amp; Screenwriter, BFIAA Alumni</image:title>
+    </image:image>
+  </url>
   <!-- Films Page -->
   <url>
     <loc>https://bfiaa.bfibd.org/films</loc>
