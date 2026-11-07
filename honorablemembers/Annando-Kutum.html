@@ -79,7 +79,7 @@
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="../css/style.css?v=4.0">
     
@@ -102,7 +102,7 @@
         --gold-dark: #8F7D52;
         --serif: 'Cormorant Garamond', Georgia, serif;
         --sans: 'Inter', system-ui, -apple-system, sans-serif;
-        --bn: 'Hind Siliguri', sans-serif;
+        --bn: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif;
         --mono: 'JetBrains Mono', monospace;
         --alumni-bg: #0b0f0e;
         --alumni-bg-soft: #121715;
@@ -125,7 +125,7 @@
       .font-serif { font-family: 'Cinzel', serif; }
       .font-sans { font-family: 'Plus Jakarta Sans', sans-serif; }
       .font-mono { font-family: 'JetBrains Mono', monospace; }
-      .font-bn { font-family: 'Hind Siliguri', sans-serif; }
+      .font-bn { font-family: 'Noto Sans Bengali', 'Hind Siliguri', sans-serif; letter-spacing: normal; }
       
       .text-cream { color: var(--alumni-cream); }
       .text-muted { color: var(--alumni-muted); }
@@ -213,10 +213,13 @@
       }
       
       .hero-title-bn {
-        font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-        font-weight: 500;
-        margin: 0 0 25px;
-        opacity: 0.9;
+        font-family: var(--bn);
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        opacity: 0.95;
       }
       
       .hero-roles {
@@ -688,6 +691,12 @@
         margin-bottom: 5px;
         color: #fff;
       }
+      #festivals .ct-title-en {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: var(--alumni-cream);
+        line-height: 1.45;
+      }
       .ct-title-en {
         font-size: 0.9rem;
         color: var(--alumni-muted);
@@ -887,7 +896,15 @@
           width: 100%;
         }
         .hero-title { font-size: 3rem; line-height: 1.1; }
-        .hero-title-bn { font-size: 1.2rem; margin-bottom: 25px; }
+        .hero-title-bn {
+        font-family: var(--bn);
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        opacity: 0.95;
+      }
         .hero-roles { flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
         .role-pill { font-size: 0.65rem; padding: 5px 12px; }
         .hero-location { margin-bottom: 30px; }
@@ -951,7 +968,15 @@
       @media (max-width: 480px) {
         .container { padding: 0 20px; }
         .hero-title { font-size: 2.4rem; }
-        .hero-title-bn { font-size: 1rem; }
+        .hero-title-bn {
+        font-family: var(--bn);
+        font-size: 1.5rem;
+        letter-spacing: normal;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        opacity: 0.95;
+      }
         .hero-eyebrow { font-size: 0.65rem; }
         .section-title { font-size: 2rem; }
 
@@ -1671,14 +1696,14 @@
             <!-- A City of Lie -->
             <div class="film-card">
               <div class="film-image-wrap">
-                <img src="../images/anando-a-city-of-lie.jpg" loading="lazy" alt="A City of Lie (শহরের মিথ্যা) Film Poster"/>
+                <img src="../images/anando-a-city-of-lie.jpg" loading="lazy" alt="A City of Lie (মিথ্যা কথার শহর) Film Poster"/>
               </div>
               <div class="film-meta-bar font-mono text-muted">
                 <span>MYSTERY</span>
                 <span>KOLKATA</span>
                 <span>NARRATIVE</span>
               </div>
-              <h3 class="film-title-bn font-bn text-cream">শহরের মিথ্যা</h3>
+              <h3 class="film-title-bn font-bn text-cream">মিথ্যা কথার শহর</h3>
               <h4 class="film-title-en font-serif text-accent">A City of Lie</h4>
               <p class="film-desc font-sans text-muted">কলকাতার প্রাণবন্ত ও রহস্যময় পটভূমিতে নির্মিত। একজন তরুণ বাংলাদেশী আলোকচিত্রী এক রূপসী নারীর ছবি তুলে তার প্রেমে পড়ে যান। তাকে খুঁজতে গিয়ে প্রতারিত হওয়ার পর তিনি কলকাতার ঐতিহাসিক স্থানগুলোর ভেতর দিয়ে নিজের এক অলৌকিক পুনর্জন্মের গভীর সত্য আবিষ্কার করেন।</p>
               <div class="film-cta font-mono disabled">
@@ -1701,42 +1726,6 @@
               <p class="film-desc font-sans text-muted">২০১৩ থেকে ২০১৭ সালের বাংলাদেশে মুক্তমনা ব্লগারদের ওপর মৌলবাদী আক্রমণের স্পর্শকাতর সংকটকাল নিয়ে নির্মিত চলচ্চিত্র। সামাজিক যোগাযোগ মাধ্যমে কুসংস্কার ও অন্যায়ের বিরুদ্ধে সোচ্চার এক ব্লগারের প্রতিদিনের শঙ্কা এবং সত্য উচ্চারণের আত্মত্যাগের দলিল।</p>
               <div class="film-cta font-mono disabled">
                 <span>Director &middot; Producer &middot; Screenwriter</span>
-              </div>
-            </div>
-
-            <!-- Upcoming Project -->
-            <div class="film-card">
-              <div class="film-image-wrap">
-                <img src="../images/anando-upcoming-project.jpg" loading="lazy" alt="Upcoming Project Artwork"/>
-              </div>
-              <div class="film-meta-bar font-mono text-muted">
-                <span>FEATURE</span>
-                <span>IN DEV</span>
-                <span>POST-2001</span>
-              </div>
-              <h3 class="film-title-bn font-bn text-cream">আসন্ন পূর্ণদৈর্ঘ্য চলচ্চিত্র</h3>
-              <h4 class="film-title-en font-serif text-accent">Untitled Rural Dynamics Project</h4>
-              <p class="film-desc font-sans text-muted">২০০১ সালের বৈশ্বিক পরিবর্তনের প্রেক্ষাপটে বাংলাদেশের গ্রামীণ জনজীবনের গভীর রূপান্তর, প্রযুক্তিগত ও অর্থনৈতিক পুনর্গঠন এবং প্রান্তিক জনগোষ্ঠীর সামাজিক সম্পর্কের পরিবর্তনের জটিল বাস্তবতা তুলে ধরার একটি উচ্চাকাঙ্ক্ষী পূর্ণদৈর্ঘ্য চলচ্চিত্র প্রকল্প।</p>
-              <div class="film-cta font-mono disabled">
-                <span>Director &middot; Screenwriter (Pre-Production)</span>
-              </div>
-            </div>
-
-            <!-- Dhaka Depicted Book -->
-            <div class="film-card">
-              <div class="film-image-wrap">
-                <img src="../images/anando-dhaka-depicted.jpg" loading="lazy" alt="Dhaka Depicted Book Cover"/>
-              </div>
-              <div class="film-meta-bar font-mono text-muted">
-                <span>BOOK</span>
-                <span>CINEMA</span>
-                <span>RESEARCH</span>
-              </div>
-              <h3 class="film-title-bn font-bn text-cream">চলচ্চিত্রে ঢাকা</h3>
-              <h4 class="film-title-en font-serif text-accent">Dhaka Depicted — Cinema &amp; Philosophy</h4>
-              <p class="film-desc font-sans text-muted">আমাদের স্থানীয় চলচ্চিত্রে ঢাকা শহর কীভাবে চিত্রায়িত হয়েছে, তার অন্তর্নিহিত দর্শন, নান্দনিকতা ও সমাজতাত্ত্বিক তাৎপর্য নিয়ে রচিত গবেষণা গ্রন্থ। জাতীয় ও আন্তর্জাতিক পাঠকদের কাছে চলচ্চিত্রের লেন্সের মাধ্যমে ঢাকাকে উপলব্ধি করানোর প্রয়াস।</p>
-              <div class="film-cta font-mono disabled">
-                <span>Author &middot; Forthcoming Publication</span>
               </div>
             </div>
 
@@ -1790,21 +1779,6 @@
               <p class="venture-desc font-sans">
                 Founded in 2020 by Annando Kutum, <strong>Jheel Kutum Cafe</strong> was established as Bangladesh's first dedicated film-themed cafe. It quickly became a vital cultural landmark and informal creative incubator for independent filmmakers, scriptwriters, and cinephiles. In addition to cafe culture, Annando has led transformative philanthropic drives&mdash;organizing free medical camps, educational materials distribution for underprivileged children, and food relief for marginalized communities.
               </p>
-
-              <div class="venture-highlights">
-                <div class="venture-hl-item">
-                  <span class="venture-hl-lbl font-mono">Magazine / Editorial</span>
-                  <span class="venture-hl-val font-sans"><strong>Film Festival News</strong> &mdash; Editor &amp; Publisher</span>
-                </div>
-                <div class="venture-hl-item">
-                  <span class="venture-hl-lbl font-mono">Forthcoming Book</span>
-                  <span class="venture-hl-val font-sans"><strong>Dhaka Depicted</strong> (চলচ্চিত্রে ঢাকা)</span>
-                </div>
-                <div class="venture-hl-item">
-                  <span class="venture-hl-lbl font-mono">Grassroots Film Festival</span>
-                  <span class="venture-hl-val font-sans"><strong>Kushtia Int. Film Festival</strong> &mdash; Initiator with Shilpakala</span>
-                </div>
-              </div>
             </div>
           </div>
         </section>
@@ -1829,7 +1803,6 @@
               <tbody>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">৫ম আন্তর্জাতিক কলকাতা স্বল্পদৈর্ঘ্য চলচ্চিত্র উৎসব</div>
                     <div class="ct-title-en">5th International Kolkata Short Film Festival (IKSFF)</div>
                   </td>
                   <td><span class="ct-pill">Curator for Bangladesh</span></td>
@@ -1838,7 +1811,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">৪র্থ বগুড়া আন্তর্জাতিক চলচ্চিত্র উৎসব</div>
                     <div class="ct-title-en">4th Bogura International Film Festival</div>
                   </td>
                   <td><span class="ct-pill">Festival Programmer</span></td>
@@ -1847,7 +1819,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">ঢাকা আন্তর্জাতিক চলচ্চিত্র উৎসব (DIFF)</div>
                     <div class="ct-title-en">Dhaka International Film Festival &middot; Bulletin Sub-Editor (16th DIFF)</div>
                   </td>
                   <td><span class="ct-pill">Delegate &amp; Sub-Editor</span></td>
@@ -1856,7 +1827,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">৪র্থ নেপাল সাংস্কৃতিক আন্তর্জাতিক চলচ্চিত্র উৎসব</div>
                     <div class="ct-title-en">4th Nepal Cultural International Film Festival</div>
                   </td>
                   <td><span class="ct-pill">International Delegate</span></td>
@@ -1865,7 +1835,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">গ্লোবাল ইয়ুথ ফিল্ম ফেস্টিভ্যাল বাংলাদেশ</div>
                     <div class="ct-title-en">Global Youth Film Festival Bangladesh (2nd Edition)</div>
                   </td>
                   <td><span class="ct-pill">Festival Programmer</span></td>
@@ -1874,7 +1843,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">কলকাতা আন্তর্জাতিক চলচ্চিত্র উৎসব (KIFF)</div>
                     <div class="ct-title-en">Kolkata International Film Festival</div>
                   </td>
                   <td><span class="ct-pill">Student Delegate</span></td>
@@ -1883,7 +1851,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">ভারতের আন্তর্জাতিক চলচ্চিত্র উৎসব (IFFI) &middot; ফিল্ম বাজার</div>
                     <div class="ct-title-en">International Film Festival of India (IFFI) &middot; Film Bazaar</div>
                   </td>
                   <td><span class="ct-pill">Market Fellow</span></td>
@@ -1892,7 +1859,6 @@
                 </tr>
                 <tr>
                   <td>
-                    <div class="ct-title-bn" style="font-size:1.1rem;">১৩তম আন্তর্জাতিক স্বল্পদৈর্ঘ্য ও মুক্ত চলচ্চিত্র উৎসব ঢাকা</div>
                     <div class="ct-title-en">13th Int. Short &amp; Independent Film Festival (ISIF) &middot; Talent Campus</div>
                   </td>
                   <td><span class="ct-pill">Talent Campus Fellow</span></td>
