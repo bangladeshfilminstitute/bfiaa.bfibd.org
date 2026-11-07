@@ -132,45 +132,45 @@
       .text-accent { color: var(--alumni-accent); }
       
       /* Hero Section */
+      /* Hero Section & Cover Banner */
       .hero-section {
         position: relative;
         width: 100%;
-        min-height: 75vh;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        margin-bottom: 80px;
+        padding-top: 100px;
+        margin-bottom: 70px;
       }
-      
-      .hero-bg {
-        position: absolute;
-        inset: 0;
-        z-index: 1;
-      }
-      
-      .hero-bg img {
+
+      .profile-cover-banner {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center 30%;
-        filter: contrast(1.1) brightness(0.65) grayscale(20%);
+        max-width: 1200px;
+        margin: 0 auto 35px auto;
+        padding: 0 20px;
       }
-      
-      .hero-overlay {
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(to right, rgba(11, 15, 14, 0.96) 0%, rgba(11, 15, 14, 0.7) 55%, transparent 100%),
-                    linear-gradient(to top, var(--alumni-bg) 0%, rgba(11, 15, 14, 0.3) 25%, transparent 60%);
-        z-index: 2;
+
+      .cover-banner-wrap {
+        position: relative;
+        width: 100%;
+        background: #0f1413;
+        border: 1px solid var(--alumni-line);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6);
       }
-      
+
+      .cover-banner-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 851 / 315;
+        object-fit: contain;
+        display: block;
+      }
+
       .hero-content {
         position: relative;
-        z-index: 3;
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 100px 5% 40px;
+        padding: 0 20px;
         display: grid;
         grid-template-columns: 1fr 300px;
         gap: 40px;
@@ -180,11 +180,13 @@
       .about-portrait-float {
         display: block;
         width: 100%;
-        max-width: 500px;
+        max-width: 480px;
+        height: auto;
         margin: 0 auto 30px auto;
-        border-radius: 4px;
+        border-radius: 6px;
         border: 1px solid var(--alumni-line);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55);
+        object-fit: contain;
       }
       
       .hero-eyebrow {
@@ -815,10 +817,12 @@
 
       @media (max-width: 1024px) {
         .container { padding: 0 30px; }
+        .hero-section { padding-top: 90px; }
+        .profile-cover-banner { padding: 0 30px; margin-bottom: 30px; }
         .hero-content {
           grid-template-columns: 1fr;
           gap: 30px;
-          padding: 120px 30px 50px;
+          padding: 0 30px;
         }
         .hero-title { font-size: 4.5rem; }
         .hero-stats {
@@ -834,7 +838,7 @@
         .pillars-grid { grid-template-columns: 1fr; gap: 20px; }
         .films-grid { grid-template-columns: repeat(2, 270px); justify-content: center; gap: 30px; }
         .contact-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-        .about-portrait-float { width: 220px; margin: 0 25px 15px 0; }
+        .about-portrait-float { width: 100%; max-width: 420px; margin: 0 auto 25px auto; }
       }
 
       @media (max-width: 900px) {
@@ -873,27 +877,21 @@
       @media (max-width: 768px) {
         .container { padding: 0 20px; }
         .hero-section { 
-          min-height: 100svh; 
-          align-items: flex-end;
+          padding-top: 80px; 
+          min-height: auto; 
+          margin-bottom: 45px; 
         }
-        .hero-bg {
-          height: 65svh;
-          bottom: auto;
+        .profile-cover-banner { 
+          padding: 0 20px; 
+          margin-bottom: 25px; 
         }
-        .hero-bg img { 
-          object-position: 50% 15%;
-        }
-        .hero-overlay {
-          background: linear-gradient(to bottom, 
-            rgba(11,15,14,0.05) 0%, 
-            rgba(11,15,14,0.35) 30%, 
-            rgba(11,15,14,0.88) 60%,
-            var(--alumni-bg) 100%
-          );
+        .cover-banner-wrap { 
+          border-radius: 6px; 
         }
         .hero-content { 
-          padding: 24svh 20px 40px; 
+          padding: 0 20px; 
           width: 100%;
+          gap: 25px;
         }
         .hero-title { font-size: 3rem; line-height: 1.1; }
         .hero-title-bn {
@@ -916,7 +914,7 @@
         .about-grid { grid-template-columns: 1fr; gap: 40px; }
         .about-portrait-float {
           float: none;
-          width: calc(100% - 40px);
+          width: 100%;
           max-width: 360px;
           display: block;
           margin: 0 auto 25px;
@@ -966,7 +964,9 @@
       }
 
       @media (max-width: 480px) {
-        .container { padding: 0 20px; }
+        .container { padding: 0 15px; }
+        .profile-cover-banner { padding: 0 15px; margin-bottom: 20px; }
+        .hero-content { padding: 0 15px; }
         .hero-title { font-size: 2.4rem; }
         .hero-title-bn {
         font-family: var(--bn);
@@ -1506,12 +1506,20 @@
 
       <div class="alumni-page-wrapper">
 
-        <!-- HERO -->
+        <!-- HERO & COVER BANNER -->
         <section class="hero-section">
-          <div class="hero-bg">
-            <img src="../images/anando-hero-cover.jpg" fetchpriority="high" alt="Annando Kutum Background Backdrop"/>
+          <!-- Standalone Profile Cover Banner (851x315 - All 8 timeline portraits 2017-2024 fully visible) -->
+          <div class="profile-cover-banner">
+            <div class="cover-banner-wrap">
+              <img 
+                src="../images/anando-hero-cover.jpg" 
+                fetchpriority="high" 
+                alt="Annando Kutum — Creative Evolution Timeline (2017–2024)" 
+                class="cover-banner-img"
+              />
+            </div>
           </div>
-          <div class="hero-overlay"></div>
+
           <div class="hero-content">
             <div class="hero-main">
               <div class="hero-eyebrow font-mono text-accent">Alumni Profile</div>
@@ -1569,7 +1577,7 @@
                 <h2 class="section-title font-serif">About The Filmmaker</h2>
               </div>
               <div class="about-bio font-sans text-muted">
-                <img src="../images/anando-avatar.jpg" loading="lazy" class="about-portrait-float" alt="Annando Kutum Portrait"/>
+                <img src="../images/anando-about.jpg" loading="lazy" class="about-portrait-float" alt="Annando Kutum Portrait"/>
                 <p><strong>Annando Kutum (আনন্দ কুটুম)</strong> is a dynamic film director, producer, and screenwriter with over 14 years of immersive experience spanning feature films, documentaries, television fiction, and creative advertising. Rooted in both commercial and alternative cinema in Bangladesh and India, his creative journey is defined by versatility, narrative depth, and an unwavering commitment to cinematic truth.</p>
                 <p>His foundational cinematic education was shaped under the mentorship of legendary auteur <strong>Tanvir Mokammel</strong> through the Film Appreciation Course at the <strong>Bangladesh Film Institute (BFI)</strong>. In 2012, Annando began his feature film career as an Assistant Director on Mokammel's national award-winning period epic <em>Jibon Dhuli (জীবনঢুলী)</em> and later contributed to the landmark Partition documentary <em>Border Line (সীমান্তরেখা)</em>. Over the years, he has collaborated closely with celebrated auteurs including Morshedul Islam, as well as working alongside the Bangladesh Air Force on the 1971 Liberation War documentary <em>Kilo Flight (কিলো ফ্লাইট)</em>.</p>
                 <p>As an independent director and screenwriter, Annando has created thought-provoking narrative works including <em>Alo Adharer Kabbo (আলো আঁধারের কাব্য)</em>, the Kolkata-based psychological mystery <em>A City of Lie</em>, and the socially urgent narrative <em>Blog</em>. His signature approach&mdash;<strong>"Humanistic Political Narrative"</strong>&mdash;fuses deep empathy for marginalized humanity with the acute sociopolitical realities of South Asia.</p>
