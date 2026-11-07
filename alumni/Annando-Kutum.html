@@ -116,9 +116,15 @@
         background-color: var(--alumni-bg);
         color: var(--alumni-cream);
         -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
+        width: 100%;
       }
       
       /* Utility Overrides for this page to isolate from global css */
+      .alumni-page-wrapper {
+        width: 100%;
+        overflow-x: hidden;
+      }
       .alumni-page-wrapper section { padding: 0; background: transparent; }
       
       /* Typography */
@@ -466,23 +472,40 @@
         padding-bottom: 8px;
       }
       
-      .film-title-bn {
+      .film-title-en {
+        font-family: var(--serif);
         font-size: 1.6rem;
         font-weight: 600;
-        margin: 0 0 2px;
-        line-height: 1.2;
+        margin: 0 0 4px;
+        line-height: 1.25;
+        color: var(--alumni-cream);
       }
-      
-      .film-title-en {
-        font-size: 1rem;
-        margin: 0 0 15px;
-        letter-spacing: 0.5px;
+
+      .film-title-bn {
+        font-family: var(--bn);
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin: 0 0 14px;
+        letter-spacing: normal;
+        color: var(--alumni-accent);
+        opacity: 0.95;
       }
       
       .film-desc {
         font-size: 0.9rem;
         line-height: 1.6;
+        margin-bottom: 8px;
+        color: var(--alumni-cream);
+      }
+
+      .film-desc-bn {
+        font-family: var(--bn);
+        font-size: 0.82rem;
+        line-height: 1.6;
         margin-bottom: 20px;
+        color: var(--alumni-muted);
+        opacity: 0.85;
+        letter-spacing: normal;
         flex-grow: 1;
       }
       
@@ -686,22 +709,28 @@
         background: rgba(255,255,255,0.03);
       }
       
+      .ct-title-en {
+        font-family: var(--serif);
+        font-size: 1.25rem;
+        font-weight: 500;
+        margin-bottom: 3px;
+        color: #fff;
+        line-height: 1.35;
+      }
       .ct-title-bn {
         font-family: var(--bn);
-        font-size: 1.3rem;
-        font-weight: 500;
-        margin-bottom: 5px;
-        color: #fff;
+        font-size: 0.88rem;
+        font-weight: 400;
+        color: var(--alumni-accent);
+        opacity: 0.9;
+        letter-spacing: normal;
+        margin-bottom: 0;
       }
       #festivals .ct-title-en {
-        font-size: 1.05rem;
+        font-size: 1.15rem;
         font-weight: 500;
         color: var(--alumni-cream);
-        line-height: 1.45;
-      }
-      .ct-title-en {
-        font-size: 0.9rem;
-        color: var(--alumni-muted);
+        line-height: 1.4;
       }
       
       .ct-pill {
@@ -928,6 +957,8 @@
         }
 
         .films-grid { grid-template-columns: repeat(2, 1fr); column-gap: 20px; row-gap: 60px; }
+        .film-title-en { font-size: 1.45rem; line-height: 1.25; margin-bottom: 4px; }
+        .film-title-bn { font-size: 0.9rem; margin-bottom: 12px; }
 
         .cinematic-table-wrap { border: none; background: transparent; }
         .cinematic-table { min-width: unset; }
@@ -943,18 +974,21 @@
           background: var(--alumni-bg-soft);
         }
         .cinematic-table td { padding: 0; border: none; display: block; width: 100%; }
-        .cinematic-table td:nth-child(1) { padding-right: 60px; margin-bottom: 12px; }
+        .cinematic-table td:nth-child(1) { padding-right: 70px; margin-bottom: 8px; }
         .cinematic-table td:nth-child(2) { margin-bottom: 8px; }
         
-        .cinematic-table td:nth-child(3) { display: inline-block; width: auto; }
-        .cinematic-table td:nth-child(3)::after { content: ' · '; color: var(--alumni-muted); padding: 0 5px; }
-        .cinematic-table td:nth-child(4) { display: inline-block; width: auto; }
+        .cinematic-table td.ct-meta { display: inline-block; width: auto; font-size: 0.85rem; color: var(--alumni-muted); }
+        .cinematic-table td.ct-meta:not(:last-child)::after { content: ' · '; color: var(--alumni-muted); padding: 0 4px; }
         
-        .cinematic-table td:nth-child(5) { 
+        .cinematic-table td.ct-year { 
           position: absolute; 
           top: 20px; 
           right: 15px; 
-          width: auto; 
+          width: auto;
+          font-family: var(--mono);
+          font-size: 0.85rem;
+          color: var(--alumni-accent);
+          text-align: right;
         }
         .cinematic-table tr:hover td { background: transparent; }
 
@@ -969,27 +1003,34 @@
         .hero-content { padding: 0 15px; }
         .hero-title { font-size: 2.4rem; }
         .hero-title-bn {
-        font-family: var(--bn);
-        font-size: 1.5rem;
-        letter-spacing: normal;
-        margin-top: 5px;
-        margin-bottom: 20px;
-        font-weight: 600;
-        opacity: 0.95;
-      }
+          font-family: var(--bn);
+          font-size: 1.5rem;
+          letter-spacing: normal;
+          margin-top: 5px;
+          margin-bottom: 20px;
+          font-weight: 600;
+          opacity: 0.95;
+        }
         .hero-eyebrow { font-size: 0.65rem; }
         .section-title { font-size: 2rem; }
 
-        .films-grid { grid-template-columns: 1fr; row-gap: 60px; max-width: 100%; }
+        .tl-item { grid-template-columns: 80px 1fr; gap: 12px; padding-bottom: 20px; }
+        .tl-year { font-size: 0.78rem; }
+        .tl-content { font-size: 0.9rem; }
+
+        .films-grid { grid-template-columns: 1fr; row-gap: 50px; max-width: 100%; }
         .film-card { text-align: center; align-items: center; }
         .film-image-wrap { width: 240px; margin-left: auto; margin-right: auto; margin-bottom: 25px; }
         .film-meta-bar { justify-content: center; gap: 15px; margin-bottom: 15px; font-size: 0.7rem; }
-        .film-desc { font-size: 0.85rem; padding: 0 15px; text-align: center; }
+        .film-title-en { font-size: 1.35rem; line-height: 1.25; margin-bottom: 3px; }
+        .film-title-bn { font-size: 0.85rem; margin-bottom: 10px; }
+        .film-desc { font-size: 0.85rem; padding: 0 10px; text-align: center; margin-bottom: 6px; }
+        .film-desc-bn { font-size: 0.78rem; padding: 0 10px; text-align: center; margin-bottom: 15px; }
         .about-bio p { padding: 0 10px; font-size: 0.95rem; }
 
         .credits-group-title { font-size: 0.7rem; letter-spacing: 1px; }
-        .ct-title-bn { font-size: 1.1rem; }
-        .ct-title-en { font-size: 0.8rem; }
+        .ct-title-en { font-size: 1.1rem; line-height: 1.3; margin-bottom: 2px; }
+        .ct-title-bn { font-size: 0.82rem; }
 
         .venture-card { padding: 28px 16px; }
         .venture-image-frame { max-width: 220px; }
@@ -1686,16 +1727,17 @@
             <!-- Alo Adharer Kabbo -->
             <div class="film-card">
               <div class="film-image-wrap">
-                <img src="../images/anando-alo-adharer-kabbo.jpg" loading="lazy" alt="Alo Adharer Kabbo (আলো আঁধারের কাব্য) Film Poster"/>
+                <img src="../images/anando-alo-adharer-kabbo.jpg" loading="lazy" alt="Poetry of Light and Dark — Alo Adharer Kabbo (আলো আঁধারের কাব্য) Film Poster"/>
               </div>
               <div class="film-meta-bar font-mono text-muted">
                 <span>DRAMA</span>
                 <span>DIRECTOR</span>
                 <span>2X ROI</span>
               </div>
-              <h3 class="film-title-bn font-bn text-cream">আলো আঁধারের কাব্য</h3>
-              <h4 class="film-title-en font-serif text-accent">Alo Adharer Kabbo — Poetry of Light and Dark</h4>
-              <p class="film-desc font-sans text-muted">একটি মর্মস্পর্শী নাটক যা দুটি বিপরীত যুগলের সম্পর্ক তুলে ধরে—একটি বয়স্ক দৃষ্টিহীন দম্পতি যাদের নিঃশর্ত ভালোবাসা এবং বিশ্বাসের গভীরতা তরুণ দৃষ্টিসম্পন্ন দম্পতির বাহ্যিক রূপভিত্তিক সংশয় ও অভিযোগের চোখ খুলে দেয়। বাণিজ্যিকভাবে সফল (২ গুণ রিটার্ন) এবং সমালোচকদের দ্বারা প্রশংসিত।</p>
+              <h3 class="film-title-en font-serif text-cream">Poetry of Light and Dark</h3>
+              <div class="film-title-bn font-bn text-accent">আলো আঁধারের কাব্য (Alo Adharer Kabbo)</div>
+              <p class="film-desc font-sans text-muted">A poignant drama contrasting two couples&mdash;an elderly visually impaired couple whose unconditional love and profound trust illuminate the superficial vanity and doubts of a sighted young couple. Commercially successful (2x ROI) and critically acclaimed.</p>
+              <p class="film-desc-bn font-bn text-muted">একটি মর্মস্পর্শী নাটক যা দুটি বিপরীত যুগলের সম্পর্ক তুলে ধরে—একটি বয়স্ক দৃষ্টিহীন দম্পতি যাদের নিঃশর্ত ভালোবাসা এবং বিশ্বাসের গভীরতা তরুণ দৃষ্টিসম্পন্ন দম্পতির বাহ্যিক রূপভিত্তিক সংশয় ও অভিযোগের চোখ খুলে দেয়। বাণিজ্যিকভাবে সফল (২ গুণ রিটার্ন) এবং সমালোচকদের দ্বারা প্রশংসিত।</p>
               <div class="film-cta font-mono disabled">
                 <span>Director &middot; Producer &middot; Screenwriter</span>
               </div>
@@ -1704,16 +1746,17 @@
             <!-- A City of Lie -->
             <div class="film-card">
               <div class="film-image-wrap">
-                <img src="../images/anando-a-city-of-lie.jpg" loading="lazy" alt="A City of Lie (মিথ্যা কথার শহর) Film Poster"/>
+                <img src="../images/anando-a-city-of-lie.jpg" loading="lazy" alt="A City of Lie — Mithya Kothar Shohor (মিথ্যা কথার শহর) Film Poster"/>
               </div>
               <div class="film-meta-bar font-mono text-muted">
                 <span>MYSTERY</span>
                 <span>KOLKATA</span>
                 <span>NARRATIVE</span>
               </div>
-              <h3 class="film-title-bn font-bn text-cream">মিথ্যা কথার শহর</h3>
-              <h4 class="film-title-en font-serif text-accent">A City of Lie</h4>
-              <p class="film-desc font-sans text-muted">কলকাতার প্রাণবন্ত ও রহস্যময় পটভূমিতে নির্মিত। একজন তরুণ বাংলাদেশী আলোকচিত্রী এক রূপসী নারীর ছবি তুলে তার প্রেমে পড়ে যান। তাকে খুঁজতে গিয়ে প্রতারিত হওয়ার পর তিনি কলকাতার ঐতিহাসিক স্থানগুলোর ভেতর দিয়ে নিজের এক অলৌকিক পুনর্জন্মের গভীর সত্য আবিষ্কার করেন।</p>
+              <h3 class="film-title-en font-serif text-cream">A City of Lie</h3>
+              <div class="film-title-bn font-bn text-accent">মিথ্যা কথার শহর (Mithya Kothar Shohor)</div>
+              <p class="film-desc font-sans text-muted">Set against the vibrant and enigmatic backdrop of Kolkata. A young Bangladeshi photographer captures a portrait of an alluring woman and falls in love; deceived in his search, his journey through the city's historic avenues leads to profound truths of miraculous rebirth.</p>
+              <p class="film-desc-bn font-bn text-muted">কলকাতার প্রাণবন্ত ও রহস্যময় পটভূমিতে নির্মিত। একজন তরুণ বাংলাদেশী আলোকচিত্রী এক রূপসী নারীর ছবি তুলে তার প্রেমে পড়ে যান। তাকে খুঁজতে গিয়ে প্রতারিত হওয়ার পর তিনি কলকাতার ঐতিহাসিক স্থানগুলোর ভেতর দিয়ে নিজের এক অলৌকিক পুনর্জন্মের গভীর সত্য আবিষ্কার করেন।</p>
               <div class="film-cta font-mono disabled">
                 <span>Director &middot; Producer &middot; Screenwriter</span>
               </div>
@@ -1722,16 +1765,17 @@
             <!-- Blog -->
             <div class="film-card">
               <div class="film-image-wrap">
-                <img src="../images/anando-blog.jpg" loading="lazy" alt="Blog (ব্লগ) Film Poster"/>
+                <img src="../images/anando-blog.jpg" loading="lazy" alt="Blog — Freedom of Expression (ব্লগ) Film Poster"/>
               </div>
               <div class="film-meta-bar font-mono text-muted">
                 <span>DRAMA</span>
                 <span>SOCIAL</span>
                 <span>2013-2017</span>
               </div>
-              <h3 class="film-title-bn font-bn text-cream">ব্লগ</h3>
-              <h4 class="film-title-en font-serif text-accent">Blog — Freedom of Expression</h4>
-              <p class="film-desc font-sans text-muted">২০১৩ থেকে ২০১৭ সালের বাংলাদেশে মুক্তমনা ব্লগারদের ওপর মৌলবাদী আক্রমণের স্পর্শকাতর সংকটকাল নিয়ে নির্মিত চলচ্চিত্র। সামাজিক যোগাযোগ মাধ্যমে কুসংস্কার ও অন্যায়ের বিরুদ্ধে সোচ্চার এক ব্লগারের প্রতিদিনের শঙ্কা এবং সত্য উচ্চারণের আত্মত্যাগের দলিল।</p>
+              <h3 class="film-title-en font-serif text-cream">Blog — Freedom of Expression</h3>
+              <div class="film-title-bn font-bn text-accent">ব্লগ (Blog)</div>
+              <p class="film-desc font-sans text-muted">Set during Bangladesh's perilous 2013–2017 era confronting fundamentalist attacks against freethinking bloggers. A powerful narrative documenting a courageous blogger's daily peril, resilience, and personal sacrifice in defense of truth.</p>
+              <p class="film-desc-bn font-bn text-muted">২০১৩ থেকে ২০১৭ সালের বাংলাদেশে মুক্তমনা ব্লগারদের ওপর মৌলবাদী আক্রমণের স্পর্শকাতর সংকটকাল নিয়ে নির্মিত চলচ্চিত্র। সামাজিক যোগাযোগ মাধ্যমে কুসংস্কার ও অন্যায়ের বিরুদ্ধে সোচ্চার এক ব্লগারের প্রতিদিনের শঙ্কা এবং সত্য উচ্চারণের আত্মত্যাগের দলিল।</p>
               <div class="film-cta font-mono disabled">
                 <span>Director &middot; Producer &middot; Screenwriter</span>
               </div>
@@ -1740,16 +1784,17 @@
             <!-- Jheel Kutum Cafe -->
             <div class="film-card">
               <div class="film-image-wrap">
-                <img src="../images/anando-jheel-kutum-cafe.jpg" loading="lazy" alt="Jheel Kutum Cafe Film-Themed Cultural Hub"/>
+                <img src="../images/anando-jheel-kutum-cafe.jpg" loading="lazy" alt="Jheel Kutum Cafe — Cultural Space (ঝিল কুটুম ক্যাফে)"/>
               </div>
               <div class="film-meta-bar font-mono text-muted">
                 <span>VENTURE</span>
                 <span>CULTURE</span>
                 <span>2020-2023</span>
               </div>
-              <h3 class="film-title-bn font-bn text-cream">ঝিল কুটুম ক্যাফে</h3>
-              <h4 class="film-title-en font-serif text-accent">Jheel Kutum Cafe — Film Themed Space</h4>
-              <p class="film-desc font-sans text-muted">২০২০ সালে প্রতিষ্ঠিত দেশের প্রথম চলচ্চিত্র-কেন্দ্রিক ক্যাফে, যা তরুণ ও স্বাধীন চলচ্চিত্র নির্মাতা এবং চলচ্চিত্রপ্রেমীদের এক প্রাণবন্ত আড্ডাস্থল ও মিলনমেলা হিসেবে পরিচিতি লাভ করে। চলচ্চিত্র ও মুক্ত সংস্কৃতির বিকাশে এর অবদান স্মরণীয়।</p>
+              <h3 class="film-title-en font-serif text-cream">Jheel Kutum Cafe — Cultural Space</h3>
+              <div class="film-title-bn font-bn text-accent">ঝিল কুটুম ক্যাফে (Jheel Kutum Cafe)</div>
+              <p class="film-desc font-sans text-muted">Founded in 2020 as Bangladesh's first cinema-themed cultural cafe, serving as a celebrated gathering place and creative networking sanctuary for young independent filmmakers, artists, and cinephiles.</p>
+              <p class="film-desc-bn font-bn text-muted">২০২০ সালে প্রতিষ্ঠিত দেশের প্রথম চলচ্চিত্র-কেন্দ্রিক ক্যাফে, যা তরুণ ও স্বাধীন চলচ্চিত্র নির্মাতা এবং চলচ্চিত্রপ্রেমীদের এক প্রাণবন্ত আড্ডাস্থল ও মিলনমেলা হিসেবে পরিচিতি লাভ করে। চলচ্চিত্র ও মুক্ত সংস্কৃতির বিকাশে এর অবদান স্মরণীয়।</p>
               <div class="film-cta font-mono disabled">
                 <span>Founder &middot; Creative Networking Hub</span>
               </div>
@@ -1902,8 +1947,8 @@
                 <tbody>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">জীবনঢুলী</div>
                       <div class="ct-title-en">Jibon Dhuli &middot; Liberation War Epic</div>
+                      <div class="ct-title-bn font-bn">জীবনঢুলী (Jibon Dhuli)</div>
                     </td>
                     <td><span class="ct-pill">Assistant Director</span></td>
                     <td class="ct-meta">Tanvir Mokammel</td>
@@ -1912,8 +1957,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">সীমান্তরেখা</div>
                       <div class="ct-title-en">Border Line &middot; The Partition of Bengal</div>
+                      <div class="ct-title-bn font-bn">সীমান্তরেখা (Border Line)</div>
                     </td>
                     <td><span class="ct-pill">Assistant Director</span></td>
                     <td class="ct-meta">Tanvir Mokammel</td>
@@ -1922,8 +1967,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">কিলো ফ্লাইট</div>
                       <div class="ct-title-en">Kilo Flight &middot; Bangladesh Air Force 1971</div>
+                      <div class="ct-title-bn font-bn">কিলো ফ্লাইট (Kilo Flight)</div>
                     </td>
                     <td><span class="ct-pill">Assistant Director</span></td>
                     <td class="ct-meta">Bangladesh Air Force</td>
@@ -1932,8 +1977,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">মরশেদুল ইসলাম চলচ্চিত্র সহযোগিতা</div>
                       <div class="ct-title-en">Feature &amp; Documentary Collaborations</div>
+                      <div class="ct-title-bn font-bn">মরশেদুল ইসলাম চলচ্চিত্র সহযোগিতা (Morshedul Islam Collaborations)</div>
                     </td>
                     <td><span class="ct-pill">Assistant Director</span></td>
                     <td class="ct-meta">Morshedul Islam</td>
@@ -1942,8 +1987,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">৭+ পূর্ণদৈর্ঘ্য চলচ্চিত্র ব্যবস্থাপনা</div>
                       <div class="ct-title-en">Seven Feature Films as Chief AD &amp; Line Producer</div>
+                      <div class="ct-title-bn font-bn">৭+ পূর্ণদৈর্ঘ্য চলচ্চিত্র ব্যবস্থাপনা (7+ Feature Film Management)</div>
                     </td>
                     <td><span class="ct-pill">Chief AD &middot; Line Producer</span></td>
                     <td class="ct-meta">Various National Directors</td>
@@ -1972,8 +2017,8 @@
                 <tbody>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">লাফজ বডি স্প্রে (মাশরাফি বিন মর্তুজা)</div>
                       <div class="ct-title-en">Lafz Body Spray TVC with Mashrafe Bin Mortaza</div>
+                      <div class="ct-title-bn font-bn">লাফজ বডি স্প্রে (মাশরাফি বিন মর্তুজা)</div>
                     </td>
                     <td><span class="ct-pill">Chief Assistant Director</span></td>
                     <td class="ct-meta">Gorai Films / Golpolok</td>
@@ -1982,8 +2027,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">বিশ্বব্যাংক প্রতিবন্ধী উন্নয়ন প্রকল্প</div>
                       <div class="ct-title-en">World Bank &middot; Mobility of Handicapped Individuals</div>
+                      <div class="ct-title-bn font-bn">বিশ্বব্যাংক প্রতিবন্ধী উন্নয়ন প্রকল্প</div>
                     </td>
                     <td><span class="ct-pill">Director &middot; Writer</span></td>
                     <td class="ct-meta">World Bank Development</td>
@@ -1992,8 +2037,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">মেরিল লিপ কেয়ার, মীর সিমেন্ট ও টুইঙ্কেল ডায়াপার</div>
-                      <div class="ct-title-en">Maril Lip Care, Mir Cement, Twinkle Baby Diaper</div>
+                      <div class="ct-title-en">Meril Lip Care, Mir Cement &amp; Twinkle Baby Diaper</div>
+                      <div class="ct-title-bn font-bn">মেরিল লিপ কেয়ার, মীর সিমেন্ট ও টুইঙ্কেল ডায়াপার</div>
                     </td>
                     <td><span class="ct-pill">Project Manager &middot; Line Producer</span></td>
                     <td class="ct-meta">PRAN-RFL &middot; Square Group</td>
@@ -2002,8 +2047,8 @@
                   </tr>
                   <tr>
                     <td>
-                      <div class="ct-title-bn">ব্র্যাক, ফুলকি ও ওয়ার্ল্ড ভিশন সামাজিক প্রামাণ্যচিত্র</div>
                       <div class="ct-title-en">BRAC, Fulki &amp; World Vision Social Impact Films</div>
+                      <div class="ct-title-bn font-bn">ব্র্যাক, ফুলকি ও ওয়ার্ল্ড ভিশন সামাজিক প্রামাণ্যচিত্র</div>
                     </td>
                     <td><span class="ct-pill">Writer &middot; Assistant Director</span></td>
                     <td class="ct-meta">Development Organizations</td>
