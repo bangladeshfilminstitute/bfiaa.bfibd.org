@@ -138,45 +138,48 @@
       .text-accent { color: var(--alumni-accent); }
       
       /* Hero Section */
-      /* Hero Section & Cover Banner */
       .hero-section {
         position: relative;
         width: 100%;
-        padding-top: 100px;
-        margin-bottom: 70px;
-      }
-
-      .profile-cover-banner {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto 35px auto;
-        padding: 0 20px;
-      }
-
-      .cover-banner-wrap {
-        position: relative;
-        width: 100%;
-        background: #0f1413;
-        border: 1px solid var(--alumni-line);
-        border-radius: 8px;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
         overflow: hidden;
-        box-shadow: 0 16px 45px rgba(0, 0, 0, 0.6);
+        margin-bottom: 80px;
+        padding-top: 100px;
       }
 
-      .cover-banner-img {
+      .hero-bg {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        overflow: hidden;
+      }
+
+      .hero-bg img {
         width: 100%;
-        height: auto;
-        aspect-ratio: 851 / 315;
-        object-fit: contain;
-        display: block;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 30%;
+        opacity: 0.75;
+        filter: contrast(1.1) brightness(0.68) grayscale(15%);
+      }
+
+      .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to right, rgba(11, 15, 14, 0.96) 0%, rgba(11, 15, 14, 0.72) 55%, rgba(11, 15, 14, 0.35) 100%),
+                    linear-gradient(to top, var(--alumni-bg) 0%, rgba(11, 15, 14, 0.35) 30%, transparent 70%);
+        z-index: 2;
       }
 
       .hero-content {
         position: relative;
+        z-index: 3;
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
-        padding: 0 20px;
+        padding: 40px 20px 40px;
         display: grid;
         grid-template-columns: 1fr 300px;
         gap: 40px;
@@ -846,12 +849,11 @@
 
       @media (max-width: 1024px) {
         .container { padding: 0 30px; }
-        .hero-section { padding-top: 90px; }
-        .profile-cover-banner { padding: 0 30px; margin-bottom: 30px; }
+        .hero-section { min-height: 75vh; padding-top: 100px; }
         .hero-content {
           grid-template-columns: 1fr;
           gap: 30px;
-          padding: 0 30px;
+          padding: 40px 30px;
         }
         .hero-title { font-size: 4.5rem; }
         .hero-stats {
@@ -906,19 +908,28 @@
       @media (max-width: 768px) {
         .container { padding: 0 20px; }
         .hero-section { 
-          padding-top: 80px; 
-          min-height: auto; 
-          margin-bottom: 45px; 
+          min-height: 100svh; 
+          align-items: flex-end;
+          padding-top: 80px;
+          margin-bottom: 45px;
         }
-        .profile-cover-banner { 
-          padding: 0 20px; 
-          margin-bottom: 25px; 
+        .hero-bg {
+          height: 65svh;
+          bottom: auto;
         }
-        .cover-banner-wrap { 
-          border-radius: 6px; 
+        .hero-bg img { 
+          object-position: 50% 15%;
+        }
+        .hero-overlay {
+          background: linear-gradient(to bottom, 
+            rgba(11,15,14,0.05) 0%, 
+            rgba(11,15,14,0.35) 30%, 
+            rgba(11,15,14,0.88) 60%,
+            var(--alumni-bg) 100%
+          );
         }
         .hero-content { 
-          padding: 0 20px; 
+          padding: 24svh 20px 40px; 
           width: 100%;
           gap: 25px;
         }
@@ -999,8 +1010,7 @@
 
       @media (max-width: 480px) {
         .container { padding: 0 15px; }
-        .profile-cover-banner { padding: 0 15px; margin-bottom: 20px; }
-        .hero-content { padding: 0 15px; }
+        .hero-content { padding: 20svh 15px 35px; }
         .hero-title { font-size: 2.4rem; }
         .hero-title-bn {
           font-family: var(--bn);
@@ -1507,7 +1517,7 @@
             <a href="../index.html#founder">Founder</a>
             <a href="../index.html#committee">Committee</a>
             <a href="../index.html#conferences">Conferences</a>
-            <a href="index.html" class="active">Alumni</a>
+            <a href="../honorablemembers/index.html" class="active">Alumni</a>
             <a href="../films.html">Films</a>
             <a href="../index.html#events">Events</a>
             <a href="../constitution.html">Constitution</a>
@@ -1534,7 +1544,7 @@
         <a href="../index.html#founder">Founder &amp; Patron</a>
         <a href="../index.html#committee">Executive Committee</a>
         <a href="../index.html#conferences">Conferences (2021 &amp; 2019)</a>
-        <a href="index.html" class="active">Honorable Alumni Directory</a>
+        <a href="../honorablemembers/index.html" class="active">Honorable Alumni Directory</a>
         <a href="../films.html">Alumni Films Showcase</a>
         <a href="../index.html#events">Events &amp; Screenings</a>
         <a href="../constitution.html">Constitution</a>
@@ -1547,19 +1557,16 @@
 
       <div class="alumni-page-wrapper">
 
-        <!-- HERO & COVER BANNER -->
+        <!-- HERO -->
         <section class="hero-section">
-          <!-- Standalone Profile Cover Banner (851x315 - All 8 timeline portraits 2017-2024 fully visible) -->
-          <div class="profile-cover-banner">
-            <div class="cover-banner-wrap">
-              <img 
-                src="../images/anando-hero-cover.jpg?v=2" 
-                fetchpriority="high" 
-                alt="Annando Kutum — Creative Evolution Timeline (2017–2024)" 
-                class="cover-banner-img"
-              />
-            </div>
+          <div class="hero-bg">
+            <img 
+              src="../images/anando-hero-cover.jpg?v=5" 
+              fetchpriority="high" 
+              alt="Annando Kutum Background Backdrop"
+            />
           </div>
+          <div class="hero-overlay"></div>
 
           <div class="hero-content">
             <div class="hero-main">
@@ -1793,7 +1800,7 @@
               </div>
               <h3 class="film-title-en font-serif text-cream">Jheel Kutum Cafe — Cultural Space</h3>
               <div class="film-title-bn font-bn text-accent">ঝিল কুটুম ক্যাফে (Jheel Kutum Cafe)</div>
-              <p class="film-desc font-sans text-muted">Founded in 2020 as Bangladesh's first cinema-themed cultural cafe, becoming a celebrated gathering place and creative networking sanctuary for young independent filmmakers, artists, and cinephiles.</p>
+              <p class="film-desc font-sans text-muted">Founded in 2020 as Bangladesh's first cinema-themed cultural cafe, serving as a celebrated gathering place and creative networking sanctuary for young independent filmmakers, artists, and cinephiles.</p>
               <p class="film-desc-bn font-bn text-muted">২০২০ সালে প্রতিষ্ঠিত দেশের প্রথম চলচ্চিত্র-কেন্দ্রিক ক্যাফে, যা তরুণ ও স্বাধীন চলচ্চিত্র নির্মাতা এবং চলচ্চিত্রপ্রেমীদের এক প্রাণবন্ত আড্ডাস্থল ও মিলনমেলা হিসেবে পরিচিতি লাভ করে। চলচ্চিত্র ও মুক্ত সংস্কৃতির বিকাশে এর অবদান স্মরণীয়।</p>
               <div class="film-cta font-mono disabled">
                 <span>Founder &middot; Creative Networking Hub</span>
@@ -2164,7 +2171,7 @@
                 <li><a href="../index.html#founder">Founder &amp; Patron</a></li>
                 <li><a href="../index.html#committee">Executive Committee</a></li>
                 <li><a href="../index.html#conferences">Conferences</a></li>
-                <li><a href="index.html">Honorable Alumni</a></li>
+                <li><a href="../honorablemembers/index.html">Honorable Alumni</a></li>
               </ul>
             </div>
             <div class="footer-col">
